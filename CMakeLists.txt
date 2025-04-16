@@ -10,12 +10,12 @@ set(CET_WARN_DEPRECATED)
 
 project(otsdaq_fermilabtestbeam VERSION 2.06.03)
 
-#set(CMAKE_MODULE_PATH
-#        $ENV{ART_DIR}/Modules
-#        $ENV{CETBUILDTOOLS_DIR}/Modules
-#        $ENV{XDAQ_DIR}/Modules
-#        $ENV{ARTDAQ_UTILITIES_DIR}/Modules
-#        ${CMAKE_MODULE_PATH})
+set(CMAKE_MODULE_PATH
+        $ENV{ART_DIR}/Modules
+        $ENV{CETBUILDTOOLS_DIR}/Modules
+        $ENV{XDAQ_DIR}/Modules
+        $ENV{ARTDAQ_UTILITIES_DIR}/Modules
+        ${CMAKE_MODULE_PATH})
 message(STATUS "CMAKE_MODULE_PATH is ${CMAKE_MODULE_PATH}")
 
 include(CetCMakeEnv)
