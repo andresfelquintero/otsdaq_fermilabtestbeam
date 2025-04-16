@@ -1,3 +1,6 @@
+message(STATUS "This is MY CMakeLists.txt in otsdaq_fermilabtestbeam!")
+
+
 include(CetRootCint)
 cet_rootcint(Monicelli)
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
