@@ -1,12 +1,3 @@
-# ======================================================================
-#  otsdaq-fermilabtestbeam main build file
-#
-#  cd .../path/to/build/directory
-#  source .../path/to/otsdaq-fermilabtestbeam/ups/setup_for_development
-#  buildtool
-# ======================================================================
-
-
 # use cmake 3.17 or later
 cmake_minimum_required (VERSION 3.17)
 
@@ -33,11 +24,6 @@ cet_set_compiler_flags(DIAGS VIGILANT
  NO_UNDEFINED
  EXTRA_FLAGS -pedantic -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-maybe-uninitialized -Wno-ignored-qualifiers -Wno-unused-variable
 )
-
-#string(TOUPPER ${CMAKE_BUILD_TYPE} BTYPE_UC )
-#if( ${BTYPE_UC} MATCHES "DEBUG" )
-#  cet_add_compiler_flags(-fsanitize=address)
-#endif()
 
 cet_report_compiler_flags()
 
@@ -66,72 +52,7 @@ find_ups_boost( v1_50_0 filesystem
 include_directories($ENV{XDAQ_INC}/linux)
 link_directories($ENV{XDAQ_LIB})
 
-#find_ups_product( xmlrpc_c v1_25_18 )
 
-
-#find_library( XMLRPC_SERVER_ABYSSPP NAMES xmlrpc_server_abyss++ PATHS $ENV{XMLRPC_C_LIBRARY} NO_DEFAULT_PATH )
-#find_library( XMLRPC_SERVER_ABYSS NAMES xmlrpc_server_abyss PATHS $ENV{XMLRPC_C_LIBRARY} NO_DEFAULT_PATH )
-#find_library( XMLRPC_SERVERPP NAMES xmlrpc_server++ PATHS $ENV{XMLRPC_C_LIBRARY} NO_DEFAULT_PATH )
-#find_library( XMLRPC_SERVER NAMES xmlrpc_server PATHS $ENV{XMLRPC_C_LIBRARY} NO_DEFAULT_PATH )
-#find_library( XMLRPC_ABYSS NAMES xmlrpc_abyss PATHS $ENV{XMLRPC_C_LIBRARY} NO_DEFAULT_PATH )
-#find_library( XMLRPC_CLIENTPP NAMES xmlrpc_client++ PATHS $ENV{XMLRPC_C_LIBRARY} NO_DEFAULT_PATH )
-#find_library( XMLRPCPP NAMES xmlrpc++ PATHS $ENV{XMLRPC_C_LIBRARY} NO_DEFAULT_PATH )
-#find_library( XMLRPC NAMES xmlrpc PATHS $ENV{XMLRPC_C_LIBRARY} NO_DEFAULT_PATH )
-#find_library( XMLRPC_UTIL NAMES xmlrpc_util PATHS $ENV{XMLRPC_C_LIBRARY} NO_DEFAULT_PATH )
-#find_library( XMLRPC_UTILPP NAMES xmlrpc_util++ PATHS $ENV{XMLRPC_C_LIBRARY} NO_DEFAULT_PATH )
-# XMLRPC_UTILPP is new to v1_39_07:
-#if(NOT XMLRPC_UTILPP)
-#	set(XMLRPC_UTILPP "")
-#endif()
-#find_library( XMLRPC_XMLPARSE NAMES xmlrpc_xmlparse PATHS $ENV{XMLRPC_C_LIBRARY} NO_DEFAULT_PATH )
-#find_library( XMLRPC_XMLTOK NAMES xmlrpc_xmltok PATHS $ENV{XMLRPC_C_LIBRARY} NO_DEFAULT_PATH )
-
-#string(REGEX MATCHALL "[0-9][0-9]?[0-9]?" ART_VERSION_LIST "$ENV{ART_VERSION}")
-#list(GET ART_VERSION_LIST 0 ART_MAJOR_VERSION)
-#list(GET ART_VERSION_LIST 1 ART_MINOR_VERSION)
-#list(GET ART_VERSION_LIST 2 ART_PATCH_VERSION)
-
-# string(LENGTH ${ART_MINOR_VERSION} TMP_LEN)
-# if (${TMP_LEN} GREATER 1)
-#     string(SUBSTRING ${ART_MINOR_VERSION} 0 1 TMP_STRING)
-#     if (${TMP_STRING} EQUAL "0")
-#         string(SUBSTRING ${ART_MINOR_VERSION} 1 ${TMP_LEN} ART_MINOR_VERSION)
-#     endif()
-# endif()
-
-# string(LENGTH ${ART_PATCH_VERSION} TMP_LEN)
-# if (${TMP_LEN} GREATER 1)
-#     string(SUBSTRING ${ART_PATCH_VERSION} 0 1 TMP_STRING)
-#     if (${TMP_STRING} EQUAL "0")
-#         string(SUBSTRING ${ART_PATCH_VERSION} 1 ${TMP_LEN} ART_PATCH_VERSION)
-#     endif()
-# endif()
-
-# message("-DART_MAJOR_VERSION=${ART_MAJOR_VERSION} -DART_MINOR_VERSION=${ART_MINOR_VERSION} -DART_PATCH_VERSION=${ART_PATCH_VERSION}")
-# add_definitions(-DART_MAJOR_VERSION=${ART_MAJOR_VERSION} -DART_MINOR_VERSION=${ART_MINOR_VERSION} -DART_PATCH_VERSION=${ART_PATCH_VERSION})
-#message("-DART_HEX_VERSION=0x${ART_MAJOR_VERSION}${ART_MINOR_VERSION}${ART_PATCH_VERSION}")
-#set(ART_HEX_VERSION 0x${ART_MAJOR_VERSION}${ART_MINOR_VERSION}${ART_PATCH_VERSION})
-#add_definitions(-DART_HEX_VERSION=0x${ART_MAJOR_VERSION}${ART_MINOR_VERSION}${ART_PATCH_VERSION})
-
-#string(REGEX MATCHALL "[0-9][0-9]?[0-9]?" MESSAGEFACILITY_VERSION_LIST "$ENV{MESSAGEFACILITY_VERSION}")
-#list(GET MESSAGEFACILITY_VERSION_LIST 0 MESSAGEFACILITY_MAJOR_VERSION)
-#list(GET MESSAGEFACILITY_VERSION_LIST 1 MESSAGEFACILITY_MINOR_VERSION)
-#list(GET MESSAGEFACILITY_VERSION_LIST 2 MESSAGEFACILITY_PATCH_VERSION)
-
-#message("-DMESSAGEFACILITY_HEX_VERSION=0x${MESSAGEFACILITY_MAJOR_VERSION}${MESSAGEFACILITY_MINOR_VERSION}${MESSAGEFACILITY_PATCH_VERSION}")
-#add_definitions(-DMESSAGEFACILITY_HEX_VERSION=0x${MESSAGEFACILITY_MAJOR_VERSION}${MESSAGEFACILITY_MINOR_VERSION}${MESSAGEFACILITY_PATCH_VERSION})
-
-# Needed if using old art with new cetbuildtools / CMake.
-#check_ups_version(art "$ENV{ART_VERSION}" v1_11_00 PRODUCT_OLDER_VAR have_old_art)
-#if (have_old_art)
-#  cmake_policy(SET CMP0046 OLD)
-#endif()
-#unset(have_old_art)
-
-#find_package(MPI QUIET)
-
-# macros for art_dictionary and simple_plugin
-#include(ArtDictionary)
 include(ArtMake)
 include(BuildPlugins)
 include(CetTest)
