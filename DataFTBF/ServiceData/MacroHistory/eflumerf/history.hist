@@ -1,0 +1,90 @@
+{
+"Command":"r:31:31200034",
+"Format":"ascii:hex",
+"Time":"Tue Oct 31 2017 10:52:42 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FTBFWireChamberInterface:210:FEI0"
+}#
+{
+"Command":"r:31:72630032",
+"Format":"ascii:ascii",
+"Time":"Tue Oct 31 2017 10:52:50 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FTBFWireChamberInterface:210:FEI0"
+}#
+{
+"Command":"w:31:63",
+"Format":"ascii:ascii",
+"Time":"Tue Oct 31 2017 10:53:02 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FTBFWireChamberInterface:210:FEI0"
+}#
+{
+"Command":"w:31:63",
+"Format":"ascii:ascii",
+"Time":"Tue Oct 31 2017 11:39:04 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FTBFWireChamberInterface:210:FEI0"
+}#
+{
+"Command":"w:31:63",
+"Format":"ascii:ascii",
+"Time":"Tue Oct 31 2017 12:08:56 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FTBFWireChamberInterface:210:FEI0"
+}#
+{
+"Command":"r:1:0100312D",
+"Format":"hex:hex",
+"Time":"Mon Nov 13 2017 11:07:30 GMT-0600 (CST)",
+"Interfaces":"FTBFWireChamberInterface:315:FTBF01"
+}#
+{
+"Command":"r:1:0100312D",
+"Format":"hex:ascii",
+"Time":"Mon Nov 13 2017 11:07:35 GMT-0600 (CST)",
+"Interfaces":"FTBFWireChamberInterface:315:FTBF01"
+}#
+{
+"Command":"r:31:31200034",
+"Format":"ascii:ascii",
+"Time":"Mon Nov 13 2017 11:10:28 GMT-0600 (CST)",
+"Interfaces":"FTBFWireChamberInterface:315:FTBF01"
+}#
+{
+"Command":"w:31:34",
+"Format":"ascii:ascii",
+"Time":"Mon Nov 13 2017 11:10:54 GMT-0600 (CST)",
+"Interfaces":"FTBFWireChamberInterface:315:FTBF01"
+}#
+{
+"Command":"r:30:30200030",
+"Format":"ascii:ascii",
+"Time":"Fri Dec 08 2017 13:41:46 GMT-0600 (CST)",
+"Interfaces":"FTBFWireChamberInterface%3A315%3AFTBF01"
+}#
+{
+"Command":"r:3130:30200034",
+"Format":"ascii:ascii",
+"Time":"Fri Dec 08 2017 13:41:51 GMT-0600 (CST)",
+"Interfaces":"FTBFWireChamberInterface%3A315%3AFTBF01"
+}#
+{
+"Command":"r:31:31200034",
+"Format":"ascii:ascii",
+"Time":"Fri Dec 08 2017 13:42:40 GMT-0600 (CST)",
+"Interfaces":"FTBFWireChamberInterface%3A315%3AFTBF01"
+}#
+{
+"Command":"r:6337:37200032",
+"Format":"ascii:ascii",
+"Time":"Fri Dec 08 2017 14:04:43 GMT-0600 (CST)",
+"Interfaces":"FTBFWireChamberInterface%3A315%3AFTBF01"
+}#
+{
+"Command":"w:31:30",
+"Format":"ascii:ascii",
+"Time":"Fri Dec 08 2017 14:10:48 GMT-0600 (CST)",
+"Interfaces":"FTBFWireChamberInterface%3A315%3AFTBF01"
+}#
+{
+"Command":"r:31:31200034",
+"Format":"ascii:ascii",
+"Time":"Fri Dec 08 2017 14:11:00 GMT-0600 (CST)",
+"Interfaces":"FTBFWireChamberInterface%3A315%3AFTBF01"
+}#

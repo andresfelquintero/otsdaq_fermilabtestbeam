@@ -1,0 +1,127 @@
+{
+"document" : {
+"data" : {
+"NAME" : "XDAQ_CONTEXT_TABLE",
+"COMMENT" : "FTBF \"facility daq\" default context.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1582232527,
+"COL_TYPES" : {
+"CONTEXT_UID" : "STRING",
+"STATUS" : "STRING",
+"ID" : "NUMBER",
+"ADDRESS" : "STRING",
+"PORT" : "NUMBER",
+"LINK_TO_APPLICATION_TABLE" : "STRING",
+"LINK_TO_APPLICATION_GROUP_ID" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2020-02-20T15:02:07.996-0600",
+"rawdata" : [
+
+]
+},
+"version" : "16",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2020-02-20T15:02:07.998-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2020-02-20T15:02:07.997-0600"
+},
+{
+"name" : "T992Context_v28",
+"assigned" : "2020-02-20T15:02:09.688-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T15:02:07.997-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2020-02-20T15:02:07.997-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2020-02-20T15:02:07.997-0600",
+"value" : {
+"name" : "16",
+"assigned" : "2020-02-20T15:02:07.997-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2020-02-20T15:02:07.997-0600",
+"value" : {
+"name" : "XDAQContextTable",
+"assigned" : "2020-02-20T15:02:07.997-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2020-02-20T15:02:07.998-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2020-02-20T15:02:07.998-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T15:02:09.688-0600",
+"value" : {
+"name" : "T992Context_v28",
+"assigned" : "2020-02-20T15:02:09.688-0600"
+}
+}
+],
+"created" : "2020-02-20T15:02:07.996-0600"
+},
+"_id" : {
+"$oid" : "9cb9f1f8f59c4609b047e9fc"
+},
+"collection" : "XDAQContextTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

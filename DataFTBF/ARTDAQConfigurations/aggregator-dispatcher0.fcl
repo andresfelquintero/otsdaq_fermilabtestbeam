@@ -1,0 +1,63 @@
+services: {
+	scheduler: {
+		fileMode: NOMERGE
+		errorOnFailureToPut: false
+	}
+
+	NetMonTransportServiceInterface: {
+		service_provider: NetMonTransportService
+	}
+
+}
+
+daq: {
+	aggregator: {
+		expected_events_per_bunch: 1
+		print_event_store_stats: true
+		event_queue_depth: 20
+		event_queue_wait_time: 5
+		onmon_event_prescale: 1
+		xmlrpc_client_list: ""
+		subrun_size_MB: 0.0
+		subrun_duration: 0
+		subrun_event_count: 0
+		is_dispatcher: true
+		auto_suppression_enabled: false
+		broadcast_sends: true
+		max_fragment_size_bytes: 167772160
+		buffer_count: 4
+		
+		sources: {
+			s8: { transferPluginType: Shmem source_rank: 502 max_fragment_size_words: 20971520 host_map: [{rank: 502 host: "ftbf-daq-08.fnal.gov" portOffset: 0}, {rank: 505 host: "ftbf-daq-08.fnal.gov" portOffset: 1}]}
+		}
+
+	}
+
+	metrics: {
+	}
+
+	destinations: {
+	}
+
+}
+
+source: {
+	module_type: NetMonInput
+}
+
+outputs: {
+}
+
+physics: {
+	analyzers: {
+		triggerCounter: {
+			module_type: TriggerCounter
+			dummy_param: false
+		}
+
+	}
+
+	a4: [ triggerCounter ]
+}
+
+process_name: DAQAG

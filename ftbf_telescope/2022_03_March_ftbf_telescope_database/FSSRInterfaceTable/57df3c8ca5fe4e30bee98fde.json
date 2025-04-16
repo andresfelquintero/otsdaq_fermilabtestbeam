@@ -1,0 +1,450 @@
+{
+"document" : {
+"data" : {
+"NAME" : "FSSR_INTERFACE_TABLE",
+"COMMENT" : "New FSSR Interface table",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1579735092,
+"COL_TYPES" : {
+"INTERFACE_ID" : "STRING",
+"STATUS" : "STRING",
+"FIRMWARE_VERSION" : "NUMBER",
+"FIRMWARE_TYPE" : "STRING",
+"HARDWARE_TYPE" : "STRING",
+"INTERFACE_IP_ADDRESS" : "STRING",
+"INTERFACE_PORT" : "NUMBER",
+"HOST_IP_ADDRESS" : "STRING",
+"HOST_PORT" : "NUMBER",
+"STREAM_TO_IP_ADDRESS" : "STRING",
+"STREAM_TO_PORT" : "NUMBER",
+"CLOCK_SELECT" : "STRING",
+"CLOCK_SPEED_M_HZ" : "NUMBER",
+"CHANNEL_STATUS0" : "STRING",
+"CHANNEL_STATUS1" : "STRING",
+"CHANNEL_STATUS2" : "STRING",
+"CHANNEL_STATUS3" : "STRING",
+"CHANNEL_STATUS4" : "STRING",
+"CHANNEL_STATUS5" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"INTERFACE_ID" : "OtsUDPFSSR0",
+"STATUS" : "On",
+"FIRMWARE_VERSION" : "2",
+"FIRMWARE_TYPE" : "OtsUDPFSSRFirmware",
+"HARDWARE_TYPE" : "OtsUDPHardware",
+"INTERFACE_IP_ADDRESS" : "192.168.133.36",
+"INTERFACE_PORT" : "2001",
+"HOST_IP_ADDRESS" : "192.168.133.48",
+"HOST_PORT" : "10000",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.48",
+"STREAM_TO_PORT" : "47000",
+"CLOCK_SELECT" : "External",
+"CLOCK_SPEED_M_HZ" : "13.5",
+"CHANNEL_STATUS0" : "On",
+"CHANNEL_STATUS1" : "On",
+"CHANNEL_STATUS2" : "On",
+"CHANNEL_STATUS3" : "On",
+"CHANNEL_STATUS4" : "On",
+"CHANNEL_STATUS5" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579735058"
+},
+{
+"INTERFACE_ID" : "OtsUDPFSSR1",
+"STATUS" : "On",
+"FIRMWARE_VERSION" : "2",
+"FIRMWARE_TYPE" : "OtsUDPFSSRFirmware",
+"HARDWARE_TYPE" : "OtsUDPHardware",
+"INTERFACE_IP_ADDRESS" : "192.168.133.132",
+"INTERFACE_PORT" : "2001",
+"HOST_IP_ADDRESS" : "192.168.133.48",
+"HOST_PORT" : "10001",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.48",
+"STREAM_TO_PORT" : "47001",
+"CLOCK_SELECT" : "External",
+"CLOCK_SPEED_M_HZ" : "13.5",
+"CHANNEL_STATUS0" : "On",
+"CHANNEL_STATUS1" : "On",
+"CHANNEL_STATUS2" : "On",
+"CHANNEL_STATUS3" : "On",
+"CHANNEL_STATUS4" : "On",
+"CHANNEL_STATUS5" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579735078"
+},
+{
+"INTERFACE_ID" : "OtsUDPFSSR2",
+"STATUS" : "On",
+"FIRMWARE_VERSION" : "2",
+"FIRMWARE_TYPE" : "OtsUDPFSSRFirmware",
+"HARDWARE_TYPE" : "OtsUDPHardware",
+"INTERFACE_IP_ADDRESS" : "192.168.133.20",
+"INTERFACE_PORT" : "2001",
+"HOST_IP_ADDRESS" : "192.168.133.48",
+"HOST_PORT" : "10002",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.48",
+"STREAM_TO_PORT" : "47002",
+"CLOCK_SELECT" : "External",
+"CLOCK_SPEED_M_HZ" : "13.5",
+"CHANNEL_STATUS0" : "On",
+"CHANNEL_STATUS1" : "On",
+"CHANNEL_STATUS2" : "On",
+"CHANNEL_STATUS3" : "On",
+"CHANNEL_STATUS4" : "On",
+"CHANNEL_STATUS5" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579733404"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2020-01-31T09:57:29.629-0600",
+"rawdata" : [
+
+]
+},
+"version" : "2",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2020-01-31T09:57:29.629-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2020-01-31T09:57:29.629-0600"
+},
+{
+"name" : "T992Config_v2",
+"assigned" : "2020-01-31T09:57:30.912-0600"
+},
+{
+"name" : "T992Config_v3",
+"assigned" : "2020-02-05T09:54:35.371-0600"
+},
+{
+"name" : "T992Config_v4",
+"assigned" : "2020-02-05T10:21:40.268-0600"
+},
+{
+"name" : "T992Config_v5",
+"assigned" : "2020-02-05T15:36:26.309-0600"
+},
+{
+"name" : "T992Config_v6",
+"assigned" : "2020-02-07T11:23:03.139-0600"
+},
+{
+"name" : "T992Config_v7",
+"assigned" : "2020-02-07T11:37:03.045-0600"
+},
+{
+"name" : "T992Config_v8",
+"assigned" : "2020-02-08T21:46:30.553-0600"
+},
+{
+"name" : "T992Config_v9",
+"assigned" : "2020-02-08T21:53:12.110-0600"
+},
+{
+"name" : "T992Config_v10",
+"assigned" : "2020-02-18T15:05:35.777-0600"
+},
+{
+"name" : "T992Config_v11",
+"assigned" : "2020-02-18T15:49:53.986-0600"
+},
+{
+"name" : "T992Config_v12",
+"assigned" : "2020-02-18T15:54:39.268-0600"
+},
+{
+"name" : "T992Config_v13",
+"assigned" : "2020-02-18T16:17:11.344-0600"
+},
+{
+"name" : "T992Config_v14",
+"assigned" : "2020-02-18T17:30:15.579-0600"
+},
+{
+"name" : "T992Config_v15",
+"assigned" : "2020-02-18T17:33:25.018-0600"
+},
+{
+"name" : "T992Config_v16",
+"assigned" : "2020-02-18T17:42:10.762-0600"
+},
+{
+"name" : "T992Config_v17",
+"assigned" : "2020-02-18T17:47:16.116-0600"
+},
+{
+"name" : "T992Config_v18",
+"assigned" : "2020-02-19T09:25:24.837-0600"
+},
+{
+"name" : "T992Config_v19",
+"assigned" : "2020-02-19T09:31:02.793-0600"
+},
+{
+"name" : "T992Config_v20",
+"assigned" : "2020-02-20T09:44:16.442-0600"
+},
+{
+"name" : "T992Config_v21",
+"assigned" : "2020-02-20T09:45:35.505-0600"
+},
+{
+"name" : "T992Config_v22",
+"assigned" : "2020-02-20T10:12:14.308-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-01-31T09:57:29.629-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2020-01-31T09:57:29.629-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2020-01-31T09:57:29.629-0600",
+"value" : {
+"name" : "2",
+"assigned" : "2020-01-31T09:57:29.629-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2020-01-31T09:57:29.629-0600",
+"value" : {
+"name" : "FSSRInterfaceTable",
+"assigned" : "2020-01-31T09:57:29.629-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2020-01-31T09:57:29.629-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2020-01-31T09:57:29.629-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-01-31T09:57:30.912-0600",
+"value" : {
+"name" : "T992Config_v2",
+"assigned" : "2020-01-31T09:57:30.912-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-05T09:54:35.371-0600",
+"value" : {
+"name" : "T992Config_v3",
+"assigned" : "2020-02-05T09:54:35.371-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-05T10:21:40.269-0600",
+"value" : {
+"name" : "T992Config_v4",
+"assigned" : "2020-02-05T10:21:40.268-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-05T15:36:26.309-0600",
+"value" : {
+"name" : "T992Config_v5",
+"assigned" : "2020-02-05T15:36:26.309-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-07T11:23:03.139-0600",
+"value" : {
+"name" : "T992Config_v6",
+"assigned" : "2020-02-07T11:23:03.139-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-07T11:37:03.045-0600",
+"value" : {
+"name" : "T992Config_v7",
+"assigned" : "2020-02-07T11:37:03.045-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-08T21:46:30.553-0600",
+"value" : {
+"name" : "T992Config_v8",
+"assigned" : "2020-02-08T21:46:30.553-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-08T21:53:12.110-0600",
+"value" : {
+"name" : "T992Config_v9",
+"assigned" : "2020-02-08T21:53:12.110-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T15:05:35.777-0600",
+"value" : {
+"name" : "T992Config_v10",
+"assigned" : "2020-02-18T15:05:35.777-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T15:49:53.986-0600",
+"value" : {
+"name" : "T992Config_v11",
+"assigned" : "2020-02-18T15:49:53.986-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T15:54:39.269-0600",
+"value" : {
+"name" : "T992Config_v12",
+"assigned" : "2020-02-18T15:54:39.268-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T16:17:11.344-0600",
+"value" : {
+"name" : "T992Config_v13",
+"assigned" : "2020-02-18T16:17:11.344-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T17:30:15.579-0600",
+"value" : {
+"name" : "T992Config_v14",
+"assigned" : "2020-02-18T17:30:15.579-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T17:33:25.018-0600",
+"value" : {
+"name" : "T992Config_v15",
+"assigned" : "2020-02-18T17:33:25.018-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T17:42:10.762-0600",
+"value" : {
+"name" : "T992Config_v16",
+"assigned" : "2020-02-18T17:42:10.762-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T17:47:16.116-0600",
+"value" : {
+"name" : "T992Config_v17",
+"assigned" : "2020-02-18T17:47:16.116-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T09:25:24.837-0600",
+"value" : {
+"name" : "T992Config_v18",
+"assigned" : "2020-02-19T09:25:24.837-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T09:31:02.793-0600",
+"value" : {
+"name" : "T992Config_v19",
+"assigned" : "2020-02-19T09:31:02.793-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T09:44:16.442-0600",
+"value" : {
+"name" : "T992Config_v20",
+"assigned" : "2020-02-20T09:44:16.442-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T09:45:35.505-0600",
+"value" : {
+"name" : "T992Config_v21",
+"assigned" : "2020-02-20T09:45:35.505-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T10:12:14.308-0600",
+"value" : {
+"name" : "T992Config_v22",
+"assigned" : "2020-02-20T10:12:14.308-0600"
+}
+}
+],
+"created" : "2020-01-31T09:57:29.629-0600"
+},
+"_id" : {
+"$oid" : "57df3c8ca5fe4e30bee98fde"
+},
+"collection" : "FSSRInterfaceTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

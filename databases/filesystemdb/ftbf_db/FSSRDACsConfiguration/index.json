@@ -1,0 +1,55 @@
+{
+"ouid" : [
+"6b5f79100c7548d2abe8e367"
+],
+"version" : {
+"0" : [
+"6b5f79100c7548d2abe8e367"
+]
+},
+"configurations.name" : {
+"notprovided" : [
+"6b5f79100c7548d2abe8e367"
+],
+"FTBFConfig_v0" : [
+"6b5f79100c7548d2abe8e367"
+],
+"FTBFConfig_v1" : [
+"6b5f79100c7548d2abe8e367"
+],
+"FTBFConfig_v2" : [
+"6b5f79100c7548d2abe8e367"
+],
+"FTBFConfig_v3" : [
+"6b5f79100c7548d2abe8e367"
+]
+},
+"entities.name" : {
+"OTSROOT" : [
+"6b5f79100c7548d2abe8e367"
+]
+},
+"aliases.active.name" : {
+
+},
+"runs.name" : {
+
+},
+"configurations.assigned" : {
+"notprovided" : [
+"2018-09-11T15:48:31.023-0500"
+],
+"FTBFConfig_v0" : [
+"2018-09-11T15:48:32.532-0500"
+],
+"FTBFConfig_v1" : [
+"2018-09-11T16:28:24.758-0500"
+],
+"FTBFConfig_v2" : [
+"2018-09-11T16:30:48.297-0500"
+],
+"FTBFConfig_v3" : [
+"2018-09-11T16:34:57.540-0500"
+]
+}
+}

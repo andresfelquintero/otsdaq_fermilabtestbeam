@@ -1,0 +1,116 @@
+{
+"document" : {
+"data" : {
+"NAME" : "",
+"COMMENT" : "",
+"AUTHOR" : "",
+"CREATION_TIME" : 1530564597,
+"COL_TYPES" : {
+"UNUSED_UID" : "NUMBER",
+"GROUP_ALIASES" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"GROUP_CREATION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"UNUSED_UID" : "0",
+"GROUP_ALIASES" : "",
+"COMMENT_DESCRIPTION" : "NO COMMENT FOUND",
+"AUTHOR" : "NO AUTHOR FOUND",
+"GROUP_CREATION_TIME" : "0"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2020-01-31T09:57:28.031-0600",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2020-01-31T09:57:28.032-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2020-01-31T09:57:28.032-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-01-31T09:57:28.032-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2020-01-31T09:57:28.032-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2020-01-31T09:57:28.032-0600",
+"value" : {
+"name" : "0",
+"assigned" : "2020-01-31T09:57:28.032-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2020-01-31T09:57:28.032-0600",
+"value" : {
+"name" : "TableGroupMetadata",
+"assigned" : "2020-01-31T09:57:28.032-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2020-01-31T09:57:28.032-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2020-01-31T09:57:28.032-0600"
+}
+}
+],
+"created" : "2020-01-31T09:57:28.031-0600"
+},
+"_id" : {
+"$oid" : "98ddf524db854546b7053533"
+},
+"collection" : "TableGroupMetadata",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

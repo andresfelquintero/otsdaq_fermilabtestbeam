@@ -1,0 +1,136 @@
+09 Mar 2022 17:49:51.276 [140362102384832] INFO  gov.fnal.dhcp.athenanu.p:2007 <> - xdaq version: 05.09.00, compiled on May 13 2021 at 13:22:04, 64bit
+09 Mar 2022 17:49:51.278 [140362102384832] INFO  gov.fnal.dhcp.athenanu.p:2007 <> - Loaded profile: /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/XDAQConfigurations/otsConfiguration_CMake.xml
+09 Mar 2022 17:49:51.280 [140362102384832] INFO  gov.fnal.dhcp.athenanu.p:2007 <> - core::b2innub version: 02.05.02, compiled on May 13 2021 at 13:23:23
+09 Mar 2022 17:49:51.281 [140362102384832] INFO  gov.fnal.dhcp.athenanu.p:2007 <> - core::i2outils version: 04.00.00, compiled on May 13 2021 at 13:22:32
+09 Mar 2022 17:49:51.285 [140362102384832] INFO  gov.fnal.dhcp.athenanu.p:2007 <> - core::executive version: 04.02.00, compiled on May 13 2021 at 13:23:07
+09 Mar 2022 17:49:51.290 [140362102384832] INFO  gov.fnal.dhcp.athenanu.p:2007 <> - core::b2inutils version: 04.04.05, compiled on May 13 2021 at 13:23:26
+09 Mar 2022 17:49:51.295 [140362102384832] INFO  gov.fnal.dhcp.athenanu.p:2007 <> - core::pthttp version: 04.07.00, compiled on May 13 2021 at 13:22:36
+09 Mar 2022 17:49:51.298 [140362102384832] INFO  gov.fnal.dhcp.athenanu.p:2007 <> - core::ptfifo version: 04.04.00, compiled on May 13 2021 at 13:22:57
+09 Mar 2022 17:49:51.299 [140362102384832] INFO  gov.fnal.dhcp.athenanu.p:2007 <> - core::xrelay version: 04.02.00, compiled on May 13 2021 at 13:23:20
+09 Mar 2022 17:49:51.302 [140362102384832] INFO  gov.fnal.dhcp.athenanu.p:2007 <> - core::hyperdaq version: 05.04.00, compiled on May 13 2021 at 13:23:19
+09 Mar 2022 17:49:51.302 [140362102384832] DEBUG gov.fnal.dhcp.athenanu.p:2007 <> - Create application descriptor for class: executive::Application id: 0
+09 Mar 2022 17:49:51.318 [140362102384832] INFO  gov.fnal.dhcp.athenanu.p:2007.executive::Application.lid(0) <> - Log URL not set (was already console)
+09 Mar 2022 17:49:51.318 [140362102384832] INFO  gov.fnal.dhcp.athenanu.p:2007.executive::Application.lid(0) <> - Changed Log level to INFO
+09 Mar 2022 17:49:51.321 [140362102384832] INFO  gov.fnal.dhcp.athenanu.p:2007.pt::http::PeerTransportHTTP.lid(1) <> - No security policies on this server
+09 Mar 2022 17:49:51.702 [140362102384832] INFO  gov.fnal.dhcp.athenanu.p:2007 <> - otsdaq::Visualization version: 00.00.00, compiled on Mar  4 2022 at 13:55:59
+03-09 11:49:51.711385                    MessageFacility.h    DEBUG INIT_MF(...): Configuring message facility with /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/MessageFacilityGen.fcl
+otsConsole: {
+	type: UDP
+	threshold: DEBUG
+	filename_delimit: "/src"
+	port: 30000
+	host: "127.0.0.1"
+}
+console: {
+	type: "OTS"
+	threshold: "DEBUG"
+	filename_delimit: "/src"
+	format_string: "|%L:%N:%f [%u]	%m"
+
+}
+
+file: ""
+
+|Info:configureMessageFacility:configureMessageFacility.cc [283]	Message Facility Application . configured with: destinations:{console:{filename_delimit:"/src" format_string:"|%L:%N:%f [%u]\t%m" threshold:"DEBUG" type:"OTS"} file:"" otsConsole:{filename_delimit:"/src" host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+|Info:_TCPConnect:TCPConnect.cc [344]	Resolving host 127.0.0.1, on port 30000
+03-09 11:49:51.727616                         UDP_mfPlugin    ERROR routePayload(...): Error sending message 2 to 127.0.0.1, errno=17 (File exists)
+|Info:_TCPConnect:TCPConnect.cc [371]	Host resolved as 127.0.0.1
+|Info:_TCPConnect:TCPConnect.cc [247]	Resolving ip athenanu.dhcp.fnal.gov
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [24]	VisualSupervisor:UNINITIALIZED_supervisorApplicationUID	<> application->getApplicationContext()->getContextDescriptor()->getURL() = http://athenanu.dhcp.fnal.gov:2007
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [25]	VisualSupervisor:UNINITIALIZED_supervisorApplicationUID	<> application->getApplicationDescriptor()->getLocalId() = 270
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [26]	VisualSupervisor:UNINITIALIZED_supervisorApplicationUID	<> supervisorClass_ = ots::VisualSupervisor
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [27]	VisualSupervisor:UNINITIALIZED_supervisorApplicationUID	<> supervisorClassNoNamespace_ = VisualSupervisor
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [48]	Initializing info based on XDAQ context...
+|Debug:SupervisorDescriptorInfoBase.cc:otsdaq/otsdaq/SupervisorInfo/SupervisorDescriptorInfoBase.cc [33]	Init
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [107]	Initializing info for Normal mode XDAQ context...
+|Debug:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [104]	TableBase-TableGroupMetadata	<> Special table 'TableGroupMetadata' constructed. 1
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [193]	READONLY_USER	<> username_ = READONLY_USER
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [239]	READONLY_USER	<> ACTIVE_GROUPS_FILENAME = /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/ActiveTableGroups.cfg
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [240]	READONLY_USER	<> ARTDAQ_DATABASE_URI = filesystemdb:///home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_database
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Context group 'T992Context(73)']
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [102]	Foud FWD/WEB/QT true/true/true and IP:Port:FwdPort 127.0.0.1:30000:30001 in MesageFacility table.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [146]	Forwarding to Web GUI at IP:Port:FwdPort 127.0.0.1:30000:30001 with UDP forward MesageFacility.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [194]	Wrote /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/QuietForwarderGen.cfg:
+RECEIVE_PORT 	 30000
+DESTINATION_PORT 	 30001
+DESTINATION_IP 	 127.0.0.1
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [271]	Opened.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/MessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [282]	Opened for artdaq.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/ARTDAQInterfaceMessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [291]	Wrote 
+otsConsole: {
+	type: UDP
+	threshold: DEBUG
+	filename_delimit: "/src"
+	port: 30000
+	host: "127.0.0.1"
+}
+console: {
+	type: "OTS"
+	threshold: "DEBUG"
+	filename_delimit: "/src"
+	format_string: "|%L:%N:%f [%u]	%m"
+
+}
+|Debug:XDAQContextTable_table.cc:otsdaq/otsdaq/TablePlugins/XDAQContextTable_table.cc [337]	Fixing deprecated Supervisor class from ots::Supervisor to ots::GatewaySupervisor
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Context group 'T992Context(73)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(161)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(161)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1379]	READONLY_USER	<> Not loading group because it is not of type Context or Backbone (it is type 'Configuration').
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [272]	The TRACE-controller app for hostname 'athenanu.dhcp.fnal.gov' is CLASS:LID = ots::GatewaySupervisor:200
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [282]	TRACE-controller app count = 1
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [286]	The TRACE-controller for hostname = athenanu.dhcp.fnal.gov/200 is ... name = GatewaySupervisor class = ots::GatewaySupervisor hostname = athenanu.dhcp.fnal.gov
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [298]	Supervisor Info initialization complete!
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [456]	READONLY_USER	<> Destroying Backbone Key: 161
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [474]	READONLY_USER	<> Destroying Context Key: 73
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [68]	VisualSupervisor:UNINITIALIZED_supervisorApplicationUID	<> Getting configuration specific info for supervisor 'VisualSupervisor' of class ots::VisualSupervisor.
+|Debug:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [104]	TableBase-TableGroupMetadata	<> Special table 'TableGroupMetadata' constructed. 1
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [193]	READONLY_USER	<> username_ = READONLY_USER
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [239]	READONLY_USER	<> ACTIVE_GROUPS_FILENAME = /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/ActiveTableGroups.cfg
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [240]	READONLY_USER	<> ARTDAQ_DATABASE_URI = filesystemdb:///home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_database
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Context group 'T992Context(73)']
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [102]	Foud FWD/WEB/QT true/true/true and IP:Port:FwdPort 127.0.0.1:30000:30001 in MesageFacility table.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [146]	Forwarding to Web GUI at IP:Port:FwdPort 127.0.0.1:30000:30001 with UDP forward MesageFacility.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [194]	Wrote /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/QuietForwarderGen.cfg:
+RECEIVE_PORT 	 30000
+DESTINATION_PORT 	 30001
+DESTINATION_IP 	 127.0.0.1
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [271]	Opened.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/MessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [282]	Opened for artdaq.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/ARTDAQInterfaceMessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [291]	Wrote 
+otsConsole: {
+	type: UDP
+	threshold: DEBUG
+	filename_delimit: "/src"
+	port: 30000
+	host: "127.0.0.1"
+}
+console: {
+	type: "OTS"
+	threshold: "DEBUG"
+	filename_delimit: "/src"
+	format_string: "|%L:%N:%f [%u]	%m"
+
+}
+|Debug:XDAQContextTable_table.cc:otsdaq/otsdaq/TablePlugins/XDAQContextTable_table.cc [337]	Fixing deprecated Supervisor class from ots::Supervisor to ots::GatewaySupervisor
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Context group 'T992Context(73)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(161)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(161)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1379]	READONLY_USER	<> Not loading group because it is not of type Context or Backbone (it is type 'Configuration').
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [106]	VisualSupervisor:VisualSupervisor	<> CorePropertySupervisorBase::supervisorContextUID_ = DQMContext
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [107]	VisualSupervisor:VisualSupervisor	<> CorePropertySupervisorBase::supervisorApplicationUID_ = VisualSupervisor
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [108]	VisualSupervisor:VisualSupervisor	<> CorePropertySupervisorBase::supervisorConfigurationPath_ = /DQMContext/LinkToApplicationTable/VisualSupervisor/LinkToSupervisorTable
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [164]	hostname = athenanu.dhcp.fnal.gov
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [178]	Marked alive: /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/Logs/otsdaq_is_alive-athenanu.dhcp.fnal.gov-2007.dat
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/FiniteStateMachine.cc [19]	FSM-VisualSupervisor:VisualSupervisor	<> Constructing FiniteStateMachine
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [106]	FSM-VisualSupervisor:VisualSupervisor	<> Resetting RunControlStateMachine with name 'VisualSupervisor:VisualSupervisor'...
+|Debug:WorkLoopManager.cc:otsdaq/otsdaq/WorkLoopManager/WorkLoopManager.cc [19]	Request name: StateMachine jobName: StateMachine
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [26]	VisualSupervisor:VisualSupervisor	<> Constructor.
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [41]	VisualSupervisor:VisualSupervisor	<> Constructed.
+|Debug:Visualizer:otsdaq_utilities/otsdaq-utilities/Visualization/VisualSupervisor.cc [74]	VisualSupervisor:VisualSupervisor	<> Constructor.
+|Debug:Visualizer:otsdaq_utilities/otsdaq-utilities/Visualization/VisualSupervisor.cc [80]	VisualSupervisor:VisualSupervisor	<> Constructed.
+09 Mar 2022 17:49:54.983 [140362102384832] INFO  gov.fnal.dhcp.athenanu.p:2007 <> - Ready.
+Terminating...
+|Debug:MetricManager:MetricManager.cc [190]	MetricManager is shutting down...
+|Debug:MetricManager:MetricManager.cc [156]	Stopping Metrics
+|Debug:MetricManager:MetricManager.cc [159]	Joining Metric-Sending thread
+|Debug:MetricManager:MetricManager.cc [172]	do_stop Complete

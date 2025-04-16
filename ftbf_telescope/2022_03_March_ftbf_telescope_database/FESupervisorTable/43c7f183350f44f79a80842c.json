@@ -1,0 +1,290 @@
+{
+"document" : {
+"data" : {
+"NAME" : "FE_SUPERVISOR_TABLE",
+"COMMENT" : "Front-end Supervisor records.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1542062870,
+"COL_TYPES" : {
+"SUPERVISOR_UID" : "STRING",
+"LINK_TO_FE_INTERFACE_TABLE" : "STRING",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"SUPERVISOR_UID" : "FESupervisorFSSR0",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "FESupervisorFSSR0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509656774"
+},
+{
+"SUPERVISOR_UID" : "FESupervisorFSSR1",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "FESupervisorFSSR1",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509656774"
+},
+{
+"SUPERVISOR_UID" : "FESupervisorFSSR2",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "FESupervisorFSSR2",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509656774"
+},
+{
+"SUPERVISOR_UID" : "FESupervisorNetworkMaster",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "FESupervisorNetworkMaster",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509656774"
+},
+{
+"SUPERVISOR_UID" : "NimPlusFESupervisor0",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "NimPlusFE0Group",
+"COMMENT_DESCRIPTION" : "For NIM+x at FTBF",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509656774"
+},
+{
+"SUPERVISOR_UID" : "PixelFESupervisor0",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "PixelFE0Group",
+"COMMENT_DESCRIPTION" : "To control the pixel telescope",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1512262602"
+},
+{
+"SUPERVISOR_UID" : "CommanderFESupervisor0",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "CommanderFE0Group",
+"COMMENT_DESCRIPTION" : "To control another state machine",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1541745022"
+},
+{
+"SUPERVISOR_UID" : "FESupervisorYarr0",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "FESupervisorYarr0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1541744530"
+},
+{
+"SUPERVISOR_UID" : "FESupervisorYarr2",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "FESupervisorYarr2",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1542062870"
+},
+{
+"SUPERVISOR_UID" : "TimingFEVMESupervisor",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "TimingFEVMEGroup",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1542062870"
+},
+{
+"SUPERVISOR_UID" : "TimingFETOFPETSupervisor",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "TimingFETOFPETGroup",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1542062870"
+},
+{
+"SUPERVISOR_UID" : "FESupervisorNetScope",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "FENetScopeGroup",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1542062870"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2020-01-31T09:57:29.261-0600",
+"rawdata" : [
+
+]
+},
+"version" : "2",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2020-01-31T09:57:29.262-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2020-01-31T09:57:29.262-0600"
+},
+{
+"name" : "T992Config_v2",
+"assigned" : "2020-01-31T09:57:30.628-0600"
+},
+{
+"name" : "T992Config_v3",
+"assigned" : "2020-02-05T09:54:35.035-0600"
+},
+{
+"name" : "T992Config_v4",
+"assigned" : "2020-02-05T10:21:39.930-0600"
+},
+{
+"name" : "T992Config_v5",
+"assigned" : "2020-02-05T15:36:25.957-0600"
+},
+{
+"name" : "T992Config_v6",
+"assigned" : "2020-02-07T11:23:02.739-0600"
+},
+{
+"name" : "T992Config_v7",
+"assigned" : "2020-02-07T11:37:02.709-0600"
+},
+{
+"name" : "T992Config_v8",
+"assigned" : "2020-02-08T21:46:30.203-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-01-31T09:57:29.262-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2020-01-31T09:57:29.262-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2020-01-31T09:57:29.262-0600",
+"value" : {
+"name" : "2",
+"assigned" : "2020-01-31T09:57:29.262-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2020-01-31T09:57:29.262-0600",
+"value" : {
+"name" : "FESupervisorTable",
+"assigned" : "2020-01-31T09:57:29.262-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2020-01-31T09:57:29.262-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2020-01-31T09:57:29.262-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-01-31T09:57:30.628-0600",
+"value" : {
+"name" : "T992Config_v2",
+"assigned" : "2020-01-31T09:57:30.628-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-05T09:54:35.035-0600",
+"value" : {
+"name" : "T992Config_v3",
+"assigned" : "2020-02-05T09:54:35.035-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-05T10:21:39.930-0600",
+"value" : {
+"name" : "T992Config_v4",
+"assigned" : "2020-02-05T10:21:39.930-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-05T15:36:25.957-0600",
+"value" : {
+"name" : "T992Config_v5",
+"assigned" : "2020-02-05T15:36:25.957-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-07T11:23:02.739-0600",
+"value" : {
+"name" : "T992Config_v6",
+"assigned" : "2020-02-07T11:23:02.739-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-07T11:37:02.709-0600",
+"value" : {
+"name" : "T992Config_v7",
+"assigned" : "2020-02-07T11:37:02.709-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-08T21:46:30.203-0600",
+"value" : {
+"name" : "T992Config_v8",
+"assigned" : "2020-02-08T21:46:30.203-0600"
+}
+}
+],
+"created" : "2020-01-31T09:57:29.261-0600"
+},
+"_id" : {
+"$oid" : "43c7f183350f44f79a80842c"
+},
+"collection" : "FESupervisorTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

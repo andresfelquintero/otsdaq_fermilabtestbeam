@@ -1,0 +1,182 @@
+{
+"document" : {
+"data" : {
+"NAME" : "STATE_MACHINE_TABLE",
+"COMMENT" : "three FSMs for The Supervisor.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1634252046,
+"COL_TYPES" : {
+"STATE_MACHINE_GROUP_ID" : "STRING",
+"STATE_MACHINE_UID" : "STRING",
+"SYSTEM_ALIAS_FILTER" : "STRING",
+"RUN_DISPLAY_ALIAS" : "STRING",
+"ENABLE_TABLE_DUMP_ON_CONFIGURE_TRANSITION" : "STRING",
+"TABLE_DUMP_ON_CONFIGURE_FORMAT" : "STRING",
+"TABLE_DUMP_ON_CONFIGURE_FILE_PATH" : "STRING",
+"TABLE_DUMP_ON_CONFIGURE_FILE_RADIX" : "STRING",
+"ENABLE_TABLE_DUMP_ON_RUN_TRANSITION" : "STRING",
+"TABLE_DUMP_ON_RUN_FORMAT" : "STRING",
+"TABLE_DUMP_ON_RUN_FILE_PATH" : "STRING",
+"TABLE_DUMP_ON_RUN_FILE_RADIX" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"STATE_MACHINE_GROUP_ID" : "Supervisor0_FSMs",
+"STATE_MACHINE_UID" : "PhysicsRuns0",
+"SYSTEM_ALIAS_FILTER" : "*Physics*Config*",
+"RUN_DISPLAY_ALIAS" : "Physics Run",
+"ENABLE_TABLE_DUMP_ON_CONFIGURE_TRANSITION" : "No",
+"TABLE_DUMP_ON_CONFIGURE_FORMAT" : "DEFAULT",
+"TABLE_DUMP_ON_CONFIGURE_FILE_PATH" : "DEFAULT",
+"TABLE_DUMP_ON_CONFIGURE_FILE_RADIX" : "DEFAULT",
+"ENABLE_TABLE_DUMP_ON_RUN_TRANSITION" : "No",
+"TABLE_DUMP_ON_RUN_FORMAT" : "DEFAULT",
+"TABLE_DUMP_ON_RUN_FILE_PATH" : "DEFAULT",
+"TABLE_DUMP_ON_RUN_FILE_RADIX" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "System alias filter will only show Physics config groups. And the FSM display will show \"Physics Run.\"",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1483025802"
+},
+{
+"STATE_MACHINE_GROUP_ID" : "Supervisor0_FSMs",
+"STATE_MACHINE_UID" : "CalibrationRuns0",
+"SYSTEM_ALIAS_FILTER" : "*Calib*Config*",
+"RUN_DISPLAY_ALIAS" : "Calibration",
+"ENABLE_TABLE_DUMP_ON_CONFIGURE_TRANSITION" : "No",
+"TABLE_DUMP_ON_CONFIGURE_FORMAT" : "DEFAULT",
+"TABLE_DUMP_ON_CONFIGURE_FILE_PATH" : "DEFAULT",
+"TABLE_DUMP_ON_CONFIGURE_FILE_RADIX" : "DEFAULT",
+"ENABLE_TABLE_DUMP_ON_RUN_TRANSITION" : "No",
+"TABLE_DUMP_ON_RUN_FORMAT" : "DEFAULT",
+"TABLE_DUMP_ON_RUN_FILE_PATH" : "DEFAULT",
+"TABLE_DUMP_ON_RUN_FILE_RADIX" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "Filter selects only groups with Calib in the name (for Calibrations). Displays runs as \"Calibration.\"",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1483025802"
+},
+{
+"STATE_MACHINE_GROUP_ID" : "Supervisor0_FSMs",
+"STATE_MACHINE_UID" : "OtherRuns0",
+"SYSTEM_ALIAS_FILTER" : "!*Context*",
+"RUN_DISPLAY_ALIAS" : "Run",
+"ENABLE_TABLE_DUMP_ON_CONFIGURE_TRANSITION" : "No",
+"TABLE_DUMP_ON_CONFIGURE_FORMAT" : "DEFAULT",
+"TABLE_DUMP_ON_CONFIGURE_FILE_PATH" : "DEFAULT",
+"TABLE_DUMP_ON_CONFIGURE_FILE_RADIX" : "DEFAULT",
+"ENABLE_TABLE_DUMP_ON_RUN_TRANSITION" : "No",
+"TABLE_DUMP_ON_RUN_FORMAT" : "All",
+"TABLE_DUMP_ON_RUN_FILE_PATH" : "${OTSDAQ_DATA}/ConfigDumps",
+"TABLE_DUMP_ON_RUN_FILE_RADIX" : "ConfigDumpOnRun",
+"COMMENT_DESCRIPTION" : "System alias filter will only show non-context config groups. And the FSM display will show \"Oddball-Run.\"",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1634252046"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2021-10-14T17:54:06.635-0500",
+"rawdata" : [
+
+]
+},
+"version" : "5",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2021-10-14T17:54:06.637-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2021-10-14T17:54:06.636-0500"
+},
+{
+"name" : "T992Context_v38",
+"assigned" : "2021-10-14T17:54:08.642-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2021-10-14T17:54:06.636-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2021-10-14T17:54:06.636-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2021-10-14T17:54:06.637-0500",
+"value" : {
+"name" : "5",
+"assigned" : "2021-10-14T17:54:06.637-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2021-10-14T17:54:06.637-0500",
+"value" : {
+"name" : "StateMachineTable",
+"assigned" : "2021-10-14T17:54:06.637-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2021-10-14T17:54:06.637-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2021-10-14T17:54:06.637-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2021-10-14T17:54:08.642-0500",
+"value" : {
+"name" : "T992Context_v38",
+"assigned" : "2021-10-14T17:54:08.642-0500"
+}
+}
+],
+"created" : "2021-10-14T17:54:06.635-0500"
+},
+"_id" : {
+"$oid" : "b191d9eefc234b11b5ba5fba"
+},
+"collection" : "StateMachineTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

@@ -1,0 +1,163 @@
+<?xml version='1.0'?>
+<xc:Partition 	xmlns:xsi	= "http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:soapenc	= "http://schemas.xmlsoap.org/soap/encoding/"
+		xmlns:xc	= "http://xdaq.web.cern.ch/xdaq/xsd/2004/XMLConfiguration-30">
+
+	<!-- ContextUID='MainContext' sourceConfig='XDAQContextTable_v26 @ 1643402425' -->
+	<xc:Context id="0" url="http://athenanu.dhcp.fnal.gov:2020">
+
+		<!-- Application GroupID = 'MainContext' UID='GatewaySupervisor' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<xc:Application class="ots::GatewaySupervisor" id="200" instance="1" network="local" icon="/WebPath/images/otsdaqIcons/logo_square.png" icon16x16="/WebPath/images/otsdaqIcons/favicon-16x16.png" group="daq">
+			<properties xmlns="urn:xdaq-application:GatewaySupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_LIB}/libGatewaySupervisor.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='ChatSupervisor' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<xc:Application class="ots::ChatSupervisor" id="250" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ChatSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_UTILITIES_LIB}/libChat.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='ConsoleSupervisor' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<!--
+		<xc:Application class="ots::ConsoleSupervisor" id="260" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ConsoleSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_UTILITIES_LIB}/libConsole.so</xc:Module>
+		-->
+
+		<!-- Application GroupID = 'MainContext' UID='LogbookSupervisor' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<!--
+		<xc:Application class="ots::LogbookSupervisor" id="261" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:LogbookSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_UTILITIES_LIB}/libLogbook.so</xc:Module>
+		-->
+
+		<!-- Application GroupID = 'MainContext' UID='ConfigurationGUISupervisor' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<xc:Application class="ots::ConfigurationGUISupervisor" id="281" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ConfigurationGUISupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_UTILITIES_LIB}/libConfigurationGUI.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='MacroMakerSupervisor' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<xc:Application class="ots::MacroMakerSupervisor" id="300" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:MacroMakerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_UTILITIES_LIB}/libMacroMaker.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='StripTelescopeContext' sourceConfig='XDAQContextTable_v26 @ 1643402425' -->
+	<xc:Context id="0" url="http://athenanu.dhcp.fnal.gov:2002">
+
+		<!-- Application GroupID = 'StripTelescopeContext' UID='FESupervisorFSSR0' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<xc:Application class="ots::FESupervisor" id="210" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_LIB}/libCoreSupervisors.so</xc:Module>
+
+		<!-- Application GroupID = 'StripTelescopeContext' UID='FESupervisorFSSR1' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<xc:Application class="ots::FESupervisor" id="211" instance="2" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_LIB}/libCoreSupervisors.so</xc:Module>
+
+		<!-- Application GroupID = 'StripTelescopeContext' UID='FESupervisorFSSR2' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<xc:Application class="ots::FESupervisor" id="212" instance="3" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_LIB}/libCoreSupervisors.so</xc:Module>
+
+		<!-- Application GroupID = 'StripTelescopeContext' UID='FESupervisorFSSR3' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<xc:Application class="ots::FESupervisor" id="213" instance="4" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_LIB}/libCoreSupervisors.so</xc:Module>
+
+		<!-- Application GroupID = 'StripTelescopeContext' UID='DataManagerSupervisorFSSR0' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<xc:Application class="ots::DataManagerSupervisor" id="310" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_LIB}/libCoreSupervisors.so</xc:Module>
+
+		<!-- Application GroupID = 'StripTelescopeContext' UID='DataManagerSupervisorFSSR1' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<xc:Application class="ots::DataManagerSupervisor" id="311" instance="2" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_LIB}/libCoreSupervisors.so</xc:Module>
+
+		<!-- Application GroupID = 'StripTelescopeContext' UID='DataManagerSupervisorFSSR2' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<xc:Application class="ots::DataManagerSupervisor" id="312" instance="3" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_LIB}/libCoreSupervisors.so</xc:Module>
+
+		<!-- Application GroupID = 'StripTelescopeContext' UID='DataManagerSupervisorFSSR3' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<xc:Application class="ots::DataManagerSupervisor" id="313" instance="4" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_LIB}/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='NimPlusContext' sourceConfig='XDAQContextTable_v26 @ 1643402425' -->
+	<xc:Context id="0" url="http://athenanu.dhcp.fnal.gov:2003">
+
+		<!-- Application GroupID = 'NimPlusContext' UID='NimPlusFESupervisor0' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<xc:Application class="ots::FESupervisor" id="600" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_LIB}/libCoreSupervisors.so</xc:Module>
+
+		<!-- Application GroupID = 'NimPlusContext' UID='NimPlusDataManagerSupervisor0' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<xc:Application class="ots::DataManagerSupervisor" id="601" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_LIB}/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='CommanderContext' sourceConfig='XDAQContextTable_v26 @ 1643402425' -->
+	<xc:Context id="0" url="http://athenanu.dhcp.fnal.gov:2008">
+
+		<!-- Application GroupID = 'CommanderContext' UID='FECommanderSupervisor' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<xc:Application class="ots::FESupervisor" id="316" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_LIB}/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='DQMContext' sourceConfig='XDAQContextTable_v26 @ 1643402425' -->
+	<xc:Context id="0" url="http://athenanu.dhcp.fnal.gov:2007">
+
+		<!-- Application GroupID = 'DQMContext' UID='VisualSupervisor' sourceConfig='XDAQApplicationTable_v30 @ 1643402360' -->
+		<xc:Application class="ots::VisualSupervisor" id="270" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:VisualSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>${OTSDAQ_UTILITIES_LIB}/libVisualization.so</xc:Module>
+
+	</xc:Context>
+
+</xc:Partition>
+
+

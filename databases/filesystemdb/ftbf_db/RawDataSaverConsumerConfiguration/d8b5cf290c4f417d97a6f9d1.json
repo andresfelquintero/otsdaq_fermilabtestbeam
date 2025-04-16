@@ -1,0 +1,222 @@
+{
+"document" : {
+"data" : {
+"NAME" : "RAW_DATA_SAVER_CONSUMER_CONFIGURATION",
+"COMMENT" : "Records for raw data savers.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1509718331,
+"COL_TYPES" : {
+"PROCESSOR_UID" : "VARCHAR2",
+"FILE_PATH" : "VARCHAR2",
+"RADIX_FILE_NAME" : "VARCHAR2",
+"MAX_FILE_SIZE" : "NUMBER",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"PROCESSOR_UID" : "RAWSaver0",
+"FILE_PATH" : "${OTSDAQ_DATA}",
+"RADIX_FILE_NAME" : "Run",
+"MAX_FILE_SIZE" : "0",
+"COMMENT_DESCRIPTION" : "saving hw emulator data.",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1508879202"
+},
+{
+"PROCESSOR_UID" : "FSSR0_DB0_RawDataSaver0",
+"FILE_PATH" : "/data/TestBeam/2017_04_April/OtsData",
+"RADIX_FILE_NAME" : "RawDataSaver0FER0",
+"MAX_FILE_SIZE" : "1000",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509718331"
+},
+{
+"PROCESSOR_UID" : "FSSR1_DB0_RawDataSaver0",
+"FILE_PATH" : "/data/TestBeam/2017_04_April/OtsData",
+"RADIX_FILE_NAME" : "RawDataSaver0FER1",
+"MAX_FILE_SIZE" : "1000",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509718331"
+},
+{
+"PROCESSOR_UID" : "FSSR2_DB0_RawDataSaver0",
+"FILE_PATH" : "/data/TestBeam/2017_04_April/OtsData",
+"RADIX_FILE_NAME" : "RawDataSaver0FER2",
+"MAX_FILE_SIZE" : "1000",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509718331"
+},
+{
+"PROCESSOR_UID" : "FSSR3_DB0_RawDataSaver0",
+"FILE_PATH" : "/data/TestBeam/2017_04_April/OtsData",
+"RADIX_FILE_NAME" : "RawDataSaver0FER3",
+"MAX_FILE_SIZE" : "1000",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509718331"
+},
+{
+"PROCESSOR_UID" : "NIMPlus0_DB0_RawDataSaver0",
+"FILE_PATH" : "/data/TestBeam/2017_04_April/NIMPlus",
+"RADIX_FILE_NAME" : "RawDataSaver0NIM0",
+"MAX_FILE_SIZE" : "1000",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509718331"
+},
+{
+"PROCESSOR_UID" : "CMSTiming0_DB0_RawDataSaver0",
+"FILE_PATH" : "/data/TestBeam/2017_04_April/CMSTiming",
+"RADIX_FILE_NAME" : "RawDataSaver0CMSTiming0",
+"MAX_FILE_SIZE" : "1000",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509718331"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T15:48:31.210-0500",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:31.212-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:31.211-0500"
+},
+{
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:32.687-0500"
+},
+{
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:24.958-0500"
+},
+{
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:48.500-0500"
+},
+{
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:57.746-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:31.211-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:31.211-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T15:48:31.211-0500",
+"value" : {
+"name" : "0",
+"assigned" : "2018-09-11T15:48:31.211-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T15:48:31.212-0500",
+"value" : {
+"name" : "RawDataSaverConsumerConfiguration",
+"assigned" : "2018-09-11T15:48:31.212-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T15:48:31.212-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:31.212-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:32.687-0500",
+"value" : {
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:32.687-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:28:24.958-0500",
+"value" : {
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:24.958-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:30:48.500-0500",
+"value" : {
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:48.500-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:57.746-0500",
+"value" : {
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:57.746-0500"
+}
+}
+],
+"created" : "2018-09-11T15:48:31.210-0500"
+},
+"_id" : {
+"$oid" : "d8b5cf290c4f417d97a6f9d1"
+},
+"collection" : "RawDataSaverConsumerConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

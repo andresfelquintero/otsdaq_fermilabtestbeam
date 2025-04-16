@@ -1,0 +1,236 @@
+<?xml version='1.0'?>
+<xc:Partition 	xmlns:xsi	= "http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:soapenc	= "http://schemas.xmlsoap.org/soap/encoding/"
+		xmlns:xc	= "http://xdaq.web.cern.ch/xdaq/xsd/2004/XMLConfiguration-30">
+
+	<!-- ContextUID='MainContext' sourceConfig='XDAQContextConfiguration_v9 @ 1541888288' -->
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:2030">
+
+		<!-- Application GroupID = 'MainContext' UID='Supervisor' sourceConfig='XDAQApplicationConfiguration_v7 @ 1541748101' -->
+		<xc:Application class="ots::GatewaySupervisor" id="200" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:Supervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libGatewaySupervisor.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='ChatSupervisor' sourceConfig='XDAQApplicationConfiguration_v7 @ 1541748101' -->
+		<xc:Application class="ots::ChatSupervisor" id="250" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ChatSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq_utilities/lib/libChat.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='ConsoleSupervisor' sourceConfig='XDAQApplicationConfiguration_v7 @ 1541748101' -->
+		<!--
+		<xc:Application class="ots::ConsoleSupervisor" id="260" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ConsoleSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq_utilities/lib/libConsole.so</xc:Module>
+		-->
+
+		<!-- Application GroupID = 'MainContext' UID='LogbookSupervisor' sourceConfig='XDAQApplicationConfiguration_v7 @ 1541748101' -->
+		<xc:Application class="ots::LogbookSupervisor" id="261" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:LogbookSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq_utilities/lib/libLogbook.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='VisualSupervisor' sourceConfig='XDAQApplicationConfiguration_v7 @ 1541748101' -->
+		<!--
+		<xc:Application class="ots::VisualSupervisor" id="270" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:VisualSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq_utilities/lib/libVisualization.so</xc:Module>
+		-->
+
+		<!-- Application GroupID = 'MainContext' UID='ConfigurationGUISupervisor' sourceConfig='XDAQApplicationConfiguration_v7 @ 1541748101' -->
+		<xc:Application class="ots::ConfigurationGUISupervisor" id="281" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ConfigurationGUISupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq_utilities/lib/libConfigurationGUI.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='MacroMakerSupervisor' sourceConfig='XDAQApplicationConfiguration_v7 @ 1541748101' -->
+		<xc:Application class="ots::MacroMakerSupervisor" id="300" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:MacroMakerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq_utilities/lib/libMacroMaker.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='WireChamberContext' sourceConfig='XDAQContextConfiguration_v9 @ 1541888288' -->
+	<!--
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:2001">
+
+	</xc:Context>
+	-->
+
+	<!-- ContextUID='StripTelescopeContext' sourceConfig='XDAQContextConfiguration_v9 @ 1541888288' -->
+	<!--
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:2002">
+
+		<xc:Application class="ots::FESupervisor" id="210" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::FESupervisor" id="211" instance="2" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::FESupervisor" id="212" instance="3" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::FESupervisor" id="213" instance="4" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::DataManagerSupervisor" id="310" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::DataManagerSupervisor" id="311" instance="2" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::DataManagerSupervisor" id="312" instance="3" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+	-->
+
+	<!-- ContextUID='NimPlusContext' sourceConfig='XDAQContextConfiguration_v9 @ 1541888288' -->
+	<!--
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:2003">
+
+		<xc:Application class="ots::FESupervisor" id="600" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::DataManagerSupervisor" id="601" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+	-->
+
+	<!-- ContextUID='PixelTelescopeContext' sourceConfig='XDAQContextConfiguration_v9 @ 1541888288' -->
+	<!--
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:2004">
+
+		<xc:Application class="ots::FESupervisor" id="315" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+	-->
+
+	<!-- ContextUID='CommanderContext' sourceConfig='XDAQContextConfiguration_v9 @ 1541888288' -->
+	<!--
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:2008">
+
+		<xc:Application class="ots::FESupervisor" id="316" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+	-->
+
+	<!-- ContextUID='PixelContext' sourceConfig='XDAQContextConfiguration_v9 @ 1541888288' -->
+	<xc:Context id="0" url="192.168.133.53:2053">
+
+		<!-- Application GroupID = 'PixelContext' UID='FESupervisorYarr0' sourceConfig='XDAQApplicationConfiguration_v7 @ 1541748101' -->
+		<xc:Application class="ots::FESupervisor" id="800" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/pixeluser/otsdaq/build_slf7.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='TimingContext' sourceConfig='XDAQContextConfiguration_v9 @ 1541888288' -->
+	<!--
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:2005">
+
+		<xc:Application class="ots::FESupervisor" id="400" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::FESupervisor" id="402" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::DataManagerSupervisor" id="401" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+	-->
+
+	<!-- ContextUID='NetScopeContext' sourceConfig='XDAQContextConfiguration_v9 @ 1541888288' -->
+	<!--
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:2006">
+
+		<xc:Application class="ots::FESupervisor" id="405" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::DataManagerSupervisor" id="406" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+	-->
+
+	<!-- ContextUID='DQMContext' sourceConfig='XDAQContextConfiguration_v9 @ 1541888288' -->
+	<!--
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:2007">
+
+		<xc:Application class="ots::VisualSupervisor" id="270" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:VisualSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/home/otsdaq/otsdaq/build_slf6.x86_64/otsdaq_utilities/lib/libVisualization.so</xc:Module>
+
+	</xc:Context>
+	-->
+
+</xc:Partition>
+
+

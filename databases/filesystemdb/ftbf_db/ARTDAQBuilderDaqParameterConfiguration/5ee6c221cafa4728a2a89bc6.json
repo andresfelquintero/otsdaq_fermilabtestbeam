@@ -1,0 +1,260 @@
+{
+"document" : {
+"data" : {
+"NAME" : "ARTDAQ_BUILDER_DAQ_PARAMETER_CONFIGURATION",
+"COMMENT" : "No comment.",
+"AUTHOR" : "eflumerf",
+"CREATION_TIME" : 1520016402,
+"COL_TYPES" : {
+"DAQ_PARAMETER_GROUP_ID" : "VARCHAR2",
+"DAQ_PARAMETER_UID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"DAQ_PARAMETER_KEY" : "VARCHAR2",
+"DAQ_PARAMETER_VALUE" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"DAQ_PARAMETER_GROUP_ID" : "builder0PGroup",
+"DAQ_PARAMETER_UID" : "builder0ExpectedFragmentsPerEventParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "expected_fragments_per_event",
+"DAQ_PARAMETER_VALUE" : "4",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516387272"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "builder0PGroup",
+"DAQ_PARAMETER_UID" : "builder0UseArtParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "use_art",
+"DAQ_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513893831"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "builder0PGroup",
+"DAQ_PARAMETER_UID" : "builder0PrintEventStoreStatsParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "print_event_store_stats",
+"DAQ_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513893831"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "builder0PGroup",
+"DAQ_PARAMETER_UID" : "builder0VerboseParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "verbose",
+"DAQ_PARAMETER_VALUE" : "false",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513893831"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "builder0PGroup",
+"DAQ_PARAMETER_UID" : "builder0SendRequestsParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "send_requests",
+"DAQ_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513893831"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "builder0PGroup",
+"DAQ_PARAMETER_UID" : "builder0RequestPortParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "request_port",
+"DAQ_PARAMETER_VALUE" : "8600",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516388888"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "builder0PGroup",
+"DAQ_PARAMETER_UID" : "builder0RequestAddressParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "request_address",
+"DAQ_PARAMETER_VALUE" : "\"227.128.12.26\"",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516388691"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "builder0PGroup",
+"DAQ_PARAMETER_UID" : "builder0RequestOutputAddress",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "output_address",
+"DAQ_PARAMETER_VALUE" : "\"0.0.0.0\"",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516815746"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "builder0PGroup",
+"DAQ_PARAMETER_UID" : "builder0MaxFragmentSizeBytes",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "max_fragment_size_bytes",
+"DAQ_PARAMETER_VALUE" : "167772160",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1520016306"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "builder0PGroup",
+"DAQ_PARAMETER_UID" : "builder0BufferCount",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "buffer_count",
+"DAQ_PARAMETER_VALUE" : "5",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1520016402"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T15:48:29.889-0500",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:29.892-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:29.891-0500"
+},
+{
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:31.574-0500"
+},
+{
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:23.353-0500"
+},
+{
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:46.856-0500"
+},
+{
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:56.057-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:29.891-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:29.891-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T15:48:29.891-0500",
+"value" : {
+"name" : "0",
+"assigned" : "2018-09-11T15:48:29.891-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T15:48:29.892-0500",
+"value" : {
+"name" : "ARTDAQBuilderDaqParameterConfiguration",
+"assigned" : "2018-09-11T15:48:29.892-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T15:48:29.892-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:29.892-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:31.574-0500",
+"value" : {
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:31.574-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:28:23.353-0500",
+"value" : {
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:23.353-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:30:46.856-0500",
+"value" : {
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:46.856-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:56.057-0500",
+"value" : {
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:56.057-0500"
+}
+}
+],
+"created" : "2018-09-11T15:48:29.889-0500"
+},
+"_id" : {
+"$oid" : "5ee6c221cafa4728a2a89bc6"
+},
+"collection" : "ARTDAQBuilderDaqParameterConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

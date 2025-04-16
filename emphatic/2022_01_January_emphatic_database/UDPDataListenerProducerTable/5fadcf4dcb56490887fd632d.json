@@ -1,0 +1,318 @@
+{
+"document" : {
+"data" : {
+"NAME" : "UDP_DATA_LISTENER_PRODUCER_TABLE",
+"COMMENT" : "No comment.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1642003504,
+"COL_TYPES" : {
+"PROCESSOR_UID" : "STRING",
+"BUFFER_SIZE" : "NUMBER",
+"HOST_IP_ADDRESS" : "STRING",
+"HOST_PORT" : "NUMBER",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"PROCESSOR_UID" : "UDPListener0",
+"BUFFER_SIZE" : "100",
+"HOST_IP_ADDRESS" : "127.0.0.1",
+"HOST_PORT" : "40005",
+"COMMENT_DESCRIPTION" : "Listening to hardware emulator which is sending to 4005.",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1508871058"
+},
+{
+"PROCESSOR_UID" : "UDPListener1",
+"BUFFER_SIZE" : "100",
+"HOST_IP_ADDRESS" : "127.0.0.1",
+"HOST_PORT" : "4101",
+"COMMENT_DESCRIPTION" : "Listening to DB0 streamer.",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1479826574"
+},
+{
+"PROCESSOR_UID" : "readerUDPListener0",
+"BUFFER_SIZE" : "500",
+"HOST_IP_ADDRESS" : "127.0.0.1",
+"HOST_PORT" : "4121",
+"COMMENT_DESCRIPTION" : "artdaq listener",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1513727343"
+},
+{
+"PROCESSOR_UID" : "FSSR0_DB0_Listener0",
+"BUFFER_SIZE" : "1000",
+"HOST_IP_ADDRESS" : "192.168.133.10",
+"HOST_PORT" : "47000",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1642003485"
+},
+{
+"PROCESSOR_UID" : "FSSR1_DB0_Listener0",
+"BUFFER_SIZE" : "1000",
+"HOST_IP_ADDRESS" : "192.168.133.48",
+"HOST_PORT" : "47001",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579715364"
+},
+{
+"PROCESSOR_UID" : "FSSR2_DB0_Listener0",
+"BUFFER_SIZE" : "1000",
+"HOST_IP_ADDRESS" : "192.168.133.48",
+"HOST_PORT" : "47002",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579715364"
+},
+{
+"PROCESSOR_UID" : "NIMPlus0_DB0_Listener0",
+"BUFFER_SIZE" : "100",
+"HOST_IP_ADDRESS" : "192.168.133.48",
+"HOST_PORT" : "55000",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579715364"
+},
+{
+"PROCESSOR_UID" : "CMSTiming0_DB0_Listener0",
+"BUFFER_SIZE" : "1000",
+"HOST_IP_ADDRESS" : "192.168.133.48",
+"HOST_PORT" : "47004",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579715364"
+},
+{
+"PROCESSOR_UID" : "VB0Listener0",
+"BUFFER_SIZE" : "1000",
+"HOST_IP_ADDRESS" : "192.168.133.10",
+"HOST_PORT" : "50000",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1642003449"
+},
+{
+"PROCESSOR_UID" : "NetScope_Listener0",
+"BUFFER_SIZE" : "1000",
+"HOST_IP_ADDRESS" : "192.168.133.48",
+"HOST_PORT" : "47011",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579715364"
+},
+{
+"PROCESSOR_UID" : "NIMPlus1_DB0_Listener0",
+"BUFFER_SIZE" : "100",
+"HOST_IP_ADDRESS" : "192.168.133.48",
+"HOST_PORT" : "55001",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579715364"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2022-01-12T10:05:04.961-0600",
+"rawdata" : [
+
+]
+},
+"version" : "5",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2022-01-12T10:05:04.962-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2022-01-12T10:05:04.961-0600"
+},
+{
+"name" : "T992Config_v138",
+"assigned" : "2022-01-12T10:05:09.902-0600"
+},
+{
+"name" : "T992Config_v139",
+"assigned" : "2022-01-12T17:01:15.047-0600"
+},
+{
+"name" : "T992Config_v140",
+"assigned" : "2022-01-12T17:32:23.761-0600"
+},
+{
+"name" : "T992Config_v141",
+"assigned" : "2022-01-13T10:39:07.188-0600"
+},
+{
+"name" : "T992Config_v142",
+"assigned" : "2022-01-20T11:11:35.943-0600"
+},
+{
+"name" : "T992Config_v143",
+"assigned" : "2022-01-20T11:19:31.782-0600"
+},
+{
+"name" : "T992Config_v144",
+"assigned" : "2022-01-20T17:31:25.107-0600"
+},
+{
+"name" : "T992Config_v145",
+"assigned" : "2022-01-20T17:34:28.522-0600"
+},
+{
+"name" : "T992Config_v146",
+"assigned" : "2022-01-21T09:38:32.619-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-12T10:05:04.961-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2022-01-12T10:05:04.961-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2022-01-12T10:05:04.961-0600",
+"value" : {
+"name" : "5",
+"assigned" : "2022-01-12T10:05:04.961-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2022-01-12T10:05:04.962-0600",
+"value" : {
+"name" : "UDPDataListenerProducerTable",
+"assigned" : "2022-01-12T10:05:04.962-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2022-01-12T10:05:04.962-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2022-01-12T10:05:04.962-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-12T10:05:09.902-0600",
+"value" : {
+"name" : "T992Config_v138",
+"assigned" : "2022-01-12T10:05:09.902-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-12T17:01:15.047-0600",
+"value" : {
+"name" : "T992Config_v139",
+"assigned" : "2022-01-12T17:01:15.047-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-12T17:32:23.761-0600",
+"value" : {
+"name" : "T992Config_v140",
+"assigned" : "2022-01-12T17:32:23.761-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-13T10:39:07.188-0600",
+"value" : {
+"name" : "T992Config_v141",
+"assigned" : "2022-01-13T10:39:07.188-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-20T11:11:35.943-0600",
+"value" : {
+"name" : "T992Config_v142",
+"assigned" : "2022-01-20T11:11:35.943-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-20T11:19:31.782-0600",
+"value" : {
+"name" : "T992Config_v143",
+"assigned" : "2022-01-20T11:19:31.782-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-20T17:31:25.107-0600",
+"value" : {
+"name" : "T992Config_v144",
+"assigned" : "2022-01-20T17:31:25.107-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-20T17:34:28.523-0600",
+"value" : {
+"name" : "T992Config_v145",
+"assigned" : "2022-01-20T17:34:28.522-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T09:38:32.619-0600",
+"value" : {
+"name" : "T992Config_v146",
+"assigned" : "2022-01-21T09:38:32.619-0600"
+}
+}
+],
+"created" : "2022-01-12T10:05:04.961-0600"
+},
+"_id" : {
+"$oid" : "5fadcf4dcb56490887fd632d"
+},
+"collection" : "UDPDataListenerProducerTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

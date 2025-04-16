@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ROOT xmlns="http://www.w3.org/2001/XMLSchema-instance">
+
+  <DATA xmlns="">
+    <login_entry xmlns="">Time=1509988631 DisplayName=LorenzoUplegger Permissions=255 UID=3</login_entry>
+    <login_entry xmlns="">Time=1510069044 DisplayName=LorenzoUplegger Permissions=255 UID=3</login_entry>
+    <login_entry xmlns="">Time=1511285718 DisplayName=LorenzoUplegger Permissions=255 UID=3</login_entry>
+  </DATA>
+
+</ROOT>

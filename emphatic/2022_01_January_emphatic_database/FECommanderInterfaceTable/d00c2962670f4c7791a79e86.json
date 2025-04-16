@@ -1,0 +1,138 @@
+{
+"document" : {
+"data" : {
+"NAME" : "FE_COMMANDER_INTERFACE_TABLE",
+"COMMENT" : "No comment.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1643069075,
+"COL_TYPES" : {
+"INTERFACE_ID" : "STRING",
+"INTERFACE_IP_ADDRESS" : "STRING",
+"INTERFACE_PORT" : "NUMBER",
+"HOST_IP_ADDRESS" : "STRING",
+"HOST_PORT" : "NUMBER",
+"STATE_MACHINE_NAME" : "STRING",
+"CONFIGURATION_ALIAS" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"INTERFACE_ID" : "Commander",
+"INTERFACE_IP_ADDRESS" : "131.225.176.96",
+"INTERFACE_PORT" : "17000",
+"HOST_IP_ADDRESS" : "127.0.0.1",
+"HOST_PORT" : "16010",
+"STATE_MACHINE_NAME" : "EmphaticStateMachine",
+"CONFIGURATION_ALIAS" : "DefaultConfig",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1643069051"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2022-01-24T18:04:35.850-0600",
+"rawdata" : [
+
+]
+},
+"version" : "3",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2022-01-24T18:04:35.854-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2022-01-24T18:04:35.852-0600"
+},
+{
+"name" : "T992Config_v178",
+"assigned" : "2022-01-24T18:04:40.466-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-24T18:04:35.852-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2022-01-24T18:04:35.852-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2022-01-24T18:04:35.853-0600",
+"value" : {
+"name" : "3",
+"assigned" : "2022-01-24T18:04:35.853-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2022-01-24T18:04:35.853-0600",
+"value" : {
+"name" : "FECommanderInterfaceTable",
+"assigned" : "2022-01-24T18:04:35.853-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2022-01-24T18:04:35.854-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2022-01-24T18:04:35.854-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-24T18:04:40.466-0600",
+"value" : {
+"name" : "T992Config_v178",
+"assigned" : "2022-01-24T18:04:40.466-0600"
+}
+}
+],
+"created" : "2022-01-24T18:04:35.851-0600"
+},
+"_id" : {
+"$oid" : "d00c2962670f4c7791a79e86"
+},
+"collection" : "FECommanderInterfaceTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

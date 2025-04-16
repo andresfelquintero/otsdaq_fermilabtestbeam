@@ -1,0 +1,147 @@
+{
+"document" : {
+"data" : {
+"NAME" : "FE_MIDDLEWARE_INTERFACE_TABLE",
+"COMMENT" : "No comment.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1649287103,
+"COL_TYPES" : {
+"INTERFACE_ID" : "STRING",
+"INTERFACE_IP_ADDRESS" : "STRING",
+"INTERFACE_PORT" : "NUMBER",
+"CALIBRATION_NAME" : "STRING",
+"CONFIGURATION_DIR" : "STRING",
+"CONFIGURATION_NAME" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"INTERFACE_ID" : "FEInterfacePixelTelescope0",
+"INTERFACE_IP_ADDRESS" : "127.0.0.1",
+"INTERFACE_PORT" : "5000",
+"CALIBRATION_NAME" : "physics",
+"CONFIGURATION_DIR" : "${PH2ACF_BASE_DIR}/runDir",
+"CONFIGURATION_NAME" : "CMSIT_Telescope_Physics.xml",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646857500"
+},
+{
+"INTERFACE_ID" : "RD53FEInterface0",
+"INTERFACE_IP_ADDRESS" : "127.0.0.1",
+"INTERFACE_PORT" : "5001",
+"CALIBRATION_NAME" : "physics",
+"CONFIGURATION_DIR" : "/home/otsdaq/Ph2_ACF/Ph2_ACF/myRun/",
+"CONFIGURATION_NAME" : "CMSIT.xml",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1649286834"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2022-04-06T18:18:23.825-0500",
+"rawdata" : [
+
+]
+},
+"version" : "10",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2022-04-06T18:18:23.825-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2022-04-06T18:18:23.825-0500"
+},
+{
+"name" : "T992Config_v291",
+"assigned" : "2022-04-06T18:18:30.268-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-04-06T18:18:23.825-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2022-04-06T18:18:23.825-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2022-04-06T18:18:23.825-0500",
+"value" : {
+"name" : "10",
+"assigned" : "2022-04-06T18:18:23.825-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2022-04-06T18:18:23.825-0500",
+"value" : {
+"name" : "FEMiddlewareInterfaceTable",
+"assigned" : "2022-04-06T18:18:23.825-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2022-04-06T18:18:23.825-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2022-04-06T18:18:23.825-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-04-06T18:18:30.268-0500",
+"value" : {
+"name" : "T992Config_v291",
+"assigned" : "2022-04-06T18:18:30.268-0500"
+}
+}
+],
+"created" : "2022-04-06T18:18:23.825-0500"
+},
+"_id" : {
+"$oid" : "e72b19f799604270bf6ffca0"
+},
+"collection" : "FEMiddlewareInterfaceTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

@@ -1,0 +1,7 @@
+{
+"name":"ResetNimPlusCounters",
+"sequence":"0:w:18000:7,1:w:18000:0",
+"time":"Fri Dec 01 2017 13:54:57 GMT-0600 (Central Standard Time)",
+"notes":"Resets the sig norm, cms1 and cm2 counters.",
+"LSBF":"false"
+}@

@@ -1,0 +1,347 @@
+OtsUDPFSSR0: {
+	FEInterfacePluginName: 	"FSSRInterface"
+	LinkToFETypeTable_FSSRInterfaceTable 	{
+		OtsUDPFSSR0: 	{
+			Status: 				"On"
+			FirmwareVersion: 				2
+			FirmwareType: 				"OtsUDPFSSRFirmware"
+			HardwareType: 				"OtsUDPHardware"
+			InterfaceIPAddress: 				"192.168.133.132"
+			InterfacePort: 				2001
+			HostIPAddress: 				"192.168.133.10"
+			HostPort: 				10000
+			StreamToIPAddress: 				"192.168.133.10"
+			StreamToPort: 				47000
+			ClockSelect: 				"External"
+			ClockSpeedMHz: 				13.5
+			ChannelStatus0: 				"On"
+			ChannelStatus1: 				"On"
+			ChannelStatus2: 				"On"
+			ChannelStatus3: 				"On"
+			ChannelStatus4: 				"Off"
+			ChannelStatus5: 				"Off"
+		} //end OtsUDPFSSR0 record
+	} //end FSSRInterfaceTable link record
+} //end OtsUDPFSSR0
+
+OtsUDPFSSR1: {
+	FEInterfacePluginName: 	"FSSRInterface"
+	LinkToFETypeTable_FSSRInterfaceTable 	{
+		OtsUDPFSSR1: 	{
+			Status: 				"On"
+			FirmwareVersion: 				2
+			FirmwareType: 				"OtsUDPFSSRFirmware"
+			HardwareType: 				"OtsUDPHardware"
+			InterfaceIPAddress: 				"192.168.133.36"
+			InterfacePort: 				2001
+			HostIPAddress: 				"192.168.133.10"
+			HostPort: 				10001
+			StreamToIPAddress: 				"192.168.133.10"
+			StreamToPort: 				47001
+			ClockSelect: 				"External"
+			ClockSpeedMHz: 				13.5
+			ChannelStatus0: 				"On"
+			ChannelStatus1: 				"On"
+			ChannelStatus2: 				"On"
+			ChannelStatus3: 				"On"
+			ChannelStatus4: 				"On"
+			ChannelStatus5: 				"On"
+		} //end OtsUDPFSSR1 record
+	} //end FSSRInterfaceTable link record
+} //end OtsUDPFSSR1
+
+OtsUDPFSSR2: {
+	FEInterfacePluginName: 	"FSSRInterface"
+	LinkToFETypeTable_FSSRInterfaceTable 	{
+		OtsUDPFSSR2: 	{
+			Status: 				"On"
+			FirmwareVersion: 				2
+			FirmwareType: 				"OtsUDPFSSRFirmware"
+			HardwareType: 				"OtsUDPHardware"
+			InterfaceIPAddress: 				"192.168.133.109"
+			InterfacePort: 				2001
+			HostIPAddress: 				"192.168.133.10"
+			HostPort: 				10002
+			StreamToIPAddress: 				"192.168.133.10"
+			StreamToPort: 				47002
+			ClockSelect: 				"External"
+			ClockSpeedMHz: 				13.5
+			ChannelStatus0: 				"On"
+			ChannelStatus1: 				"On"
+			ChannelStatus2: 				"On"
+			ChannelStatus3: 				"On"
+			ChannelStatus4: 				"On"
+			ChannelStatus5: 				"On"
+		} //end OtsUDPFSSR2 record
+	} //end FSSRInterfaceTable link record
+} //end OtsUDPFSSR2
+
+OtsUDPFSSR3: {
+	FEInterfacePluginName: 	"FSSRInterface"
+	LinkToFETypeTable_FSSRInterfaceTable 	{
+		OtsUDPFSSR3: 	{
+			Status: 				"On"
+			FirmwareVersion: 				2
+			FirmwareType: 				"OtsUDPFSSRFirmware"
+			HardwareType: 				"OtsUDPHardware"
+			InterfaceIPAddress: 				"192.168.133.108"
+			InterfacePort: 				2001
+			HostIPAddress: 				"192.168.133.10"
+			HostPort: 				10003
+			StreamToIPAddress: 				"192.168.133.10"
+			StreamToPort: 				47003
+			ClockSelect: 				"External"
+			ClockSpeedMHz: 				13.5
+			ChannelStatus0: 				"On"
+			ChannelStatus1: 				"On"
+			ChannelStatus2: 				"On"
+			ChannelStatus3: 				"On"
+			ChannelStatus4: 				"On"
+			ChannelStatus5: 				"On"
+		} //end OtsUDPFSSR3 record
+	} //end FSSRInterfaceTable link record
+} //end OtsUDPFSSR3
+
+PurdueNetworkMaster: {
+	FEInterfacePluginName: 	"FEPurdueNetworkMasterInterface"
+	LinkToFETypeTable_FEPurdueNetworkMasterInterfaceTable 	{
+		PurdueNetworkMaster: 	{
+			Status: 				"On"
+			FirmwareVersion: 				0
+			InterfaceIPAddress: 				"192.168.133.37"
+			InterfacePort: 				47000
+			HostIPAddress: 				"192.168.133.48"
+			HostPort: 				11000
+		} //end PurdueNetworkMaster record
+	} //end FEPurdueNetworkMasterInterfaceTable link record
+} //end PurdueNetworkMaster
+
+PixelTelescope0: {
+	FEInterfacePluginName: 	"FEPixelTelescopeInterface"
+	LinkToFETypeTable_FEPixelTelescopeInterfaceTable 	{
+		PixelTelescope: 	{
+			InterfaceIPAddress: 				"131.225.179.175"
+			InterfacePort: 				2001
+			HostIPAddress: 				"127.0.0.1"
+			HostPort: 				10250
+		} //end PixelTelescope record
+	} //end FEPixelTelescopeInterfaceTable link record
+} //end PixelTelescope0
+
+Commander0: {
+	FEInterfacePluginName: 	"FECommanderInterface"
+	LinkToFETypeTable_FECommanderInterfaceTable 	{
+		Commander: 	{
+			InterfaceIPAddress: 				"192.168.1.250"
+			InterfacePort: 				17000
+			HostIPAddress: 				"192.168.133.10"
+			HostPort: 				16010
+			StateMachineName: 				"EmphaticStateMachine"
+			ConfigurationAlias: 				"DefaultConfig"
+		} //end Commander record
+	} //end FECommanderInterfaceTable link record
+} //end Commander0
+
+TimingFEVME: {
+	FEInterfacePluginName: 	"FEOtsUDPCMSTimingInterface"
+	LinkToFETypeTable_FECMSTimingInterfaceTable 	{
+		CMSVMETiming: 	{
+			Status: 				"On"
+			InterfaceIPAddress: 				"192.168.133.51"
+			InterfacePort: 				5000
+			HostIPAddress: 				"192.168.133.48"
+			HostPort: 				10003
+			StreamToIPAddress: 				"192.168.133.48"
+			StreamToPort: 				47004
+		} //end CMSVMETiming record
+	} //end FECMSTimingInterfaceTable link record
+} //end TimingFEVME
+
+Yarr0_FE0: {
+	FEInterfacePluginName: 	"FERD53AInterface"
+	LinkToFETypeTable_FEYarrInterfaceTable 	{
+		Yarr0_FE0: 	{
+			Status: 				"On"
+			YarrScanType: 				"/home/pixeluser/YarrExtTrigFork/src/configs/scans/rd53a/fnal_exttrigger.json"
+			YarrFECfgPath: 				"/home/pixeluser/YarrExtTrigFork/src/configs/connectivity/example_rd53a_setup.json"
+			YarrCtrlCfgPath: 				"/home/pixeluser/YarrExtTrigFork/src/configs/controller/specCfgFnal.json"
+		} //end Yarr0_FE0 record
+	} //end FEYarrInterfaceTable link record
+} //end Yarr0_FE0
+
+Yarr2_FE2: {
+	FEInterfacePluginName: 	"FERD53AInterface"
+	LinkToFETypeTable_FEYarrInterfaceTable 	{
+		Yarr2_FE2: 	{
+			Status: 				"On"
+			YarrScanType: 				"/home/pixeluser/YarrExtTrigFork/src/configs/scans/rd53a/fnal_exttrigger.json"
+			YarrFECfgPath: 				"/home/pixeluser/YarrExtTrigFork/src/configs/connectivity/example_rd53a_setup.json"
+			YarrCtrlCfgPath: 				"/home/pixeluser/YarrExtTrigFork/src/configs/controller/specCfgFnal.json"
+		} //end Yarr2_FE2 record
+	} //end FEYarrInterfaceTable link record
+} //end Yarr2_FE2
+
+FEMiddlewareInterface: {
+	FEInterfacePluginName: 	"FEMiddlewareInterface"
+	LinkToFETypeTable_FEMiddlewareInterfaceTable 	{
+		FEInterfaceMiddleware: 	{
+			InterfaceIPAddress: 				"131.225.179.187"
+			InterfacePort: 				5000
+			CalibrationName: 				"physics"
+			ConfigurationDir: 				"${PH2ACF_ROOT}/runDir"
+			ConfigurationName: 				"CMSIT.xml"
+		} //end FEInterfaceMiddleware record
+	} //end FEMiddlewareInterfaceTable link record
+} //end FEMiddlewareInterface
+
+TimingFETOFPET: {
+	FEInterfacePluginName: 	"FEOtsUDPCMSTimingInterface"
+	LinkToFETypeTable_FECMSTimingInterfaceTable 	{
+		CMSTOFPETTiming: 	{
+			Status: 				"On"
+			InterfaceIPAddress: 				"192.168.133.222"
+			InterfacePort: 				10000
+			HostIPAddress: 				"192.168.133.48"
+			HostPort: 				10005
+			StreamToIPAddress: 				"192.168.133.48"
+			StreamToPort: 				97000
+		} //end CMSTOFPETTiming record
+	} //end FECMSTimingInterfaceTable link record
+} //end TimingFETOFPET
+
+NetScopeFE: {
+	FEInterfacePluginName: 	"FENetScopeInterface"
+	LinkToFETypeTable_FENetScopeInterfaceTable 	{
+		FENetScope0: 	{
+			HostIPAddress: 				"192.168.133.46"
+			HostPort: 				47012
+			StreamToIPAddress: 				"192.168.133.46"
+			StreamToPort: 				47011
+			ChannelMask: 				0x7
+			UseFastFrame: 				"False"
+			ScopeIPAddress: 				"192.168.133.160"
+			ScopePort: 				"4000"
+		} //end FENetScope0 record
+	} //end FENetScopeInterfaceTable link record
+} //end NetScopeFE
+
+NIMPlus: {
+	FEInterfacePluginName: 	"FENIMPlusInterface"
+	LinkToFETypeTable_FENIMPlusInterfaceTable 	{
+		NIMPlus: 	{
+			Status: 				"On"
+			FirmwareVersion: 				0
+			InterfaceIPAddress: 				"192.168.133.112"
+			InterfacePort: 				2001
+			HostIPAddress: 				"192.168.133.10"
+			HostPort: 				5102
+			StreamToIPAddress: 				"192.168.133.10"
+			StreamToPort: 				55001
+			LogicInputChannelA: 				"NIM Input CH-A Modified"
+			LogicInputChannelB: 				"False"
+			LogicInputChannelC: 				"False"
+			LogicInputChannelD: 				"False"
+			LogicInputChannelE: 				"False"
+			LogicInputChannelF: 				"False"
+			LogicInputChannelG: 				"False"
+			LogicInputChannelH: 				"False"
+			TriggerInputChannel0: 				"Logic Output"
+			TriggerInputChannel1: 				"Trigger CH-0"
+			TriggerInputChannel2: 				"Trigger CH-0"
+			OutputMuxSelectChannelA: 				"System Clock after DCM @ 53MHz"
+			OutputMuxSelectChannelB: 				"Trigger Output CH-1"
+			OutputMuxSelectChannelC: 				"Trigger Output CH-2"
+			OutputMuxSelectChannelD: 				"Trigger Output CH-2"
+			CoincidenceLogicWord: 				2
+			LinkToOptionalParameters_FENIMPlusInterfaceOptionalTable 	{
+				NIMPlus: 	{
+					EnableExpertWebappFeatures: 						"Yes"
+					EnableClockResetDuringConfigure: 						"Yes"
+					BoardVersion: 						2
+					UseExternalClock: 						"No"
+					PrimaryBoardConfig: 						"True"
+					InputMuxConfig: 						0
+					OutputMuxConfig: 						0
+					ExternalClockSource: 						"NIM Input CH-A Raw"
+					AddressOffset: 						0
+					SecondsDelayBeforeStartingTriggers: 						5
+					EnableDACSetupDuringConfigure: 						"Yes"
+					DACValueChannelA: 						1450
+					DACValueChannelB: 						4095
+					DACValueChannelC: 						4017
+					DACValueChannelD: 						4095
+					DACValueChannelE: 						"4095"
+					DACValueChannelF: 						"4095"
+					DACValueChannelG: 						"4095"
+					DACValueChannelH: 						"4095"
+					DelayInputChannelA: 						0
+					WidthInputChannelA: 						4
+					InvertPolarityInputChannelA: 						"Yes"
+					DelayInputChannelB: 						0
+					WidthInputChannelB: 						10
+					InvertPolarityInputChannelB: 						"No"
+					DelayInputChannelC: 						0
+					WidthInputChannelC: 						6
+					InvertPolarityInputChannelC: 						"No"
+					DelayInputChannelD: 						0
+					WidthInputChannelD: 						6
+					InvertPolarityInputChannelD: 						"No"
+					DelayInputChannelE: 						0
+					WidthInputChannelE: 						0
+					InvertPolarityInputChannelE: 						"No"
+					DelayInputChannelF: 						0
+					WidthInputChannelF: 						0
+					InvertPolarityInputChannelF: 						"No"
+					DelayInputChannelG: 						0
+					WidthInputChannelG: 						0
+					InvertPolarityInputChannelG: 						"No"
+					DelayInputChannelH: 						0
+					WidthInputChannelH: 						0
+					InvertPolarityInputChannelH: 						"No"
+					EnableBackPressureNwFmcPta1: 						"False"
+					EnableBackPressureNwFmcPta2: 						"False"
+					40MHzClockDelay: 						0
+					ClockMaskSetup: 						0
+					DelayTriggerOutputChannel0: 						0
+					WidthTriggerOutputChannel0: 						15
+					TimeVetoTriggerOutputChannel0: 						20000
+					PrescaleTriggerOutputChannel0: 						0
+					BackpressureTriggerOutputChannel0: 						"False"
+					EnableClockMaskTriggerOutputChannel0: 						"False"
+					VetoSourceTriggerOutputChannel0: 						"No-Veto"
+					DelayTriggerOutputChannel1: 						0
+					WidthTriggerOutputChannel1: 						48
+					TimeVetoTriggerOutputChannel1: 						0
+					PrescaleTriggerOutputChannel1: 						0
+					BackpressureTriggerOutputChannel1: 						"False"
+					EnableClockMaskTriggerOutputChannel1: 						"False"
+					VetoSourceTriggerOutputChannel1: 						"No-Veto"
+					DelayTriggerOutputChannel2: 						0
+					WidthTriggerOutputChannel2: 						6
+					TimeVetoTriggerOutputChannel2: 						0
+					PrescaleTriggerOutputChannel2: 						0
+					BackpressureTriggerOutputChannel2: 						"False"
+					EnableClockMaskTriggerOutputChannel2: 						"False"
+					VetoSourceTriggerOutputChannel2: 						"No-Veto"
+					InvertPolarityOutputChannelA: 						"Yes"
+					InvertPolarityOutputChannelB: 						"Yes"
+					InvertPolarityOutputChannelC: 						"No"
+					InvertPolarityOutputChannelD: 						"No"
+					SignalGeneratorPulseCount: 						10
+					SignalGeneratorHighPeriod: 						10
+					SignalGeneratorLowPeriod: 						100
+					SignalGeneratorInvertPolarity: 						"No"
+					SignalGeneratorEnable: 						"Yes"
+					EnableBurstData: 						"False"
+					BurstDataMuxSelect: 						"Output Counters"
+					BurstDataLogicSampleDelay: 						0
+					BurstDataGateInputChannel: 						"Input Channel-A"
+					TriggerCountAtRunStopFilename: 						"${OTSDAQ_DATA}/NimPlus/TriggerCountNimPlus"
+					TriggerMuxSelectionsBankA: 						"DEFAULT"
+					TriggerMuxSelectionsBankB: 						"DEFAULT"
+				} //end NIMPlus record
+			} //end FENIMPlusInterfaceOptionalTable link record
+		} //end NIMPlus record
+	} //end FENIMPlusInterfaceTable link record
+} //end NIMPlus
+

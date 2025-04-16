@@ -1,0 +1,177 @@
+{
+"document" : {
+"data" : {
+"NAME" : "DQM_HISTOS_CONSUMER_CONFIGURATION",
+"COMMENT" : "DQM for HW emulator.",
+"AUTHOR" : "eflumerf",
+"CREATION_TIME" : 1509384202,
+"COL_TYPES" : {
+"PROCESSOR_ID" : "VARCHAR2",
+"SAVE_DQM_FILE" : "VARCHAR2",
+"DQM_FILE_PATH" : "VARCHAR2",
+"DQM_FILE_NAME_PREFIX" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"PROCESSOR_ID" : "DQMHistos0",
+"SAVE_DQM_FILE" : "Yes",
+"DQM_FILE_PATH" : "${OTSDAQ_DATA}",
+"DQM_FILE_NAME_PREFIX" : "DQMHistosRun",
+"COMMENT_DESCRIPTION" : "DQM for hw emulator",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1501087901"
+},
+{
+"PROCESSOR_ID" : "DQMHistos1",
+"SAVE_DQM_FILE" : "Yes",
+"DQM_FILE_PATH" : "/data/otsdaq/OutputData",
+"DQM_FILE_NAME_PREFIX" : "DAMHistosRun",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1509384180"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T15:48:30.408-0500",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:30.410-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:30.409-0500"
+},
+{
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:32.030-0500"
+},
+{
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:24.022-0500"
+},
+{
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:47.547-0500"
+},
+{
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:56.770-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:30.409-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:30.409-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T15:48:30.409-0500",
+"value" : {
+"name" : "0",
+"assigned" : "2018-09-11T15:48:30.409-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T15:48:30.410-0500",
+"value" : {
+"name" : "DQMHistosConsumerConfiguration",
+"assigned" : "2018-09-11T15:48:30.410-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T15:48:30.410-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:30.410-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:32.031-0500",
+"value" : {
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:32.030-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:28:24.022-0500",
+"value" : {
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:24.022-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:30:47.547-0500",
+"value" : {
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:47.547-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:56.770-0500",
+"value" : {
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:56.770-0500"
+}
+}
+],
+"created" : "2018-09-11T15:48:30.408-0500"
+},
+"_id" : {
+"$oid" : "bb51503fef41488e9b5b5181"
+},
+"collection" : "DQMHistosConsumerConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

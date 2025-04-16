@@ -1,0 +1,255 @@
+<?xml version='1.0'?>
+<xc:Partition 	xmlns:xsi	= "http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:soapenc	= "http://schemas.xmlsoap.org/soap/encoding/"
+		xmlns:xc	= "http://xdaq.web.cern.ch/xdaq/xsd/2004/XMLConfiguration-30">
+
+	<!-- ContextUID='MainContext' sourceConfig='XDAQContextTable_v26 @ 1580142789' -->
+	<xc:Context id="0" url="http://ftbf-daq-06.fnal.gov:2030">
+
+		<!-- Application GroupID = 'MainContext' UID='Supervisor' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<xc:Application class="ots::GatewaySupervisor" id="200" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:GatewaySupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libGatewaySupervisor.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='ChatSupervisor' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<xc:Application class="ots::ChatSupervisor" id="250" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ChatSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libChat.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='ConsoleSupervisor' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<!--
+		<xc:Application class="ots::ConsoleSupervisor" id="260" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ConsoleSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libConsole.so</xc:Module>
+		-->
+
+		<!-- Application GroupID = 'MainContext' UID='LogbookSupervisor' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<xc:Application class="ots::LogbookSupervisor" id="261" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:LogbookSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libLogbook.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='VisualSupervisor' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<xc:Application class="ots::VisualSupervisor" id="270" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:VisualSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libVisualization.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='ConfigurationGUISupervisor' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<xc:Application class="ots::ConfigurationGUISupervisor" id="281" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ConfigurationGUISupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libConfigurationGUI.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='MacroMakerSupervisor' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<xc:Application class="ots::MacroMakerSupervisor" id="300" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:MacroMakerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libMacroMaker.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='WireChamberContext' sourceConfig='XDAQContextTable_v26 @ 1580142789' -->
+	<!--
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:2001">
+
+	</xc:Context>
+	-->
+
+	<!-- ContextUID='StripTelescopeContext' sourceConfig='XDAQContextTable_v26 @ 1580142789' -->
+	<xc:Context id="0" url="http://ftbf-daq-06.fnal.gov:2002">
+
+		<!-- Application GroupID = 'StripTelescopeContext' UID='FESupervisorFSSR0' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<xc:Application class="ots::FESupervisor" id="210" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+
+		<!-- Application GroupID = 'StripTelescopeContext' UID='FESupervisorFSSR1' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<xc:Application class="ots::FESupervisor" id="211" instance="2" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+
+		<!-- Application GroupID = 'StripTelescopeContext' UID='FESupervisorFSSR2' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<!--
+		<xc:Application class="ots::FESupervisor" id="212" instance="3" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+		-->
+
+		<!-- Application GroupID = 'StripTelescopeContext' UID='FESupervisorNetworkMaster' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<xc:Application class="ots::FESupervisor" id="213" instance="4" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+
+		<!-- Application GroupID = 'StripTelescopeContext' UID='DataManagerSupervisorFSSR0' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<xc:Application class="ots::DataManagerSupervisor" id="310" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+
+		<!-- Application GroupID = 'StripTelescopeContext' UID='DataManagerSupervisorFSSR1' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<xc:Application class="ots::DataManagerSupervisor" id="311" instance="2" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+
+		<!-- Application GroupID = 'StripTelescopeContext' UID='DataManagerSupervisorFSSR2' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<!--
+		<xc:Application class="ots::DataManagerSupervisor" id="312" instance="3" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+		-->
+
+	</xc:Context>
+
+	<!-- ContextUID='NimPlusContext' sourceConfig='XDAQContextTable_v26 @ 1580142789' -->
+	<xc:Context id="0" url="http://ftbf-daq-06.fnal.gov:2003">
+
+		<!-- Application GroupID = 'NimPlusContext' UID='NimPlusFESupervisor0' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<xc:Application class="ots::FESupervisor" id="600" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+
+		<!-- Application GroupID = 'NimPlusContext' UID='NimPlusDataManagerSupervisor0' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<xc:Application class="ots::DataManagerSupervisor" id="601" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='PixelTelescopeContext' sourceConfig='XDAQContextTable_v26 @ 1580142789' -->
+	<xc:Context id="0" url="http://ftbf-daq-06.fnal.gov:2004">
+
+		<!-- Application GroupID = 'PixelTelescopeContext' UID='FEPixelSupervisor' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<xc:Application class="ots::FESupervisor" id="315" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='CommanderContext' sourceConfig='XDAQContextTable_v26 @ 1580142789' -->
+	<xc:Context id="0" url="http://ftbf-daq-06.fnal.gov:2008">
+
+		<!-- Application GroupID = 'CommanderContext' UID='FECommanderSupervisor' sourceConfig='XDAQApplicationTable_v21 @ 1579733306' -->
+		<xc:Application class="ots::FESupervisor" id="316" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='PixelContext' sourceConfig='XDAQContextTable_v26 @ 1580142789' -->
+	<!--
+	<xc:Context id="0" url="http://rd53pixel.fnal.gov:2053">
+
+		<xc:Application class="ots::FESupervisor" id="800" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+	-->
+
+	<!-- ContextUID='PixelContext2' sourceConfig='XDAQContextTable_v26 @ 1580142789' -->
+	<!--
+	<xc:Context id="0" url="http://rd53pixel2.fnal.gov:2054">
+
+		<xc:Application class="ots::FESupervisor" id="801" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+	-->
+
+	<!-- ContextUID='TimingContext' sourceConfig='XDAQContextTable_v26 @ 1580142789' -->
+	<!--
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:2005">
+
+		<xc:Application class="ots::FESupervisor" id="400" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::FESupervisor" id="402" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::DataManagerSupervisor" id="401" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+	-->
+
+	<!-- ContextUID='NetScopeContext' sourceConfig='XDAQContextTable_v26 @ 1580142789' -->
+	<!--
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:2006">
+
+		<xc:Application class="ots::FESupervisor" id="405" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::DataManagerSupervisor" id="406" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+	-->
+
+	<!-- ContextUID='DQMContext' sourceConfig='XDAQContextTable_v26 @ 1580142789' -->
+	<!--
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:2007">
+
+		<xc:Application class="ots::VisualSupervisor" id="270" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:VisualSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/TestBeam/Users/cmstiming/2020_02_February_cmstiming_userdata//libVisualization.so</xc:Module>
+
+	</xc:Context>
+	-->
+
+</xc:Partition>
+
+

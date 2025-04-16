@@ -1,0 +1,300 @@
+{
+"document" : {
+"data" : {
+"NAME" : "ARTDAQ_DAQ_METRIC_PARAMETER_CONFIGURATION",
+"COMMENT" : "No comment.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1504822217,
+"COL_TYPES" : {
+"METRIC_PARAMETER_GROUP_ID" : "VARCHAR2",
+"METRIC_PARAMETER_UID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"METRIC_PARAMETER_KEY" : "VARCHAR2",
+"METRIC_PARAMETER_VALUE" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"METRIC_PARAMETER_GROUP_ID" : "reader0MetricPGroup",
+"METRIC_PARAMETER_UID" : "readerFileP0",
+"STATUS" : "On",
+"METRIC_PARAMETER_KEY" : "fileName",
+"METRIC_PARAMETER_VALUE" : "\"/tmp/boardreader/br_%UID%_metrics.log\"",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "DEFAULT",
+"RECORD_INSERTION_TIME" : "0"
+},
+{
+"METRIC_PARAMETER_GROUP_ID" : "reader0MetricPGroup",
+"METRIC_PARAMETER_UID" : "readerMetricP0",
+"STATUS" : "On",
+"METRIC_PARAMETER_KEY" : "uniquify",
+"METRIC_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "DEFAULT",
+"RECORD_INSERTION_TIME" : "0"
+},
+{
+"METRIC_PARAMETER_GROUP_ID" : "builder0MetricPGroup",
+"METRIC_PARAMETER_UID" : "builderFileP0",
+"STATUS" : "On",
+"METRIC_PARAMETER_KEY" : "fileName",
+"METRIC_PARAMETER_VALUE" : "\"/tmp/eventbuilder/evb_%UID%_metrics.log\"",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "DEFAULT",
+"RECORD_INSERTION_TIME" : "0"
+},
+{
+"METRIC_PARAMETER_GROUP_ID" : "builder0MetricPGroup",
+"METRIC_PARAMETER_UID" : "builderMetricP0",
+"STATUS" : "On",
+"METRIC_PARAMETER_KEY" : "uniquify",
+"METRIC_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "DEFAULT",
+"RECORD_INSERTION_TIME" : "0"
+},
+{
+"METRIC_PARAMETER_GROUP_ID" : "builder0GangliaPGroup",
+"METRIC_PARAMETER_UID" : "gangliaMetricP1",
+"STATUS" : "On",
+"METRIC_PARAMETER_KEY" : "reporting_interval",
+"METRIC_PARAMETER_VALUE" : "15.0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "DEFAULT",
+"RECORD_INSERTION_TIME" : "0"
+},
+{
+"METRIC_PARAMETER_GROUP_ID" : "builder0GangliaPGroup",
+"METRIC_PARAMETER_UID" : "gangliaFileP1",
+"STATUS" : "On",
+"METRIC_PARAMETER_KEY" : "configFile",
+"METRIC_PARAMETER_VALUE" : "\"/etc/ganglia/gmond.conf\"",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "DEFAULT",
+"RECORD_INSERTION_TIME" : "0"
+},
+{
+"METRIC_PARAMETER_GROUP_ID" : "builder0GangliaPGroup",
+"METRIC_PARAMETER_UID" : "gangliaMetricP2",
+"STATUS" : "On",
+"METRIC_PARAMETER_KEY" : "group",
+"METRIC_PARAMETER_VALUE" : "\"ARTDAQ\"",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "DEFAULT",
+"RECORD_INSERTION_TIME" : "0"
+},
+{
+"METRIC_PARAMETER_GROUP_ID" : "builder0MessageFacilityPGroup",
+"METRIC_PARAMETER_UID" : "builderMessageFacilityMetricP0",
+"STATUS" : "On",
+"METRIC_PARAMETER_KEY" : "output_message_application_name",
+"METRIC_PARAMETER_VALUE" : "\"ARTDAQ Metric\"",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1504818676"
+},
+{
+"METRIC_PARAMETER_GROUP_ID" : "builder0MessageFacilityPGroup",
+"METRIC_PARAMETER_UID" : "builderMessageFacilityMetricP1",
+"STATUS" : "On",
+"METRIC_PARAMETER_KEY" : "output_message_severity",
+"METRIC_PARAMETER_VALUE" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1504818676"
+},
+{
+"METRIC_PARAMETER_GROUP_ID" : "builder0GraphiteMetricPGroup",
+"METRIC_PARAMETER_UID" : "builderGraphiteMetricP0",
+"STATUS" : "On",
+"METRIC_PARAMETER_KEY" : "DEFAULT",
+"METRIC_PARAMETER_VALUE" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "DEFAULT",
+"RECORD_INSERTION_TIME" : "0"
+},
+{
+"METRIC_PARAMETER_GROUP_ID" : "builder0GraphiteMetricPGroup",
+"METRIC_PARAMETER_UID" : "builderGraphiteMetricP1",
+"STATUS" : "On",
+"METRIC_PARAMETER_KEY" : "DEFAULT",
+"METRIC_PARAMETER_VALUE" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "DEFAULT",
+"RECORD_INSERTION_TIME" : "0"
+},
+{
+"METRIC_PARAMETER_GROUP_ID" : "builder0GraphiteMetricPGroup",
+"METRIC_PARAMETER_UID" : "builderGraphiteMetricP2",
+"STATUS" : "On",
+"METRIC_PARAMETER_KEY" : "DEFAULT",
+"METRIC_PARAMETER_VALUE" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "DEFAULT",
+"RECORD_INSERTION_TIME" : "0"
+},
+{
+"METRIC_PARAMETER_GROUP_ID" : "aggregator0Metric0PGroup",
+"METRIC_PARAMETER_UID" : "aggregatorFileP0",
+"STATUS" : "On",
+"METRIC_PARAMETER_KEY" : "fileName",
+"METRIC_PARAMETER_VALUE" : "\"/tmp/aggregator/agg_%UID%_metrics.log\"",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "DEFAULT",
+"RECORD_INSERTION_TIME" : "0"
+},
+{
+"METRIC_PARAMETER_GROUP_ID" : "aggregator0Metric0PGroup",
+"METRIC_PARAMETER_UID" : "aggregatorFileP1",
+"STATUS" : "On",
+"METRIC_PARAMETER_KEY" : "uniquify",
+"METRIC_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "DEFAULT",
+"RECORD_INSERTION_TIME" : "0"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T15:48:30.067-0500",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:30.071-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:30.069-0500"
+},
+{
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:31.723-0500"
+},
+{
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:23.571-0500"
+},
+{
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:47.082-0500"
+},
+{
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:56.290-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:30.069-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:30.069-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T15:48:30.070-0500",
+"value" : {
+"name" : "0",
+"assigned" : "2018-09-11T15:48:30.070-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T15:48:30.070-0500",
+"value" : {
+"name" : "ARTDAQDaqMetricParameterConfiguration",
+"assigned" : "2018-09-11T15:48:30.070-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T15:48:30.071-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:30.071-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:31.723-0500",
+"value" : {
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:31.723-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:28:23.571-0500",
+"value" : {
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:23.571-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:30:47.082-0500",
+"value" : {
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:47.082-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:56.290-0500",
+"value" : {
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:56.290-0500"
+}
+}
+],
+"created" : "2018-09-11T15:48:30.067-0500"
+},
+"_id" : {
+"$oid" : "da2ca694f88443d1ab76aaa1"
+},
+"collection" : "ARTDAQDaqMetricParameterConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

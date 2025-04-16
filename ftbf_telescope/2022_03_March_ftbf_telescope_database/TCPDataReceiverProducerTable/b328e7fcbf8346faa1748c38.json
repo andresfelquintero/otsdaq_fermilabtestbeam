@@ -1,0 +1,132 @@
+{
+"document" : {
+"data" : {
+"NAME" : "TCP_DATA_RECEIVER_PRODUCER_TABLE",
+"COMMENT" : "No comment.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1649281567,
+"COL_TYPES" : {
+"PROCESSOR_UID" : "STRING",
+"BUFFER_SIZE" : "NUMBER",
+"SERVER_IP_ADDRESS" : "STRING",
+"SERVER_PORT" : "NUMBER",
+"DATA_TYPE" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"PROCESSOR_UID" : "VB1Listener0",
+"BUFFER_SIZE" : "1000",
+"SERVER_IP_ADDRESS" : "127.0.0.1",
+"SERVER_PORT" : "5001",
+"DATA_TYPE" : "Raw",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1649281567"
+},
+{
+"PROCESSOR_UID" : "VB1Listener1",
+"BUFFER_SIZE" : "1000",
+"SERVER_IP_ADDRESS" : "127.0.0.1",
+"SERVER_PORT" : "6001",
+"DATA_TYPE" : "Raw",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1649281567"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2022-04-06T16:46:07.217-0500",
+"rawdata" : [
+
+]
+},
+"version" : "1",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2022-04-06T16:46:07.218-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2022-04-06T16:46:07.217-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-04-06T16:46:07.218-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2022-04-06T16:46:07.217-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2022-04-06T16:46:07.218-0500",
+"value" : {
+"name" : "1",
+"assigned" : "2022-04-06T16:46:07.218-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2022-04-06T16:46:07.218-0500",
+"value" : {
+"name" : "TCPDataReceiverProducerTable",
+"assigned" : "2022-04-06T16:46:07.218-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2022-04-06T16:46:07.218-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2022-04-06T16:46:07.218-0500"
+}
+}
+],
+"created" : "2022-04-06T16:46:07.217-0500"
+},
+"_id" : {
+"$oid" : "b328e7fcbf8346faa1748c38"
+},
+"collection" : "TCPDataReceiverProducerTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

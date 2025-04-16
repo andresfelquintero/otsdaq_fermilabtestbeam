@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ROOT xmlns="http://www.w3.org/2001/XMLSchema-instance">
+
+  <DATA xmlns="">
+    <pref_syslayout xmlns="">[State Machine,,/WebPath/html/StateMachine.html?fsm_name%61OtherRuns0,0,0,3333,4868,1, Macro Maker,,/WebPath/html/MacroMaker.html?urn%61300,0,4830,3333,5169,1, Console,,/WebPath/html/Console.html?urn%61260,3340,0,6659,10000,1, ];[State Machine,,/WebPath/html/StateMachine.html?fsm_name%61OtherRuns0,34,78,2697,4730,1, Console,,/WebPath/html/Console.html?urn%61260,6372,0,3604,9899,1, Chat,,/urn:xdaq-application:lid%61250,58,4887,2837,4955,1, Visualizer,,/WebPath/html/Visualization.html?urn%61270,2750,0,3604,9876,1, ]</pref_syslayout>
+  </DATA>
+
+</ROOT>

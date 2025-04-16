@@ -1,0 +1,128 @@
+{
+"document" : {
+"data" : {
+"NAME" : "TABLE_GROUP_METADATA",
+"COMMENT" : "",
+"AUTHOR" : "",
+"CREATION_TIME" : 1530564597,
+"COL_TYPES" : {
+"UNUSED_UID" : "NUMBER",
+"GROUP_ALIASES" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"GROUP_CREATION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"UNUSED_UID" : "0",
+"GROUP_ALIASES" : "",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"GROUP_CREATION_TIME" : "1649281098"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2022-04-06T16:38:18.850-0500",
+"rawdata" : [
+
+]
+},
+"version" : "785",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2022-04-06T16:38:18.851-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2022-04-06T16:38:18.851-0500"
+},
+{
+"name" : "GroupAliasWizBackbone_v21",
+"assigned" : "2022-04-06T16:38:19.013-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-04-06T16:38:18.851-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2022-04-06T16:38:18.851-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2022-04-06T16:38:18.851-0500",
+"value" : {
+"name" : "785",
+"assigned" : "2022-04-06T16:38:18.851-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2022-04-06T16:38:18.851-0500",
+"value" : {
+"name" : "TableGroupMetadata",
+"assigned" : "2022-04-06T16:38:18.851-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2022-04-06T16:38:18.851-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2022-04-06T16:38:18.851-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-04-06T16:38:19.013-0500",
+"value" : {
+"name" : "GroupAliasWizBackbone_v21",
+"assigned" : "2022-04-06T16:38:19.013-0500"
+}
+}
+],
+"created" : "2022-04-06T16:38:18.850-0500"
+},
+"_id" : {
+"$oid" : "4fcc78f6aeb34bb5b27cc65a"
+},
+"collection" : "TableGroupMetadata",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

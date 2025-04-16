@@ -1,0 +1,234 @@
+{
+"document" : {
+"data" : {
+"NAME" : "FSSR_INTERFACE_TABLE",
+"COMMENT" : "New FSSR Interface table",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1642787013,
+"COL_TYPES" : {
+"INTERFACE_ID" : "STRING",
+"STATUS" : "STRING",
+"FIRMWARE_VERSION" : "NUMBER",
+"FIRMWARE_TYPE" : "STRING",
+"HARDWARE_TYPE" : "STRING",
+"INTERFACE_IP_ADDRESS" : "STRING",
+"INTERFACE_PORT" : "NUMBER",
+"HOST_IP_ADDRESS" : "STRING",
+"HOST_PORT" : "NUMBER",
+"STREAM_TO_IP_ADDRESS" : "STRING",
+"STREAM_TO_PORT" : "NUMBER",
+"CLOCK_SELECT" : "STRING",
+"CLOCK_SPEED_M_HZ" : "NUMBER",
+"CHANNEL_STATUS0" : "STRING",
+"CHANNEL_STATUS1" : "STRING",
+"CHANNEL_STATUS2" : "STRING",
+"CHANNEL_STATUS3" : "STRING",
+"CHANNEL_STATUS4" : "STRING",
+"CHANNEL_STATUS5" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"INTERFACE_ID" : "OtsUDPFSSR0",
+"STATUS" : "On",
+"FIRMWARE_VERSION" : "2",
+"FIRMWARE_TYPE" : "OtsUDPFSSRFirmware",
+"HARDWARE_TYPE" : "OtsUDPHardware",
+"INTERFACE_IP_ADDRESS" : "192.168.133.132",
+"INTERFACE_PORT" : "2001",
+"HOST_IP_ADDRESS" : "192.168.133.10",
+"HOST_PORT" : "10000",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.10",
+"STREAM_TO_PORT" : "47000",
+"CLOCK_SELECT" : "Internal",
+"CLOCK_SPEED_M_HZ" : "13.5",
+"CHANNEL_STATUS0" : "On",
+"CHANNEL_STATUS1" : "On",
+"CHANNEL_STATUS2" : "On",
+"CHANNEL_STATUS3" : "On",
+"CHANNEL_STATUS4" : "Off",
+"CHANNEL_STATUS5" : "Off",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1642785815"
+},
+{
+"INTERFACE_ID" : "OtsUDPFSSR1",
+"STATUS" : "On",
+"FIRMWARE_VERSION" : "2",
+"FIRMWARE_TYPE" : "OtsUDPFSSRFirmware",
+"HARDWARE_TYPE" : "OtsUDPHardware",
+"INTERFACE_IP_ADDRESS" : "192.168.133.36",
+"INTERFACE_PORT" : "2001",
+"HOST_IP_ADDRESS" : "192.168.133.10",
+"HOST_PORT" : "10001",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.10",
+"STREAM_TO_PORT" : "47001",
+"CLOCK_SELECT" : "Internal",
+"CLOCK_SPEED_M_HZ" : "13.5",
+"CHANNEL_STATUS0" : "On",
+"CHANNEL_STATUS1" : "On",
+"CHANNEL_STATUS2" : "On",
+"CHANNEL_STATUS3" : "On",
+"CHANNEL_STATUS4" : "On",
+"CHANNEL_STATUS5" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1642787008"
+},
+{
+"INTERFACE_ID" : "OtsUDPFSSR2",
+"STATUS" : "On",
+"FIRMWARE_VERSION" : "2",
+"FIRMWARE_TYPE" : "OtsUDPFSSRFirmware",
+"HARDWARE_TYPE" : "OtsUDPHardware",
+"INTERFACE_IP_ADDRESS" : "192.168.133.109",
+"INTERFACE_PORT" : "2001",
+"HOST_IP_ADDRESS" : "192.168.133.10",
+"HOST_PORT" : "10002",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.10",
+"STREAM_TO_PORT" : "47002",
+"CLOCK_SELECT" : "External",
+"CLOCK_SPEED_M_HZ" : "13.5",
+"CHANNEL_STATUS0" : "On",
+"CHANNEL_STATUS1" : "On",
+"CHANNEL_STATUS2" : "On",
+"CHANNEL_STATUS3" : "On",
+"CHANNEL_STATUS4" : "On",
+"CHANNEL_STATUS5" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1642782931"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2022-01-21T11:43:33.607-0600",
+"rawdata" : [
+
+]
+},
+"version" : "22",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2022-01-21T11:43:33.607-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2022-01-21T11:43:33.607-0600"
+},
+{
+"name" : "T992Config_v164",
+"assigned" : "2022-01-21T11:43:39.338-0600"
+},
+{
+"name" : "T992Config_v165",
+"assigned" : "2022-01-21T11:49:25.920-0600"
+},
+{
+"name" : "T992Config_v166",
+"assigned" : "2022-01-21T11:54:16.781-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:43:33.607-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2022-01-21T11:43:33.607-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2022-01-21T11:43:33.607-0600",
+"value" : {
+"name" : "22",
+"assigned" : "2022-01-21T11:43:33.607-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2022-01-21T11:43:33.607-0600",
+"value" : {
+"name" : "FSSRInterfaceTable",
+"assigned" : "2022-01-21T11:43:33.607-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2022-01-21T11:43:33.607-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2022-01-21T11:43:33.607-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:43:39.338-0600",
+"value" : {
+"name" : "T992Config_v164",
+"assigned" : "2022-01-21T11:43:39.338-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:49:25.920-0600",
+"value" : {
+"name" : "T992Config_v165",
+"assigned" : "2022-01-21T11:49:25.920-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:54:16.781-0600",
+"value" : {
+"name" : "T992Config_v166",
+"assigned" : "2022-01-21T11:54:16.781-0600"
+}
+}
+],
+"created" : "2022-01-21T11:43:33.607-0600"
+},
+"_id" : {
+"$oid" : "136ff3343cb5495f815fb603"
+},
+"collection" : "FSSRInterfaceTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

@@ -1,0 +1,578 @@
+{
+"document" : {
+"data" : {
+"NAME" : "STATE_MACHINE_TABLE",
+"COMMENT" : "three FSMs for The Supervisor.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1516913808,
+"COL_TYPES" : {
+"STATE_MACHINE_GROUP_ID" : "STRING",
+"STATE_MACHINE_UID" : "STRING",
+"SYSTEM_ALIAS_FILTER" : "STRING",
+"RUN_DISPLAY_ALIAS" : "STRING",
+"ENABLE_TABLE_DUMP_ON_CONFIGURE_TRANSITION" : "STRING",
+"TABLE_DUMP_ON_CONFIGURE_FORMAT" : "STRING",
+"TABLE_DUMP_ON_CONFIGURE_FILE_PATH" : "STRING",
+"TABLE_DUMP_ON_CONFIGURE_FILE_RADIX" : "STRING",
+"ENABLE_TABLE_DUMP_ON_RUN_TRANSITION" : "STRING",
+"TABLE_DUMP_ON_RUN_FORMAT" : "STRING",
+"TABLE_DUMP_ON_RUN_FILE_PATH" : "STRING",
+"TABLE_DUMP_ON_RUN_FILE_RADIX" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"STATE_MACHINE_GROUP_ID" : "Supervisor0_FSMs",
+"STATE_MACHINE_UID" : "PhysicsRuns0",
+"SYSTEM_ALIAS_FILTER" : "*Physics*Config*",
+"RUN_DISPLAY_ALIAS" : "Physics Run",
+"ENABLE_TABLE_DUMP_ON_CONFIGURE_TRANSITION" : "No",
+"TABLE_DUMP_ON_CONFIGURE_FORMAT" : "DEFAULT",
+"TABLE_DUMP_ON_CONFIGURE_FILE_PATH" : "DEFAULT",
+"TABLE_DUMP_ON_CONFIGURE_FILE_RADIX" : "DEFAULT",
+"ENABLE_TABLE_DUMP_ON_RUN_TRANSITION" : "No",
+"TABLE_DUMP_ON_RUN_FORMAT" : "DEFAULT",
+"TABLE_DUMP_ON_RUN_FILE_PATH" : "DEFAULT",
+"TABLE_DUMP_ON_RUN_FILE_RADIX" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "System alias filter will only show Physics config groups. And the FSM display will show \"Physics Run.\"",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1483025802"
+},
+{
+"STATE_MACHINE_GROUP_ID" : "Supervisor0_FSMs",
+"STATE_MACHINE_UID" : "CalibrationRuns0",
+"SYSTEM_ALIAS_FILTER" : "*Calib*Config*",
+"RUN_DISPLAY_ALIAS" : "Calibration",
+"ENABLE_TABLE_DUMP_ON_CONFIGURE_TRANSITION" : "No",
+"TABLE_DUMP_ON_CONFIGURE_FORMAT" : "DEFAULT",
+"TABLE_DUMP_ON_CONFIGURE_FILE_PATH" : "DEFAULT",
+"TABLE_DUMP_ON_CONFIGURE_FILE_RADIX" : "DEFAULT",
+"ENABLE_TABLE_DUMP_ON_RUN_TRANSITION" : "No",
+"TABLE_DUMP_ON_RUN_FORMAT" : "DEFAULT",
+"TABLE_DUMP_ON_RUN_FILE_PATH" : "DEFAULT",
+"TABLE_DUMP_ON_RUN_FILE_RADIX" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "Filter selects only groups with Calib in the name (for Calibrations). Displays runs as \"Calibration.\"",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1483025802"
+},
+{
+"STATE_MACHINE_GROUP_ID" : "Supervisor0_FSMs",
+"STATE_MACHINE_UID" : "OtherRuns0",
+"SYSTEM_ALIAS_FILTER" : "!*Context*",
+"RUN_DISPLAY_ALIAS" : "Run",
+"ENABLE_TABLE_DUMP_ON_CONFIGURE_TRANSITION" : "No",
+"TABLE_DUMP_ON_CONFIGURE_FORMAT" : "DEFAULT",
+"TABLE_DUMP_ON_CONFIGURE_FILE_PATH" : "DEFAULT",
+"TABLE_DUMP_ON_CONFIGURE_FILE_RADIX" : "DEFAULT",
+"ENABLE_TABLE_DUMP_ON_RUN_TRANSITION" : "Yes",
+"TABLE_DUMP_ON_RUN_FORMAT" : "All",
+"TABLE_DUMP_ON_RUN_FILE_PATH" : "${OTSDAQ_DATA}/ConfigDumps",
+"TABLE_DUMP_ON_RUN_FILE_RADIX" : "ConfigDumpOnRun",
+"COMMENT_DESCRIPTION" : "System alias filter will only show non-context config groups. And the FSM display will show \"Oddball-Run.\"",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1516913803"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2020-01-31T09:57:31.481-0600",
+"rawdata" : [
+
+]
+},
+"version" : "3",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2020-01-31T09:57:31.482-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2020-01-31T09:57:31.482-0600"
+},
+{
+"name" : "T992Context_v3",
+"assigned" : "2020-01-31T09:57:31.824-0600"
+},
+{
+"name" : "T992Context_v4",
+"assigned" : "2020-01-31T09:57:32.347-0600"
+},
+{
+"name" : "T992Context_v5",
+"assigned" : "2020-01-31T10:03:49.259-0600"
+},
+{
+"name" : "T992Context_v6",
+"assigned" : "2020-01-31T11:28:31.194-0600"
+},
+{
+"name" : "T992Context_v7",
+"assigned" : "2020-02-05T09:54:36.572-0600"
+},
+{
+"name" : "T992Context_v8",
+"assigned" : "2020-02-05T10:21:41.503-0600"
+},
+{
+"name" : "T992Context_v9",
+"assigned" : "2020-02-18T12:21:10.422-0600"
+},
+{
+"name" : "T992Context_v10",
+"assigned" : "2020-02-18T15:04:11.521-0600"
+},
+{
+"name" : "T992Context_v11",
+"assigned" : "2020-02-18T15:09:21.410-0600"
+},
+{
+"name" : "T992Context_v12",
+"assigned" : "2020-02-18T15:09:52.041-0600"
+},
+{
+"name" : "T992Context_v13",
+"assigned" : "2020-02-18T15:10:57.627-0600"
+},
+{
+"name" : "T992Context_v14",
+"assigned" : "2020-02-18T15:13:37.293-0600"
+},
+{
+"name" : "T992Context_v15",
+"assigned" : "2020-02-18T15:16:59.333-0600"
+},
+{
+"name" : "T992Context_v16",
+"assigned" : "2020-02-18T15:17:37.930-0600"
+},
+{
+"name" : "T992Context_v17",
+"assigned" : "2020-02-19T09:21:33.015-0600"
+},
+{
+"name" : "T992Context_v18",
+"assigned" : "2020-02-19T09:37:29.445-0600"
+},
+{
+"name" : "T992Context_v19",
+"assigned" : "2020-02-19T09:45:53.265-0600"
+},
+{
+"name" : "T992Context_v20",
+"assigned" : "2020-02-19T11:02:16.835-0600"
+},
+{
+"name" : "T992Context_v21",
+"assigned" : "2020-02-19T11:07:12.416-0600"
+},
+{
+"name" : "T992Context_v22",
+"assigned" : "2020-02-19T11:56:43.276-0600"
+},
+{
+"name" : "T992Context_v23",
+"assigned" : "2020-02-19T12:10:30.393-0600"
+},
+{
+"name" : "T992Context_v24",
+"assigned" : "2020-02-19T17:33:35.013-0600"
+},
+{
+"name" : "T992Context_v25",
+"assigned" : "2020-02-20T08:57:23.657-0600"
+},
+{
+"name" : "T992Context_v26",
+"assigned" : "2020-02-20T10:15:43.186-0600"
+},
+{
+"name" : "T992Context_v27",
+"assigned" : "2020-02-20T14:59:55.304-0600"
+},
+{
+"name" : "T992Context_v28",
+"assigned" : "2020-02-20T15:02:09.484-0600"
+},
+{
+"name" : "T992Context_v29",
+"assigned" : "2020-02-20T15:03:46.279-0600"
+},
+{
+"name" : "T992Context_v30",
+"assigned" : "2020-12-24T13:41:09.469-0600"
+},
+{
+"name" : "T992Context_v31",
+"assigned" : "2020-12-24T13:46:31.822-0600"
+},
+{
+"name" : "T992Context_v32",
+"assigned" : "2020-12-24T17:20:40.884-0600"
+},
+{
+"name" : "T992Context_v33",
+"assigned" : "2020-12-26T11:40:00.735-0600"
+},
+{
+"name" : "T992Context_v34",
+"assigned" : "2021-01-27T15:23:27.593-0600"
+},
+{
+"name" : "T992Context_v35",
+"assigned" : "2021-10-14T17:15:58.233-0500"
+},
+{
+"name" : "T992Context_v36",
+"assigned" : "2021-10-14T17:18:20.627-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-01-31T09:57:31.482-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2020-01-31T09:57:31.482-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2020-01-31T09:57:31.482-0600",
+"value" : {
+"name" : "3",
+"assigned" : "2020-01-31T09:57:31.482-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2020-01-31T09:57:31.482-0600",
+"value" : {
+"name" : "StateMachineTable",
+"assigned" : "2020-01-31T09:57:31.482-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2020-01-31T09:57:31.482-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2020-01-31T09:57:31.482-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-01-31T09:57:31.824-0600",
+"value" : {
+"name" : "T992Context_v3",
+"assigned" : "2020-01-31T09:57:31.824-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-01-31T09:57:32.347-0600",
+"value" : {
+"name" : "T992Context_v4",
+"assigned" : "2020-01-31T09:57:32.347-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-01-31T10:03:49.259-0600",
+"value" : {
+"name" : "T992Context_v5",
+"assigned" : "2020-01-31T10:03:49.259-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-01-31T11:28:31.194-0600",
+"value" : {
+"name" : "T992Context_v6",
+"assigned" : "2020-01-31T11:28:31.194-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-05T09:54:36.572-0600",
+"value" : {
+"name" : "T992Context_v7",
+"assigned" : "2020-02-05T09:54:36.572-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-05T10:21:41.503-0600",
+"value" : {
+"name" : "T992Context_v8",
+"assigned" : "2020-02-05T10:21:41.503-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T12:21:10.422-0600",
+"value" : {
+"name" : "T992Context_v9",
+"assigned" : "2020-02-18T12:21:10.422-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T15:04:11.521-0600",
+"value" : {
+"name" : "T992Context_v10",
+"assigned" : "2020-02-18T15:04:11.521-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T15:09:21.410-0600",
+"value" : {
+"name" : "T992Context_v11",
+"assigned" : "2020-02-18T15:09:21.410-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T15:09:52.041-0600",
+"value" : {
+"name" : "T992Context_v12",
+"assigned" : "2020-02-18T15:09:52.041-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T15:10:57.627-0600",
+"value" : {
+"name" : "T992Context_v13",
+"assigned" : "2020-02-18T15:10:57.627-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T15:13:37.293-0600",
+"value" : {
+"name" : "T992Context_v14",
+"assigned" : "2020-02-18T15:13:37.293-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T15:16:59.333-0600",
+"value" : {
+"name" : "T992Context_v15",
+"assigned" : "2020-02-18T15:16:59.333-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T15:17:37.930-0600",
+"value" : {
+"name" : "T992Context_v16",
+"assigned" : "2020-02-18T15:17:37.930-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T09:21:33.015-0600",
+"value" : {
+"name" : "T992Context_v17",
+"assigned" : "2020-02-19T09:21:33.015-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T09:37:29.445-0600",
+"value" : {
+"name" : "T992Context_v18",
+"assigned" : "2020-02-19T09:37:29.445-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T09:45:53.265-0600",
+"value" : {
+"name" : "T992Context_v19",
+"assigned" : "2020-02-19T09:45:53.265-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T11:02:16.835-0600",
+"value" : {
+"name" : "T992Context_v20",
+"assigned" : "2020-02-19T11:02:16.835-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T11:07:12.416-0600",
+"value" : {
+"name" : "T992Context_v21",
+"assigned" : "2020-02-19T11:07:12.416-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T11:56:43.276-0600",
+"value" : {
+"name" : "T992Context_v22",
+"assigned" : "2020-02-19T11:56:43.276-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T12:10:30.393-0600",
+"value" : {
+"name" : "T992Context_v23",
+"assigned" : "2020-02-19T12:10:30.393-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T17:33:35.013-0600",
+"value" : {
+"name" : "T992Context_v24",
+"assigned" : "2020-02-19T17:33:35.013-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T08:57:23.657-0600",
+"value" : {
+"name" : "T992Context_v25",
+"assigned" : "2020-02-20T08:57:23.657-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T10:15:43.186-0600",
+"value" : {
+"name" : "T992Context_v26",
+"assigned" : "2020-02-20T10:15:43.186-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T14:59:55.304-0600",
+"value" : {
+"name" : "T992Context_v27",
+"assigned" : "2020-02-20T14:59:55.304-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T15:02:09.484-0600",
+"value" : {
+"name" : "T992Context_v28",
+"assigned" : "2020-02-20T15:02:09.484-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T15:03:46.279-0600",
+"value" : {
+"name" : "T992Context_v29",
+"assigned" : "2020-02-20T15:03:46.279-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-12-24T13:41:09.469-0600",
+"value" : {
+"name" : "T992Context_v30",
+"assigned" : "2020-12-24T13:41:09.469-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-12-24T13:46:31.822-0600",
+"value" : {
+"name" : "T992Context_v31",
+"assigned" : "2020-12-24T13:46:31.822-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-12-24T17:20:40.885-0600",
+"value" : {
+"name" : "T992Context_v32",
+"assigned" : "2020-12-24T17:20:40.884-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-12-26T11:40:00.735-0600",
+"value" : {
+"name" : "T992Context_v33",
+"assigned" : "2020-12-26T11:40:00.735-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2021-01-27T15:23:27.593-0600",
+"value" : {
+"name" : "T992Context_v34",
+"assigned" : "2021-01-27T15:23:27.593-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2021-10-14T17:15:58.233-0500",
+"value" : {
+"name" : "T992Context_v35",
+"assigned" : "2021-10-14T17:15:58.233-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2021-10-14T17:18:20.627-0500",
+"value" : {
+"name" : "T992Context_v36",
+"assigned" : "2021-10-14T17:18:20.627-0500"
+}
+}
+],
+"created" : "2020-01-31T09:57:31.481-0600"
+},
+"_id" : {
+"$oid" : "2f12476b99ce47dd81829cd4"
+},
+"collection" : "StateMachineTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

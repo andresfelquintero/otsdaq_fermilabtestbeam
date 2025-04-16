@@ -1,0 +1,246 @@
+{
+"document" : {
+"data" : {
+"NAME" : "OTDQM_HISTOS_CONSUMER_TABLE",
+"COMMENT" : "No comment.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1582062328,
+"COL_TYPES" : {
+"PROCESSOR_UID" : "STRING",
+"FILE_PATH" : "STRING",
+"RADIX_FILE_NAME" : "STRING",
+"SAVE_FILE" : "STRING",
+"CALIBRATION_NAME" : "STRING",
+"CONFIGURATION_DIR" : "STRING",
+"CONFIGURATION_NAME" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"PROCESSOR_UID" : "VB1MiddlewareDQMHistos",
+"FILE_PATH" : "${OTSDAQ_DATA}/OtsHistos",
+"RADIX_FILE_NAME" : "OTDQMHistos",
+"SAVE_FILE" : "Yes",
+"CALIBRATION_NAME" : "physics",
+"CONFIGURATION_DIR" : "${PH2ACF_ROOT}/runDir",
+"CONFIGURATION_NAME" : "CMSIT.xml",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1582062328"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2020-02-18T15:45:28.341-0600",
+"rawdata" : [
+
+]
+},
+"version" : "3",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2020-02-18T15:45:28.341-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2020-02-18T15:45:28.341-0600"
+},
+{
+"name" : "T992Config_v11",
+"assigned" : "2020-02-18T15:49:54.029-0600"
+},
+{
+"name" : "T992Config_v12",
+"assigned" : "2020-02-18T15:54:39.313-0600"
+},
+{
+"name" : "T992Config_v13",
+"assigned" : "2020-02-18T16:17:11.386-0600"
+},
+{
+"name" : "T992Config_v14",
+"assigned" : "2020-02-18T17:30:15.623-0600"
+},
+{
+"name" : "T992Config_v15",
+"assigned" : "2020-02-18T17:33:25.064-0600"
+},
+{
+"name" : "T992Config_v16",
+"assigned" : "2020-02-18T17:42:10.808-0600"
+},
+{
+"name" : "T992Config_v17",
+"assigned" : "2020-02-18T17:47:16.164-0600"
+},
+{
+"name" : "T992Config_v18",
+"assigned" : "2020-02-19T09:25:24.884-0600"
+},
+{
+"name" : "T992Config_v19",
+"assigned" : "2020-02-19T09:31:02.847-0600"
+},
+{
+"name" : "T992Config_v20",
+"assigned" : "2020-02-20T09:44:16.498-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T15:45:28.341-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2020-02-18T15:45:28.341-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2020-02-18T15:45:28.341-0600",
+"value" : {
+"name" : "3",
+"assigned" : "2020-02-18T15:45:28.341-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2020-02-18T15:45:28.341-0600",
+"value" : {
+"name" : "OTDQMHistosConsumerTable",
+"assigned" : "2020-02-18T15:45:28.341-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2020-02-18T15:45:28.341-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2020-02-18T15:45:28.341-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T15:49:54.029-0600",
+"value" : {
+"name" : "T992Config_v11",
+"assigned" : "2020-02-18T15:49:54.029-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T15:54:39.313-0600",
+"value" : {
+"name" : "T992Config_v12",
+"assigned" : "2020-02-18T15:54:39.313-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T16:17:11.386-0600",
+"value" : {
+"name" : "T992Config_v13",
+"assigned" : "2020-02-18T16:17:11.386-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T17:30:15.623-0600",
+"value" : {
+"name" : "T992Config_v14",
+"assigned" : "2020-02-18T17:30:15.623-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T17:33:25.064-0600",
+"value" : {
+"name" : "T992Config_v15",
+"assigned" : "2020-02-18T17:33:25.064-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T17:42:10.808-0600",
+"value" : {
+"name" : "T992Config_v16",
+"assigned" : "2020-02-18T17:42:10.808-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T17:47:16.164-0600",
+"value" : {
+"name" : "T992Config_v17",
+"assigned" : "2020-02-18T17:47:16.164-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T09:25:24.884-0600",
+"value" : {
+"name" : "T992Config_v18",
+"assigned" : "2020-02-19T09:25:24.884-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T09:31:02.847-0600",
+"value" : {
+"name" : "T992Config_v19",
+"assigned" : "2020-02-19T09:31:02.847-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T09:44:16.498-0600",
+"value" : {
+"name" : "T992Config_v20",
+"assigned" : "2020-02-20T09:44:16.498-0600"
+}
+}
+],
+"created" : "2020-02-18T15:45:28.341-0600"
+},
+"_id" : {
+"$oid" : "90a890b1cbeb4a1e827a0272"
+},
+"collection" : "OTDQMHistosConsumerTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

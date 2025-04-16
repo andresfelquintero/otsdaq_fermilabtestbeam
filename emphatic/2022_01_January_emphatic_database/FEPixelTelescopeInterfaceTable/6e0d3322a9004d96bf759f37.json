@@ -1,0 +1,398 @@
+{
+"document" : {
+"data" : {
+"NAME" : "FE_PIXEL_TELESCOPE_INTERFACE_TABLE",
+"COMMENT" : "No comment.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1579725752,
+"COL_TYPES" : {
+"INTERFACE_ID" : "STRING",
+"INTERFACE_IP_ADDRESS" : "STRING",
+"INTERFACE_PORT" : "NUMBER",
+"HOST_IP_ADDRESS" : "STRING",
+"HOST_PORT" : "NUMBER",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"INTERFACE_ID" : "PixelTelescope",
+"INTERFACE_IP_ADDRESS" : "131.225.179.79",
+"INTERFACE_PORT" : "2001",
+"HOST_IP_ADDRESS" : "127.0.0.1",
+"HOST_PORT" : "10250",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579725748"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2020-01-31T09:57:29.076-0600",
+"rawdata" : [
+
+]
+},
+"version" : "2",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2020-01-31T09:57:29.076-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2020-01-31T09:57:29.076-0600"
+},
+{
+"name" : "T992Config_v2",
+"assigned" : "2020-01-31T09:57:30.484-0600"
+},
+{
+"name" : "T992Config_v3",
+"assigned" : "2020-02-05T09:54:34.877-0600"
+},
+{
+"name" : "T992Config_v4",
+"assigned" : "2020-02-05T10:21:39.762-0600"
+},
+{
+"name" : "T992Config_v5",
+"assigned" : "2020-02-05T15:36:25.790-0600"
+},
+{
+"name" : "T992Config_v6",
+"assigned" : "2020-02-07T11:23:02.523-0600"
+},
+{
+"name" : "T992Config_v7",
+"assigned" : "2020-02-07T11:37:02.553-0600"
+},
+{
+"name" : "T992Config_v8",
+"assigned" : "2020-02-08T21:46:30.027-0600"
+},
+{
+"name" : "T992Config_v9",
+"assigned" : "2020-02-08T21:53:11.617-0600"
+},
+{
+"name" : "T992Config_v10",
+"assigned" : "2020-02-18T15:05:35.260-0600"
+},
+{
+"name" : "T992Config_v11",
+"assigned" : "2020-02-18T15:49:53.471-0600"
+},
+{
+"name" : "T992Config_v12",
+"assigned" : "2020-02-18T15:54:38.728-0600"
+},
+{
+"name" : "T992Config_v13",
+"assigned" : "2020-02-18T16:17:10.840-0600"
+},
+{
+"name" : "T992Config_v14",
+"assigned" : "2020-02-18T17:30:15.070-0600"
+},
+{
+"name" : "T992Config_v15",
+"assigned" : "2020-02-18T17:33:24.505-0600"
+},
+{
+"name" : "T992Config_v16",
+"assigned" : "2020-02-18T17:42:10.224-0600"
+},
+{
+"name" : "T992Config_v17",
+"assigned" : "2020-02-18T17:47:15.556-0600"
+},
+{
+"name" : "T992Config_v18",
+"assigned" : "2020-02-19T09:25:24.279-0600"
+},
+{
+"name" : "T992Config_v19",
+"assigned" : "2020-02-19T09:31:02.155-0600"
+},
+{
+"name" : "T992Config_v20",
+"assigned" : "2020-02-20T09:44:15.794-0600"
+},
+{
+"name" : "T992Config_v21",
+"assigned" : "2020-02-20T09:45:34.855-0600"
+},
+{
+"name" : "T992Config_v22",
+"assigned" : "2020-02-20T10:12:13.654-0600"
+},
+{
+"name" : "T992Config_v23",
+"assigned" : "2020-02-20T14:59:52.651-0600"
+},
+{
+"name" : "T992Config_v24",
+"assigned" : "2020-12-24T13:46:28.363-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-01-31T09:57:29.076-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2020-01-31T09:57:29.076-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2020-01-31T09:57:29.076-0600",
+"value" : {
+"name" : "2",
+"assigned" : "2020-01-31T09:57:29.076-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2020-01-31T09:57:29.076-0600",
+"value" : {
+"name" : "FEPixelTelescopeInterfaceTable",
+"assigned" : "2020-01-31T09:57:29.076-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2020-01-31T09:57:29.076-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2020-01-31T09:57:29.076-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-01-31T09:57:30.484-0600",
+"value" : {
+"name" : "T992Config_v2",
+"assigned" : "2020-01-31T09:57:30.484-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-05T09:54:34.877-0600",
+"value" : {
+"name" : "T992Config_v3",
+"assigned" : "2020-02-05T09:54:34.877-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-05T10:21:39.762-0600",
+"value" : {
+"name" : "T992Config_v4",
+"assigned" : "2020-02-05T10:21:39.762-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-05T15:36:25.790-0600",
+"value" : {
+"name" : "T992Config_v5",
+"assigned" : "2020-02-05T15:36:25.790-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-07T11:23:02.523-0600",
+"value" : {
+"name" : "T992Config_v6",
+"assigned" : "2020-02-07T11:23:02.523-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-07T11:37:02.553-0600",
+"value" : {
+"name" : "T992Config_v7",
+"assigned" : "2020-02-07T11:37:02.553-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-08T21:46:30.027-0600",
+"value" : {
+"name" : "T992Config_v8",
+"assigned" : "2020-02-08T21:46:30.027-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-08T21:53:11.617-0600",
+"value" : {
+"name" : "T992Config_v9",
+"assigned" : "2020-02-08T21:53:11.617-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T15:05:35.260-0600",
+"value" : {
+"name" : "T992Config_v10",
+"assigned" : "2020-02-18T15:05:35.260-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T15:49:53.471-0600",
+"value" : {
+"name" : "T992Config_v11",
+"assigned" : "2020-02-18T15:49:53.471-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T15:54:38.728-0600",
+"value" : {
+"name" : "T992Config_v12",
+"assigned" : "2020-02-18T15:54:38.728-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T16:17:10.840-0600",
+"value" : {
+"name" : "T992Config_v13",
+"assigned" : "2020-02-18T16:17:10.840-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T17:30:15.070-0600",
+"value" : {
+"name" : "T992Config_v14",
+"assigned" : "2020-02-18T17:30:15.070-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T17:33:24.505-0600",
+"value" : {
+"name" : "T992Config_v15",
+"assigned" : "2020-02-18T17:33:24.505-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T17:42:10.225-0600",
+"value" : {
+"name" : "T992Config_v16",
+"assigned" : "2020-02-18T17:42:10.224-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T17:47:15.556-0600",
+"value" : {
+"name" : "T992Config_v17",
+"assigned" : "2020-02-18T17:47:15.556-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T09:25:24.279-0600",
+"value" : {
+"name" : "T992Config_v18",
+"assigned" : "2020-02-19T09:25:24.279-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T09:31:02.155-0600",
+"value" : {
+"name" : "T992Config_v19",
+"assigned" : "2020-02-19T09:31:02.155-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T09:44:15.794-0600",
+"value" : {
+"name" : "T992Config_v20",
+"assigned" : "2020-02-20T09:44:15.794-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T09:45:34.855-0600",
+"value" : {
+"name" : "T992Config_v21",
+"assigned" : "2020-02-20T09:45:34.855-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T10:12:13.654-0600",
+"value" : {
+"name" : "T992Config_v22",
+"assigned" : "2020-02-20T10:12:13.654-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T14:59:52.651-0600",
+"value" : {
+"name" : "T992Config_v23",
+"assigned" : "2020-02-20T14:59:52.651-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-12-24T13:46:28.363-0600",
+"value" : {
+"name" : "T992Config_v24",
+"assigned" : "2020-12-24T13:46:28.363-0600"
+}
+}
+],
+"created" : "2020-01-31T09:57:29.076-0600"
+},
+"_id" : {
+"$oid" : "6e0d3322a9004d96bf759f37"
+},
+"collection" : "FEPixelTelescopeInterfaceTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

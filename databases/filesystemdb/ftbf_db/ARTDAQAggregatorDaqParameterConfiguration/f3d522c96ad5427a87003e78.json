@@ -1,0 +1,310 @@
+{
+"document" : {
+"data" : {
+"NAME" : "ARTDAQ_AGGREGATOR_DAQ_PARAMETER_CONFIGURATION",
+"COMMENT" : "Default aggregator daq parameters for the artdaq (1-1-1) tutorial.",
+"AUTHOR" : "eflumerf",
+"CREATION_TIME" : 1520021275,
+"COL_TYPES" : {
+"DAQ_PARAMETER_GROUP_ID" : "VARCHAR2",
+"DAQ_PARAMETER_UID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"DAQ_PARAMETER_KEY" : "VARCHAR2",
+"DAQ_PARAMETER_VALUE" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"DAQ_PARAMETER_GROUP_ID" : "dataloggerdaq0PGroup | dispatcherdaq0PGroup",
+"DAQ_PARAMETER_UID" : "expectedEventsPerBunch",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "expected_events_per_bunch",
+"DAQ_PARAMETER_VALUE" : "1",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513116628"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "dataloggerdaq0PGroup | dispatcherdaq0PGroup",
+"DAQ_PARAMETER_UID" : "printEventStoreStats",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "print_event_store_stats",
+"DAQ_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513116628"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "dataloggerdaq0PGroup | dispatcherdaq0PGroup",
+"DAQ_PARAMETER_UID" : "eventQueueDepth",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "event_queue_depth",
+"DAQ_PARAMETER_VALUE" : "20",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513116628"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "dataloggerdaq0PGroup | dispatcherdaq0PGroup",
+"DAQ_PARAMETER_UID" : "eventQueueWait",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "event_queue_wait_time",
+"DAQ_PARAMETER_VALUE" : "5",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513116628"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "dataloggerdaq0PGroup | dispatcherdaq0PGroup",
+"DAQ_PARAMETER_UID" : "onmonPrescale",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "onmon_event_prescale",
+"DAQ_PARAMETER_VALUE" : "1",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513116628"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "dataloggerdaq0PGroup | dispatcherdaq0PGroup",
+"DAQ_PARAMETER_UID" : "xlmrpcClientList",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "xmlrpc_client_list",
+"DAQ_PARAMETER_VALUE" : "\"\"",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513174451"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "dataloggerdaq0PGroup | dispatcherdaq0PGroup",
+"DAQ_PARAMETER_UID" : "fileSizeMB",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "subrun_size_MB",
+"DAQ_PARAMETER_VALUE" : "0.0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513174451"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "dataloggerdaq0PGroup | dispatcherdaq0PGroup",
+"DAQ_PARAMETER_UID" : "fileDuration",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "subrun_duration",
+"DAQ_PARAMETER_VALUE" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513174451"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "dataloggerdaq0PGroup | dispatcherdaq0PGroup",
+"DAQ_PARAMETER_UID" : "fileEventCount",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "subrun_event_count",
+"DAQ_PARAMETER_VALUE" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513174451"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "dataloggerdaq0PGroup",
+"DAQ_PARAMETER_UID" : "isDataLogger",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "is_data_logger",
+"DAQ_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513116560"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "dispatcherdaq0PGroup",
+"DAQ_PARAMETER_UID" : "isDispatcher",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "is_dispatcher",
+"DAQ_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513116560"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "dataloggerdaq0PGroup | dispatcherdaq0PGroup",
+"DAQ_PARAMETER_UID" : "autoSuppression",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "auto_suppression_enabled",
+"DAQ_PARAMETER_VALUE" : "false",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513174451"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "dataloggerdaq0PGroup | dispatcherdaq0PGroup",
+"DAQ_PARAMETER_UID" : "broadcastSends",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "broadcast_sends",
+"DAQ_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513174451"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "dataloggerdaq0PGroup | dispatcherdaq0PGroup",
+"DAQ_PARAMETER_UID" : "maxFragmentSizeBytes",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "max_fragment_size_bytes",
+"DAQ_PARAMETER_VALUE" : "167772160",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1520021275"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "dataloggerdaq0PGroup | dispatcherdaq0PGroup",
+"DAQ_PARAMETER_UID" : "bufferCount",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "buffer_count",
+"DAQ_PARAMETER_VALUE" : "4",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1520021275"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T15:48:29.683-0500",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:29.688-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:29.685-0500"
+},
+{
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:31.411-0500"
+},
+{
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:23.117-0500"
+},
+{
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:46.614-0500"
+},
+{
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:55.805-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:29.685-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:29.685-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T15:48:29.686-0500",
+"value" : {
+"name" : "0",
+"assigned" : "2018-09-11T15:48:29.686-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T15:48:29.687-0500",
+"value" : {
+"name" : "ARTDAQAggregatorDaqParameterConfiguration",
+"assigned" : "2018-09-11T15:48:29.687-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T15:48:29.688-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:29.688-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:31.411-0500",
+"value" : {
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:31.411-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:28:23.117-0500",
+"value" : {
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:23.117-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:30:46.614-0500",
+"value" : {
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:46.614-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:55.805-0500",
+"value" : {
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:55.805-0500"
+}
+}
+],
+"created" : "2018-09-11T15:48:29.684-0500"
+},
+"_id" : {
+"$oid" : "f3d522c96ad5427a87003e78"
+},
+"collection" : "ARTDAQAggregatorDaqParameterConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

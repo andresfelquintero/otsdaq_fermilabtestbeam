@@ -1,0 +1,296 @@
+{
+"document" : {
+"data" : {
+"NAME" : "XDAQ_CONTEXT_CONFIGURATION",
+"COMMENT" : "No comment.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1528230689,
+"COL_TYPES" : {
+"CONTEXT_UID" : "VARCHAR2",
+"LINK_TO_APPLICATION_TABLE" : "VARCHAR2",
+"APPLICATION_GROUP_ID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"ID" : "NUMBER",
+"ADDRESS" : "VARCHAR2",
+"PORT" : "NUMBER",
+"ARTDAQ_DATA_PORT" : "NUMBER",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"CONTEXT_UID" : "MainContext",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationConfiguration",
+"APPLICATION_GROUP_ID" : "MainContextApps",
+"STATUS" : "On",
+"ID" : "0",
+"ADDRESS" : "http://ftbf-daq-08.fnal.gov",
+"PORT" : "3015",
+"ARTDAQ_DATA_PORT" : "0",
+"COMMENT_DESCRIPTION" : "main context",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1510244236"
+},
+{
+"CONTEXT_UID" : "WireChamberContext",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationConfiguration",
+"APPLICATION_GROUP_ID" : "WireChamberContextApps",
+"STATUS" : "On",
+"ID" : "0",
+"ADDRESS" : "http://ftbf-daq-08.fnal.gov",
+"PORT" : "3016",
+"ARTDAQ_DATA_PORT" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1515514887"
+},
+{
+"CONTEXT_UID" : "StripTelescopeContext",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationConfiguration",
+"APPLICATION_GROUP_ID" : "StripTelescopeContextApps",
+"STATUS" : "Off",
+"ID" : "0",
+"ADDRESS" : "http://ftbftracker02.fnal.gov",
+"PORT" : "2017",
+"ARTDAQ_DATA_PORT" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1510248373"
+},
+{
+"CONTEXT_UID" : "NimPlusContext",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationConfiguration",
+"APPLICATION_GROUP_ID" : "NimPlusContextApps",
+"STATUS" : "On",
+"ID" : "0",
+"ADDRESS" : "http://ftbf-daq-08.fnal.gov",
+"PORT" : "3018",
+"ARTDAQ_DATA_PORT" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1528230689"
+},
+{
+"CONTEXT_UID" : "ARTDAQBoardReaderWireChamber0",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationConfiguration",
+"APPLICATION_GROUP_ID" : "BoardReaderWireChamber0Apps",
+"STATUS" : "On",
+"ID" : "0",
+"ADDRESS" : "http://ftbf-daq-08.fnal.gov",
+"PORT" : "8350",
+"ARTDAQ_DATA_PORT" : "8400",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1516375345"
+},
+{
+"CONTEXT_UID" : "ARTDAQEventBuilder0",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationConfiguration",
+"APPLICATION_GROUP_ID" : "EventBuilder0Apps",
+"STATUS" : "Off",
+"ID" : "0",
+"ADDRESS" : "http://ftbf-daq-06.fnal.gov",
+"PORT" : "8351",
+"ARTDAQ_DATA_PORT" : "8410",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1516375345"
+},
+{
+"CONTEXT_UID" : "ARTDAQEventBuilder1",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationConfiguration",
+"APPLICATION_GROUP_ID" : "EventBuilder1Apps",
+"STATUS" : "Off",
+"ID" : "0",
+"ADDRESS" : "http://ftbf-daq-07.fnal.gov",
+"PORT" : "8352",
+"ARTDAQ_DATA_PORT" : "8420",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1516375345"
+},
+{
+"CONTEXT_UID" : "ARTDAQEventBuilder2",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationConfiguration",
+"APPLICATION_GROUP_ID" : "EventBuilder2Apps",
+"STATUS" : "On",
+"ID" : "0",
+"ADDRESS" : "http://ftbf-daq-08.fnal.gov",
+"PORT" : "8353",
+"ARTDAQ_DATA_PORT" : "8430",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1516375345"
+},
+{
+"CONTEXT_UID" : "ARTDAQAggregator0",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationConfiguration",
+"APPLICATION_GROUP_ID" : "Aggregator0Apps",
+"STATUS" : "On",
+"ID" : "0",
+"ADDRESS" : "http://ftbf-daq-08.fnal.gov",
+"PORT" : "8354",
+"ARTDAQ_DATA_PORT" : "8440",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1516375345"
+},
+{
+"CONTEXT_UID" : "ARTDAQDispatcher0",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationConfiguration",
+"APPLICATION_GROUP_ID" : "Dispatcher0Apps",
+"STATUS" : "On",
+"ID" : "0",
+"ADDRESS" : "http://ftbf-daq-08.fnal.gov",
+"PORT" : "8355",
+"ARTDAQ_DATA_PORT" : "8450",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1516375345"
+},
+{
+"CONTEXT_UID" : "ARTDAQBoardReaderStrips0",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationConfiguration",
+"APPLICATION_GROUP_ID" : "ARTDAQBoardReaderStrips0Apps",
+"STATUS" : "On",
+"ID" : "0",
+"ADDRESS" : "http://ftbf-daq-08.fnal.gov",
+"PORT" : "8358",
+"ARTDAQ_DATA_PORT" : "8460",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1516375345"
+},
+{
+"CONTEXT_UID" : "ARTDAQBoardReaderStrips1",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationConfiguration",
+"APPLICATION_GROUP_ID" : "ARTDAQBoardReaderStrips1Apps",
+"STATUS" : "On",
+"ID" : "0",
+"ADDRESS" : "http://ftbf-daq-08.fnal.gov",
+"PORT" : "8357",
+"ARTDAQ_DATA_PORT" : "8470",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1516375345"
+},
+{
+"CONTEXT_UID" : "ARTDAQBoardReaderStrips2",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationConfiguration",
+"APPLICATION_GROUP_ID" : "ARTDAQBoardReaderStrips2Apps",
+"STATUS" : "On",
+"ID" : "0",
+"ADDRESS" : "http://ftbf-daq-08.fnal.gov",
+"PORT" : "8356",
+"ARTDAQ_DATA_PORT" : "8480",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1516375345"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T15:48:33.066-0500",
+"rawdata" : [
+
+]
+},
+"version" : "1",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:33.071-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:33.068-0500"
+},
+{
+"name" : "FTBFContext_v1",
+"assigned" : "2018-09-11T15:48:33.321-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:33.068-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:33.068-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T15:48:33.069-0500",
+"value" : {
+"name" : "1",
+"assigned" : "2018-09-11T15:48:33.069-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T15:48:33.070-0500",
+"value" : {
+"name" : "XDAQContextConfiguration",
+"assigned" : "2018-09-11T15:48:33.070-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T15:48:33.071-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:33.071-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:33.321-0500",
+"value" : {
+"name" : "FTBFContext_v1",
+"assigned" : "2018-09-11T15:48:33.321-0500"
+}
+}
+],
+"created" : "2018-09-11T15:48:33.066-0500"
+},
+"_id" : {
+"$oid" : "a48dd4dd2b984648af0976b7"
+},
+"collection" : "XDAQContextConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

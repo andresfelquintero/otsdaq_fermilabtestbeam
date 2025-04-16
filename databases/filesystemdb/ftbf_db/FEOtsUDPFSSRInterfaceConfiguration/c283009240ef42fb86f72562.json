@@ -1,0 +1,216 @@
+{
+"document" : {
+"data" : {
+"NAME" : "FE_OTS_UDPFSSR_INTERFACE_CONFIGURATION",
+"COMMENT" : "ots style FE-for-FSSR records.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1509657820,
+"COL_TYPES" : {
+"INTERFACE_ID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"FIRMWARE_VERSION" : "NUMBER",
+"INTERFACE_IP_ADDRESS" : "VARCHAR2",
+"INTERFACE_PORT" : "NUMBER",
+"HOST_IP_ADDRESS" : "VARCHAR2",
+"HOST_PORT" : "NUMBER",
+"STREAM_TO_IP_ADDRESS" : "VARCHAR2",
+"STREAM_TO_PORT" : "NUMBER",
+"CLOCK_SELECT" : "VARCHAR2",
+"CLOCK_SPEED_M_HZ" : "NUMBER",
+"CHANNEL_STATUS0" : "VARCHAR2",
+"CHANNEL_STATUS1" : "VARCHAR2",
+"CHANNEL_STATUS2" : "VARCHAR2",
+"CHANNEL_STATUS3" : "VARCHAR2",
+"CHANNEL_STATUS4" : "VARCHAR2",
+"CHANNEL_STATUS5" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"INTERFACE_ID" : "OtsUDPFSSR3",
+"STATUS" : "On",
+"FIRMWARE_VERSION" : "1",
+"INTERFACE_IP_ADDRESS" : "192.168.133.107",
+"INTERFACE_PORT" : "2000",
+"HOST_IP_ADDRESS" : "192.168.133.1",
+"HOST_PORT" : "10003",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.1",
+"STREAM_TO_PORT" : "47003",
+"CLOCK_SELECT" : "External",
+"CLOCK_SPEED_M_HZ" : "13.5",
+"CHANNEL_STATUS0" : "On",
+"CHANNEL_STATUS1" : "On",
+"CHANNEL_STATUS2" : "Off",
+"CHANNEL_STATUS3" : "Off",
+"CHANNEL_STATUS4" : "Off",
+"CHANNEL_STATUS5" : "Off",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509657820"
+},
+{
+"INTERFACE_ID" : "OtsUDPFSSR2",
+"STATUS" : "On",
+"FIRMWARE_VERSION" : "1",
+"INTERFACE_IP_ADDRESS" : "192.168.133.132",
+"INTERFACE_PORT" : "2000",
+"HOST_IP_ADDRESS" : "192.168.133.1",
+"HOST_PORT" : "10002",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.1",
+"STREAM_TO_PORT" : "47002",
+"CLOCK_SELECT" : "External",
+"CLOCK_SPEED_M_HZ" : "13.5",
+"CHANNEL_STATUS0" : "On",
+"CHANNEL_STATUS1" : "On",
+"CHANNEL_STATUS2" : "On",
+"CHANNEL_STATUS3" : "On",
+"CHANNEL_STATUS4" : "On",
+"CHANNEL_STATUS5" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509657820"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T15:48:30.733-0500",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:30.736-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:30.734-0500"
+},
+{
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:32.294-0500"
+},
+{
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:24.421-0500"
+},
+{
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:47.954-0500"
+},
+{
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:57.187-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:30.735-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:30.734-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T15:48:30.735-0500",
+"value" : {
+"name" : "0",
+"assigned" : "2018-09-11T15:48:30.735-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T15:48:30.735-0500",
+"value" : {
+"name" : "FEOtsUDPFSSRInterfaceConfiguration",
+"assigned" : "2018-09-11T15:48:30.735-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T15:48:30.736-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:30.736-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:32.294-0500",
+"value" : {
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:32.294-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:28:24.421-0500",
+"value" : {
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:24.421-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:30:47.954-0500",
+"value" : {
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:47.954-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:57.187-0500",
+"value" : {
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:57.187-0500"
+}
+}
+],
+"created" : "2018-09-11T15:48:30.733-0500"
+},
+"_id" : {
+"$oid" : "c283009240ef42fb86f72562"
+},
+"collection" : "FEOtsUDPFSSRInterfaceConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

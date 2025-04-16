@@ -1,0 +1,6 @@
+udp: {
+	type: UDP
+	threshold: DEBUG
+	port: 8449
+	host: "131.225.176.98"
+}

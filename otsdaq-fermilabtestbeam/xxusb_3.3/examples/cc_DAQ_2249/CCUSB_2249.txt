@@ -1,0 +1,114 @@
+Main program (external trigger):
+// LAM=0xfff;  LAM mask are bits!, set to 0 for external trigger
+	LAM=0x0;
+// Set internal pulser to generate Gate and trigger (feed O1 into I1 and gate of 2249)
+	ret = CAMAC_DGG(udev, 0, DGGtrigger_pulser, 0, 20000,100, 0, 0);
+// Run
+	error_count = CCUSB_Test_DAQ_read_2249 (udev, loops, 1000, LAM);
+
+
+//-------------------------------------------------------------------------
+// Read LeCroy 2249A im LAM triggered DAQ mode 
+// A. Ruben 06/22/07
+// tested with 2249 in slot 15 / LAM-mask 0x4000 and up to 10kHz rate 06/20/07
+// tested with C-EMU in slot 2 / LAM-mask 0x2 at 10kHz pulser rate 06/22/07
+// Read out with F2 (clears data and LAM with A=11) and trigger delay added 10/14/13
+//-------------------------------------------------------------------------
+int CCUSB_Test_DAQ_read_2249 (usb_dev_handle *hdev, long loops, long trigger_rate, long
+LAM)
+{
+    long stack [100];
+	int i,j,k,k_loops, error_count=0, events=0, event_size=0;
+//	unsigned int IntArray [10000];  //-> produces 32 bit data structure, use only with event alignment!
+	short IntArray [10000];  //for FIFOREAD
+//	char IntArray [10000];  //for FIFOREAD
+
+//	char * ByteAP;
+	long data_lines;
+	long CamN, CamDummy;
+	int ret,CamQ, CamX;
+	int CAM_2249=3;			// station number for 2249 ADC
+// prepare stack and load to CC-USB
+	CamN=(CAM_2249<<9);
+	stack[0] = 14;				// number of lines to follow
+	for (i=0; i<=11; i++) stack[i+1] = CamN+(i<<5)+2;	// Read channels F(2) A(i)
+//	stack[13] = CamN+0x0009;		// CLEAR LAM N()with F(9) A(0) ==> not needed with F(2)A(11)
+	stack[13] = 0x0010;				// add marker
+	stack[14] = 0xffff;				// marker = ffff
+// Load stack into CC-USB
+	ret = xxusb_stack_write(hdev, 2, stack);
+// Define Trigger LAM=0 -> extern, otherwise LAM
+	ret = CAMAC_write(hdev, 25,9,16,LAM,&CamQ, &CamX);
+// Define Trigger Delay / LAM time out in Delay Register N(25) A(2) F(16) and enable /disable LAM
+	if (LAM = 0)
+	{
+		//  Define Trigger Delay to 100us for external LAM; bits 0 to 15 in Delay Register N(25) A(2) F(16) 
+		ret = CAMAC_write(hdev, 25, 2, 16, 0x64,&CamQ, &CamX);
+		//  Prepare LeCroy ADC (disable LAM)
+		ret = CAMAC_read(hdev, CAM_2249, 0, 24, &CamDummy,&CamQ, &CamX);
+	}
+	else
+	{
+		//  Define LAM time out to 100us for external LAM; bits 0 to 15 in Delay Register N(25) A(2) F(16) 
+		ret = CAMAC_write(hdev, 25, 2, 16, 0x640000,&CamQ, &CamX);
+		//  Prepare LeCroy ADC (enable LAM)
+		ret = CAMAC_read(hdev, CAM_2249, 0, 26, &CamDummy,&CamQ, &CamX);
+	}
+// Set buffer size to 4k BuffOpt in Global Mode register N(25) A(1) F(16)	
+	ret = CAMAC_write(hdev, 25, 1, 16, 0x0,&CamQ, &CamX);
+
+// Prepare data file
+	data_file = fopen("CCUSB_test_2249.txt","w");
+	fprintf(data_file,"CC-USB test data file \n");
+// START DAQ
+//	printf("switch to DAQ & Reading data\n");
+//  Clear Data and LAM
+	ret = CAMAC_read(hdev, CAM_2249, 0, 9, &CamDummy,&CamQ, &CamX);
+
+//  Start DAQ mode
+	ret = xxusb_register_write(hdev, 1, 0x1); // start acquisition 
+    k_loops=0;
+    while(k_loops<loops) // number of loops to read
+    {
+		ret = xxusb_bulk_read(hdev, IntArray, 8192, 100);	// use for32-bit data
+		data_lines = ret / 2;
+		event_size = (IntArray[1] & 0xffff);
+		if (event_size > 0x100) event_size = 0x100;
+		if (data_file !=NULL) 
+		{		
+		
+			if(ret>0)
+			{
+				events = (IntArray[0]& 0xffff);				
+//				printf("Events in loop %i : %i\n ",k_loops, events);
+				for (j=0; j<=data_lines; j++) fprintf(data_file,"%hx\t",IntArray[j]);
+			}
+			else 	
+			{	
+				error_count ++;
+				printf("no read\n"); 
+			}
+			fprintf(data_file,"\n");
+		}
+		k_loops ++;
+	}
+// leave DAQ mode
+    xxusb_register_write(hdev, 1, 0x0);
+// drain all data from fifo    
+	ret=1;
+	k=0;
+	while(ret>0)
+    {
+		ret = xxusb_bulk_read(hdev, IntArray, 8192, 100);	
+		if(ret>0)
+		{
+//			printf("drain loops: %i (result %i)\n ",k,ret);
+			k++;
+			if (k>100) ret=0;
+		}
+	}
+//	in case still DAQ mode -> leave!!!
+//  xxusb_register_write(hdev, 1, 0x0);
+	fclose(data_file);
+	return 0;
+}

@@ -1,0 +1,174 @@
+{
+"document" : {
+"data" : {
+"NAME" : "ARTDAQ_BUILDER_DAQ_CONFIGURATION",
+"COMMENT" : "",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1504818287,
+"COL_TYPES" : {
+"DAQ_UID" : "VARCHAR2",
+"DAQ_EVENT_BUILDER_PARAMETERS_LINK" : "VARCHAR2",
+"DAQ_EVENT_BUILDER_PARAMETERS_LINK_GROUP_ID" : "VARCHAR2",
+"DAQ_EVENT_BUILDER_SOURCES_LINK" : "VARCHAR2",
+"DAQ_EVENT_BUILDER_SOURCES_LINK_GROUP_ID" : "VARCHAR2",
+"DAQ_METRICS_LINK" : "VARCHAR2",
+"DAQ_METRICS_LINK_GROUP_ID" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"DAQ_UID" : "builder0daq0",
+"DAQ_EVENT_BUILDER_PARAMETERS_LINK" : "ARTDAQBuilderDaqParameterConfiguration",
+"DAQ_EVENT_BUILDER_PARAMETERS_LINK_GROUP_ID" : "builder0PGroup",
+"DAQ_EVENT_BUILDER_SOURCES_LINK" : "ARTDAQDaqSourceConfiguration",
+"DAQ_EVENT_BUILDER_SOURCES_LINK_GROUP_ID" : "reader0sources",
+"DAQ_METRICS_LINK" : "ARTDAQDaqMetricConfiguration",
+"DAQ_METRICS_LINK_GROUP_ID" : "builder0Metrics",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "DEFAULT",
+"RECORD_INSERTION_TIME" : "0"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T15:48:29.864-0500",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:29.866-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:29.865-0500"
+},
+{
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:31.554-0500"
+},
+{
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:23.322-0500"
+},
+{
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:46.825-0500"
+},
+{
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:56.025-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:29.865-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:29.865-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T15:48:29.866-0500",
+"value" : {
+"name" : "0",
+"assigned" : "2018-09-11T15:48:29.866-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T15:48:29.866-0500",
+"value" : {
+"name" : "ARTDAQBuilderDaqConfiguration",
+"assigned" : "2018-09-11T15:48:29.866-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T15:48:29.866-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:29.866-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:31.554-0500",
+"value" : {
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:31.554-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:28:23.322-0500",
+"value" : {
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:23.322-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:30:46.825-0500",
+"value" : {
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:46.825-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:56.025-0500",
+"value" : {
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:56.025-0500"
+}
+}
+],
+"created" : "2018-09-11T15:48:29.865-0500"
+},
+"_id" : {
+"$oid" : "bd98698f242a4e1c836feaa3"
+},
+"collection" : "ARTDAQBuilderDaqConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

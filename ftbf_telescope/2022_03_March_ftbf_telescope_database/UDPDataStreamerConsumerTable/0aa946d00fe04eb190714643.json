@@ -1,0 +1,358 @@
+{
+"document" : {
+"data" : {
+"NAME" : "UDP_DATA_STREAMER_CONSUMER_TABLE",
+"COMMENT" : "No comment.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1642784051,
+"COL_TYPES" : {
+"PROCESSOR_UID" : "STRING",
+"HOST_IP_ADDRESS" : "STRING",
+"HOST_PORT" : "NUMBER",
+"STREAM_TO_IP_ADDRESS" : "STRING",
+"STREAM_TO_PORT" : "NUMBER",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"PROCESSOR_UID" : "UDPStreamer0",
+"HOST_IP_ADDRESS" : "127.0.0.1",
+"HOST_PORT" : "4100",
+"STREAM_TO_IP_ADDRESS" : "127.0.0.1",
+"STREAM_TO_PORT" : "4101",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "uplegger",
+"RECORD_INSERTION_TIME" : "1510768494"
+},
+{
+"PROCESSOR_UID" : "UDPStreamer1",
+"HOST_IP_ADDRESS" : "127.0.0.1",
+"HOST_PORT" : "3000",
+"STREAM_TO_IP_ADDRESS" : "127.0.0.1",
+"STREAM_TO_PORT" : "3001",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "DEFAULT",
+"RECORD_INSERTION_TIME" : "0"
+},
+{
+"PROCESSOR_UID" : "FSSR0_DB0_DataStreamer0",
+"HOST_IP_ADDRESS" : "192.168.133.10",
+"HOST_PORT" : "48000",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.10",
+"STREAM_TO_PORT" : "50000",
+"COMMENT_DESCRIPTION" : "Streaming to Visualizer",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1642003500"
+},
+{
+"PROCESSOR_UID" : "FSSR0_DB0_DataStreamer1",
+"HOST_IP_ADDRESS" : "192.168.133.48",
+"HOST_PORT" : "48010",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.48",
+"STREAM_TO_PORT" : "49000",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579727480"
+},
+{
+"PROCESSOR_UID" : "FSSR1_DB0_DataStreamer0",
+"HOST_IP_ADDRESS" : "192.168.133.48",
+"HOST_PORT" : "48001",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.48",
+"STREAM_TO_PORT" : "50000",
+"COMMENT_DESCRIPTION" : "Streaming to Visualizer",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579726243"
+},
+{
+"PROCESSOR_UID" : "FSSR1_DB0_DataStreamer1",
+"HOST_IP_ADDRESS" : "192.168.133.48",
+"HOST_PORT" : "48011",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.48",
+"STREAM_TO_PORT" : "49001",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579726261"
+},
+{
+"PROCESSOR_UID" : "FSSR2_DB0_DataStreamer0",
+"HOST_IP_ADDRESS" : "192.168.133.10",
+"HOST_PORT" : "48002",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.10",
+"STREAM_TO_PORT" : "50000",
+"COMMENT_DESCRIPTION" : "Streaming to Visualizer",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1642784008"
+},
+{
+"PROCESSOR_UID" : "FSSR3_DB0_DataStreamer0",
+"HOST_IP_ADDRESS" : "192.168.133.46",
+"HOST_PORT" : "48003",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.46",
+"STREAM_TO_PORT" : "50000",
+"COMMENT_DESCRIPTION" : "Streaming to Visualizer",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1513876924"
+},
+{
+"PROCESSOR_UID" : "FSSR2_DB0_DataStreamer1",
+"HOST_IP_ADDRESS" : "192.168.133.10",
+"HOST_PORT" : "48012",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.10",
+"STREAM_TO_PORT" : "49002",
+"COMMENT_DESCRIPTION" : "Streaming to Artdaq",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1642784032"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2022-01-21T10:54:11.359-0600",
+"rawdata" : [
+
+]
+},
+"version" : "4",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2022-01-21T10:54:11.360-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2022-01-21T10:54:11.360-0600"
+},
+{
+"name" : "T992Config_v149",
+"assigned" : "2022-01-21T10:54:17.363-0600"
+},
+{
+"name" : "T992Config_v150",
+"assigned" : "2022-01-21T11:00:36.552-0600"
+},
+{
+"name" : "T992Config_v151",
+"assigned" : "2022-01-21T11:01:45.121-0600"
+},
+{
+"name" : "T992Config_v152",
+"assigned" : "2022-01-21T11:02:46.631-0600"
+},
+{
+"name" : "T992Config_v153",
+"assigned" : "2022-01-21T11:04:39.676-0600"
+},
+{
+"name" : "T992Config_v154",
+"assigned" : "2022-01-21T11:06:10.688-0600"
+},
+{
+"name" : "T992Config_v155",
+"assigned" : "2022-01-21T11:07:12.311-0600"
+},
+{
+"name" : "T992Config_v156",
+"assigned" : "2022-01-21T11:11:03.489-0600"
+},
+{
+"name" : "T992Config_v157",
+"assigned" : "2022-01-21T11:12:27.553-0600"
+},
+{
+"name" : "T992Config_v158",
+"assigned" : "2022-01-21T11:13:47.093-0600"
+},
+{
+"name" : "T992Config_v159",
+"assigned" : "2022-01-21T11:20:29.229-0600"
+},
+{
+"name" : "T992Config_v160",
+"assigned" : "2022-01-21T11:24:48.998-0600"
+},
+{
+"name" : "T992Config_v161",
+"assigned" : "2022-01-21T11:31:40.320-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T10:54:11.360-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2022-01-21T10:54:11.360-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2022-01-21T10:54:11.360-0600",
+"value" : {
+"name" : "4",
+"assigned" : "2022-01-21T10:54:11.360-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2022-01-21T10:54:11.360-0600",
+"value" : {
+"name" : "UDPDataStreamerConsumerTable",
+"assigned" : "2022-01-21T10:54:11.360-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2022-01-21T10:54:11.360-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2022-01-21T10:54:11.360-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T10:54:17.363-0600",
+"value" : {
+"name" : "T992Config_v149",
+"assigned" : "2022-01-21T10:54:17.363-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:00:36.552-0600",
+"value" : {
+"name" : "T992Config_v150",
+"assigned" : "2022-01-21T11:00:36.552-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:01:45.121-0600",
+"value" : {
+"name" : "T992Config_v151",
+"assigned" : "2022-01-21T11:01:45.121-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:02:46.631-0600",
+"value" : {
+"name" : "T992Config_v152",
+"assigned" : "2022-01-21T11:02:46.631-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:04:39.676-0600",
+"value" : {
+"name" : "T992Config_v153",
+"assigned" : "2022-01-21T11:04:39.676-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:06:10.688-0600",
+"value" : {
+"name" : "T992Config_v154",
+"assigned" : "2022-01-21T11:06:10.688-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:07:12.311-0600",
+"value" : {
+"name" : "T992Config_v155",
+"assigned" : "2022-01-21T11:07:12.311-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:11:03.489-0600",
+"value" : {
+"name" : "T992Config_v156",
+"assigned" : "2022-01-21T11:11:03.489-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:12:27.553-0600",
+"value" : {
+"name" : "T992Config_v157",
+"assigned" : "2022-01-21T11:12:27.553-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:13:47.093-0600",
+"value" : {
+"name" : "T992Config_v158",
+"assigned" : "2022-01-21T11:13:47.093-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:20:29.229-0600",
+"value" : {
+"name" : "T992Config_v159",
+"assigned" : "2022-01-21T11:20:29.229-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:24:48.998-0600",
+"value" : {
+"name" : "T992Config_v160",
+"assigned" : "2022-01-21T11:24:48.998-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:31:40.320-0600",
+"value" : {
+"name" : "T992Config_v161",
+"assigned" : "2022-01-21T11:31:40.320-0600"
+}
+}
+],
+"created" : "2022-01-21T10:54:11.359-0600"
+},
+"_id" : {
+"$oid" : "0aa946d00fe04eb190714643"
+},
+"collection" : "UDPDataStreamerConsumerTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

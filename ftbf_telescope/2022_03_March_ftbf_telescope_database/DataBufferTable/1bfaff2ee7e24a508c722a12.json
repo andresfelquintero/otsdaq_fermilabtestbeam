@@ -1,0 +1,264 @@
+{
+"document" : {
+"data" : {
+"NAME" : "DATA_BUFFER_TABLE",
+"COMMENT" : "Records for data buffer Producers and Consumers.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1647812959,
+"COL_TYPES" : {
+"DATA_BUFFER_GROUP_ID" : "STRING",
+"DATA_BUFFER_UID" : "STRING",
+"LINK_TO_DATA_PROCESSOR_TABLE" : "STRING",
+"LINK_TO_DATA_PROCESSOR_GROUP_ID" : "STRING",
+"STATUS" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"DATA_BUFFER_GROUP_ID" : "DMVisualizerGroup0",
+"DATA_BUFFER_UID" : "DB1",
+"LINK_TO_DATA_PROCESSOR_TABLE" : "DataProcessorTable",
+"LINK_TO_DATA_PROCESSOR_GROUP_ID" : "DBGroup1",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579724546"
+},
+{
+"DATA_BUFFER_GROUP_ID" : "DMGroup0 | ARTDAQDMGroup0",
+"DATA_BUFFER_UID" : "readerDB0",
+"LINK_TO_DATA_PROCESSOR_TABLE" : "DataProcessorTable",
+"LINK_TO_DATA_PROCESSOR_GROUP_ID" : "reader0DBGroup",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579724546"
+},
+{
+"DATA_BUFFER_GROUP_ID" : "DataManagerSupervisorFSSR0",
+"DATA_BUFFER_UID" : "FSSR0_DataBuffer0",
+"LINK_TO_DATA_PROCESSOR_TABLE" : "DataProcessorTable",
+"LINK_TO_DATA_PROCESSOR_GROUP_ID" : "FSSR0_DataBuffer0",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "DEFAULT",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579724546"
+},
+{
+"DATA_BUFFER_GROUP_ID" : "DataManagerSupervisorFSSR1",
+"DATA_BUFFER_UID" : "FSSR1_DataBuffer0",
+"LINK_TO_DATA_PROCESSOR_TABLE" : "DataProcessorTable",
+"LINK_TO_DATA_PROCESSOR_GROUP_ID" : "FSSR1_DataBuffer0",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "DEFAULT",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1579724546"
+},
+{
+"DATA_BUFFER_GROUP_ID" : "DataManagerSupervisorFSSR2",
+"DATA_BUFFER_UID" : "FSSR2_DataBuffer0",
+"LINK_TO_DATA_PROCESSOR_TABLE" : "DataProcessorTable",
+"LINK_TO_DATA_PROCESSOR_GROUP_ID" : "FSSR2_DataBuffer0",
+"STATUS" : "Off",
+"COMMENT_DESCRIPTION" : "DEFAULT",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1647812938"
+},
+{
+"DATA_BUFFER_GROUP_ID" : "DataManagerSupervisorFSSR3",
+"DATA_BUFFER_UID" : "FSSR3_DataBuffer0",
+"LINK_TO_DATA_PROCESSOR_TABLE" : "DataProcessorTable",
+"LINK_TO_DATA_PROCESSOR_GROUP_ID" : "FSSR3_DataBuffer0",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "DEFAULT",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1642793193"
+},
+{
+"DATA_BUFFER_GROUP_ID" : "DataManagerSupervisorNIMPlus0",
+"DATA_BUFFER_UID" : "NIMPlus0_DataBuffer0",
+"LINK_TO_DATA_PROCESSOR_TABLE" : "DataProcessorTable",
+"LINK_TO_DATA_PROCESSOR_GROUP_ID" : "NIMPlus0_DataBuffer0",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1642793193"
+},
+{
+"DATA_BUFFER_GROUP_ID" : "VisualDataManager",
+"DATA_BUFFER_UID" : "VisualBuffer0",
+"LINK_TO_DATA_PROCESSOR_TABLE" : "DataProcessorTable",
+"LINK_TO_DATA_PROCESSOR_GROUP_ID" : "VisualBuffer0",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "DEFAULT",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1642793193"
+},
+{
+"DATA_BUFFER_GROUP_ID" : "VisualDataManager",
+"DATA_BUFFER_UID" : "VisualBuffer1",
+"LINK_TO_DATA_PROCESSOR_TABLE" : "DataProcessorTable",
+"LINK_TO_DATA_PROCESSOR_GROUP_ID" : "VisualBuffer1",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "DEFAULT",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646931830"
+},
+{
+"DATA_BUFFER_GROUP_ID" : "ARTDAQDataManagerStripsSupervisor2",
+"DATA_BUFFER_UID" : "ARTDAQreaderStrips2",
+"LINK_TO_DATA_PROCESSOR_TABLE" : "DataProcessorTable",
+"LINK_TO_DATA_PROCESSOR_GROUP_ID" : "ARTDAQreaderStrips2",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646931830"
+},
+{
+"DATA_BUFFER_GROUP_ID" : "NimPlusDataManagerSupervisor0",
+"DATA_BUFFER_UID" : "NimPlus0_DataBuffer0",
+"LINK_TO_DATA_PROCESSOR_TABLE" : "DataProcessorTable",
+"LINK_TO_DATA_PROCESSOR_GROUP_ID" : "NIMPlus0_DataBuffer0",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646931830"
+},
+{
+"DATA_BUFFER_GROUP_ID" : "TimingDataManagerVMESupervisor",
+"DATA_BUFFER_UID" : "CMSVMETiming_DataBuffer0",
+"LINK_TO_DATA_PROCESSOR_TABLE" : "DataProcessorTable",
+"LINK_TO_DATA_PROCESSOR_GROUP_ID" : "CMSVMETiming_DataBuffer0",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646931830"
+},
+{
+"DATA_BUFFER_GROUP_ID" : "NetScopeDataManagerSupervisor",
+"DATA_BUFFER_UID" : "NetScope_DataBuffer0",
+"LINK_TO_DATA_PROCESSOR_TABLE" : "DataProcessorTable",
+"LINK_TO_DATA_PROCESSOR_GROUP_ID" : "NetScope_DataBuffer0",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646931830"
+},
+{
+"DATA_BUFFER_GROUP_ID" : "NimPlusDataManagerSupervisor0",
+"DATA_BUFFER_UID" : "NimPlus1_DataBuffer0",
+"LINK_TO_DATA_PROCESSOR_TABLE" : "DataProcessorTable",
+"LINK_TO_DATA_PROCESSOR_GROUP_ID" : "NimPlus1_DataBuffer0ProcessorGroup",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "Generated by Record Creation Wiz",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646931830"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2022-03-20T16:49:19.262-0500",
+"rawdata" : [
+
+]
+},
+"version" : "10",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2022-03-20T16:49:19.263-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2022-03-20T16:49:19.263-0500"
+},
+{
+"name" : "T992Config_v285",
+"assigned" : "2022-03-20T16:49:25.249-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-03-20T16:49:19.263-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2022-03-20T16:49:19.263-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2022-03-20T16:49:19.263-0500",
+"value" : {
+"name" : "10",
+"assigned" : "2022-03-20T16:49:19.263-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2022-03-20T16:49:19.263-0500",
+"value" : {
+"name" : "DataBufferTable",
+"assigned" : "2022-03-20T16:49:19.263-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2022-03-20T16:49:19.263-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2022-03-20T16:49:19.263-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-03-20T16:49:25.249-0500",
+"value" : {
+"name" : "T992Config_v285",
+"assigned" : "2022-03-20T16:49:25.249-0500"
+}
+}
+],
+"created" : "2022-03-20T16:49:19.262-0500"
+},
+"_id" : {
+"$oid" : "1bfaff2ee7e24a508c722a12"
+},
+"collection" : "DataBufferTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

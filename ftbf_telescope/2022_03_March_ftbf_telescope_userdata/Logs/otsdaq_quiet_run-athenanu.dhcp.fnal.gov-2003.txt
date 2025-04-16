@@ -1,0 +1,181 @@
+02 Nov 2022 16:54:12.120 [140365879806144] INFO  gov.fnal.dhcp.athenanu.p:2003 <> - xdaq version: 05.09.00, compiled on May 13 2021 at 13:22:04, 64bit
+02 Nov 2022 16:54:12.121 [140365879806144] INFO  gov.fnal.dhcp.athenanu.p:2003 <> - Loaded profile: /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/XDAQConfigurations/otsConfiguration_CMake.xml
+02 Nov 2022 16:54:12.123 [140365879806144] INFO  gov.fnal.dhcp.athenanu.p:2003 <> - core::b2innub version: 02.05.02, compiled on May 13 2021 at 13:23:23
+02 Nov 2022 16:54:12.124 [140365879806144] INFO  gov.fnal.dhcp.athenanu.p:2003 <> - core::i2outils version: 04.00.00, compiled on May 13 2021 at 13:22:32
+02 Nov 2022 16:54:12.127 [140365879806144] INFO  gov.fnal.dhcp.athenanu.p:2003 <> - core::executive version: 04.02.00, compiled on May 13 2021 at 13:23:07
+02 Nov 2022 16:54:12.133 [140365879806144] INFO  gov.fnal.dhcp.athenanu.p:2003 <> - core::b2inutils version: 04.04.05, compiled on May 13 2021 at 13:23:26
+02 Nov 2022 16:54:12.140 [140365879806144] INFO  gov.fnal.dhcp.athenanu.p:2003 <> - core::pthttp version: 04.07.00, compiled on May 13 2021 at 13:22:36
+02 Nov 2022 16:54:12.142 [140365879806144] INFO  gov.fnal.dhcp.athenanu.p:2003 <> - core::ptfifo version: 04.04.00, compiled on May 13 2021 at 13:22:57
+02 Nov 2022 16:54:12.143 [140365879806144] INFO  gov.fnal.dhcp.athenanu.p:2003 <> - core::xrelay version: 04.02.00, compiled on May 13 2021 at 13:23:20
+02 Nov 2022 16:54:12.145 [140365879806144] INFO  gov.fnal.dhcp.athenanu.p:2003 <> - core::hyperdaq version: 05.04.00, compiled on May 13 2021 at 13:23:19
+02 Nov 2022 16:54:12.146 [140365879806144] DEBUG gov.fnal.dhcp.athenanu.p:2003 <> - Create application descriptor for class: executive::Application id: 0
+02 Nov 2022 16:54:12.150 [140365879806144] INFO  gov.fnal.dhcp.athenanu.p:2003.executive::Application.lid(0) <> - Log URL not set (was already console)
+02 Nov 2022 16:54:12.150 [140365879806144] INFO  gov.fnal.dhcp.athenanu.p:2003.executive::Application.lid(0) <> - Changed Log level to INFO
+02 Nov 2022 16:54:12.153 [140365879806144] INFO  gov.fnal.dhcp.athenanu.p:2003.pt::http::PeerTransportHTTP.lid(1) <> - No security policies on this server
+02 Nov 2022 16:54:12.459 [140365879806144] INFO  gov.fnal.dhcp.athenanu.p:2003 <> - otsdaq::Visualization version: 00.00.00, compiled on Nov  2 2022 at 11:00:46
+11-02 11:54:12.470418                    MessageFacility.h    DEBUG INIT_MF(...): Configuring message facility with /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/MessageFacilityGen.fcl
+otsConsole: {
+	type: UDP
+	threshold: DEBUG
+	filename_delimit: "/src"
+	port: 30000
+	host: "127.0.0.1"
+}
+console: {
+	type: "OTS"
+	threshold: "DEBUG"
+	filename_delimit: "/src"
+	format_string: "|%L:%N:%f [%u]	%m"
+
+}
+
+file: ""
+
+|Info:configureMessageFacility:configureMessageFacility.cc [283]	Message Facility Application . configured with: destinations:{console:{filename_delimit:"/src" format_string:"|%L:%N:%f [%u]\t%m" threshold:"DEBUG" type:"OTS"} file:"" otsConsole:{filename_delimit:"/src" host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+|Info:_TCPConnect:TCPConnect.cc [344]	Resolving host 127.0.0.1, on port 30000
+11-02 11:54:12.483009                         UDP_mfPlugin    ERROR routePayload(...): Error sending message 2 to 127.0.0.1, errno=17 (File exists)
+|Info:_TCPConnect:TCPConnect.cc [371]	Host resolved as 127.0.0.1
+|Info:_TCPConnect:TCPConnect.cc [247]	Resolving ip athenanu.dhcp.fnal.gov
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [24]	VisualSupervisor:UNINITIALIZED_supervisorApplicationUID	<> application->getApplicationContext()->getContextDescriptor()->getURL() = http://athenanu.dhcp.fnal.gov:2003
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [25]	VisualSupervisor:UNINITIALIZED_supervisorApplicationUID	<> application->getApplicationDescriptor()->getLocalId() = 270
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [26]	VisualSupervisor:UNINITIALIZED_supervisorApplicationUID	<> supervisorClass_ = ots::VisualSupervisor
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [27]	VisualSupervisor:UNINITIALIZED_supervisorApplicationUID	<> supervisorClassNoNamespace_ = VisualSupervisor
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [48]	Initializing info based on XDAQ context...
+|Debug:SupervisorDescriptorInfoBase.cc:otsdaq/otsdaq/SupervisorInfo/SupervisorDescriptorInfoBase.cc [33]	Init
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [107]	Initializing info for Normal mode XDAQ context...
+|Debug:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [104]	TableBase-TableGroupMetadata	<> Special table 'TableGroupMetadata' constructed. 1
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [193]	READONLY_USER	<> username_ = READONLY_USER
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [239]	READONLY_USER	<> ACTIVE_GROUPS_FILENAME = /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/ActiveTableGroups.cfg
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [240]	READONLY_USER	<> ARTDAQ_DATABASE_URI = filesystemdb:///home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_database
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Context group 'T992Context(91)']
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [102]	Foud FWD/WEB/QT true/true/true and IP:Port:FwdPort 127.0.0.1:30000:30001 in MesageFacility table.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [146]	Forwarding to Web GUI at IP:Port:FwdPort 127.0.0.1:30000:30001 with UDP forward MesageFacility.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [194]	Wrote /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/QuietForwarderGen.cfg:
+RECEIVE_PORT 	 30000
+DESTINATION_PORT 	 30001
+DESTINATION_IP 	 127.0.0.1
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [271]	Opened.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/MessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [282]	Opened for artdaq.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/ARTDAQInterfaceMessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [291]	Wrote 
+otsConsole: {
+	type: UDP
+	threshold: DEBUG
+	filename_delimit: "/src"
+	port: 30000
+	host: "127.0.0.1"
+}
+console: {
+	type: "OTS"
+	threshold: "DEBUG"
+	filename_delimit: "/src"
+	format_string: "|%L:%N:%f [%u]	%m"
+
+}
+|Debug:XDAQContextTable_table.cc:otsdaq/otsdaq/TablePlugins/XDAQContextTable_table.cc [337]	Fixing deprecated Supervisor class from ots::Supervisor to ots::GatewaySupervisor
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Context group 'T992Context(91)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(219)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(219)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1379]	READONLY_USER	<> Not loading group because it is not of type Context or Backbone (it is type 'Configuration').
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [272]	The TRACE-controller app for hostname 'athenanu.dhcp.fnal.gov' is CLASS:LID = ots::GatewaySupervisor:200
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [282]	TRACE-controller app count = 1
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [286]	The TRACE-controller for hostname = athenanu.dhcp.fnal.gov/200 is ... name = GatewaySupervisor class = ots::GatewaySupervisor hostname = athenanu.dhcp.fnal.gov
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [298]	Supervisor Info initialization complete!
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [456]	READONLY_USER	<> Destroying Backbone Key: 219
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [474]	READONLY_USER	<> Destroying Context Key: 91
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [68]	VisualSupervisor:UNINITIALIZED_supervisorApplicationUID	<> Getting configuration specific info for supervisor 'VisualSupervisor' of class ots::VisualSupervisor.
+|Debug:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [104]	TableBase-TableGroupMetadata	<> Special table 'TableGroupMetadata' constructed. 1
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [193]	READONLY_USER	<> username_ = READONLY_USER
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [239]	READONLY_USER	<> ACTIVE_GROUPS_FILENAME = /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/ActiveTableGroups.cfg
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [240]	READONLY_USER	<> ARTDAQ_DATABASE_URI = filesystemdb:///home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_database
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Context group 'T992Context(91)']
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [102]	Foud FWD/WEB/QT true/true/true and IP:Port:FwdPort 127.0.0.1:30000:30001 in MesageFacility table.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [146]	Forwarding to Web GUI at IP:Port:FwdPort 127.0.0.1:30000:30001 with UDP forward MesageFacility.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [194]	Wrote /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/QuietForwarderGen.cfg:
+RECEIVE_PORT 	 30000
+DESTINATION_PORT 	 30001
+DESTINATION_IP 	 127.0.0.1
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [271]	Opened.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/MessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [282]	Opened for artdaq.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/ARTDAQInterfaceMessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [291]	Wrote 
+otsConsole: {
+	type: UDP
+	threshold: DEBUG
+	filename_delimit: "/src"
+	port: 30000
+	host: "127.0.0.1"
+}
+console: {
+	type: "OTS"
+	threshold: "DEBUG"
+	filename_delimit: "/src"
+	format_string: "|%L:%N:%f [%u]	%m"
+
+}
+|Debug:XDAQContextTable_table.cc:otsdaq/otsdaq/TablePlugins/XDAQContextTable_table.cc [337]	Fixing deprecated Supervisor class from ots::Supervisor to ots::GatewaySupervisor
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Context group 'T992Context(91)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(219)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(219)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1379]	READONLY_USER	<> Not loading group because it is not of type Context or Backbone (it is type 'Configuration').
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [106]	VisualSupervisor:VisualSupervisor	<> CorePropertySupervisorBase::supervisorContextUID_ = DQMContext
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [107]	VisualSupervisor:VisualSupervisor	<> CorePropertySupervisorBase::supervisorApplicationUID_ = VisualSupervisor
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [108]	VisualSupervisor:VisualSupervisor	<> CorePropertySupervisorBase::supervisorConfigurationPath_ = /DQMContext/LinkToApplicationTable/VisualSupervisor/LinkToSupervisorTable
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [164]	hostname = athenanu.dhcp.fnal.gov
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [178]	Marked alive: /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/Logs/otsdaq_is_alive-athenanu.dhcp.fnal.gov-2003.dat
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/FiniteStateMachine.cc [19]	FSM-VisualSupervisor:VisualSupervisor	<> Constructing FiniteStateMachine
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [106]	FSM-VisualSupervisor:VisualSupervisor	<> Resetting RunControlStateMachine with name 'VisualSupervisor:VisualSupervisor'...
+|Debug:WorkLoopManager.cc:otsdaq/otsdaq/WorkLoopManager/WorkLoopManager.cc [19]	Request name: StateMachine jobName: StateMachine
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [26]	VisualSupervisor:VisualSupervisor	<> Constructor.
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [41]	VisualSupervisor:VisualSupervisor	<> Constructed.
+|Debug:Visualizer:otsdaq_utilities/otsdaq-utilities/Visualization/VisualSupervisor.cc [74]	VisualSupervisor:VisualSupervisor	<> Constructor.
+|Debug:Visualizer:otsdaq_utilities/otsdaq-utilities/Visualization/VisualSupervisor.cc [80]	VisualSupervisor:VisualSupervisor	<> Constructed.
+02 Nov 2022 16:54:14.228 [140365879806144] INFO  gov.fnal.dhcp.athenanu.p:2003 <> - Ready.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [148]	FSM-VisualSupervisor:VisualSupervisor	<> Received... 	Command: Initialize Par 0 Name: commandId Value: 8, Par 0 Name: xmlns:xdaq Value: urn:xdaq-soap:3.0,
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [159]	FSM-VisualSupervisor:VisualSupervisor	<> Defaulting iteration index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [169]	FSM-VisualSupervisor:VisualSupervisor	<> Defaulting subIterationIndex_ index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [218]	FSM-VisualSupervisor:VisualSupervisor	<> Starting state for VisualSupervisor:VisualSupervisor is Initial and attempting to Initialize
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [316]	FSM-VisualSupervisor:VisualSupervisor	<> command = Initialize
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [317]	FSM-VisualSupervisor:VisualSupervisor	<> currentState = Initial
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [318]	FSM-VisualSupervisor:VisualSupervisor	<> getErrorMessage() = 
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [319]	FSM-VisualSupervisor:VisualSupervisor	<> retransmittedCommand = 0
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/FiniteStateMachine.cc [146]	FSM-VisualSupervisor:VisualSupervisor	<> transition = Initialize
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [677]	VisualSupervisor:VisualSupervisor	<> transitionInitializing
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [405]	VisualSupervisor:VisualSupervisor	<> CoreSupervisorBase::stateHalted
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [430]	FSM-VisualSupervisor:VisualSupervisor	<> Ending state for VisualSupervisor:VisualSupervisor is Halted
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [431]	FSM-VisualSupervisor:VisualSupervisor	<> result = InitializeDone
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [148]	FSM-VisualSupervisor:VisualSupervisor	<> Received... 	Command: Error Par 0 Name: commandId Value: 24, Par 0 Name: xmlns:xdaq Value: urn:xdaq-soap:3.0,
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [159]	FSM-VisualSupervisor:VisualSupervisor	<> Defaulting iteration index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [169]	FSM-VisualSupervisor:VisualSupervisor	<> Defaulting subIterationIndex_ index to 0.
+otsdaq/otsdaq/ProgressBar/ProgressBar.cc [66]	File Not there
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [218]	FSM-VisualSupervisor:VisualSupervisor	<> Starting state for VisualSupervisor:VisualSupervisor is Halted and attempting to Error
+|Error:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [239]	FSM-VisualSupervisor:VisualSupervisor	<> 
+:FSM-VisualSupervisor:VisualSupervisor	<> :otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [238]	Error was received! Halting immediately.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [148]	FSM-VisualSupervisor:VisualSupervisor	<> Received... 	Command: Halt Par 0 Name: commandId Value: 33, Par 0 Name: xmlns:xdaq Value: urn:xdaq-soap:3.0,
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [159]	FSM-VisualSupervisor:VisualSupervisor	<> Defaulting iteration index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [169]	FSM-VisualSupervisor:VisualSupervisor	<> Defaulting subIterationIndex_ index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [218]	FSM-VisualSupervisor:VisualSupervisor	<> Starting state for VisualSupervisor:VisualSupervisor is Halted and attempting to Halt
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [316]	FSM-VisualSupervisor:VisualSupervisor	<> command = Halt
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [317]	FSM-VisualSupervisor:VisualSupervisor	<> currentState = Halted
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [318]	FSM-VisualSupervisor:VisualSupervisor	<> getErrorMessage() = 
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [319]	FSM-VisualSupervisor:VisualSupervisor	<> retransmittedCommand = 0
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/FiniteStateMachine.cc [146]	FSM-VisualSupervisor:VisualSupervisor	<> transition = Halt
+|Debug:Visualizer:otsdaq_utilities/otsdaq-utilities/Visualization/VisualSupervisor.cc [178]	VisualSupervisor:VisualSupervisor	<> Halting...
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [607]	VisualSupervisor:VisualSupervisor	<> Halting all state machine implementations...
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [520]	VisualSupervisor:VisualSupervisor	<> Done configuration all state machine implementations...
+|Debug:Visualizer:otsdaq_utilities/otsdaq-utilities/Visualization/VisualSupervisor.cc [94]	VisualSupervisor:VisualSupervisor	<> Destroying...
+|Warning:Visualizer:otsdaq_utilities/otsdaq-utilities/Visualization/VisualSupervisor.cc [105]	No visual data manager was pushed.
+|Debug:Visualizer:otsdaq_utilities/otsdaq-utilities/Visualization/VisualSupervisor.cc [183]	VisualSupervisor:VisualSupervisor	<> Halted.
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [405]	VisualSupervisor:VisualSupervisor	<> CoreSupervisorBase::stateHalted
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [430]	FSM-VisualSupervisor:VisualSupervisor	<> Ending state for VisualSupervisor:VisualSupervisor is Halted
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [431]	FSM-VisualSupervisor:VisualSupervisor	<> result = HaltDone
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [148]	FSM-VisualSupervisor:VisualSupervisor	<> Received... 	Command: Error Par 0 Name: commandId Value: 51, Par 0 Name: xmlns:xdaq Value: urn:xdaq-soap:3.0,
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [159]	FSM-VisualSupervisor:VisualSupervisor	<> Defaulting iteration index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [169]	FSM-VisualSupervisor:VisualSupervisor	<> Defaulting subIterationIndex_ index to 0.
+otsdaq/otsdaq/ProgressBar/ProgressBar.cc [66]	File Not there
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [218]	FSM-VisualSupervisor:VisualSupervisor	<> Starting state for VisualSupervisor:VisualSupervisor is Halted and attempting to Error
+|Error:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [239]	FSM-VisualSupervisor:VisualSupervisor	<> 
+:FSM-VisualSupervisor:VisualSupervisor	<> :otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [238]	Error was received! Halting immediately.
+Terminating...
+|Debug:MetricManager:MetricManager.cc [190]	MetricManager is shutting down...
+|Debug:MetricManager:MetricManager.cc [156]	Stopping Metrics
+|Debug:MetricManager:MetricManager.cc [159]	Joining Metric-Sending thread
+|Debug:MetricManager:MetricManager.cc [172]	do_stop Complete

@@ -1,0 +1,298 @@
+{
+"document" : {
+"data" : {
+"NAME" : "GATEWAY_SUPERVISOR_TABLE",
+"COMMENT" : "State Machine group link.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1646875221,
+"COL_TYPES" : {
+"SUPERVISOR_UID" : "STRING",
+"NUMBER_OF_STATE_MACHINE_BROADCAST_THREADS" : "NUMBER",
+"LINK_TO_STATE_MACHINE_TABLE" : "STRING",
+"STATE_MACHINE_GROUP_ID" : "STRING",
+"ENABLE_APPLICATION_STATUS_MONITORING" : "STRING",
+"ENABLE_STATE_CHANGES_OVER_UDP" : "STRING",
+"IP_ADDRESS_FOR_STATE_CHANGES_OVER_UDP" : "STRING",
+"PORT_FOR_STATE_CHANGES_OVER_UDP" : "NUMBER",
+"ENABLE_ACK_FOR_STATE_CHANGES_OVER_UDP" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"SUPERVISOR_UID" : "Supervisor0",
+"NUMBER_OF_STATE_MACHINE_BROADCAST_THREADS" : "0",
+"LINK_TO_STATE_MACHINE_TABLE" : "StateMachineTable",
+"STATE_MACHINE_GROUP_ID" : "Supervisor0_FSMs",
+"ENABLE_APPLICATION_STATUS_MONITORING" : "No",
+"ENABLE_STATE_CHANGES_OVER_UDP" : "Yes",
+"IP_ADDRESS_FOR_STATE_CHANGES_OVER_UDP" : "131.225.179.70",
+"PORT_FOR_STATE_CHANGES_OVER_UDP" : "17000",
+"ENABLE_ACK_FOR_STATE_CHANGES_OVER_UDP" : "No",
+"COMMENT_DESCRIPTION" : "Link to a group of state machines.",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646875221"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2022-03-09T19:20:21.672-0600",
+"rawdata" : [
+
+]
+},
+"version" : "8",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2022-03-09T19:20:21.675-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2022-03-09T19:20:21.673-0600"
+},
+{
+"name" : "T992Context_v79",
+"assigned" : "2022-03-09T19:20:28.482-0600"
+},
+{
+"name" : "T992Context_v80",
+"assigned" : "2022-03-09T21:13:12.701-0600"
+},
+{
+"name" : "T992Context_v81",
+"assigned" : "2022-03-09T23:30:47.148-0600"
+},
+{
+"name" : "T992Context_v82",
+"assigned" : "2022-03-10T10:42:18.602-0600"
+},
+{
+"name" : "T992Context_v83",
+"assigned" : "2022-03-20T16:49:33.870-0500"
+},
+{
+"name" : "T992Context_v84",
+"assigned" : "2022-04-06T16:38:13.398-0500"
+},
+{
+"name" : "T992Context_v85",
+"assigned" : "2022-04-14T11:26:20.608-0500"
+},
+{
+"name" : "T992Context_v86",
+"assigned" : "2022-04-20T14:55:10.546-0500"
+},
+{
+"name" : "T992Context_v87",
+"assigned" : "2022-04-20T15:22:08.321-0500"
+},
+{
+"name" : "T992Context_v88",
+"assigned" : "2022-04-20T15:56:50.175-0500"
+},
+{
+"name" : "T992Context_v89",
+"assigned" : "2022-04-24T09:41:11.145-0500"
+},
+{
+"name" : "T992Context_v90",
+"assigned" : "2022-06-04T12:22:28.238-0500"
+},
+{
+"name" : "T992Context_v91",
+"assigned" : "2022-06-06T09:50:47.273-0500"
+},
+{
+"name" : "T992Context_v92",
+"assigned" : "2022-06-29T09:30:25.111-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-03-09T19:20:21.673-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2022-03-09T19:20:21.673-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2022-03-09T19:20:21.674-0600",
+"value" : {
+"name" : "8",
+"assigned" : "2022-03-09T19:20:21.674-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2022-03-09T19:20:21.674-0600",
+"value" : {
+"name" : "GatewaySupervisorTable",
+"assigned" : "2022-03-09T19:20:21.674-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2022-03-09T19:20:21.675-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2022-03-09T19:20:21.675-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-03-09T19:20:28.482-0600",
+"value" : {
+"name" : "T992Context_v79",
+"assigned" : "2022-03-09T19:20:28.482-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-03-09T21:13:12.701-0600",
+"value" : {
+"name" : "T992Context_v80",
+"assigned" : "2022-03-09T21:13:12.701-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-03-09T23:30:47.148-0600",
+"value" : {
+"name" : "T992Context_v81",
+"assigned" : "2022-03-09T23:30:47.148-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-03-10T10:42:18.602-0600",
+"value" : {
+"name" : "T992Context_v82",
+"assigned" : "2022-03-10T10:42:18.602-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-03-20T16:49:33.870-0500",
+"value" : {
+"name" : "T992Context_v83",
+"assigned" : "2022-03-20T16:49:33.870-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-04-06T16:38:13.398-0500",
+"value" : {
+"name" : "T992Context_v84",
+"assigned" : "2022-04-06T16:38:13.398-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-04-14T11:26:20.608-0500",
+"value" : {
+"name" : "T992Context_v85",
+"assigned" : "2022-04-14T11:26:20.608-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-04-20T14:55:10.546-0500",
+"value" : {
+"name" : "T992Context_v86",
+"assigned" : "2022-04-20T14:55:10.546-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-04-20T15:22:08.321-0500",
+"value" : {
+"name" : "T992Context_v87",
+"assigned" : "2022-04-20T15:22:08.321-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-04-20T15:56:50.175-0500",
+"value" : {
+"name" : "T992Context_v88",
+"assigned" : "2022-04-20T15:56:50.175-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-04-24T09:41:11.145-0500",
+"value" : {
+"name" : "T992Context_v89",
+"assigned" : "2022-04-24T09:41:11.145-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-04T12:22:28.238-0500",
+"value" : {
+"name" : "T992Context_v90",
+"assigned" : "2022-06-04T12:22:28.238-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T09:50:47.273-0500",
+"value" : {
+"name" : "T992Context_v91",
+"assigned" : "2022-06-06T09:50:47.273-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-29T09:30:25.111-0500",
+"value" : {
+"name" : "T992Context_v92",
+"assigned" : "2022-06-29T09:30:25.111-0500"
+}
+}
+],
+"created" : "2022-03-09T19:20:21.672-0600"
+},
+"_id" : {
+"$oid" : "12f77cefaa9a417cbfd24114"
+},
+"collection" : "GatewaySupervisorTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

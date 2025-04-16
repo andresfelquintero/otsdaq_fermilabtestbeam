@@ -1,0 +1,230 @@
+{
+"document" : {
+"data" : {
+"NAME" : "ARTDAQ_PHYSICS_PARAMETER_CONFIGURATION",
+"COMMENT" : "No comment.",
+"AUTHOR" : "eflumerf",
+"CREATION_TIME" : 1515795903,
+"COL_TYPES" : {
+"PHYSICS_PARAMETER_GROUP_ID" : "VARCHAR2",
+"PHYSICS_PARAMETER_UID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"PHYSICS_PARAMETER_KEY" : "VARCHAR2",
+"PHYSICS_PARAMETER_VALUE" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "aggergator0PhysicsPGroup",
+"PHYSICS_PARAMETER_UID" : "NormalOutputPath",
+"STATUS" : "On",
+"PHYSICS_PARAMETER_KEY" : "my_output_modules",
+"PHYSICS_PARAMETER_VALUE" : "[ normalOutput ]",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513879108"
+},
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "builder0PhysicsPGroup",
+"PHYSICS_PARAMETER_UID" : "WireChamberAnalysisPath",
+"STATUS" : "On",
+"PHYSICS_PARAMETER_KEY" : "a2",
+"PHYSICS_PARAMETER_VALUE" : "[ wireChambers ]",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1515528870"
+},
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "builder0PhysicsPGroup",
+"PHYSICS_PARAMETER_UID" : "MPIOutputPath",
+"STATUS" : "On",
+"PHYSICS_PARAMETER_KEY" : "my_output_modules",
+"PHYSICS_PARAMETER_VALUE" : "[ rootMPIOutput ]",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513879108"
+},
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "builder0PhysicsPGroup",
+"PHYSICS_PARAMETER_UID" : "WireChamberEventAnalysisPath",
+"STATUS" : "Off",
+"PHYSICS_PARAMETER_KEY" : "a1",
+"PHYSICS_PARAMETER_VALUE" : "[ wireChamberEvts ]",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513879108"
+},
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "builder0PhysicsPGroup",
+"PHYSICS_PARAMETER_UID" : "STIBAnalysisPath",
+"STATUS" : "On",
+"PHYSICS_PARAMETER_KEY" : "a3",
+"PHYSICS_PARAMETER_VALUE" : "[ stib ]",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1515528870"
+},
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "dispatcher0PhysicsPGroup",
+"PHYSICS_PARAMETER_UID" : "TriggerCounterAnalyzerPath",
+"STATUS" : "On",
+"PHYSICS_PARAMETER_KEY" : "a4",
+"PHYSICS_PARAMETER_VALUE" : "[ triggerCounter ]",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513879108"
+},
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "builder0PhysicsPGroup",
+"PHYSICS_PARAMETER_UID" : "WireChamberPythonOutputPath",
+"STATUS" : "On",
+"PHYSICS_PARAMETER_KEY" : "a5",
+"PHYSICS_PARAMETER_VALUE" : "[ python ]",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1515795902"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T15:48:30.334-0500",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:30.336-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:30.335-0500"
+},
+{
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:31.946-0500"
+},
+{
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:23.897-0500"
+},
+{
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:47.418-0500"
+},
+{
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:56.637-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:30.335-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:30.335-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T15:48:30.335-0500",
+"value" : {
+"name" : "0",
+"assigned" : "2018-09-11T15:48:30.335-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T15:48:30.336-0500",
+"value" : {
+"name" : "ARTDAQPhysicsParameterConfiguration",
+"assigned" : "2018-09-11T15:48:30.336-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T15:48:30.336-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:30.336-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:31.946-0500",
+"value" : {
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:31.946-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:28:23.897-0500",
+"value" : {
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:23.897-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:30:47.418-0500",
+"value" : {
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:47.418-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:56.637-0500",
+"value" : {
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:56.637-0500"
+}
+}
+],
+"created" : "2018-09-11T15:48:30.334-0500"
+},
+"_id" : {
+"$oid" : "c9f9401d3b2c42d1ab94249c"
+},
+"collection" : "ARTDAQPhysicsParameterConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

@@ -1,0 +1,153 @@
+{
+"document" : {
+"data" : {
+"NAME" : "FECMS_TIMING_INTERFACE_TABLE",
+"COMMENT" : "No comment.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1580918073,
+"COL_TYPES" : {
+"INTERFACE_ID" : "STRING",
+"STATUS" : "STRING",
+"INTERFACE_IP_ADDRESS" : "STRING",
+"INTERFACE_PORT" : "NUMBER",
+"HOST_IP_ADDRESS" : "STRING",
+"HOST_PORT" : "NUMBER",
+"STREAM_TO_IP_ADDRESS" : "STRING",
+"STREAM_TO_PORT" : "NUMBER",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"INTERFACE_ID" : "CMSVMETiming",
+"STATUS" : "On",
+"INTERFACE_IP_ADDRESS" : "192.168.133.50",
+"INTERFACE_PORT" : "5000",
+"HOST_IP_ADDRESS" : "192.168.133.46",
+"HOST_PORT" : "10003",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.46",
+"STREAM_TO_PORT" : "47004",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1513798643"
+},
+{
+"INTERFACE_ID" : "CMSTOFPETTiming",
+"STATUS" : "On",
+"INTERFACE_IP_ADDRESS" : "192.168.133.222",
+"INTERFACE_PORT" : "10000",
+"HOST_IP_ADDRESS" : "192.168.133.48",
+"HOST_PORT" : "10005",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.48",
+"STREAM_TO_PORT" : "97000",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580918045"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2020-02-05T09:54:33.665-0600",
+"rawdata" : [
+
+]
+},
+"version" : "3",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2020-02-05T09:54:33.667-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2020-02-05T09:54:33.666-0600"
+},
+{
+"name" : "T992Config_v3",
+"assigned" : "2020-02-05T09:54:34.549-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-05T09:54:33.666-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2020-02-05T09:54:33.666-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2020-02-05T09:54:33.667-0600",
+"value" : {
+"name" : "3",
+"assigned" : "2020-02-05T09:54:33.667-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2020-02-05T09:54:33.667-0600",
+"value" : {
+"name" : "FECMSTimingInterfaceTable",
+"assigned" : "2020-02-05T09:54:33.667-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2020-02-05T09:54:33.667-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2020-02-05T09:54:33.667-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-05T09:54:34.549-0600",
+"value" : {
+"name" : "T992Config_v3",
+"assigned" : "2020-02-05T09:54:34.549-0600"
+}
+}
+],
+"created" : "2020-02-05T09:54:33.666-0600"
+},
+"_id" : {
+"$oid" : "4971ae4373b24a92be8453ea"
+},
+"collection" : "FECMSTimingInterfaceTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

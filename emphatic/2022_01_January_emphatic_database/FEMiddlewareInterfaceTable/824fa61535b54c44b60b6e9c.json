@@ -1,0 +1,124 @@
+{
+"document" : {
+"data" : {
+"NAME" : "FE_MIDDLEWARE_INTERFACE_TABLE",
+"COMMENT" : "No comment.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1582068415,
+"COL_TYPES" : {
+"INTERFACE_ID" : "STRING",
+"INTERFACE_IP_ADDRESS" : "STRING",
+"INTERFACE_PORT" : "NUMBER",
+"CALIBRATION_NAME" : "STRING",
+"CONFIGURATION_DIR" : "STRING",
+"CONFIGURATION_NAME" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"INTERFACE_ID" : "FEMiddlewareInterface",
+"INTERFACE_IP_ADDRESS" : "192.168.133.48",
+"INTERFACE_PORT" : "5000",
+"CALIBRATION_NAME" : "physics",
+"CONFIGURATION_DIR" : "${PH2ACF_ROOT}/runDir",
+"CONFIGURATION_NAME" : "CMSIT.xml",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1582068415"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2020-02-18T17:26:55.565-0600",
+"rawdata" : [
+
+]
+},
+"version" : "1",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2020-02-18T17:26:55.566-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2020-02-18T17:26:55.566-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-18T17:26:55.566-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2020-02-18T17:26:55.566-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2020-02-18T17:26:55.566-0600",
+"value" : {
+"name" : "1",
+"assigned" : "2020-02-18T17:26:55.566-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2020-02-18T17:26:55.566-0600",
+"value" : {
+"name" : "FEMiddlewareInterfaceTable",
+"assigned" : "2020-02-18T17:26:55.566-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2020-02-18T17:26:55.567-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2020-02-18T17:26:55.566-0600"
+}
+}
+],
+"created" : "2020-02-18T17:26:55.565-0600"
+},
+"_id" : {
+"$oid" : "824fa61535b54c44b60b6e9c"
+},
+"collection" : "FEMiddlewareInterfaceTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

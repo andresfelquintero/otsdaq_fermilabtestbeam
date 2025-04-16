@@ -1,0 +1,328 @@
+{
+"document" : {
+"data" : {
+"NAME" : "SLOW_CONTROLS_DASHBOARD_SUPERVISOR_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1582135002,
+"COL_TYPES" : {
+"SUPERVISOR_UID" : "STRING",
+"SLOW_CONTROLS_INTERFACE_PLUGIN_TYPE" : "STRING",
+"LINK_TO_CONFIGURE_ALARMS_TO_MONITOR_TABLE" : "STRING",
+"LINK_TO_CONFIGURE_ALARMS_TO_MONITOR_GROUP_ID" : "STRING",
+"LINK_TO_HALT_ALARMS_TO_MONITOR_TABLE" : "STRING",
+"LINK_TO_HALT_ALARMS_TO_MONITOR_GROUP_ID" : "STRING",
+"LINK_TO_PAUSE_ALARMS_TO_MONITOR_TABLE" : "STRING",
+"LINK_TO_PAUSE_ALARMS_TO_MONITOR_GROUP_ID" : "STRING",
+"LINK_TO_RESUME_ALARMS_TO_MONITOR_TABLE" : "STRING",
+"LINK_TO_RESUME_ALARMS_TO_MONITOR_GROUP_ID" : "STRING",
+"LINK_TO_START_ALARMS_TO_MONITOR_TABLE" : "STRING",
+"LINK_TO_START_ALARMS_TO_MONITOR_GROUP_ID" : "STRING",
+"LINK_TO_STOP_ALARMS_TO_MONITOR_TABLE" : "STRING",
+"LINK_TO_STOP_ALARMS_TO_MONITOR_GROUP_ID" : "STRING",
+"LINK_TO_RUNNING_ALARMS_TO_MONITOR_TABLE" : "STRING",
+"LINK_TO_RUNNING_ALARMS_TO_MONITOR_GROUP_ID" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2020-02-19T11:56:42.544-0600",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2020-02-19T11:56:42.546-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2020-02-19T11:56:42.545-0600"
+},
+{
+"name" : "T992Context_v22",
+"assigned" : "2020-02-19T11:56:43.235-0600"
+},
+{
+"name" : "T992Context_v23",
+"assigned" : "2020-02-19T12:10:30.343-0600"
+},
+{
+"name" : "T992Context_v24",
+"assigned" : "2020-02-19T17:33:34.968-0600"
+},
+{
+"name" : "T992Context_v25",
+"assigned" : "2020-02-20T08:57:23.608-0600"
+},
+{
+"name" : "T992Context_v26",
+"assigned" : "2020-02-20T10:15:43.135-0600"
+},
+{
+"name" : "T992Context_v27",
+"assigned" : "2020-02-20T14:59:55.260-0600"
+},
+{
+"name" : "T992Context_v28",
+"assigned" : "2020-02-20T15:02:09.440-0600"
+},
+{
+"name" : "T992Context_v29",
+"assigned" : "2020-02-20T15:03:46.235-0600"
+},
+{
+"name" : "T992Context_v30",
+"assigned" : "2020-12-24T13:41:09.427-0600"
+},
+{
+"name" : "T992Context_v31",
+"assigned" : "2020-12-24T13:46:31.779-0600"
+},
+{
+"name" : "T992Context_v32",
+"assigned" : "2020-12-24T17:20:40.842-0600"
+},
+{
+"name" : "T992Context_v33",
+"assigned" : "2020-12-26T11:40:00.691-0600"
+},
+{
+"name" : "T992Context_v34",
+"assigned" : "2021-01-27T15:23:27.546-0600"
+},
+{
+"name" : "T992Context_v35",
+"assigned" : "2021-10-14T17:15:58.151-0500"
+},
+{
+"name" : "T992Context_v36",
+"assigned" : "2021-10-14T17:18:20.554-0500"
+},
+{
+"name" : "T992Context_v37",
+"assigned" : "2021-10-14T17:45:17.876-0500"
+},
+{
+"name" : "T992Context_v38",
+"assigned" : "2021-10-14T17:54:08.567-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T11:56:42.545-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2020-02-19T11:56:42.545-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2020-02-19T11:56:42.545-0600",
+"value" : {
+"name" : "0",
+"assigned" : "2020-02-19T11:56:42.545-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2020-02-19T11:56:42.545-0600",
+"value" : {
+"name" : "SlowControlsDashboardSupervisorTable",
+"assigned" : "2020-02-19T11:56:42.546-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2020-02-19T11:56:42.546-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2020-02-19T11:56:42.546-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T11:56:43.235-0600",
+"value" : {
+"name" : "T992Context_v22",
+"assigned" : "2020-02-19T11:56:43.235-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T12:10:30.343-0600",
+"value" : {
+"name" : "T992Context_v23",
+"assigned" : "2020-02-19T12:10:30.343-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-19T17:33:34.968-0600",
+"value" : {
+"name" : "T992Context_v24",
+"assigned" : "2020-02-19T17:33:34.968-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T08:57:23.608-0600",
+"value" : {
+"name" : "T992Context_v25",
+"assigned" : "2020-02-20T08:57:23.608-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T10:15:43.135-0600",
+"value" : {
+"name" : "T992Context_v26",
+"assigned" : "2020-02-20T10:15:43.135-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T14:59:55.260-0600",
+"value" : {
+"name" : "T992Context_v27",
+"assigned" : "2020-02-20T14:59:55.260-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T15:02:09.440-0600",
+"value" : {
+"name" : "T992Context_v28",
+"assigned" : "2020-02-20T15:02:09.440-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-20T15:03:46.235-0600",
+"value" : {
+"name" : "T992Context_v29",
+"assigned" : "2020-02-20T15:03:46.235-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-12-24T13:41:09.427-0600",
+"value" : {
+"name" : "T992Context_v30",
+"assigned" : "2020-12-24T13:41:09.427-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-12-24T13:46:31.779-0600",
+"value" : {
+"name" : "T992Context_v31",
+"assigned" : "2020-12-24T13:46:31.779-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-12-24T17:20:40.842-0600",
+"value" : {
+"name" : "T992Context_v32",
+"assigned" : "2020-12-24T17:20:40.842-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-12-26T11:40:00.691-0600",
+"value" : {
+"name" : "T992Context_v33",
+"assigned" : "2020-12-26T11:40:00.691-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2021-01-27T15:23:27.546-0600",
+"value" : {
+"name" : "T992Context_v34",
+"assigned" : "2021-01-27T15:23:27.546-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2021-10-14T17:15:58.151-0500",
+"value" : {
+"name" : "T992Context_v35",
+"assigned" : "2021-10-14T17:15:58.151-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2021-10-14T17:18:20.554-0500",
+"value" : {
+"name" : "T992Context_v36",
+"assigned" : "2021-10-14T17:18:20.554-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2021-10-14T17:45:17.876-0500",
+"value" : {
+"name" : "T992Context_v37",
+"assigned" : "2021-10-14T17:45:17.876-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2021-10-14T17:54:08.567-0500",
+"value" : {
+"name" : "T992Context_v38",
+"assigned" : "2021-10-14T17:54:08.567-0500"
+}
+}
+],
+"created" : "2020-02-19T11:56:42.545-0600"
+},
+"_id" : {
+"$oid" : "d7e8781a99dd41e4b37ef2e0"
+},
+"collection" : "SlowControlsDashboardSupervisorTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

@@ -1,0 +1,270 @@
+{
+"document" : {
+"data" : {
+"NAME" : "FE_SUPERVISOR_TABLE",
+"COMMENT" : "Front-end Supervisor records.Removed TimingFETOFPET Temporarily",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1646849448,
+"COL_TYPES" : {
+"SUPERVISOR_UID" : "STRING",
+"LINK_TO_FE_INTERFACE_TABLE" : "STRING",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "STRING",
+"SLOW_CONTROLS_METRIC_MANAGER_CHANNEL_NAME_PREAMBLE" : "STRING",
+"DAQ_METRICS_LINK" : "STRING",
+"DAQ_METRICS_LINK_GROUP_ID" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"SUPERVISOR_UID" : "FESupervisorFSSR0",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "FESupervisorFSSR0",
+"SLOW_CONTROLS_METRIC_MANAGER_CHANNEL_NAME_PREAMBLE" : "DEFAULT",
+"DAQ_METRICS_LINK" : "NO_LINK",
+"DAQ_METRICS_LINK_GROUP_ID" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509656774"
+},
+{
+"SUPERVISOR_UID" : "FESupervisorFSSR1",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "FESupervisorFSSR1",
+"SLOW_CONTROLS_METRIC_MANAGER_CHANNEL_NAME_PREAMBLE" : "DEFAULT",
+"DAQ_METRICS_LINK" : "NO_LINK",
+"DAQ_METRICS_LINK_GROUP_ID" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509656774"
+},
+{
+"SUPERVISOR_UID" : "FESupervisorFSSR2",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "FESupervisorFSSR2",
+"SLOW_CONTROLS_METRIC_MANAGER_CHANNEL_NAME_PREAMBLE" : "DEFAULT",
+"DAQ_METRICS_LINK" : "NO_LINK",
+"DAQ_METRICS_LINK_GROUP_ID" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509656774"
+},
+{
+"SUPERVISOR_UID" : "FESupervisorFSSR3",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "FESupervisorFSSR3",
+"SLOW_CONTROLS_METRIC_MANAGER_CHANNEL_NAME_PREAMBLE" : "DEFAULT",
+"DAQ_METRICS_LINK" : "NO_LINK",
+"DAQ_METRICS_LINK_GROUP_ID" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1642787880"
+},
+{
+"SUPERVISOR_UID" : "FESupervisorPixelTelescope0",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "FESupervisorPixelTelescope0",
+"SLOW_CONTROLS_METRIC_MANAGER_CHANNEL_NAME_PREAMBLE" : "DEFAULT",
+"DAQ_METRICS_LINK" : "NO_LINK",
+"DAQ_METRICS_LINK_GROUP_ID" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646849447"
+},
+{
+"SUPERVISOR_UID" : "FESupervisorNetworkMaster",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "FESupervisorNetworkMaster",
+"SLOW_CONTROLS_METRIC_MANAGER_CHANNEL_NAME_PREAMBLE" : "DEFAULT",
+"DAQ_METRICS_LINK" : "NO_LINK",
+"DAQ_METRICS_LINK_GROUP_ID" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646849447"
+},
+{
+"SUPERVISOR_UID" : "NimPlusFESupervisor0",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "NimPlusFE0Group",
+"SLOW_CONTROLS_METRIC_MANAGER_CHANNEL_NAME_PREAMBLE" : "DEFAULT",
+"DAQ_METRICS_LINK" : "NO_LINK",
+"DAQ_METRICS_LINK_GROUP_ID" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "For NIM+x at FTBF",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646849447"
+},
+{
+"SUPERVISOR_UID" : "PixelFESupervisor0",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "PixelFE0Group",
+"SLOW_CONTROLS_METRIC_MANAGER_CHANNEL_NAME_PREAMBLE" : "DEFAULT",
+"DAQ_METRICS_LINK" : "NO_LINK",
+"DAQ_METRICS_LINK_GROUP_ID" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "To control the pixel telescope",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646849447"
+},
+{
+"SUPERVISOR_UID" : "CommanderFESupervisor0",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "CommanderFE0Group",
+"SLOW_CONTROLS_METRIC_MANAGER_CHANNEL_NAME_PREAMBLE" : "DEFAULT",
+"DAQ_METRICS_LINK" : "NO_LINK",
+"DAQ_METRICS_LINK_GROUP_ID" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "To control another state machine",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646849447"
+},
+{
+"SUPERVISOR_UID" : "TimingFEVMESupervisor",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "TimingFEVMEGroup",
+"SLOW_CONTROLS_METRIC_MANAGER_CHANNEL_NAME_PREAMBLE" : "DEFAULT",
+"DAQ_METRICS_LINK" : "NO_LINK",
+"DAQ_METRICS_LINK_GROUP_ID" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646849447"
+},
+{
+"SUPERVISOR_UID" : "FESupervisorNetScope",
+"LINK_TO_FE_INTERFACE_TABLE" : "FEInterfaceTable",
+"LINK_TO_FE_INTERFACE_GROUP_ID" : "FENetScopeGroup",
+"SLOW_CONTROLS_METRIC_MANAGER_CHANNEL_NAME_PREAMBLE" : "DEFAULT",
+"DAQ_METRICS_LINK" : "NO_LINK",
+"DAQ_METRICS_LINK_GROUP_ID" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646849447"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2022-03-09T12:10:48.004-0600",
+"rawdata" : [
+
+]
+},
+"version" : "7",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2022-03-09T12:10:48.004-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2022-03-09T12:10:48.004-0600"
+},
+{
+"name" : "T992Config_v213",
+"assigned" : "2022-03-09T13:52:28.599-0600"
+},
+{
+"name" : "T992Config_v214",
+"assigned" : "2022-03-09T14:04:18.155-0600"
+},
+{
+"name" : "T992Config_v215",
+"assigned" : "2022-03-09T14:25:10.261-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-03-09T12:10:48.004-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2022-03-09T12:10:48.004-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2022-03-09T12:10:48.004-0600",
+"value" : {
+"name" : "7",
+"assigned" : "2022-03-09T12:10:48.004-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2022-03-09T12:10:48.004-0600",
+"value" : {
+"name" : "FESupervisorTable",
+"assigned" : "2022-03-09T12:10:48.004-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2022-03-09T12:10:48.004-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2022-03-09T12:10:48.004-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-03-09T13:52:28.599-0600",
+"value" : {
+"name" : "T992Config_v213",
+"assigned" : "2022-03-09T13:52:28.599-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-03-09T14:04:18.155-0600",
+"value" : {
+"name" : "T992Config_v214",
+"assigned" : "2022-03-09T14:04:18.155-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-03-09T14:25:10.261-0600",
+"value" : {
+"name" : "T992Config_v215",
+"assigned" : "2022-03-09T14:25:10.261-0600"
+}
+}
+],
+"created" : "2022-03-09T12:10:48.004-0600"
+},
+"_id" : {
+"$oid" : "48831ea7ebd34431a9ebba70"
+},
+"collection" : "FESupervisorTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

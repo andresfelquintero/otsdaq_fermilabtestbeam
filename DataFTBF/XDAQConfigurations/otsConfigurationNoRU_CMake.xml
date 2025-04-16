@@ -1,0 +1,266 @@
+<?xml version='1.0'?>
+<xc:Partition 	xmlns:xsi	= "http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:soapenc	= "http://schemas.xmlsoap.org/soap/encoding/"
+		xmlns:xc	= "http://xdaq.web.cern.ch/xdaq/xsd/2004/XMLConfiguration-30">
+
+	<!-- ContextUID='MainContext' sourceConfig='XDAQContextConfiguration_v2 @ 1536701445' -->
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:3015">
+
+		<!-- Application GroupID = 'MainContext' UID='Supervisor' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::Supervisor" id="200" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:Supervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libSupervisor.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='ChatSupervisor' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::ChatSupervisor" id="250" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ChatSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq_utilities/lib/libChat.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='ConsoleSupervisor' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::ConsoleSupervisor" id="260" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ConsoleSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq_utilities/lib/libConsole.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='LogbookSupervisor' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::LogbookSupervisor" id="261" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:LogbookSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq_utilities/lib/libLogbook.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='ECLSupervisor' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<!--
+		<xc:Application class="ots::ECLSupervisor" id="262" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ECLSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq_utilities/lib/libECLWriter.so</xc:Module>
+		-->
+
+		<!-- Application GroupID = 'MainContext' UID='VisualSupervisor' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::VisualSupervisor" id="270" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:VisualSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq_utilities/lib/libVisualization.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='ConfigurationGUISupervisor' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::ConfigurationGUISupervisor" id="281" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ConfigurationGUISupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq_utilities/lib/libConfigurationGUI.so</xc:Module>
+
+		<!-- Application GroupID = 'MainContext' UID='MacroMakerSupervisor' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::MacroMakerSupervisor" id="300" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:MacroMakerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq_utilities/lib/libMacroMaker.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='WireChamberContext' sourceConfig='XDAQContextConfiguration_v2 @ 1536701445' -->
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:3016">
+
+		<!-- Application GroupID = 'WireChamberContext' UID='FESupervisorMWPC01' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::FESupervisor" id="315" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='StripTelescopeContext' sourceConfig='XDAQContextConfiguration_v2 @ 1536701445' -->
+	<!--
+	<xc:Context id="0" url="http://ftbftracker02.fnal.gov:2017">
+
+		<xc:Application class="ots::FESupervisor" id="210" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::FESupervisor" id="211" instance="2" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::FESupervisor" id="212" instance="3" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::FESupervisor" id="213" instance="4" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::DataManagerSupervisor" id="310" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::DataManagerSupervisor" id="311" instance="2" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+		<xc:Application class="ots::DataManagerSupervisor" id="312" instance="3" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+	-->
+
+	<!-- ContextUID='NimPlusContext' sourceConfig='XDAQContextConfiguration_v2 @ 1536701445' -->
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:3018">
+
+		<!-- Application GroupID = 'NimPlusContext' UID='NimPlusFESupervisor0' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::FESupervisor" id="600" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='ARTDAQBoardReaderWireChamber0' sourceConfig='XDAQContextConfiguration_v2 @ 1536701445' -->
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:8350">
+
+		<!-- Application GroupID = 'ARTDAQBoardReaderWireChamber0' UID='ARTDAQBoardReaderWireChamberSupervisor0' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::ARTDAQDataManagerSupervisor" id="500" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ARTDAQDataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='ARTDAQEventBuilder0' sourceConfig='XDAQContextConfiguration_v2 @ 1536701445' -->
+	<!--
+	<xc:Context id="0" url="http://ftbf-daq-06.fnal.gov:8351">
+
+		<xc:Application class="ots::EventBuilderApp" id="501" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:EventBuilderApp" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libEventBuilderApp.so</xc:Module>
+
+	</xc:Context>
+	-->
+
+	<!-- ContextUID='ARTDAQEventBuilder1' sourceConfig='XDAQContextConfiguration_v2 @ 1536701445' -->
+	<!--
+	<xc:Context id="0" url="http://ftbf-daq-07.fnal.gov:8352">
+
+		<xc:Application class="ots::EventBuilderApp" id="503" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:EventBuilderApp" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libEventBuilderApp.so</xc:Module>
+
+	</xc:Context>
+	-->
+
+	<!-- ContextUID='ARTDAQEventBuilder2' sourceConfig='XDAQContextConfiguration_v2 @ 1536701445' -->
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:8353">
+
+		<!-- Application GroupID = 'ARTDAQEventBuilder2' UID='ARTDAQEventBuilderApp2' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::EventBuilderApp" id="504" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:EventBuilderApp" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libEventBuilderApp.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='ARTDAQAggregator0' sourceConfig='XDAQContextConfiguration_v2 @ 1536701445' -->
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:8354">
+
+		<!-- Application GroupID = 'ARTDAQAggregator0' UID='ARTDAQAggregatorApp0' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::DataLoggerApp" id="502" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DataLoggerApp" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libDataLoggerApp.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='ARTDAQDispatcher0' sourceConfig='XDAQContextConfiguration_v2 @ 1536701445' -->
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:8355">
+
+		<!-- Application GroupID = 'ARTDAQDispatcher0' UID='ARTDAQDispatcherApp0' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::DispatcherApp" id="505" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:DispatcherApp" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libDispatcherApp.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='ARTDAQBoardReaderStrips0' sourceConfig='XDAQContextConfiguration_v2 @ 1536701445' -->
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:8358">
+
+		<!-- Application GroupID = 'ARTDAQBoardReaderStrips0' UID='ARTDAQBoardReaderStrips0App0' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::ARTDAQDataManagerSupervisor" id="520" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ARTDAQDataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='ARTDAQBoardReaderStrips1' sourceConfig='XDAQContextConfiguration_v2 @ 1536701445' -->
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:8357">
+
+		<!-- Application GroupID = 'ARTDAQBoardReaderStrips1' UID='ARTDAQBoardReaderStrips1App0' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::ARTDAQDataManagerSupervisor" id="521" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ARTDAQDataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='ARTDAQBoardReaderStrips2' sourceConfig='XDAQContextConfiguration_v2 @ 1536701445' -->
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:8356">
+
+		<!-- Application GroupID = 'ARTDAQBoardReaderStrips2' UID='ARTDAQBoardReaderStrips2App0' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::ARTDAQDataManagerSupervisor" id="522" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:ARTDAQDataManagerSupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+
+	<!-- ContextUID='CherenkovContext' sourceConfig='XDAQContextConfiguration_v2 @ 1536701445' -->
+	<xc:Context id="0" url="http://ftbf-daq-08.fnal.gov:2010">
+
+		<!-- Application GroupID = 'CherenkovContext' UID='CherenkovFESupervisor' sourceConfig='XDAQApplicationConfiguration_v4 @ 1536702062' -->
+		<xc:Application class="ots::FESupervisor" id="601" instance="1" network="local" group="daq">
+			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
+			</properties>
+		</xc:Application>
+		<xc:Module>/data/otsdaq_develop/build_slf6.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
+
+	</xc:Context>
+
+</xc:Partition>
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+	<ROOT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TableInfo.xsd">
+		<TABLE Name="FEInterfaceTable">
+			<VIEW Name="FE_INTERFACE_TABLE" Type="File,Database,DatabaseTest" Description="This%20table%20is%20used%20to%20associate%20a%20plugin%20class%20(and%20its%20table%20specifics)%20with%20a%20front-end%20device.%0A%0AThis%20table%20can%20be%20optionally%20used%20to%20associate%20a%20slow%20control%20table%20with%20a%20front-end.">
+				<COLUMN Type="GroupID-0" 	 Name="FEInterfaceGroupID" 	 StorageName="FE_INTERFACE_GROUP_ID" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="UID" 	 Name="FEInterfaceUID" 	 StorageName="FE_INTERFACE_UID" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="OnOff" 	 Name="Status" 	 StorageName="STATUS" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="FixedChoiceData" 	 Name="FEInterfacePluginName" 	 StorageName="FE_INTERFACE_PLUGIN_NAME" 		DataType="STRING" 		DataChoices="arbitraryBool=1,FEOtsUDPTemplateInterface"/>
+				<COLUMN Type="ChildLink-0" 	 Name="LinkToFETypeTable" 	 StorageName="LINK_TO_FE_TYPE_TABLE" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="ChildLinkUID-0" 	 Name="LinkToFETypeUID" 	 StorageName="LINK_TO_FE_TYPE_UID" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="ChildLink-FEToDetector" 	 Name="LinkToFEToDetectorTable" 	 StorageName="LINK_TO_FE_TO_DETECTOR_TABLE" 		DataType="STRING" 		DataChoices="arbitraryBool=1,NO_LINK,FEToDetectorTable"/>
+				<COLUMN Type="ChildLinkGroupID-FEToDetector" 	 Name="LinkToFEToDetectorGroupID" 	 StorageName="LINK_TO_FE_TO_DETECTOR_GROUP_ID" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="ChildLink-SlowControlChannels" 	 Name="LinkToSlowControlsChannelTable" 	 StorageName="LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="ChildLinkGroupID-SlowControlChannels" 	 Name="LinkToSlowControlsChannelGroupID" 	 StorageName="LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="ChildLink-SlowControlsMonitor" 	 Name="LinkToSlowControlsMonitorTable" 	 StorageName="LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="ChildLinkUID-SlowControlsMonitor" 	 Name="LinkToSlowControlsMonitorUID" 	 StorageName="LINK_TO_SLOW_CONTROLS_MONITOR_UID" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="Data" 	 Name="SlowControlsTxSocketIPAddress" 	 StorageName="SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="Data" 	 Name="SlowControlsTxSocketPort" 	 StorageName="SLOW_CONTROLS_TX_SOCKET_PORT" 		DataType="NUMBER" 		DataChoices=""/>
+				<COLUMN Type="YesNo" 	 Name="SlowControlsLocalAggregateSavingEnabled" 	 StorageName="SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="Data" 	 Name="SlowControlsLocalFilePath" 	 StorageName="SLOW_CONTROLS_LOCAL_FILE_PATH" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="Data" 	 Name="SlowControlsRadixFileName" 	 StorageName="SLOW_CONTROLS_RADIX_FILE_NAME" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="TrueFalse" 	 Name="SlowControlsSaveBinaryFile" 	 StorageName="SLOW_CONTROLS_SAVE_BINARY_FILE" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="Comment" 	 Name="CommentDescription" 	 StorageName="COMMENT_DESCRIPTION" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="Author" 	 Name="Author" 	 StorageName="AUTHOR" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="Timestamp" 	 Name="RecordInsertionTime" 	 StorageName="RECORD_INSERTION_TIME" 		DataType="TIMESTAMP WITH TIMEZONE" 		DataChoices=""/>
+			</VIEW>
+		</TABLE>
+	</ROOT>

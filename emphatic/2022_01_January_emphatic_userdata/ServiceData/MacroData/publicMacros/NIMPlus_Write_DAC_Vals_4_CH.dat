@@ -1,0 +1,7 @@
+{
+"name":"NIMPlus_Write_DAC_Vals_4_CH",
+"sequence":"21:w:1:1,22:w:1:0,1:w:0:CHAData,2:w:1:2,3:w:1:0,4:w:1:4,5:w:1:0,6:w:0:CHBData,7:w:1:2,8:w:1:0,9:w:1:4,10:w:1:0,11:w:0:CHCData,12:w:1:2,13:w:1:0,14:w:1:4,15:w:1:0,16:w:0:CHDData,17:w:1:2,18:w:1:0,19:w:1:4,20:w:1:0",
+"time":"Wed May 09 2018 11:00:10 GMT-0500 (CDT)",
+"notes":"[Modified 11:00 5/9/2018] Write DAC Values for the 4 Channels of the NIMPlus,Must Prepend Data with what channel you're programming. CH | ValA      |   2B      |   6C      |   AD      |   E",
+"LSBF":"false"
+}@

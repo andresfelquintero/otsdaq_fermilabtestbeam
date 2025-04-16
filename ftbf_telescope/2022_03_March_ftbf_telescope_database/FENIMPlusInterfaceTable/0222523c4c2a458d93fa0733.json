@@ -1,0 +1,598 @@
+{
+"document" : {
+"data" : {
+"NAME" : "FENIM_PLUS_INTERFACE_TABLE",
+"COMMENT" : "NIM+ parameters",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1642003504,
+"COL_TYPES" : {
+"INTERFACE_ID" : "STRING",
+"STATUS" : "STRING",
+"FIRMWARE_VERSION" : "NUMBER",
+"INTERFACE_IP_ADDRESS" : "STRING",
+"INTERFACE_PORT" : "NUMBER",
+"HOST_IP_ADDRESS" : "STRING",
+"HOST_PORT" : "NUMBER",
+"STREAM_TO_IP_ADDRESS" : "STRING",
+"STREAM_TO_PORT" : "NUMBER",
+"LOGIC_INPUT_CHANNEL_A" : "STRING",
+"LOGIC_INPUT_CHANNEL_B" : "STRING",
+"LOGIC_INPUT_CHANNEL_C" : "STRING",
+"LOGIC_INPUT_CHANNEL_D" : "STRING",
+"LOGIC_INPUT_CHANNEL_E" : "STRING",
+"LOGIC_INPUT_CHANNEL_F" : "STRING",
+"LOGIC_INPUT_CHANNEL_G" : "STRING",
+"LOGIC_INPUT_CHANNEL_H" : "STRING",
+"TRIGGER_INPUT_CHANNEL0" : "STRING",
+"TRIGGER_INPUT_CHANNEL1" : "STRING",
+"TRIGGER_INPUT_CHANNEL2" : "STRING",
+"OUTPUT_MUX_SELECT_CHANNEL_A" : "STRING",
+"OUTPUT_MUX_SELECT_CHANNEL_B" : "STRING",
+"OUTPUT_MUX_SELECT_CHANNEL_C" : "STRING",
+"OUTPUT_MUX_SELECT_CHANNEL_D" : "STRING",
+"COINCIDENCE_LOGIC_WORD" : "NUMBER",
+"LINK_TO_OPTIONAL_PARAMETERS" : "STRING",
+"LINK_TO_OPTIONAL_PARAMETERS_UID" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"INTERFACE_ID" : "NIMPlus",
+"STATUS" : "On",
+"FIRMWARE_VERSION" : "0",
+"INTERFACE_IP_ADDRESS" : "192.168.133.112",
+"INTERFACE_PORT" : "2001",
+"HOST_IP_ADDRESS" : "192.168.133.10",
+"HOST_PORT" : "5102",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.10",
+"STREAM_TO_PORT" : "55001",
+"LOGIC_INPUT_CHANNEL_A" : "NIM Input CH-A Modified",
+"LOGIC_INPUT_CHANNEL_B" : "False",
+"LOGIC_INPUT_CHANNEL_C" : "False",
+"LOGIC_INPUT_CHANNEL_D" : "False",
+"LOGIC_INPUT_CHANNEL_E" : "False",
+"LOGIC_INPUT_CHANNEL_F" : "False",
+"LOGIC_INPUT_CHANNEL_G" : "False",
+"LOGIC_INPUT_CHANNEL_H" : "False",
+"TRIGGER_INPUT_CHANNEL0" : "Logic Output",
+"TRIGGER_INPUT_CHANNEL1" : "Trigger CH-0",
+"TRIGGER_INPUT_CHANNEL2" : "Trigger CH-0",
+"OUTPUT_MUX_SELECT_CHANNEL_A" : "System Clock after DCM @ 26.5MHz",
+"OUTPUT_MUX_SELECT_CHANNEL_B" : "Trigger Output CH-1",
+"OUTPUT_MUX_SELECT_CHANNEL_C" : "Trigger Output CH-2",
+"OUTPUT_MUX_SELECT_CHANNEL_D" : "Trigger Output CH-2",
+"COINCIDENCE_LOGIC_WORD" : "2",
+"LINK_TO_OPTIONAL_PARAMETERS" : "FENIMPlusInterfaceOptionalTable",
+"LINK_TO_OPTIONAL_PARAMETERS_UID" : "NIMPlus",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1642003426"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2022-01-12T10:05:04.880-0600",
+"rawdata" : [
+
+]
+},
+"version" : "26",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2022-01-12T10:05:04.881-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2022-01-12T10:05:04.880-0600"
+},
+{
+"name" : "T992Config_v138",
+"assigned" : "2022-01-12T10:05:08.541-0600"
+},
+{
+"name" : "T992Config_v140",
+"assigned" : "2022-01-12T17:32:21.964-0600"
+},
+{
+"name" : "T992Config_v141",
+"assigned" : "2022-01-13T10:39:05.303-0600"
+},
+{
+"name" : "T992Config_v142",
+"assigned" : "2022-01-20T11:11:33.970-0600"
+},
+{
+"name" : "T992Config_v143",
+"assigned" : "2022-01-20T11:19:29.835-0600"
+},
+{
+"name" : "T992Config_v144",
+"assigned" : "2022-01-20T17:31:23.153-0600"
+},
+{
+"name" : "T992Config_v145",
+"assigned" : "2022-01-20T17:34:26.625-0600"
+},
+{
+"name" : "T992Config_v146",
+"assigned" : "2022-01-21T09:38:30.799-0600"
+},
+{
+"name" : "T992Config_v147",
+"assigned" : "2022-01-21T10:36:51.800-0600"
+},
+{
+"name" : "T992Config_v148",
+"assigned" : "2022-01-21T10:50:45.651-0600"
+},
+{
+"name" : "T992Config_v149",
+"assigned" : "2022-01-21T10:54:15.510-0600"
+},
+{
+"name" : "T992Config_v150",
+"assigned" : "2022-01-21T11:00:34.709-0600"
+},
+{
+"name" : "T992Config_v151",
+"assigned" : "2022-01-21T11:01:43.209-0600"
+},
+{
+"name" : "T992Config_v152",
+"assigned" : "2022-01-21T11:02:44.794-0600"
+},
+{
+"name" : "T992Config_v153",
+"assigned" : "2022-01-21T11:04:37.659-0600"
+},
+{
+"name" : "T992Config_v154",
+"assigned" : "2022-01-21T11:06:08.796-0600"
+},
+{
+"name" : "T992Config_v155",
+"assigned" : "2022-01-21T11:07:10.406-0600"
+},
+{
+"name" : "T992Config_v156",
+"assigned" : "2022-01-21T11:11:01.655-0600"
+},
+{
+"name" : "T992Config_v157",
+"assigned" : "2022-01-21T11:12:25.648-0600"
+},
+{
+"name" : "T992Config_v158",
+"assigned" : "2022-01-21T11:13:45.156-0600"
+},
+{
+"name" : "T992Config_v159",
+"assigned" : "2022-01-21T11:20:27.327-0600"
+},
+{
+"name" : "T992Config_v160",
+"assigned" : "2022-01-21T11:24:47.059-0600"
+},
+{
+"name" : "T992Config_v161",
+"assigned" : "2022-01-21T11:31:38.395-0600"
+},
+{
+"name" : "T992Config_v162",
+"assigned" : "2022-01-21T11:39:01.062-0600"
+},
+{
+"name" : "T992Config_v163",
+"assigned" : "2022-01-21T11:41:39.933-0600"
+},
+{
+"name" : "T992Config_v164",
+"assigned" : "2022-01-21T11:43:38.076-0600"
+},
+{
+"name" : "T992Config_v165",
+"assigned" : "2022-01-21T11:49:24.629-0600"
+},
+{
+"name" : "T992Config_v166",
+"assigned" : "2022-01-21T11:54:15.428-0600"
+},
+{
+"name" : "T992Config_v167",
+"assigned" : "2022-01-21T13:33:53.173-0600"
+},
+{
+"name" : "T992Config_v168",
+"assigned" : "2022-01-21T13:49:30.570-0600"
+},
+{
+"name" : "T992Config_v169",
+"assigned" : "2022-01-21T13:54:41.744-0600"
+},
+{
+"name" : "T992Config_v170",
+"assigned" : "2022-01-24T10:42:38.190-0600"
+},
+{
+"name" : "T992Config_v171",
+"assigned" : "2022-01-24T12:46:30.888-0600"
+},
+{
+"name" : "T992Config_v172",
+"assigned" : "2022-01-24T13:33:09.018-0600"
+},
+{
+"name" : "T992Config_v173",
+"assigned" : "2022-01-24T13:36:32.551-0600"
+},
+{
+"name" : "T992Config_v174",
+"assigned" : "2022-01-24T13:46:20.247-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-12T10:05:04.880-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2022-01-12T10:05:04.880-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2022-01-12T10:05:04.880-0600",
+"value" : {
+"name" : "26",
+"assigned" : "2022-01-12T10:05:04.880-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2022-01-12T10:05:04.880-0600",
+"value" : {
+"name" : "FENIMPlusInterfaceTable",
+"assigned" : "2022-01-12T10:05:04.880-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2022-01-12T10:05:04.881-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2022-01-12T10:05:04.881-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-12T10:05:08.541-0600",
+"value" : {
+"name" : "T992Config_v138",
+"assigned" : "2022-01-12T10:05:08.541-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-12T17:32:21.964-0600",
+"value" : {
+"name" : "T992Config_v140",
+"assigned" : "2022-01-12T17:32:21.964-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-13T10:39:05.303-0600",
+"value" : {
+"name" : "T992Config_v141",
+"assigned" : "2022-01-13T10:39:05.303-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-20T11:11:33.970-0600",
+"value" : {
+"name" : "T992Config_v142",
+"assigned" : "2022-01-20T11:11:33.970-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-20T11:19:29.835-0600",
+"value" : {
+"name" : "T992Config_v143",
+"assigned" : "2022-01-20T11:19:29.835-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-20T17:31:23.153-0600",
+"value" : {
+"name" : "T992Config_v144",
+"assigned" : "2022-01-20T17:31:23.153-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-20T17:34:26.625-0600",
+"value" : {
+"name" : "T992Config_v145",
+"assigned" : "2022-01-20T17:34:26.625-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T09:38:30.799-0600",
+"value" : {
+"name" : "T992Config_v146",
+"assigned" : "2022-01-21T09:38:30.799-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T10:36:51.800-0600",
+"value" : {
+"name" : "T992Config_v147",
+"assigned" : "2022-01-21T10:36:51.800-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T10:50:45.651-0600",
+"value" : {
+"name" : "T992Config_v148",
+"assigned" : "2022-01-21T10:50:45.651-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T10:54:15.510-0600",
+"value" : {
+"name" : "T992Config_v149",
+"assigned" : "2022-01-21T10:54:15.510-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:00:34.709-0600",
+"value" : {
+"name" : "T992Config_v150",
+"assigned" : "2022-01-21T11:00:34.709-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:01:43.209-0600",
+"value" : {
+"name" : "T992Config_v151",
+"assigned" : "2022-01-21T11:01:43.209-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:02:44.794-0600",
+"value" : {
+"name" : "T992Config_v152",
+"assigned" : "2022-01-21T11:02:44.794-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:04:37.659-0600",
+"value" : {
+"name" : "T992Config_v153",
+"assigned" : "2022-01-21T11:04:37.659-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:06:08.796-0600",
+"value" : {
+"name" : "T992Config_v154",
+"assigned" : "2022-01-21T11:06:08.796-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:07:10.406-0600",
+"value" : {
+"name" : "T992Config_v155",
+"assigned" : "2022-01-21T11:07:10.406-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:11:01.655-0600",
+"value" : {
+"name" : "T992Config_v156",
+"assigned" : "2022-01-21T11:11:01.655-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:12:25.648-0600",
+"value" : {
+"name" : "T992Config_v157",
+"assigned" : "2022-01-21T11:12:25.648-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:13:45.156-0600",
+"value" : {
+"name" : "T992Config_v158",
+"assigned" : "2022-01-21T11:13:45.156-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:20:27.327-0600",
+"value" : {
+"name" : "T992Config_v159",
+"assigned" : "2022-01-21T11:20:27.327-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:24:47.060-0600",
+"value" : {
+"name" : "T992Config_v160",
+"assigned" : "2022-01-21T11:24:47.059-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:31:38.395-0600",
+"value" : {
+"name" : "T992Config_v161",
+"assigned" : "2022-01-21T11:31:38.395-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:39:01.062-0600",
+"value" : {
+"name" : "T992Config_v162",
+"assigned" : "2022-01-21T11:39:01.062-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:41:39.933-0600",
+"value" : {
+"name" : "T992Config_v163",
+"assigned" : "2022-01-21T11:41:39.933-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:43:38.076-0600",
+"value" : {
+"name" : "T992Config_v164",
+"assigned" : "2022-01-21T11:43:38.076-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:49:24.629-0600",
+"value" : {
+"name" : "T992Config_v165",
+"assigned" : "2022-01-21T11:49:24.629-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T11:54:15.428-0600",
+"value" : {
+"name" : "T992Config_v166",
+"assigned" : "2022-01-21T11:54:15.428-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T13:33:53.173-0600",
+"value" : {
+"name" : "T992Config_v167",
+"assigned" : "2022-01-21T13:33:53.173-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T13:49:30.570-0600",
+"value" : {
+"name" : "T992Config_v168",
+"assigned" : "2022-01-21T13:49:30.570-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-21T13:54:41.744-0600",
+"value" : {
+"name" : "T992Config_v169",
+"assigned" : "2022-01-21T13:54:41.744-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-24T10:42:38.190-0600",
+"value" : {
+"name" : "T992Config_v170",
+"assigned" : "2022-01-24T10:42:38.190-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-24T12:46:30.888-0600",
+"value" : {
+"name" : "T992Config_v171",
+"assigned" : "2022-01-24T12:46:30.888-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-24T13:33:09.018-0600",
+"value" : {
+"name" : "T992Config_v172",
+"assigned" : "2022-01-24T13:33:09.018-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-24T13:36:32.551-0600",
+"value" : {
+"name" : "T992Config_v173",
+"assigned" : "2022-01-24T13:36:32.551-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-24T13:46:20.247-0600",
+"value" : {
+"name" : "T992Config_v174",
+"assigned" : "2022-01-24T13:46:20.247-0600"
+}
+}
+],
+"created" : "2022-01-12T10:05:04.880-0600"
+},
+"_id" : {
+"$oid" : "0222523c4c2a458d93fa0733"
+},
+"collection" : "FENIMPlusInterfaceTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

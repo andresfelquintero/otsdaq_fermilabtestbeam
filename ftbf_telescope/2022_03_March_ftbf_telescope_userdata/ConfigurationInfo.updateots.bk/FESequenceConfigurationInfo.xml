@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+	<ROOT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ConfigurationInfo.xsd">
+		<CONFIGURATION Name="FESequenceConfiguration">
+			<VIEW Name="FE_SEQUENCE_CONFIGURATION" Type="File,Database,DatabaseTest" Description="Used%20to%20create%20a%20sequence%20of%20write%20values%20for%20the%20states%20Configure%2C%20Start%2C%20and%20Stop%2FHalt.">
+				<COLUMN Type="GroupID-configureSequence" 	 Name="ConfigureGroupID" 	 StorageName="CONFIGURE_GROUP_ID" 		DataType="VARCHAR2" 		DataChoices=""/>
+				<COLUMN Type="GroupID-startSequence" 	 Name="StartGroupID" 	 StorageName="START_GROUP_ID" 		DataType="VARCHAR2" 		DataChoices=""/>
+				<COLUMN Type="GroupID-stopSequence" 	 Name="StopGroupID" 	 StorageName="STOP_GROUP_ID" 		DataType="VARCHAR2" 		DataChoices=""/>
+				<COLUMN Type="UID" 	 Name="EntryID" 	 StorageName="ENTRY_ID" 		DataType="VARCHAR2" 		DataChoices=""/>
+				<COLUMN Type="OnOff" 	 Name="Status" 	 StorageName="STATUS" 		DataType="VARCHAR2" 		DataChoices=""/>
+				<COLUMN Type="Data" 	 Name="WriteAddress" 	 StorageName="WRITE_ADDRESS" 		DataType="NUMBER" 		DataChoices=""/>
+				<COLUMN Type="Data" 	 Name="WriteValue" 	 StorageName="WRITE_VALUE" 		DataType="NUMBER" 		DataChoices=""/>
+				<COLUMN Type="Data" 	 Name="StartingBitPosition" 	 StorageName="STARTING_BIT_POSITION" 		DataType="NUMBER" 		DataChoices=""/>
+				<COLUMN Type="Data" 	 Name="BitFieldSize" 	 StorageName="BIT_FIELD_SIZE" 		DataType="NUMBER" 		DataChoices=""/>
+				<COLUMN Type="Comment" 	 Name="CommentDescription" 	 StorageName="COMMENT_DESCRIPTION" 		DataType="VARCHAR2" 		DataChoices=""/>
+				<COLUMN Type="Author" 	 Name="Author" 	 StorageName="AUTHOR" 		DataType="VARCHAR2" 		DataChoices=""/>
+				<COLUMN Type="Timestamp" 	 Name="RecordInsertionTime" 	 StorageName="RECORD_INSERTION_TIME" 		DataType="TIMESTAMP WITH TIMEZONE" 		DataChoices=""/>
+			</VIEW>
+		</CONFIGURATION>
+	</ROOT>

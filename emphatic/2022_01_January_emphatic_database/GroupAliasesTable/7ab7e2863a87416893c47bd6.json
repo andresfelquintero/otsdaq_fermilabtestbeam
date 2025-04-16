@@ -1,0 +1,158 @@
+{
+"document" : {
+"data" : {
+"NAME" : "GROUP_ALIASES_TABLE",
+"COMMENT" : "Default Backbone.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1643237903,
+"COL_TYPES" : {
+"GROUP_KEY_ALIAS" : "STRING",
+"GROUP_NAME" : "STRING",
+"GROUP_KEY" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"GROUP_KEY_ALIAS" : "MasterContext",
+"GROUP_NAME" : "T992Context",
+"GROUP_KEY" : "61",
+"COMMENT_DESCRIPTION" : "This Group Alias was automatically setup by the server.",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1643237903"
+},
+{
+"GROUP_KEY_ALIAS" : "T992Config",
+"GROUP_NAME" : "T992Config",
+"GROUP_KEY" : "182",
+"COMMENT_DESCRIPTION" : "This Group Alias was automatically setup by the server.",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1643234701"
+},
+{
+"GROUP_KEY_ALIAS" : "SlaveContext",
+"GROUP_NAME" : "T992Context",
+"GROUP_KEY" : "3",
+"COMMENT_DESCRIPTION" : "This Group Alias was automatically setup by the server.",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1542386340"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2022-01-26T16:58:23.832-0600",
+"rawdata" : [
+
+]
+},
+"version" : "259",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2022-01-26T16:58:23.832-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2022-01-26T16:58:23.832-0600"
+},
+{
+"name" : "GroupAliasTreeEditWizBackbone_v136",
+"assigned" : "2022-01-26T16:58:26.737-0600"
+},
+{
+"name" : "GroupAliasSaveWizBackbone_v92",
+"assigned" : "2022-01-26T17:23:54.440-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-26T16:58:23.832-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2022-01-26T16:58:23.832-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2022-01-26T16:58:23.832-0600",
+"value" : {
+"name" : "259",
+"assigned" : "2022-01-26T16:58:23.832-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2022-01-26T16:58:23.832-0600",
+"value" : {
+"name" : "GroupAliasesTable",
+"assigned" : "2022-01-26T16:58:23.832-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2022-01-26T16:58:23.832-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2022-01-26T16:58:23.832-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-26T16:58:26.737-0600",
+"value" : {
+"name" : "GroupAliasTreeEditWizBackbone_v136",
+"assigned" : "2022-01-26T16:58:26.737-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-26T17:23:54.440-0600",
+"value" : {
+"name" : "GroupAliasSaveWizBackbone_v92",
+"assigned" : "2022-01-26T17:23:54.440-0600"
+}
+}
+],
+"created" : "2022-01-26T16:58:23.832-0600"
+},
+"_id" : {
+"$oid" : "7ab7e2863a87416893c47bd6"
+},
+"collection" : "GroupAliasesTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

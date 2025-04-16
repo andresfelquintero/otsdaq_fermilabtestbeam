@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+	<ROOT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TableInfo.xsd">
+		<TABLE Name="DetectorTable">
+			<VIEW Name="DETECTOR_TABLE" Type="File,Database,DatabaseTest">
+				<COLUMN Type="UID" 	 Name="DetectorUID" 	 StorageName="DETECTOR_UID" 		DataType="VARCHAR2"/>
+				<COLUMN Type="Data" 	 Name="DetectorType" 	 StorageName="DETECTOR_TYPE" 		DataType="VARCHAR2"/>
+				<COLUMN Type="OnOff" 	 Name="Status" 	 StorageName="STATUS" 		DataType="VARCHAR2"/>
+				<COLUMN Type="ChildLink-DACs" 	 Name="LinkToDACsTable" 	 StorageName="LINK_TO_DA_CS_TABLE" 		DataType="VARCHAR2"/>
+				<COLUMN Type="ChildLinkUID-DACs" 	 Name="LinkToDACsUID" 	 StorageName="LINK_TO_DA_CS_UID" 		DataType="VARCHAR2"/>
+				<COLUMN Type="ChildLink-Mask" 	 Name="LinkToMaskTable" 	 StorageName="LINK_TO_MASK_TABLE" 		DataType="VARCHAR2"/>
+				<COLUMN Type="ChildLinkUID-Mask" 	 Name="LinkToMaskUID" 	 StorageName="LINK_TO_MASK_UID" 		DataType="VARCHAR2"/>
+				<COLUMN Type="Comment" 	 Name="CommentDescription" 	 StorageName="COMMENT_DESCRIPTION" 		DataType="VARCHAR2"/>
+				<COLUMN Type="Author" 	 Name="Author" 	 StorageName="AUTHOR" 		DataType="VARCHAR2"/>
+				<COLUMN Type="Timestamp" 	 Name="RecordInsertionTime" 	 StorageName="RECORD_INSERTION_TIME" 		DataType="TIMESTAMP WITH TIMEZONE"/>
+			</VIEW>
+		</TABLE>
+	</ROOT>

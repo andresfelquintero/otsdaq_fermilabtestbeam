@@ -1,0 +1,550 @@
+{
+"document" : {
+"data" : {
+"NAME" : "ARTDAQ_BOARD_READER_DAQ_PARAMETER_CONFIGURATION",
+"COMMENT" : "default reader paramaters for artdaq (1-1-1) tutorial.",
+"AUTHOR" : "eflumerf",
+"CREATION_TIME" : 1516809391,
+"COL_TYPES" : {
+"DAQ_PARAMETER_GROUP_ID" : "VARCHAR2",
+"DAQ_PARAMETER_UID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"DAQ_PARAMETER_KEY" : "VARCHAR2",
+"DAQ_PARAMETER_VALUE" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup | readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "daqMpiSyncParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "mpi_sync_interval",
+"DAQ_PARAMETER_VALUE" : "50",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513352427"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup | readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "daqSleepOnStopParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "sleep_on_stop_us",
+"DAQ_PARAMETER_VALUE" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513352427"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "daqRequestsEnabledParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "requests_enabled",
+"DAQ_PARAMETER_VALUE" : "false",
+"COMMENT_DESCRIPTION" : "Whether to set up the socket for listening for trigger messages",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516293762"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "daqRequestModeParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "request_mode",
+"DAQ_PARAMETER_VALUE" : "\"Ignored\"",
+"COMMENT_DESCRIPTION" : "Possible values are: Ignored, Single, Buffer, Window",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513352427"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup | readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "daqDataBufferDepthFragmentsParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "data_buffer_depth_fragments",
+"DAQ_PARAMETER_VALUE" : "1000",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513352427"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup | readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "daqDataBufferDepthMBParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "data_buffer_depth_mb",
+"DAQ_PARAMETER_VALUE" : "1000",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513352427"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup | readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "daqRequestPortParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "request_port",
+"DAQ_PARAMETER_VALUE" : "8600",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516388914"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup | readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "daqRequestAddressParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "request_address",
+"DAQ_PARAMETER_VALUE" : "\"227.128.12.26\"",
+"COMMENT_DESCRIPTION" : "Multicast request address",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516388647"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup | readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "daqRequestWindowOffsetParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "request_window_offset",
+"DAQ_PARAMETER_VALUE" : "0",
+"COMMENT_DESCRIPTION" : "Request message contains tzero. Window will be from tzero - offset to tzero + width",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513352427"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup | readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "daqRequestWindowWidthParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "request_window_width",
+"DAQ_PARAMETER_VALUE" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513352427"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup | readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "daqStaleRequestTimeoutParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "stale_request_timeout",
+"DAQ_PARAMETER_VALUE" : "\"0xFFFFFFFF\"",
+"COMMENT_DESCRIPTION" : "How long to wait before discarding request messages that are outside the available data",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513352427"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup | readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "daqUniqueWindowsParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "request_windows_are_unique",
+"DAQ_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "If request windows are unique, avoids a copy operation, but the same data point cannot be used for two requests. If this is not anticipated, leave set to \"true\"",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513352427"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup | readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "daqDataThreadParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "separate_data_thread",
+"DAQ_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "MUST be true for triggers to be applied! If triggering is not desired, but a separate readout thread is, set this to true, triggers_enabled to false and trigger_mode to ignored.",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516293595"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup | readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "daqMonitoringThreadParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "separate_monitoring_thread",
+"DAQ_PARAMETER_VALUE" : "false",
+"COMMENT_DESCRIPTION" : "Whether a thread should be started which periodically calls checkHWStatus_, a user-defined function which should be used to check hardware status registers and report to MetricMan.",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513352427"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup | readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "daqPollHardwareParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "poll_hardware_status",
+"DAQ_PARAMETER_VALUE" : "false",
+"COMMENT_DESCRIPTION" : "Whether checkHWStatus_ will be called, either through the thread or at the start of getNext",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513352427"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup | readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "daqPollIntervalParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "hardware_poll_interval_us",
+"DAQ_PARAMETER_VALUE" : "1000000",
+"COMMENT_DESCRIPTION" : "If hardware monitoring thread is enabled, how often should it call checkHWStatus_",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513352427"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "wireChamber0PortParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "port",
+"DAQ_PARAMETER_VALUE" : "40005",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1511373895"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "wireChamber0IpParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "ip",
+"DAQ_PARAMETER_VALUE" : "\"127.0.0.1\"",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1511373895"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "wireChamber0HostnameParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "wire_chamber_hostname",
+"DAQ_PARAMETER_VALUE" : "ftbfwc01",
+"COMMENT_DESCRIPTION" : "Hostname of the connected MWPC Controller",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1511373895"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "wireChamber0FragmentIdParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "fragment_id",
+"DAQ_PARAMETER_VALUE" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1511373895"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "wireChamber0BoardIDParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "board_id",
+"DAQ_PARAMETER_VALUE" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1511373895"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerWC0PGroup",
+"DAQ_PARAMETER_UID" : "wireChamber0SendEndOfSubrunFrags",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "send_endofsubrun_frag",
+"DAQ_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1512491549"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup",
+"DAQ_PARAMETER_UID" : "strips0PortParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "port",
+"DAQ_PARAMETER_VALUE" : "49000",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513874721"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup",
+"DAQ_PARAMETER_UID" : "strips0FragmentIdParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "fragment_id",
+"DAQ_PARAMETER_VALUE" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513874721"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup",
+"DAQ_PARAMETER_UID" : "strips0BoardIDParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "board_id",
+"DAQ_PARAMETER_VALUE" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513874721"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips1PGroup",
+"DAQ_PARAMETER_UID" : "strips1PortParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "port",
+"DAQ_PARAMETER_VALUE" : "49001",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513874721"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips1PGroup",
+"DAQ_PARAMETER_UID" : "strips1FragmentIdParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "fragment_id",
+"DAQ_PARAMETER_VALUE" : "1",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513874721"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips1PGroup",
+"DAQ_PARAMETER_UID" : "strips1BoardIDParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "board_id",
+"DAQ_PARAMETER_VALUE" : "1",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513874721"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips2PGroup",
+"DAQ_PARAMETER_UID" : "strips2PortParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "port",
+"DAQ_PARAMETER_VALUE" : "49002",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516293762"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup",
+"DAQ_PARAMETER_UID" : "stripsIpParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "ip",
+"DAQ_PARAMETER_VALUE" : "\"127.0.0.1\"",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516293762"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips2PGroup",
+"DAQ_PARAMETER_UID" : "strips2FragmentIdParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "fragment_id",
+"DAQ_PARAMETER_VALUE" : "2",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516293762"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips2PGroup",
+"DAQ_PARAMETER_UID" : "strips2BoardIDParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "board_id",
+"DAQ_PARAMETER_VALUE" : "2",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516293762"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup",
+"DAQ_PARAMETER_UID" : "stripsTriggerDelayParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "trigger_clock_delay",
+"DAQ_PARAMETER_VALUE" : "100",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516293762"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup",
+"DAQ_PARAMETER_UID" : "stripsTriggerWidthParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "trigger_width",
+"DAQ_PARAMETER_VALUE" : "100",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516293762"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup",
+"DAQ_PARAMETER_UID" : "stripsTriggerOffsetSearchParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "trigger_offset_search",
+"DAQ_PARAMETER_VALUE" : "false",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516293762"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup",
+"DAQ_PARAMETER_UID" : "stripsStaleRequestParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "stale_request_Timeout",
+"DAQ_PARAMETER_VALUE" : "1000",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516293762"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup",
+"DAQ_PARAMETER_UID" : "stripsDataThreadParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "separate_data_thread",
+"DAQ_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516293762"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup",
+"DAQ_PARAMETER_UID" : "stripsRequestsEnabledParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "requests_enabled",
+"DAQ_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516293762"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "readerStrips0PGroup | readerStrips1PGroup | readerStrips2PGroup",
+"DAQ_PARAMETER_UID" : "stripsRequestModeParameter",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "request_mode",
+"DAQ_PARAMETER_VALUE" : "\"Ignored\"",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516809383"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T15:48:29.794-0500",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:29.804-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:29.798-0500"
+},
+{
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:31.499-0500"
+},
+{
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:23.247-0500"
+},
+{
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:46.747-0500"
+},
+{
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:55.944-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:29.798-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:29.798-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T15:48:29.800-0500",
+"value" : {
+"name" : "0",
+"assigned" : "2018-09-11T15:48:29.800-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T15:48:29.802-0500",
+"value" : {
+"name" : "ARTDAQBoardReaderDaqParameterConfiguration",
+"assigned" : "2018-09-11T15:48:29.802-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T15:48:29.804-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:29.804-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:31.499-0500",
+"value" : {
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:31.499-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:28:23.247-0500",
+"value" : {
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:23.247-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:30:46.747-0500",
+"value" : {
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:46.747-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:55.944-0500",
+"value" : {
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:55.944-0500"
+}
+}
+],
+"created" : "2018-09-11T15:48:29.794-0500"
+},
+"_id" : {
+"$oid" : "79ed40199a794b558970ceee"
+},
+"collection" : "ARTDAQBoardReaderDaqParameterConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

@@ -1,0 +1,124 @@
+{
+"document" : {
+"data" : {
+"NAME" : "VERSION_ALIASES_TABLE",
+"COMMENT" : "Default Version Aliases.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1480649901,
+"COL_TYPES" : {
+"VERSION_ALIAS_UID" : "STRING",
+"TABLE_NAME" : "STRING",
+"VERSION_ALIAS" : "STRING",
+"VERSION" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2020-01-31T09:57:28.180-0600",
+"rawdata" : [
+
+]
+},
+"version" : "1",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2020-01-31T09:57:28.180-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2020-01-31T09:57:28.180-0600"
+},
+{
+"name" : "GroupAliasTreeEditWizBackbone_v1",
+"assigned" : "2020-01-31T09:57:28.335-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-01-31T09:57:28.180-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2020-01-31T09:57:28.180-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2020-01-31T09:57:28.180-0600",
+"value" : {
+"name" : "1",
+"assigned" : "2020-01-31T09:57:28.180-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2020-01-31T09:57:28.180-0600",
+"value" : {
+"name" : "VersionAliasesTable",
+"assigned" : "2020-01-31T09:57:28.180-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2020-01-31T09:57:28.180-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2020-01-31T09:57:28.180-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-01-31T09:57:28.335-0600",
+"value" : {
+"name" : "GroupAliasTreeEditWizBackbone_v1",
+"assigned" : "2020-01-31T09:57:28.335-0600"
+}
+}
+],
+"created" : "2020-01-31T09:57:28.180-0600"
+},
+"_id" : {
+"$oid" : "6c2978d03ae648a0a6fb8ea1"
+},
+"collection" : "VersionAliasesTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

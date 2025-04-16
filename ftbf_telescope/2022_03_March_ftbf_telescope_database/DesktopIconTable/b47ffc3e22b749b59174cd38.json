@@ -1,0 +1,498 @@
+{
+"document" : {
+"data" : {
+"NAME" : "DESKTOP_ICON_TABLE",
+"COMMENT" : "Desktop icon definitions.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1646855854,
+"COL_TYPES" : {
+"ICON_NAME" : "STRING",
+"STATUS" : "STRING",
+"CAPTION" : "STRING",
+"ALTERNATE_TEXT" : "STRING",
+"FORCE_ONLY_ONE_INSTANCE" : "STRING",
+"REQUIRED_PERMISSION_LEVEL" : "STRING",
+"IMAGE_URL" : "STRING",
+"WINDOW_CONTENT_URL" : "STRING",
+"LINK_TO_APPLICATION_TABLE" : "STRING",
+"LINK_TO_APPLICATION_UID" : "STRING",
+"LINK_TO_PARAMETER_TABLE" : "STRING",
+"LINK_TO_PARAMETER_GROUP_ID" : "STRING",
+"FOLDER_PATH" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"ICON_NAME" : "FSM",
+"STATUS" : "On",
+"CAPTION" : "State Machine",
+"ALTERNATE_TEXT" : "FSM",
+"FORCE_ONLY_ONE_INSTANCE" : "True",
+"REQUIRED_PERMISSION_LEVEL" : "1",
+"IMAGE_URL" : "icon-Physics.gif",
+"WINDOW_CONTENT_URL" : "/WebPath/html/StateMachine.html?fsm_name=OtherRuns0",
+"LINK_TO_APPLICATION_TABLE" : "NO_LINK",
+"LINK_TO_APPLICATION_UID" : "DEFAULT",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+},
+{
+"ICON_NAME" : "Chat",
+"STATUS" : "On",
+"CAPTION" : "Chat",
+"ALTERNATE_TEXT" : "CHAT",
+"FORCE_ONLY_ONE_INSTANCE" : "True",
+"REQUIRED_PERMISSION_LEVEL" : "1",
+"IMAGE_URL" : "icon-Chat.png",
+"WINDOW_CONTENT_URL" : "/urn:xdaq-application:lid=",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationTable",
+"LINK_TO_APPLICATION_UID" : "ChatSupervisor",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "The id number will be appended from the linked XDAQ supervisor urn",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+},
+{
+"ICON_NAME" : "Logbook",
+"STATUS" : "Off",
+"CAPTION" : "Logbook",
+"ALTERNATE_TEXT" : "LOG",
+"FORCE_ONLY_ONE_INSTANCE" : "True",
+"REQUIRED_PERMISSION_LEVEL" : "1",
+"IMAGE_URL" : "icon-Logbook.png",
+"WINDOW_CONTENT_URL" : "/urn:xdaq-application:lid=",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationTable",
+"LINK_TO_APPLICATION_UID" : "LogbookSupervisor",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "lid number must match XDAQ supervisor urn",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1641597228"
+},
+{
+"ICON_NAME" : "Visualizer",
+"STATUS" : "On",
+"CAPTION" : "Visualizer",
+"ALTERNATE_TEXT" : "VIS",
+"FORCE_ONLY_ONE_INSTANCE" : "False",
+"REQUIRED_PERMISSION_LEVEL" : "1",
+"IMAGE_URL" : "icon-Visualizer.png",
+"WINDOW_CONTENT_URL" : "http://athenanu.dhcp.fnal.gov:2003/WebPath/html/Visualization.html?urn=",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationTable",
+"LINK_TO_APPLICATION_UID" : "VisualSupervisor",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "urn must match XDAQ supervisor urn",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646855854"
+},
+{
+"ICON_NAME" : "MacroMaker",
+"STATUS" : "On",
+"CAPTION" : "Macro Maker",
+"ALTERNATE_TEXT" : "MM",
+"FORCE_ONLY_ONE_INSTANCE" : "True",
+"REQUIRED_PERMISSION_LEVEL" : "1",
+"IMAGE_URL" : "icon-MacroMaker.png",
+"WINDOW_CONTENT_URL" : "/WebPath/html/MacroMaker.html?urn=",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationTable",
+"LINK_TO_APPLICATION_UID" : "MacroMakerSupervisor",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "lid number must match XDAQ supervisor urn",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+},
+{
+"ICON_NAME" : "Console",
+"STATUS" : "Off",
+"CAPTION" : "Console",
+"ALTERNATE_TEXT" : "CON",
+"FORCE_ONLY_ONE_INSTANCE" : "True",
+"REQUIRED_PERMISSION_LEVEL" : "255",
+"IMAGE_URL" : "icon-Console.png",
+"WINDOW_CONTENT_URL" : "/WebPath/html/Console.html?urn=",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationTable",
+"LINK_TO_APPLICATION_UID" : "ConsoleSupervisor",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "urn must match XDAQ supervisor urn",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1608838867"
+},
+{
+"ICON_NAME" : "ConfigureGUI",
+"STATUS" : "On",
+"CAPTION" : "Configure",
+"ALTERNATE_TEXT" : "CFG",
+"FORCE_ONLY_ONE_INSTANCE" : "False",
+"REQUIRED_PERMISSION_LEVEL" : "10",
+"IMAGE_URL" : "icon-Configure.png",
+"WINDOW_CONTENT_URL" : "/urn:xdaq-application:lid=",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationTable",
+"LINK_TO_APPLICATION_UID" : "ConfigurationGUISupervisor",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "lid number must match XDAQ supervisor urn",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+},
+{
+"ICON_NAME" : "FESubConfigGUI",
+"STATUS" : "On",
+"CAPTION" : "Front-ends",
+"ALTERNATE_TEXT" : "CFG",
+"FORCE_ONLY_ONE_INSTANCE" : "False",
+"REQUIRED_PERMISSION_LEVEL" : "10",
+"IMAGE_URL" : "icon-Configure.png",
+"WINDOW_CONTENT_URL" : "/WebPath/html/ConfigurationGUI_subset.html?urn=",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationTable",
+"LINK_TO_APPLICATION_UID" : "ConfigurationGUISupervisor",
+"LINK_TO_PARAMETER_TABLE" : "DesktopWindowParameterTable",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "Config Subsets",
+"COMMENT_DESCRIPTION" : "lid number must match XDAQ supervisor urn",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+},
+{
+"ICON_NAME" : "DPSubConfigGUI",
+"STATUS" : "On",
+"CAPTION" : "Data Processors",
+"ALTERNATE_TEXT" : "CFG",
+"FORCE_ONLY_ONE_INSTANCE" : "False",
+"REQUIRED_PERMISSION_LEVEL" : "10",
+"IMAGE_URL" : "icon-Configure.png",
+"WINDOW_CONTENT_URL" : "/WebPath/html/ConfigurationGUI_subset.html?urn=",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationTable",
+"LINK_TO_APPLICATION_UID" : "ConfigurationGUISupervisor",
+"LINK_TO_PARAMETER_TABLE" : "DesktopWindowParameterTable",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "Config Subsets",
+"COMMENT_DESCRIPTION" : "Data Processors config subset",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+},
+{
+"ICON_NAME" : "ControlsDashboard",
+"STATUS" : "Off",
+"CAPTION" : "Controls Dashboard",
+"ALTERNATE_TEXT" : "CTRLS",
+"FORCE_ONLY_ONE_INSTANCE" : "False",
+"REQUIRED_PERMISSION_LEVEL" : "1",
+"IMAGE_URL" : "icon-ControlsDashboard.png",
+"WINDOW_CONTENT_URL" : "/WebPath/html/SlowControlsDashboard.html?urn=",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationTable",
+"LINK_TO_APPLICATION_UID" : "ControlsDashboardSupervisor",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "urn must match XDAQ supervisor urn",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+},
+{
+"ICON_NAME" : "NOvALog",
+"STATUS" : "Off",
+"CAPTION" : "NOvA Log",
+"ALTERNATE_TEXT" : "NOVA",
+"FORCE_ONLY_ONE_INSTANCE" : "True",
+"REQUIRED_PERMISSION_LEVEL" : "1",
+"IMAGE_URL" : "0",
+"WINDOW_CONTENT_URL" : "http://dbweb6.fnal.gov:8080/ECL/nova/E/index",
+"LINK_TO_APPLICATION_TABLE" : "NO_LINK",
+"LINK_TO_APPLICATION_UID" : "DEFAULT",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "0 means use ALT for icon",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+},
+{
+"ICON_NAME" : "FEMacroTest",
+"STATUS" : "On",
+"CAPTION" : "FE Macro Test",
+"ALTERNATE_TEXT" : "FE-Mac",
+"FORCE_ONLY_ONE_INSTANCE" : "True",
+"REQUIRED_PERMISSION_LEVEL" : "1",
+"IMAGE_URL" : "icon-Configure.png",
+"WINDOW_CONTENT_URL" : "/WebPath/html/FEMacroTest.html?urn=",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationTable",
+"LINK_TO_APPLICATION_UID" : "MacroMakerSupervisor",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "Config Subsets",
+"COMMENT_DESCRIPTION" : "lid number must match XDAQ supervisor urn",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+},
+{
+"ICON_NAME" : "NIMPlus",
+"STATUS" : "On",
+"CAPTION" : "NIM+",
+"ALTERNATE_TEXT" : "NIM+",
+"FORCE_ONLY_ONE_INSTANCE" : "False",
+"REQUIRED_PERMISSION_LEVEL" : "1",
+"IMAGE_URL" : "icon-Configure.png",
+"WINDOW_CONTENT_URL" : "/WebPath/NimPlusWebPath/html/NimPlus_app.html",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationTable",
+"LINK_TO_APPLICATION_UID" : "ConfigurationGUISupervisor",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "Config Subsets",
+"COMMENT_DESCRIPTION" : "Ben's NIM+ web app",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+},
+{
+"ICON_NAME" : "AcceleratorStatus",
+"STATUS" : "On",
+"CAPTION" : "Status",
+"ALTERNATE_TEXT" : "Accelerator",
+"FORCE_ONLY_ONE_INSTANCE" : "True",
+"REQUIRED_PERMISSION_LEVEL" : "1",
+"IMAGE_URL" : "0",
+"WINDOW_CONTENT_URL" : "http://www-bd.fnal.gov/notifyservlet/www?project=&refresh=on&infolinks=top",
+"LINK_TO_APPLICATION_TABLE" : "NO_LINK",
+"LINK_TO_APPLICATION_UID" : "DEFAULT",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "FTBF Extras",
+"COMMENT_DESCRIPTION" : "Link to FNAL accelerator status.",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+},
+{
+"ICON_NAME" : "AccLogbook",
+"STATUS" : "On",
+"CAPTION" : "Elog",
+"ALTERNATE_TEXT" : "Accelerator",
+"FORCE_ONLY_ONE_INSTANCE" : "False",
+"REQUIRED_PERMISSION_LEVEL" : "1",
+"IMAGE_URL" : "0",
+"WINDOW_CONTENT_URL" : "https://www-bd.fnal.gov/Elog/?orLogName=Operations",
+"LINK_TO_APPLICATION_TABLE" : "NO_LINK",
+"LINK_TO_APPLICATION_UID" : "DEFAULT",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "FTBF Extras",
+"COMMENT_DESCRIPTION" : "Link to FNAL accelerator elog.",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+},
+{
+"ICON_NAME" : "FTBFLogbook",
+"STATUS" : "On",
+"CAPTION" : "Elog",
+"ALTERNATE_TEXT" : "FTBF",
+"FORCE_ONLY_ONE_INSTANCE" : "False",
+"REQUIRED_PERMISSION_LEVEL" : "1",
+"IMAGE_URL" : "0",
+"WINDOW_CONTENT_URL" : "http://dbweb6.fnal.gov:8080/ECL/test_beam/E/index",
+"LINK_TO_APPLICATION_TABLE" : "NO_LINK",
+"LINK_TO_APPLICATION_UID" : "DEFAULT",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "FTBF Extras",
+"COMMENT_DESCRIPTION" : "Link to FNAL test beam elog.",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+},
+{
+"ICON_NAME" : "FTBFStatus",
+"STATUS" : "On",
+"CAPTION" : "Status",
+"ALTERNATE_TEXT" : "FTBF",
+"FORCE_ONLY_ONE_INSTANCE" : "False",
+"REQUIRED_PERMISSION_LEVEL" : "1",
+"IMAGE_URL" : "0",
+"WINDOW_CONTENT_URL" : "https://www-bd.fnal.gov/synoptic/display/MTest/FTBF_Status",
+"LINK_TO_APPLICATION_TABLE" : "NO_LINK",
+"LINK_TO_APPLICATION_UID" : "DEFAULT",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "FTBF Extras",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+},
+{
+"ICON_NAME" : "FTBFPDU02",
+"STATUS" : "On",
+"CAPTION" : "PDU_02",
+"ALTERNATE_TEXT" : "FTBF",
+"FORCE_ONLY_ONE_INSTANCE" : "False",
+"REQUIRED_PERMISSION_LEVEL" : "1",
+"IMAGE_URL" : "0",
+"WINDOW_CONTENT_URL" : "http://mtest-pdu02.fnal.gov/",
+"LINK_TO_APPLICATION_TABLE" : "NO_LINK",
+"LINK_TO_APPLICATION_UID" : "DEFAULT",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "FTBF Extras",
+"COMMENT_DESCRIPTION" : "To control PDU in MT6.1a",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+},
+{
+"ICON_NAME" : "SmartLaunch",
+"STATUS" : "On",
+"CAPTION" : "Smart Launch",
+"ALTERNATE_TEXT" : "LAUNCH",
+"FORCE_ONLY_ONE_INSTANCE" : "True",
+"REQUIRED_PERMISSION_LEVEL" : "255",
+"IMAGE_URL" : "icon-Rocket.png",
+"WINDOW_CONTENT_URL" : "/WebPath/FTBFWebPath/html/SmartLaunch.html",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationTable",
+"LINK_TO_APPLICATION_UID" : "ConfigurationGUISupervisor",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "Smart Launch web app",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1641597308"
+},
+{
+"ICON_NAME" : "DTCSupervisor",
+"STATUS" : "On",
+"CAPTION" : "DTC Supervisor",
+"ALTERNATE_TEXT" : "OT",
+"FORCE_ONLY_ONE_INSTANCE" : "False",
+"REQUIRED_PERMISSION_LEVEL" : "1",
+"IMAGE_URL" : "0",
+"WINDOW_CONTENT_URL" : "http://ftbftracker02.fnal.gov:2020/urn:xdaq-application:lid=51/MainPage",
+"LINK_TO_APPLICATION_TABLE" : "NO_LINK",
+"LINK_TO_APPLICATION_UID" : "DEFAULT",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "FTBF Extras",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+},
+{
+"ICON_NAME" : "Iterator",
+"STATUS" : "On",
+"CAPTION" : "Iterator",
+"ALTERNATE_TEXT" : "ITER",
+"FORCE_ONLY_ONE_INSTANCE" : "True",
+"REQUIRED_PERMISSION_LEVEL" : "255",
+"IMAGE_URL" : "icon-Iterate.png",
+"WINDOW_CONTENT_URL" : "/WebPath/html/Iterate.html?urn=",
+"LINK_TO_APPLICATION_TABLE" : "XDAQApplicationTable",
+"LINK_TO_APPLICATION_UID" : "ConfigurationGUISupervisor",
+"LINK_TO_PARAMETER_TABLE" : "NO_LINK",
+"LINK_TO_PARAMETER_GROUP_ID" : "DEFAULT",
+"FOLDER_PATH" : "FTBF Extras",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1580142246"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2022-03-09T13:57:34.118-0600",
+"rawdata" : [
+
+]
+},
+"version" : "13",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2022-03-09T13:57:34.118-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2022-03-09T13:57:34.118-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-03-09T13:57:34.118-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2022-03-09T13:57:34.118-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2022-03-09T13:57:34.118-0600",
+"value" : {
+"name" : "13",
+"assigned" : "2022-03-09T13:57:34.118-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2022-03-09T13:57:34.118-0600",
+"value" : {
+"name" : "DesktopIconTable",
+"assigned" : "2022-03-09T13:57:34.118-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2022-03-09T13:57:34.118-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2022-03-09T13:57:34.118-0600"
+}
+}
+],
+"created" : "2022-03-09T13:57:34.118-0600"
+},
+"_id" : {
+"$oid" : "b47ffc3e22b749b59174cd38"
+},
+"collection" : "DesktopIconTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

@@ -1,0 +1,220 @@
+{
+"document" : {
+"data" : {
+"NAME" : "UDP_DATA_STREAMER_CONSUMER_CONFIGURATION",
+"COMMENT" : "UDP Streamer records.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1509723650,
+"COL_TYPES" : {
+"PROCESSOR_UID" : "VARCHAR2",
+"HOST_IP_ADDRESS" : "VARCHAR2",
+"HOST_PORT" : "NUMBER",
+"STREAM_TO_IP_ADDRESS" : "VARCHAR2",
+"STREAM_TO_PORT" : "NUMBER",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"PROCESSOR_UID" : "UDPStreamer0",
+"HOST_IP_ADDRESS" : "127.0.0.1",
+"HOST_PORT" : "4100",
+"STREAM_TO_IP_ADDRESS" : "127.0.0.1",
+"STREAM_TO_PORT" : "4101",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1479826470"
+},
+{
+"PROCESSOR_UID" : "UDPStreamer1",
+"HOST_IP_ADDRESS" : "127.0.0.1",
+"HOST_PORT" : "3000",
+"STREAM_TO_IP_ADDRESS" : "127.0.0.1",
+"STREAM_TO_PORT" : "3001",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "DEFAULT",
+"RECORD_INSERTION_TIME" : "0"
+},
+{
+"PROCESSOR_UID" : "FSSR0_DB0_DataStreamer0",
+"HOST_IP_ADDRESS" : "192.168.133.1",
+"HOST_PORT" : "48000",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.1",
+"STREAM_TO_PORT" : "50000",
+"COMMENT_DESCRIPTION" : "Streaming to Visualizer",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509723650"
+},
+{
+"PROCESSOR_UID" : "FSSR1_DB0_DataStreamer0",
+"HOST_IP_ADDRESS" : "192.168.133.1",
+"HOST_PORT" : "48001",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.1",
+"STREAM_TO_PORT" : "50000",
+"COMMENT_DESCRIPTION" : "Streaming to Visualizer",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509723650"
+},
+{
+"PROCESSOR_UID" : "FSSR2_DB0_DataStreamer0",
+"HOST_IP_ADDRESS" : "192.168.133.1",
+"HOST_PORT" : "48002",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.1",
+"STREAM_TO_PORT" : "50000",
+"COMMENT_DESCRIPTION" : "Streaming to Visualizer",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509723650"
+},
+{
+"PROCESSOR_UID" : "FSSR3_DB0_DataStreamer0",
+"HOST_IP_ADDRESS" : "192.168.133.1",
+"HOST_PORT" : "48003",
+"STREAM_TO_IP_ADDRESS" : "192.168.133.1",
+"STREAM_TO_PORT" : "50000",
+"COMMENT_DESCRIPTION" : "Streaming to Visualizer",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509723650"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T15:48:31.287-0500",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:31.290-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:31.288-0500"
+},
+{
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:32.756-0500"
+},
+{
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:25.060-0500"
+},
+{
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:48.604-0500"
+},
+{
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:57.853-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:31.288-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:31.288-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T15:48:31.289-0500",
+"value" : {
+"name" : "0",
+"assigned" : "2018-09-11T15:48:31.289-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T15:48:31.289-0500",
+"value" : {
+"name" : "UDPDataStreamerConsumerConfiguration",
+"assigned" : "2018-09-11T15:48:31.289-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T15:48:31.290-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:31.290-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:32.756-0500",
+"value" : {
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:32.756-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:28:25.060-0500",
+"value" : {
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:25.060-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:30:48.604-0500",
+"value" : {
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:48.604-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:57.853-0500",
+"value" : {
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:57.853-0500"
+}
+}
+],
+"created" : "2018-09-11T15:48:31.287-0500"
+},
+"_id" : {
+"$oid" : "ee5e38955c0147348d64e805"
+},
+"collection" : "UDPDataStreamerConsumerConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

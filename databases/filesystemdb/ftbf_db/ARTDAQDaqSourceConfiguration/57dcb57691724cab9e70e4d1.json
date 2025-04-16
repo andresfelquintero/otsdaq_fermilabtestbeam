@@ -1,0 +1,267 @@
+{
+"document" : {
+"data" : {
+"NAME" : "ARTDAQ_DAQ_SOURCE_CONFIGURATION",
+"COMMENT" : "No comment.",
+"AUTHOR" : "eflumerf",
+"CREATION_TIME" : 1516387318,
+"COL_TYPES" : {
+"SOURCE_GROUP_ID" : "VARCHAR2",
+"SOURCE_UID" : "VARCHAR2",
+"SOURCE_KEY" : "VARCHAR2",
+"TRANSFER_PLUGIN_TYPE" : "VARCHAR2",
+"SOURCE_ARTDAQ_CONTEXT_LINK" : "VARCHAR2",
+"SOURCE_ARTDAQ_CONTEXT_LINK_UID" : "VARCHAR2",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK" : "VARCHAR2",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK_UID" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"SOURCE_GROUP_ID" : "reader0sources | wireChamber0sources",
+"SOURCE_UID" : "builder0sourceWireChamber0",
+"SOURCE_KEY" : "s1",
+"TRANSFER_PLUGIN_TYPE" : "Autodetect",
+"SOURCE_ARTDAQ_CONTEXT_LINK" : "XDAQContextConfiguration",
+"SOURCE_ARTDAQ_CONTEXT_LINK_UID" : "ARTDAQBoardReaderWireChamber0",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK" : "ARTDAQGlobalConfiguration",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK_UID" : "artdaq0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1516378294"
+},
+{
+"SOURCE_GROUP_ID" : "reader0sources | strips0sources",
+"SOURCE_UID" : "builder0sourceStrips0",
+"SOURCE_KEY" : "s2",
+"TRANSFER_PLUGIN_TYPE" : "Autodetect",
+"SOURCE_ARTDAQ_CONTEXT_LINK" : "XDAQContextConfiguration",
+"SOURCE_ARTDAQ_CONTEXT_LINK_UID" : "ARTDAQBoardReaderStrips0",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK" : "ARTDAQGlobalConfiguration",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK_UID" : "artdaq0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516387318"
+},
+{
+"SOURCE_GROUP_ID" : "reader0sources | strips1sources",
+"SOURCE_UID" : "builder0sourceStrips1",
+"SOURCE_KEY" : "s3",
+"TRANSFER_PLUGIN_TYPE" : "Autodetect",
+"SOURCE_ARTDAQ_CONTEXT_LINK" : "XDAQContextConfiguration",
+"SOURCE_ARTDAQ_CONTEXT_LINK_UID" : "ARTDAQBoardReaderStrips1",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK" : "ARTDAQGlobalConfiguration",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK_UID" : "artdaq0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516387318"
+},
+{
+"SOURCE_GROUP_ID" : "reader0sources | strips2sources",
+"SOURCE_UID" : "builder0sourceStrips2",
+"SOURCE_KEY" : "s4",
+"TRANSFER_PLUGIN_TYPE" : "Autodetect",
+"SOURCE_ARTDAQ_CONTEXT_LINK" : "XDAQContextConfiguration",
+"SOURCE_ARTDAQ_CONTEXT_LINK_UID" : "ARTDAQBoardReaderStrips2",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK" : "ARTDAQGlobalConfiguration",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK_UID" : "artdaq0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1516387318"
+},
+{
+"SOURCE_GROUP_ID" : "",
+"SOURCE_UID" : "aggregator0source0",
+"SOURCE_KEY" : "s5",
+"TRANSFER_PLUGIN_TYPE" : "Autodetect",
+"SOURCE_ARTDAQ_CONTEXT_LINK" : "XDAQContextConfiguration",
+"SOURCE_ARTDAQ_CONTEXT_LINK_UID" : "ARTDAQEventBuilder0",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK" : "ARTDAQGlobalConfiguration",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK_UID" : "artdaq0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1516378294"
+},
+{
+"SOURCE_GROUP_ID" : "",
+"SOURCE_UID" : "aggregator0source1",
+"SOURCE_KEY" : "s6",
+"TRANSFER_PLUGIN_TYPE" : "Autodetect",
+"SOURCE_ARTDAQ_CONTEXT_LINK" : "XDAQContextConfiguration",
+"SOURCE_ARTDAQ_CONTEXT_LINK_UID" : "ARTDAQEventBuilder1",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK" : "ARTDAQGlobalConfiguration",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK_UID" : "artdaq0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1516378294"
+},
+{
+"SOURCE_GROUP_ID" : "aggregator0sources",
+"SOURCE_UID" : "aggregator0source2",
+"SOURCE_KEY" : "s7",
+"TRANSFER_PLUGIN_TYPE" : "Autodetect",
+"SOURCE_ARTDAQ_CONTEXT_LINK" : "XDAQContextConfiguration",
+"SOURCE_ARTDAQ_CONTEXT_LINK_UID" : "ARTDAQEventBuilder2",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK" : "ARTDAQGlobalConfiguration",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK_UID" : "artdaq0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1516378294"
+},
+{
+"SOURCE_GROUP_ID" : "dispatcher0sources",
+"SOURCE_UID" : "dispatcher0source0",
+"SOURCE_KEY" : "s8",
+"TRANSFER_PLUGIN_TYPE" : "Shmem",
+"SOURCE_ARTDAQ_CONTEXT_LINK" : "XDAQContextConfiguration",
+"SOURCE_ARTDAQ_CONTEXT_LINK_UID" : "ARTDAQAggregator0",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK" : "ARTDAQGlobalConfiguration",
+"ARTDAQ_GLOBAL_CONFIGURATION_LINK_UID" : "artdaq0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513353018"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T15:48:30.098-0500",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:30.102-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:30.100-0500"
+},
+{
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:31.748-0500"
+},
+{
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:23.607-0500"
+},
+{
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:47.119-0500"
+},
+{
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:56.328-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:30.100-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:30.100-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T15:48:30.101-0500",
+"value" : {
+"name" : "0",
+"assigned" : "2018-09-11T15:48:30.101-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T15:48:30.101-0500",
+"value" : {
+"name" : "ARTDAQDaqSourceConfiguration",
+"assigned" : "2018-09-11T15:48:30.101-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T15:48:30.102-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:30.102-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:31.748-0500",
+"value" : {
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:31.748-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:28:23.607-0500",
+"value" : {
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:23.607-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:30:47.119-0500",
+"value" : {
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:47.119-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:56.328-0500",
+"value" : {
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:56.328-0500"
+}
+}
+],
+"created" : "2018-09-11T15:48:30.099-0500"
+},
+"_id" : {
+"$oid" : "57dcb57691724cab9e70e4d1"
+},
+"collection" : "ARTDAQDaqSourceConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

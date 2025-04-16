@@ -1,0 +1,564 @@
+02 Nov 2022 15:22:26.744 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015 <> - xdaq version: 05.09.00, compiled on May 13 2021 at 13:22:04, 64bit
+02 Nov 2022 15:22:26.746 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015 <> - Loaded profile: /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/XDAQConfigurations/otsConfiguration_CMake.xml
+02 Nov 2022 15:22:26.748 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015 <> - core::b2innub version: 02.05.02, compiled on May 13 2021 at 13:23:23
+02 Nov 2022 15:22:26.749 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015 <> - core::i2outils version: 04.00.00, compiled on May 13 2021 at 13:22:32
+02 Nov 2022 15:22:26.751 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015 <> - core::executive version: 04.02.00, compiled on May 13 2021 at 13:23:07
+02 Nov 2022 15:22:26.754 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015 <> - core::b2inutils version: 04.04.05, compiled on May 13 2021 at 13:23:26
+02 Nov 2022 15:22:26.757 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015 <> - core::pthttp version: 04.07.00, compiled on May 13 2021 at 13:22:36
+02 Nov 2022 15:22:26.759 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015 <> - core::ptfifo version: 04.04.00, compiled on May 13 2021 at 13:22:57
+02 Nov 2022 15:22:26.760 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015 <> - core::xrelay version: 04.02.00, compiled on May 13 2021 at 13:23:20
+02 Nov 2022 15:22:26.763 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015 <> - core::hyperdaq version: 05.04.00, compiled on May 13 2021 at 13:23:19
+02 Nov 2022 15:22:26.763 [139727984879808] DEBUG gov.fnal.dhcp.athenanu.p:2015 <> - Create application descriptor for class: executive::Application id: 0
+02 Nov 2022 15:22:26.768 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015.executive::Application.lid(0) <> - Log URL not set (was already console)
+02 Nov 2022 15:22:26.768 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015.executive::Application.lid(0) <> - Changed Log level to INFO
+02 Nov 2022 15:22:26.771 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015.pt::http::PeerTransportHTTP.lid(1) <> - No security policies on this server
+11-02 10:22:26.984402 MessageFacility.h    DEBUG INIT_MF(...): Configuring message facility with /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/MessageFacilityWiz.fcl
+udp: { 
+	type: 					UDP 
+	threshold: 				DEBUG 
+	port: 					32015 
+	host: 					"127.0.0.1" 
+}
+
+console: { 
+	type: 					OTS
+	threshold: 				DEBUG
+	filename_delimit: 		"/srcs/"
+	format_string: 			"|%L:%N:%f [%u]\t%m"
+}
+
+file: {}
+|Info:configureMessageFacility:configureMessageFacility.cc [283]	Message Facility Application . configured with: destinations:{console:{filename_delimit:"/srcs/" format_string:"|%L:%N:%f [%u]\t%m" threshold:"DEBUG" type:"OTS"} file:{} udp:{host:"127.0.0.1" port:32015 threshold:"DEBUG" type:"UDP"}}
+11-02 10:22:27.002671             OTSDAQ_TRACE     INFO ResolveHost(...): Resolving host 127.0.0.1, on port 32015
+11-02 10:22:27.003086             OTSDAQ_TRACE     INFO GetInterfaceForNetwork(...): Resolving ip athenanu.dhcp.fnal.gov
+%MSG-i configureMessageFacility:  Early 02-Nov-2022 10:22:27 CDT pre-events configureMessageFacility.cc:283
+Message Facility Application . configured with: destinations:{console:{filename_delimit:"/srcs/" format_string:"|%L:%N:%f [%u]\t%m" threshold:"DEBUG" type:"OTS"} file:{} udp:{host:"127.0.0.1" port:32015 threshold:"DEBUG" type:"UDP"}}
+%MSG
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [484]	/home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/LoginData/HashesData//hashes.xml
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [537]	1 Hashes found.
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [574]	Users database: /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/LoginData/UsersData//users.xml
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [601]	Found Users database next user Id: 1
+|Info:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [662]	User 'admin' is not a member of the default user group 'allUsers.' Assuming user account is inactive (permission level := 0).
+User 'admin' is not a member of the default user group 'allUsers.' Assuming user account is inactive (permission level := 0).
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [698]	1 Users found.
+User [0] 	Name: admin               	Display Name: Administrator                 	Email:                               	NAC:      	FailedCount: 0	Permissions: allUsers: 255
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [3257]	The current security type is NoSecurity
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [3267]	CareAboutCookieCodes_: 0
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [402]	/home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/LoginData/UsersData//activeSessions.sv
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [452]	Active Sessions loaded with size 0
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [2919]	Attempting to load username with lock: admin
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [2933]	Setting lock
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [2664]	actingUser = admin
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [2665]	Permissions: allUsers: 255
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [2666]	usersUsernameWithLock_ = 
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [2667]	lock = 1
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [2668]	username = admin
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [2669]	isUsernameActive(username) = 0
+|Info:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [2695]	User 'admin' has locked out the system!
+User 'admin' has locked out the system!
+|Debug:WebUsers:otsdaq/otsdaq/WebUsersUtilities/WebUsers.cc [157]	Done with Web Users initialization!
+02 Nov 2022 15:22:27.008 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015 <> - otsdaq::ConfigurationGUI version: 00.00.00, compiled on Mar 17 2022 at 10:46:59
+02 Nov 2022 15:22:27.019 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015 <> - otsdaq::WizardSupervisor version: 02.06.04, compiled on Mar 17 2022 at 10:46:33
+02 Nov 2022 15:22:27.098 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015 <> - otsdaq::Console version: 00.00.00, compiled on Mar 17 2022 at 10:47:11
+02 Nov 2022 15:22:27.123 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015 <> - otsdaq::CodeEditor version: 02.06.04, compiled on Mar 17 2022 at 10:46:39
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [24]	ConfigurationGUISupervisor:UNINITIALIZED_supervisorApplicationUID	<> application->getApplicationContext()->getContextDescriptor()->getURL() = http://athenanu.dhcp.fnal.gov:2015
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [25]	ConfigurationGUISupervisor:UNINITIALIZED_supervisorApplicationUID	<> application->getApplicationDescriptor()->getLocalId() = 280
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [26]	ConfigurationGUISupervisor:UNINITIALIZED_supervisorApplicationUID	<> supervisorClass_ = ots::ConfigurationGUISupervisor
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [27]	ConfigurationGUISupervisor:UNINITIALIZED_supervisorApplicationUID	<> supervisorClassNoNamespace_ = ConfigurationGUISupervisor
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [48]	Initializing info based on XDAQ context...
+|Debug:SupervisorDescriptorInfoBase.cc:otsdaq/otsdaq/SupervisorInfo/SupervisorDescriptorInfoBase.cc [33]	Init
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [105]	Initializing info for Wiz mode XDAQ context...
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [272]	The TRACE-controller app for hostname 'athenanu.dhcp.fnal.gov' is CLASS:LID = ots::CodeEditorSupervisor:240
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [282]	TRACE-controller app count = 1
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [286]	The TRACE-controller for hostname = athenanu.dhcp.fnal.gov/240 is ... name = LID-240 class = ots::CodeEditorSupervisor hostname = athenanu.dhcp.fnal.gov
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [298]	Supervisor Info initialization complete!
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [54]	ConfigurationGUISupervisor:UNINITIALIZED_supervisorApplicationUID	<> Wiz mode detected. So skipping configuration location work for supervisor of class 'ots::ConfigurationGUISupervisor'
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [61]	ConfigurationGUISupervisor:280	<> CorePropertySupervisorBase::supervisorContextUID_ = NO CONTEXT ID IN WIZ MODE
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [62]	ConfigurationGUISupervisor:280	<> CorePropertySupervisorBase::supervisorApplicationUID_ = 280
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [63]	ConfigurationGUISupervisor:280	<> CorePropertySupervisorBase::supervisorConfigurationPath_ = NO APP PATH IN WIZ MODE
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/FiniteStateMachine.cc [19]	FSM-ConfigurationGUISupervisor	<> Constructing FiniteStateMachine
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [106]	FSM-ConfigurationGUISupervisor	<> Resetting RunControlStateMachine with name 'ConfigurationGUISupervisor'...
+|Debug:WorkLoopManager.cc:otsdaq/otsdaq/WorkLoopManager/WorkLoopManager.cc [19]	Request name: StateMachine jobName: StateMachine
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [26]	ConfigurationGUISupervisor:280	<> Constructor.
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [41]	ConfigurationGUISupervisor:280	<> Constructed.
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [46]	ConfigurationGUISupervisor:280	<> Constructor started.
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [63]	ConfigurationGUISupervisor:280	<> Initializing...
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [65]	ConfigurationGUISupervisor:280	<> Activating saved context, which may prepare for normal mode...
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [7095]	ConfigurationGUISupervisor:280	<> Attempting test activation of the context group.
+|Debug:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [104]	TableBase-TableGroupMetadata	<> Special table 'TableGroupMetadata' constructed. 1
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [193]	READONLY_USER	<> username_ = READONLY_USER
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [239]	READONLY_USER	<> ACTIVE_GROUPS_FILENAME = /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/ActiveTableGroups.cfg
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [240]	READONLY_USER	<> ARTDAQ_DATABASE_URI = filesystemdb:///home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_database
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Context group 'T992Context(92)']
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [102]	Foud FWD/WEB/QT true/true/true and IP:Port:FwdPort 127.0.0.1:30000:30001 in MesageFacility table.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [146]	Forwarding to Web GUI at IP:Port:FwdPort 127.0.0.1:30000:30001 with UDP forward MesageFacility.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [194]	Wrote /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/QuietForwarderGen.cfg:
+RECEIVE_PORT 	 30000
+DESTINATION_PORT 	 30001
+DESTINATION_IP 	 127.0.0.1
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [271]	Opened.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/MessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [282]	Opened for artdaq.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/ARTDAQInterfaceMessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [291]	Wrote 
+otsConsole: {
+	type: UDP
+	threshold: DEBUG
+	filename_delimit: "/src"
+	port: 30000
+	host: "127.0.0.1"
+}
+console: {
+	type: "OTS"
+	threshold: "DEBUG"
+	filename_delimit: "/src"
+	format_string: "|%L:%N:%f [%u]	%m"
+
+}
+|Debug:XDAQContextTable_table.cc:otsdaq/otsdaq/TablePlugins/XDAQContextTable_table.cc [337]	Fixing deprecated Supervisor class from ots::Supervisor to ots::GatewaySupervisor
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Context group 'T992Context(92)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(213)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(213)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1379]	READONLY_USER	<> Not loading group because it is not of type Context or Backbone (it is type 'Configuration').
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [456]	READONLY_USER	<> Destroying Backbone Key: 213
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [474]	READONLY_USER	<> Destroying Context Key: 92
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [74]	ConfigurationGUISupervisor:280	<> Done with test context.
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [54]	ConfigurationGUISupervisor:280	<> Constructor complete.
+|Debug:Wizard:otsdaq/otsdaq/WizardSupervisor/WizardSupervisor.cc [98]	Constructor.
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [48]	Initializing info based on XDAQ context...
+|Debug:SupervisorDescriptorInfoBase.cc:otsdaq/otsdaq/SupervisorInfo/SupervisorDescriptorInfoBase.cc [33]	Init
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [105]	Initializing info for Wiz mode XDAQ context...
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [272]	The TRACE-controller app for hostname 'athenanu.dhcp.fnal.gov' is CLASS:LID = ots::CodeEditorSupervisor:240
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [282]	TRACE-controller app count = 1
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [286]	The TRACE-controller for hostname = athenanu.dhcp.fnal.gov/240 is ... name = LID-240 class = ots::CodeEditorSupervisor hostname = athenanu.dhcp.fnal.gov
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [298]	Supervisor Info initialization complete!
+|Info:Wizard:otsdaq/otsdaq/WizardSupervisor/WizardSupervisor.cc [302]	(Reverting to default wiz security) Sequence length file NOT found: /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/OtsWizardData/sequence.dat
+(Reverting to default wiz security) Sequence length file NOT found: /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/OtsWizardData/sequence.dat
+|Debug:Wizard:otsdaq/otsdaq/WizardSupervisor/WizardSupervisor.cc [306]	Sequence length = 4
+|Debug:Wizard:otsdaq/otsdaq/WizardSupervisor/WizardSupervisor.cc [320]	athenanu.dhcp.fnal.gov:2015/urn:xdaq-application:lid=290/Verify?code=fa37
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [178]	Marked alive: /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/Logs/otsdaq_is_alive-wiz-0.dat
+|Debug:Wizard:otsdaq/otsdaq/WizardSupervisor/WizardSupervisor.cc [120]	Constructed.
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [24]	ConsoleSupervisor:UNINITIALIZED_supervisorApplicationUID	<> application->getApplicationContext()->getContextDescriptor()->getURL() = http://athenanu.dhcp.fnal.gov:2015
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [25]	ConsoleSupervisor:UNINITIALIZED_supervisorApplicationUID	<> application->getApplicationDescriptor()->getLocalId() = 260
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [26]	ConsoleSupervisor:UNINITIALIZED_supervisorApplicationUID	<> supervisorClass_ = ots::ConsoleSupervisor
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [27]	ConsoleSupervisor:UNINITIALIZED_supervisorApplicationUID	<> supervisorClassNoNamespace_ = ConsoleSupervisor
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [48]	Initializing info based on XDAQ context...
+|Debug:SupervisorDescriptorInfoBase.cc:otsdaq/otsdaq/SupervisorInfo/SupervisorDescriptorInfoBase.cc [33]	Init
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [105]	Initializing info for Wiz mode XDAQ context...
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [272]	The TRACE-controller app for hostname 'athenanu.dhcp.fnal.gov' is CLASS:LID = ots::CodeEditorSupervisor:240
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [282]	TRACE-controller app count = 1
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [286]	The TRACE-controller for hostname = athenanu.dhcp.fnal.gov/240 is ... name = LID-240 class = ots::CodeEditorSupervisor hostname = athenanu.dhcp.fnal.gov
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [298]	Supervisor Info initialization complete!
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [54]	ConsoleSupervisor:UNINITIALIZED_supervisorApplicationUID	<> Wiz mode detected. So skipping configuration location work for supervisor of class 'ots::ConsoleSupervisor'
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [61]	ConsoleSupervisor:260	<> CorePropertySupervisorBase::supervisorContextUID_ = NO CONTEXT ID IN WIZ MODE
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [62]	ConsoleSupervisor:260	<> CorePropertySupervisorBase::supervisorApplicationUID_ = 260
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [63]	ConsoleSupervisor:260	<> CorePropertySupervisorBase::supervisorConfigurationPath_ = NO APP PATH IN WIZ MODE
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/FiniteStateMachine.cc [19]	FSM-ConsoleSupervisor	<> Constructing FiniteStateMachine
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [106]	FSM-ConsoleSupervisor	<> Resetting RunControlStateMachine with name 'ConsoleSupervisor'...
+|Debug:WorkLoopManager.cc:otsdaq/otsdaq/WorkLoopManager/WorkLoopManager.cc [19]	Request name: StateMachine jobName: StateMachine
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [26]	ConsoleSupervisor:260	<> Constructor.
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [41]	ConsoleSupervisor:260	<> Constructed.
+|Debug:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [52]	ConsoleSupervisor:260	<> Constructor started.
+|Debug:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [62]	ConsoleSupervisor:260	<> Constructor complete.
+|Debug:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [92]	Starting workloop based on config file: /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/QuietForwarder.cfg
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [24]	CodeEditorSupervisor:UNINITIALIZED_supervisorApplicationUID	<> application->getApplicationContext()->getContextDescriptor()->getURL() = http://athenanu.dhcp.fnal.gov:2015
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [25]	CodeEditorSupervisor:UNINITIALIZED_supervisorApplicationUID	<> application->getApplicationDescriptor()->getLocalId() = 240
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [26]	CodeEditorSupervisor:UNINITIALIZED_supervisorApplicationUID	<> supervisorClass_ = ots::CodeEditorSupervisor
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [27]	CodeEditorSupervisor:UNINITIALIZED_supervisorApplicationUID	<> supervisorClassNoNamespace_ = CodeEditorSupervisor
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [48]	Initializing info based on XDAQ context...
+|Debug:SupervisorDescriptorInfoBase.cc:otsdaq/otsdaq/SupervisorInfo/SupervisorDescriptorInfoBase.cc [33]	Init
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [105]	Initializing info for Wiz mode XDAQ context...
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [272]	The TRACE-controller app for hostname 'athenanu.dhcp.fnal.gov' is CLASS:LID = ots::CodeEditorSupervisor:240
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [282]	TRACE-controller app count = 1
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [286]	The TRACE-controller for hostname = athenanu.dhcp.fnal.gov/240 is ... name = LID-240 class = ots::CodeEditorSupervisor hostname = athenanu.dhcp.fnal.gov
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [298]	Supervisor Info initialization complete!
+|Debug:Socket.cc:otsdaq/otsdaq/NetworkUtilities/Socket.cc [30]	Socket constructor 127.0.0.1:32016
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [54]	CodeEditorSupervisor:UNINITIALIZED_supervisorApplicationUID	<> Wiz mode detected. So skipping configuration location work for supervisor of class 'ots::CodeEditorSupervisor'
+|Debug:Socket.cc:otsdaq/otsdaq/NetworkUtilities/Socket.cc [44]	IPAddress: 127.0.0.1 port: 32016 htons: 4221
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [61]	CodeEditorSupervisor:240	<> CorePropertySupervisorBase::supervisorContextUID_ = NO CONTEXT ID IN WIZ MODE
+|Debug:Socket.cc:otsdaq/otsdaq/NetworkUtilities/Socket.cc [56]	Constructed socket for port 32016=32016 htons: 4221
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [62]	CodeEditorSupervisor:240	<> CorePropertySupervisorBase::supervisorApplicationUID_ = 240
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [63]	CodeEditorSupervisor:240	<> CorePropertySupervisorBase::supervisorConfigurationPath_ = NO APP PATH IN WIZ MODE
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/FiniteStateMachine.cc [19]	FSM-CodeEditorSupervisor	<> Constructing FiniteStateMachine
+|Debug:ReceiverSocket.cc:otsdaq/otsdaq/NetworkUtilities/ReceiverSocket.cc [19]	ReceiverSocket constructor 127.0.0.1:32016
+|Debug:Socket.cc:otsdaq/otsdaq/NetworkUtilities/Socket.cc [83]	Initializing port 32016 htons: 4221
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [106]	FSM-CodeEditorSupervisor	<> Resetting RunControlStateMachine with name 'CodeEditorSupervisor'...
+|Debug:Socket.cc:otsdaq/otsdaq/NetworkUtilities/Socket.cc [107]	]	Binding port: 32016
+|Debug:WorkLoopManager.cc:otsdaq/otsdaq/WorkLoopManager/WorkLoopManager.cc [19]	Request name: StateMachine jobName: StateMachine
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [26]	CodeEditorSupervisor:240	<> Constructor.
+|Debug:Socket.cc:otsdaq/otsdaq/NetworkUtilities/Socket.cc [119]	]	Socket Number: 7 for port: 32016 initialized.
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [41]	CodeEditorSupervisor:240	<> Constructed.
+|Debug:Socket.cc:otsdaq/otsdaq/NetworkUtilities/Socket.cc [134]	:):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):)
+|Debug:Socket.cc:otsdaq/otsdaq/NetworkUtilities/Socket.cc [137]	:):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):)
+|Debug:Socket.cc:otsdaq/otsdaq/NetworkUtilities/Socket.cc [140]	SOCKET ON PORT: 32016 ON IP: 127.0.0.1 INITIALIZED OK!
+|Debug:Socket.cc:otsdaq/otsdaq/NetworkUtilities/Socket.cc [141]	:):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):)
+|Debug:Socket.cc:otsdaq/otsdaq/NetworkUtilities/Socket.cc [144]	:):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):)
+|Debug:Socket.cc:otsdaq/otsdaq/NetworkUtilities/Socket.cc [150]	]	Socket Number: 7 for port: 32016 initialized.
+|Debug:Socket.cc:otsdaq/otsdaq/NetworkUtilities/Socket.cc [164]	Setting socket receive buffer size = 20971520 0x1400000
+|Debug:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [169]	DEBUG messages look like this.
+|Debug:CodeEditorSupervisor.cc:otsdaq/otsdaq/CodeEditor/CodeEditorSupervisor.cc [9]	CodeEditorSupervisor:240	<> Constructed.
+02 Nov 2022 15:22:27.685 [139727984879808] INFO  gov.fnal.dhcp.athenanu.p:2015 <> - Ready.
+|Debug:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [190]	Console has first message.
+|Info:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [194]	INFO messages look like this.
+INFO messages look like this.
+|Warning:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [195]	WARNING messages look like this.
+WARNING messages look like this.
+|Error:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [196]	ERROR messages look like this.
+ERROR messages look like this.
+|Debug:Wizard:otsdaq/otsdaq/WizardSupervisor/WizardSupervisor.cc [250]	submittedSequence=fa37 1667402565
+|Debug:Wizard:otsdaq/otsdaq/WizardSupervisor/WizardSupervisor.cc [263]	*** Successfully authenticated security sequence @ 1667402565
+|Debug:Wizard:otsdaq/otsdaq/WizardSupervisor/WizardSupervisor.cc [160]	***Successfully authenticated security sequence. 1667402565
+|Debug:Wizard:otsdaq/otsdaq/WizardSupervisor/WizardSupervisor.cc [512]	***Successfully authenticated security sequence. 1667402568
+|Debug:Wizard:otsdaq/otsdaq/WizardSupervisor/WizardSupervisor.cc [517]	requestType = getAppId
+|Debug:GatewaySupervisor:otsdaq/otsdaq/GatewaySupervisor/GatewaySupervisor.cc [4122]	classNeedle = ots::CodeEditorSupervisor
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [312]	ConfigurationGUISupervisor:280	<> Wiz mode detected. Skipping setup of supervisor properties for supervisor of class 'ots::ConfigurationGUISupervisor'
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [353]	ConfigurationGUISupervisor:280	<> Final supervisor property settings:
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [355]	ConfigurationGUISupervisor:280	<> 	AllowNoLoginRequestTypes = 
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [355]	ConfigurationGUISupervisor:280	<> 	AutomatedRequestTypes = getActiveTableGroups
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [355]	ConfigurationGUISupervisor:280	<> 	CheckUserLockRequestTypes = *
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [355]	ConfigurationGUISupervisor:280	<> 	NoXmlWhiteSpaceRequestTypes = 
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [355]	ConfigurationGUISupervisor:280	<> 	NonXMLRequestTypes = 
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [355]	ConfigurationGUISupervisor:280	<> 	RequireSecurityRequestTypes = 
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [355]	ConfigurationGUISupervisor:280	<> 	RequireUserLockRequestTypes = *
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [355]	ConfigurationGUISupervisor:280	<> 	UserGroupsAllowed = 
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [355]	ConfigurationGUISupervisor:280	<> 	UserGroupsDisallowed = 
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [355]	ConfigurationGUISupervisor:280	<> 	UserPermissionsThreshold = *=10 | deleteTreeNodeRecords=255 | saveTableInfo=255 | deleteTableInfo=255
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [111]	ConfigurationGUISupervisor:280	<> requestType: getIterateMemberNames
+|Info:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [5209]	ConfigurationGUISupervisor:280	<> Creating new Configuration Manager.
+ConfigurationGUISupervisor:280	<> Creating new Configuration Manager.
+|Debug:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [104]	TableBase-TableGroupMetadata	<> Special table 'TableGroupMetadata' constructed. 1
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [193]	READONLY_USER	<> username_ = READONLY_USER
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [239]	READONLY_USER	<> ACTIVE_GROUPS_FILENAME = /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/ActiveTableGroups.cfg
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [240]	READONLY_USER	<> ARTDAQ_DATABASE_URI = filesystemdb:///home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_database
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Context group 'T992Context(92)']
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [102]	Foud FWD/WEB/QT true/true/true and IP:Port:FwdPort 127.0.0.1:30000:30001 in MesageFacility table.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [146]	Forwarding to Web GUI at IP:Port:FwdPort 127.0.0.1:30000:30001 with UDP forward MesageFacility.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [194]	Wrote /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/QuietForwarderGen.cfg:
+RECEIVE_PORT 	 30000
+DESTINATION_PORT 	 30001
+DESTINATION_IP 	 127.0.0.1
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [271]	Opened.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/MessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [282]	Opened for artdaq.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/ARTDAQInterfaceMessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [291]	Wrote 
+otsConsole: {
+	type: UDP
+	threshold: DEBUG
+	filename_delimit: "/src"
+	port: 30000
+	host: "127.0.0.1"
+}
+console: {
+	type: "OTS"
+	threshold: "DEBUG"
+	filename_delimit: "/src"
+	format_string: "|%L:%N:%f [%u]	%m"
+
+}
+|Debug:XDAQContextTable_table.cc:otsdaq/otsdaq/TablePlugins/XDAQContextTable_table.cc [337]	Fixing deprecated Supervisor class from ots::Supervisor to ots::GatewaySupervisor
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Context group 'T992Context(92)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(213)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(213)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Configuration group 'T992Config(359)']
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [25]	isFirstAppInContext = 1
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [30]	*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [31]	FESlowControlsTable
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [41]	BurstDataCount
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [43]	childType=unsigned long long
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Configuration group 'T992Config(359)']
+|Info:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [166]	READONLY_USER	<> Private constructor for write access called.
+READONLY_USER	<> Private constructor for write access called.
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [22]	admin	<> Instantiating Config Manager with Write Access! (for admin)
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [186]	admin	<> ======================================================== getAllTableInfo start
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [189]	admin	<> Refreshing all! Extracting list of tables...
+|Debug:ARTDAQBoardReaderTable_table.cc:otsdaq/otsdaq/TablePlugins/ARTDAQBoardReaderTable_table.cc [40]	ARTDAQBoardReaderTable Constructed.
+|Error:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [301]	TableInfoReader <>
+:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [296]	TableInfoReader <>In /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/TableInfo/FENIMPlusInterfaceV1OptionalTableInfo.xml the table name FENIMPlusInterfaceOptionalTable doesn't match the the class table name FENIMPlusInterfaceV1OptionalTable
+TableInfoReader <>
+:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [296]	TableInfoReader <>In /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/TableInfo/FENIMPlusInterfaceV1OptionalTableInfo.xml the table name FENIMPlusInterfaceOptionalTable doesn't match the the class table name FENIMPlusInterfaceV1OptionalTable
+|Error:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [69]	TableBase-FENIMPlusInterfaceV1OptionalTable	<> 
+:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [67]	TableBase-FENIMPlusInterfaceV1OptionalTable	<> Failure in tableInfoReader.read(this). Perhaps you need to run otsdaq_convert_config_to_table ?
+TableBase-FENIMPlusInterfaceV1OptionalTable	<> 
+:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [67]	TableBase-FENIMPlusInterfaceV1OptionalTable	<> Failure in tableInfoReader.read(this). Perhaps you need to run otsdaq_convert_config_to_table ?
+|Warning:ConfigurationInterface.icc:otsdaq/otsdaq/ConfigurationInterface/ConfigurationInterface.icc [66]	Failed to even use TableBase!
+Failed to even use TableBase!
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [234]	admin	<> Skipping! No valid class found for... FENIMPlusInterfaceV1OptionalTable
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [235]	admin	<> Error: :TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [296]	TableInfoReader <>In /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/TableInfo/FENIMPlusInterfaceV1OptionalTableInfo.xml the table name FENIMPlusInterfaceOptionalTable doesn't match the the class table name FENIMPlusInterfaceV1OptionalTable
+|Error:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [301]	TableInfoReader <>
+:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [296]	TableInfoReader <>In /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/TableInfo/FENIMPlusInterfaceV1TableInfo.xml the table name FENIMPlusInterfaceTable doesn't match the the class table name FENIMPlusInterfaceV1Table
+TableInfoReader <>
+:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [296]	TableInfoReader <>In /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/TableInfo/FENIMPlusInterfaceV1TableInfo.xml the table name FENIMPlusInterfaceTable doesn't match the the class table name FENIMPlusInterfaceV1Table
+|Error:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [69]	TableBase-FENIMPlusInterfaceV1Table	<> 
+:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [67]	TableBase-FENIMPlusInterfaceV1Table	<> Failure in tableInfoReader.read(this). Perhaps you need to run otsdaq_convert_config_to_table ?
+TableBase-FENIMPlusInterfaceV1Table	<> 
+:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [67]	TableBase-FENIMPlusInterfaceV1Table	<> Failure in tableInfoReader.read(this). Perhaps you need to run otsdaq_convert_config_to_table ?
+|Warning:ConfigurationInterface.icc:otsdaq/otsdaq/ConfigurationInterface/ConfigurationInterface.icc [66]	Failed to even use TableBase!
+Failed to even use TableBase!
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [234]	admin	<> Skipping! No valid class found for... FENIMPlusInterfaceV1Table
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [235]	admin	<> Error: :TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [296]	TableInfoReader <>In /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/TableInfo/FENIMPlusInterfaceV1TableInfo.xml the table name FENIMPlusInterfaceTable doesn't match the the class table name FENIMPlusInterfaceV1Table
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [320]	admin	<> Extracting list of tables complete. Now initializing...
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [193]	admin	<> username_ = admin
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [445]	admin	<> Destroying Configuration Key: 359
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [456]	admin	<> Destroying Backbone Key: 213
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [474]	admin	<> Destroying Context Key: 92
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [239]	admin	<> ACTIVE_GROUPS_FILENAME = /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/ActiveTableGroups.cfg
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [240]	admin	<> ARTDAQ_DATABASE_URI = filesystemdb:///home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_database
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	admin	<> ------------------------------------- init start    	 [for all plug-ins in Context group 'T992Context(92)']
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [102]	Foud FWD/WEB/QT true/true/true and IP:Port:FwdPort 127.0.0.1:30000:30001 in MesageFacility table.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [146]	Forwarding to Web GUI at IP:Port:FwdPort 127.0.0.1:30000:30001 with UDP forward MesageFacility.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [194]	Wrote /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/QuietForwarderGen.cfg:
+RECEIVE_PORT 	 30000
+DESTINATION_PORT 	 30001
+DESTINATION_IP 	 127.0.0.1
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [271]	Opened.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/MessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [282]	Opened for artdaq.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/ARTDAQInterfaceMessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [291]	Wrote 
+otsConsole: {
+	type: UDP
+	threshold: DEBUG
+	filename_delimit: "/src"
+	port: 30000
+	host: "127.0.0.1"
+}
+console: {
+	type: "OTS"
+	threshold: "DEBUG"
+	filename_delimit: "/src"
+	format_string: "|%L:%N:%f [%u]	%m"
+
+}
+|Debug:XDAQContextTable_table.cc:otsdaq/otsdaq/TablePlugins/XDAQContextTable_table.cc [337]	Fixing deprecated Supervisor class from ots::Supervisor to ots::GatewaySupervisor
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	admin	<> ------------------------------------- init complete 	 [for all plug-ins in Context group 'T992Context(92)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	admin	<> ------------------------------------- init start    	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(213)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	admin	<> ------------------------------------- init complete 	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(213)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	admin	<> ------------------------------------- init start    	 [for all plug-ins in Configuration group 'T992Config(359)']
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [25]	isFirstAppInContext = 1
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [30]	*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [31]	FESlowControlsTable
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [41]	BurstDataCount
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [43]	childType=unsigned long long
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	admin	<> ------------------------------------- init complete 	 [for all plug-ins in Configuration group 'T992Config(359)']
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [331]	admin	<> ======================================================== getAllTableInfo end
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [339]	admin	<> Number of Groups: 952
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [111]	ConfigurationGUISupervisor:280	<> requestType: getBackboneMemberNames
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [111]	ConfigurationGUISupervisor:280	<> requestType: getContextMemberNames
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [111]	ConfigurationGUISupervisor:280	<> requestType: versionTracking
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [361]	ConfigurationGUISupervisor:280	<> type: Get
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [111]	ConfigurationGUISupervisor:280	<> requestType: getLastTableGroups
+|Debug:GatewaySupervisor:otsdaq/otsdaq/GatewaySupervisor/GatewaySupervisor.cc [4016]	ActionOfLastGroup: Configured
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [2694]	theGroup.first= T992Config theGroup.second= 359
+|Debug:GatewaySupervisor:otsdaq/otsdaq/GatewaySupervisor/GatewaySupervisor.cc [4016]	ActionOfLastGroup: Started
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [2694]	theGroup.first= T992Config theGroup.second= 359
+|Debug:GatewaySupervisor:otsdaq/otsdaq/GatewaySupervisor/GatewaySupervisor.cc [4016]	ActionOfLastGroup: ActivatedC
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [2694]	theGroup.first= T992Config theGroup.second= 359
+|Debug:GatewaySupervisor:otsdaq/otsdaq/GatewaySupervisor/GatewaySupervisor.cc [4016]	ActionOfLastGroup: ActivatedC
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [2694]	theGroup.first= T992Context theGroup.second= 92
+|Debug:GatewaySupervisor:otsdaq/otsdaq/GatewaySupervisor/GatewaySupervisor.cc [4016]	ActionOfLastGroup: ActivatedB
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [2694]	theGroup.first= GroupAliasTreeEditWizBackbone theGroup.second= 213
+|Debug:GatewaySupervisor:otsdaq/otsdaq/GatewaySupervisor/GatewaySupervisor.cc [4016]	ActionOfLastGroup: ActivatedI
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [2664]	Can't open file: /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/RunControlData//CFGLastActivatedIteratorGroup.hist
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [2666]	Returning empty groupName and key -1
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [111]	ConfigurationGUISupervisor:280	<> requestType: getGroupAliases
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [412]	ConfigurationGUISupervisor:280	<> reloadActive: 0
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [6224]	ConfigurationGUISupervisor:280	<> activeVersions["GroupAliasesTable"]=481
+|Error:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [624]	:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [622]	This group is an incomplete match to a Context group:  Size=8 but should be 9
+
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [622]	This group is an incomplete match to a Context group:  Size=8 but should be 9
+|Error:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [634]	:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [622]	This group is an incomplete match to a Context group:  Size=8 but should be 9
+
+The members currently are...
+1. DesktopIconTable
+2. DesktopWindowParameterTable
+3. GatewaySupervisorTable
+4. MessageFacilityTable
+5. StateMachineTable
+6. XDAQApplicationPropertyTable
+7. XDAQApplicationTable
+8. XDAQContextTable
+
+The expected Context members are...
+1. DesktopIconTable
+2. DesktopWindowParameterTable
+3. GatewaySupervisorTable
+4. MessageFacilityTable
+5. SlowControlsDashboardSupervisorTable
+6. StateMachineTable
+7. XDAQApplicationPropertyTable
+8. XDAQApplicationTable
+9. XDAQContextTable
+
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [622]	This group is an incomplete match to a Context group:  Size=8 but should be 9
+
+The members currently are...
+1. DesktopIconTable
+2. DesktopWindowParameterTable
+3. GatewaySupervisorTable
+4. MessageFacilityTable
+5. StateMachineTable
+6. XDAQApplicationPropertyTable
+7. XDAQApplicationTable
+8. XDAQContextTable
+
+The expected Context members are...
+1. DesktopIconTable
+2. DesktopWindowParameterTable
+3. GatewaySupervisorTable
+4. MessageFacilityTable
+5. SlowControlsDashboardSupervisorTable
+6. StateMachineTable
+7. XDAQApplicationPropertyTable
+8. XDAQApplicationTable
+9. XDAQContextTable
+|Warning:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [6266]	ConfigurationGUISupervisor:280	<> Failed to load group 'T992Context(3)' to extract group comment and type.
+ConfigurationGUISupervisor:280	<> Failed to load group 'T992Context(3)' to extract group comment and type.
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [111]	ConfigurationGUISupervisor:280	<> requestType: getTreeView
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [1667]	ConfigurationGUISupervisor:280	<> Refreshing all table info, ignoring warnings...
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [186]	admin	<> ======================================================== getAllTableInfo start
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [189]	admin	<> Refreshing all! Extracting list of tables...
+|Debug:ARTDAQBoardReaderTable_table.cc:otsdaq/otsdaq/TablePlugins/ARTDAQBoardReaderTable_table.cc [40]	ARTDAQBoardReaderTable Constructed.
+|Error:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [301]	TableInfoReader <>
+:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [296]	TableInfoReader <>In /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/TableInfo/FENIMPlusInterfaceV1OptionalTableInfo.xml the table name FENIMPlusInterfaceOptionalTable doesn't match the the class table name FENIMPlusInterfaceV1OptionalTable
+TableInfoReader <>
+:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [296]	TableInfoReader <>In /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/TableInfo/FENIMPlusInterfaceV1OptionalTableInfo.xml the table name FENIMPlusInterfaceOptionalTable doesn't match the the class table name FENIMPlusInterfaceV1OptionalTable
+|Error:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [69]	TableBase-FENIMPlusInterfaceV1OptionalTable	<> 
+:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [67]	TableBase-FENIMPlusInterfaceV1OptionalTable	<> Failure in tableInfoReader.read(this). Perhaps you need to run otsdaq_convert_config_to_table ?
+TableBase-FENIMPlusInterfaceV1OptionalTable	<> 
+:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [67]	TableBase-FENIMPlusInterfaceV1OptionalTable	<> Failure in tableInfoReader.read(this). Perhaps you need to run otsdaq_convert_config_to_table ?
+|Warning:ConfigurationInterface.icc:otsdaq/otsdaq/ConfigurationInterface/ConfigurationInterface.icc [66]	Failed to even use TableBase!
+Failed to even use TableBase!
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [234]	admin	<> Skipping! No valid class found for... FENIMPlusInterfaceV1OptionalTable
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [235]	admin	<> Error: :TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [296]	TableInfoReader <>In /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/TableInfo/FENIMPlusInterfaceV1OptionalTableInfo.xml the table name FENIMPlusInterfaceOptionalTable doesn't match the the class table name FENIMPlusInterfaceV1OptionalTable
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [251]	admin	<> Attempting to allow illegal columns!
+|Error:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [301]	TableInfoReader <>
+:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [296]	TableInfoReader <>In /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/TableInfo/FENIMPlusInterfaceV1OptionalTableInfo.xml the table name FENIMPlusInterfaceOptionalTable doesn't match the the class table name FENIMPlusInterfaceV1OptionalTable
+TableInfoReader <>
+:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [296]	TableInfoReader <>In /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/TableInfo/FENIMPlusInterfaceV1OptionalTableInfo.xml the table name FENIMPlusInterfaceOptionalTable doesn't match the the class table name FENIMPlusInterfaceV1OptionalTable
+|Error:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [69]	TableBase-FENIMPlusInterfaceV1OptionalTable	<> 
+:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [67]	TableBase-FENIMPlusInterfaceV1OptionalTable	<> Failure in tableInfoReader.read(this). Perhaps you need to run otsdaq_convert_config_to_table ?
+TableBase-FENIMPlusInterfaceV1OptionalTable	<> 
+:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [67]	TableBase-FENIMPlusInterfaceV1OptionalTable	<> Failure in tableInfoReader.read(this). Perhaps you need to run otsdaq_convert_config_to_table ?
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [265]	admin	<> Error (but allowed): 
+:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [67]	TableBase-FENIMPlusInterfaceV1OptionalTable	<> Failure in tableInfoReader.read(this). Perhaps you need to run otsdaq_convert_config_to_table ?
+|Error:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [301]	TableInfoReader <>
+:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [296]	TableInfoReader <>In /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/TableInfo/FENIMPlusInterfaceV1TableInfo.xml the table name FENIMPlusInterfaceTable doesn't match the the class table name FENIMPlusInterfaceV1Table
+TableInfoReader <>
+:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [296]	TableInfoReader <>In /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/TableInfo/FENIMPlusInterfaceV1TableInfo.xml the table name FENIMPlusInterfaceTable doesn't match the the class table name FENIMPlusInterfaceV1Table
+|Error:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [69]	TableBase-FENIMPlusInterfaceV1Table	<> 
+:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [67]	TableBase-FENIMPlusInterfaceV1Table	<> Failure in tableInfoReader.read(this). Perhaps you need to run otsdaq_convert_config_to_table ?
+TableBase-FENIMPlusInterfaceV1Table	<> 
+:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [67]	TableBase-FENIMPlusInterfaceV1Table	<> Failure in tableInfoReader.read(this). Perhaps you need to run otsdaq_convert_config_to_table ?
+|Warning:ConfigurationInterface.icc:otsdaq/otsdaq/ConfigurationInterface/ConfigurationInterface.icc [66]	Failed to even use TableBase!
+Failed to even use TableBase!
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [234]	admin	<> Skipping! No valid class found for... FENIMPlusInterfaceV1Table
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [235]	admin	<> Error: :TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [296]	TableInfoReader <>In /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/TableInfo/FENIMPlusInterfaceV1TableInfo.xml the table name FENIMPlusInterfaceTable doesn't match the the class table name FENIMPlusInterfaceV1Table
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [251]	admin	<> Attempting to allow illegal columns!
+|Error:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [301]	TableInfoReader <>
+:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [296]	TableInfoReader <>In /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/TableInfo/FENIMPlusInterfaceV1TableInfo.xml the table name FENIMPlusInterfaceTable doesn't match the the class table name FENIMPlusInterfaceV1Table
+TableInfoReader <>
+:TableInfoReader.cc:otsdaq/otsdaq/TableCore/TableInfoReader.cc [296]	TableInfoReader <>In /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/TableInfo/FENIMPlusInterfaceV1TableInfo.xml the table name FENIMPlusInterfaceTable doesn't match the the class table name FENIMPlusInterfaceV1Table
+|Error:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [69]	TableBase-FENIMPlusInterfaceV1Table	<> 
+:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [67]	TableBase-FENIMPlusInterfaceV1Table	<> Failure in tableInfoReader.read(this). Perhaps you need to run otsdaq_convert_config_to_table ?
+TableBase-FENIMPlusInterfaceV1Table	<> 
+:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [67]	TableBase-FENIMPlusInterfaceV1Table	<> Failure in tableInfoReader.read(this). Perhaps you need to run otsdaq_convert_config_to_table ?
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [265]	admin	<> Error (but allowed): 
+:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [67]	TableBase-FENIMPlusInterfaceV1Table	<> Failure in tableInfoReader.read(this). Perhaps you need to run otsdaq_convert_config_to_table ?
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [320]	admin	<> Extracting list of tables complete. Now initializing...
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [193]	admin	<> username_ = admin
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [445]	admin	<> Destroying Configuration Key: 359
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [456]	admin	<> Destroying Backbone Key: 213
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [474]	admin	<> Destroying Context Key: 92
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [239]	admin	<> ACTIVE_GROUPS_FILENAME = /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/ActiveTableGroups.cfg
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [240]	admin	<> ARTDAQ_DATABASE_URI = filesystemdb:///home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_database
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [327]	admin	<> Ignoring warnings while loading and activating group 'T992Context(92)'
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	admin	<> ------------------------------------- init start    	 [for all plug-ins in Context group 'T992Context(92)']
+|Error:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1452]	admin	<> Errors detected while loading Table Group: T992Context(92). Ignoring the following errors: 
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'FESupervisorFSSR0' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'FESupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table FESupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'FESupervisorFSSR1' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'FESupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table FESupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'FESupervisorFSSR2' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'FESupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table FESupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'FESupervisorFSSR3' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'FESupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table FESupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'DataManagerSupervisorFSSR0' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'DataManagerSupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table DataManagerSupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'DataManagerSupervisorFSSR1' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'DataManagerSupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table DataManagerSupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'DataManagerSupervisorFSSR2' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'DataManagerSupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table DataManagerSupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'DataManagerSupervisorFSSR3' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'DataManagerSupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table DataManagerSupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'FESupervisorPixelTelescope0' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'FESupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table FESupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'NimPlusFESupervisor0' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'FESupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table FESupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'NimPlusDataManagerSupervisor0' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'DataManagerSupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table DataManagerSupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'VisualSupervisor' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'DataManagerSupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table DataManagerSupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'FECommanderSupervisor' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'FESupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table FESupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'FESupervisorRD53' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'FESupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table FESupervisorTable is not a member of this group (and may not be loaded yet)
+admin	<> Errors detected while loading Table Group: T992Context(92). Ignoring the following errors: 
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'FESupervisorFSSR0' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'FESupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table FESupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'FESupervisorFSSR1' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'FESupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table FESupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'FESupervisorFSSR2' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'FESupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table FESupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'FESupervisorFSSR3' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'FESupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table FESupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'DataManagerSupervisorFSSR0' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'DataManagerSupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table DataManagerSupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'DataManagerSupervisorFSSR1' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'DataManagerSupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table DataManagerSupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'DataManagerSupervisorFSSR2' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'DataManagerSupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table DataManagerSupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'DataManagerSupervisorFSSR3' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'DataManagerSupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table DataManagerSupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'FESupervisorPixelTelescope0' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'FESupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table FESupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'NimPlusFESupervisor0' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'FESupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table FESupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'NimPlusDataManagerSupervisor0' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'DataManagerSupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table DataManagerSupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'VisualSupervisor' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'DataManagerSupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table DataManagerSupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'FECommanderSupervisor' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'FESupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table FESupervisorTable is not a member of this group (and may not be loaded yet)
+:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1864]	At node 'XDAQApplicationTable' with entry UID 'FESupervisorRD53' there is a disconnected child node at link column 'LinkToSupervisorTable' that points to table named 'FESupervisorTable' ...:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1883]	Note: It may be safe to ignore this error since the link's target table FESupervisorTable is not a member of this group (and may not be loaded yet)
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [102]	Foud FWD/WEB/QT true/true/true and IP:Port:FwdPort 127.0.0.1:30000:30001 in MesageFacility table.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [146]	Forwarding to Web GUI at IP:Port:FwdPort 127.0.0.1:30000:30001 with UDP forward MesageFacility.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [194]	Wrote /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/QuietForwarderGen.cfg:
+RECEIVE_PORT 	 30000
+DESTINATION_PORT 	 30001
+DESTINATION_IP 	 127.0.0.1
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [271]	Opened.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/MessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [282]	Opened for artdaq.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/ARTDAQInterfaceMessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [291]	Wrote 
+otsConsole: {
+	type: UDP
+	threshold: DEBUG
+	filename_delimit: "/src"
+	port: 30000
+	host: "127.0.0.1"
+}
+console: {
+	type: "OTS"
+	threshold: "DEBUG"
+	filename_delimit: "/src"
+	format_string: "|%L:%N:%f [%u]	%m"
+
+}
+|Debug:XDAQContextTable_table.cc:otsdaq/otsdaq/TablePlugins/XDAQContextTable_table.cc [337]	Fixing deprecated Supervisor class from ots::Supervisor to ots::GatewaySupervisor
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	admin	<> ------------------------------------- init complete 	 [for all plug-ins in Context group 'T992Context(92)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [327]	admin	<> Ignoring warnings while loading and activating group 'GroupAliasTreeEditWizBackbone(213)'
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	admin	<> ------------------------------------- init start    	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(213)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	admin	<> ------------------------------------- init complete 	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(213)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [327]	admin	<> Ignoring warnings while loading and activating group 'T992Config(359)'
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	admin	<> ------------------------------------- init start    	 [for all plug-ins in Configuration group 'T992Config(359)']
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [25]	isFirstAppInContext = 1
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [30]	*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [31]	FESlowControlsTable
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [41]	BurstDataCount
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [43]	childType=unsigned long long
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	admin	<> ------------------------------------- init complete 	 [for all plug-ins in Configuration group 'T992Config(359)']
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [331]	admin	<> ======================================================== getAllTableInfo end
+|Debug:ConfigurationManagerRW:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManagerRW.cc [339]	admin	<> Number of Groups: 952
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [1685]	ConfigurationGUISupervisor:280	<> Loading group 'T992Context(92)'
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [3078]	ConfigurationGUISupervisor:280	<> Active tables are setup. No issues found.
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [3100]	ConfigurationGUISupervisor:280	<> accumulateTreeErrs = 
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [111]	ConfigurationGUISupervisor:280	<> requestType: getTreeView
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [1685]	ConfigurationGUISupervisor:280	<> Loading group 'T992Context(92)'
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [3078]	ConfigurationGUISupervisor:280	<> Active tables are setup. No issues found.
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [3122]	StringMacros::mapToString(filterMap) = 
+|Debug:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [283]	Console is alive and waiting... (if no messages, next heartbeat is in two minutes)
+|Debug:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [283]	Console is alive and waiting... (if no messages, next heartbeat is in two minutes)
+|Debug:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [283]	Console is alive and waiting... (if no messages, next heartbeat is in two minutes)
+|Debug:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [283]	Console is alive and waiting... (if no messages, next heartbeat is in two minutes)
+|Debug:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [283]	Console is alive and waiting... (if no messages, next heartbeat is in two minutes)
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [111]	ConfigurationGUISupervisor:280	<> requestType: getTreeView
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [1685]	ConfigurationGUISupervisor:280	<> Loading group 'T992Context(92)'
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [3078]	ConfigurationGUISupervisor:280	<> Active tables are setup. No issues found.
+|Debug:CfgGUI:otsdaq_utilities/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [3122]	StringMacros::mapToString(filterMap) = 
+|Debug:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [283]	Console is alive and waiting... (if no messages, next heartbeat is in two minutes)
+|Debug:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [283]	Console is alive and waiting... (if no messages, next heartbeat is in two minutes)
+|Debug:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [283]	Console is alive and waiting... (if no messages, next heartbeat is in two minutes)
+|Debug:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [283]	Console is alive and waiting... (if no messages, next heartbeat is in two minutes)
+|Debug:Console:otsdaq_utilities/otsdaq-utilities/Console/ConsoleSupervisor.cc [283]	Console is alive and waiting... (if no messages, next heartbeat is in two minutes)
+Terminating...
+|Debug:MetricManager:MetricManager.cc [190]	MetricManager is shutting down...
+|Debug:MetricManager:MetricManager.cc [156]	Stopping Metrics
+|Debug:MetricManager:MetricManager.cc [159]	Joining Metric-Sending thread
+|Debug:MetricManager:MetricManager.cc [172]	do_stop Complete

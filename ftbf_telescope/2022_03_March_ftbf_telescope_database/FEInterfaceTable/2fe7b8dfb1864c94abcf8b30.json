@@ -1,0 +1,1094 @@
+{
+"document" : {
+"data" : {
+"NAME" : "FE_INTERFACE_TABLE",
+"COMMENT" : "No comment.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1654374866,
+"COL_TYPES" : {
+"FE_INTERFACE_GROUP_ID" : "STRING",
+"FE_INTERFACE_UID" : "STRING",
+"STATUS" : "STRING",
+"FE_INTERFACE_PLUGIN_NAME" : "STRING",
+"LINK_TO_FE_TYPE_TABLE" : "STRING",
+"LINK_TO_FE_TYPE_UID" : "STRING",
+"LINK_TO_FE_TO_DETECTOR_TABLE" : "STRING",
+"LINK_TO_FE_TO_DETECTOR_GROUP_ID" : "STRING",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" : "STRING",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" : "STRING",
+"LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" : "STRING",
+"LINK_TO_SLOW_CONTROLS_MONITOR_UID" : "STRING",
+"SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" : "STRING",
+"SLOW_CONTROLS_TX_SOCKET_PORT" : "NUMBER",
+"SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" : "STRING",
+"SLOW_CONTROLS_LOCAL_FILE_PATH" : "STRING",
+"SLOW_CONTROLS_RADIX_FILE_NAME" : "STRING",
+"SLOW_CONTROLS_SAVE_BINARY_FILE" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"FE_INTERFACE_GROUP_ID" : "FESupervisorFSSR0",
+"FE_INTERFACE_UID" : "OtsUDPFSSR0",
+"STATUS" : "On",
+"FE_INTERFACE_PLUGIN_NAME" : "FSSRInterface",
+"LINK_TO_FE_TYPE_TABLE" : "FSSRInterfaceTable",
+"LINK_TO_FE_TYPE_UID" : "OtsUDPFSSR0",
+"LINK_TO_FE_TO_DETECTOR_TABLE" : "FEToDetectorTable",
+"LINK_TO_FE_TO_DETECTOR_GROUP_ID" : "PurdueFSSR0",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_MONITOR_UID" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_PORT" : "0",
+"SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" : "No",
+"SLOW_CONTROLS_LOCAL_FILE_PATH" : "DEFAULT",
+"SLOW_CONTROLS_RADIX_FILE_NAME" : "DEFAULT",
+"SLOW_CONTROLS_SAVE_BINARY_FILE" : "False",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1642788071"
+},
+{
+"FE_INTERFACE_GROUP_ID" : "FESupervisorFSSR1",
+"FE_INTERFACE_UID" : "OtsUDPFSSR1",
+"STATUS" : "On",
+"FE_INTERFACE_PLUGIN_NAME" : "FSSRInterface",
+"LINK_TO_FE_TYPE_TABLE" : "FSSRInterfaceTable",
+"LINK_TO_FE_TYPE_UID" : "OtsUDPFSSR1",
+"LINK_TO_FE_TO_DETECTOR_TABLE" : "FEToDetectorTable",
+"LINK_TO_FE_TO_DETECTOR_GROUP_ID" : "PurdueFSSR1",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_MONITOR_UID" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_PORT" : "0",
+"SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" : "No",
+"SLOW_CONTROLS_LOCAL_FILE_PATH" : "DEFAULT",
+"SLOW_CONTROLS_RADIX_FILE_NAME" : "DEFAULT",
+"SLOW_CONTROLS_SAVE_BINARY_FILE" : "False",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1634591755"
+},
+{
+"FE_INTERFACE_GROUP_ID" : "FESupervisorFSSR2",
+"FE_INTERFACE_UID" : "OtsUDPFSSR2",
+"STATUS" : "On",
+"FE_INTERFACE_PLUGIN_NAME" : "FSSRInterface",
+"LINK_TO_FE_TYPE_TABLE" : "FSSRInterfaceTable",
+"LINK_TO_FE_TYPE_UID" : "OtsUDPFSSR2",
+"LINK_TO_FE_TO_DETECTOR_TABLE" : "FEToDetectorTable",
+"LINK_TO_FE_TO_DETECTOR_GROUP_ID" : "PurdueFSSR2",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_MONITOR_UID" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_PORT" : "0",
+"SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" : "No",
+"SLOW_CONTROLS_LOCAL_FILE_PATH" : "DEFAULT",
+"SLOW_CONTROLS_RADIX_FILE_NAME" : "DEFAULT",
+"SLOW_CONTROLS_SAVE_BINARY_FILE" : "False",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646863530"
+},
+{
+"FE_INTERFACE_GROUP_ID" : "FESupervisorFSSR3",
+"FE_INTERFACE_UID" : "OtsUDPFSSR3",
+"STATUS" : "On",
+"FE_INTERFACE_PLUGIN_NAME" : "FSSRInterface",
+"LINK_TO_FE_TYPE_TABLE" : "FSSRInterfaceTable",
+"LINK_TO_FE_TYPE_UID" : "OtsUDPFSSR3",
+"LINK_TO_FE_TO_DETECTOR_TABLE" : "FEToDetectorTable",
+"LINK_TO_FE_TO_DETECTOR_GROUP_ID" : "PurdueFSSR3",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_MONITOR_UID" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_PORT" : "0",
+"SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" : "No",
+"SLOW_CONTROLS_LOCAL_FILE_PATH" : "DEFAULT",
+"SLOW_CONTROLS_RADIX_FILE_NAME" : "DEFAULT",
+"SLOW_CONTROLS_SAVE_BINARY_FILE" : "False",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1642788071"
+},
+{
+"FE_INTERFACE_GROUP_ID" : "FESupervisorNetworkMaster",
+"FE_INTERFACE_UID" : "PurdueNetworkMaster",
+"STATUS" : "On",
+"FE_INTERFACE_PLUGIN_NAME" : "FEPurdueNetworkMasterInterface",
+"LINK_TO_FE_TYPE_TABLE" : "FEPurdueNetworkMasterInterfaceTable",
+"LINK_TO_FE_TYPE_UID" : "PurdueNetworkMaster",
+"LINK_TO_FE_TO_DETECTOR_TABLE" : "NO_LINK",
+"LINK_TO_FE_TO_DETECTOR_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_MONITOR_UID" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_PORT" : "0",
+"SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" : "No",
+"SLOW_CONTROLS_LOCAL_FILE_PATH" : "DEFAULT",
+"SLOW_CONTROLS_RADIX_FILE_NAME" : "DEFAULT",
+"SLOW_CONTROLS_SAVE_BINARY_FILE" : "False",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1634591755"
+},
+{
+"FE_INTERFACE_GROUP_ID" : "FESupervisorPixelTelescope0",
+"FE_INTERFACE_UID" : "FEInterfacePixelTelescope0",
+"STATUS" : "On",
+"FE_INTERFACE_PLUGIN_NAME" : "FEMiddlewareInterface",
+"LINK_TO_FE_TYPE_TABLE" : "FEMiddlewareInterfaceTable",
+"LINK_TO_FE_TYPE_UID" : "FEInterfacePixelTelescope0",
+"LINK_TO_FE_TO_DETECTOR_TABLE" : "NO_LINK",
+"LINK_TO_FE_TO_DETECTOR_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_MONITOR_UID" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_PORT" : "0",
+"SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" : "No",
+"SLOW_CONTROLS_LOCAL_FILE_PATH" : "DEFAULT",
+"SLOW_CONTROLS_RADIX_FILE_NAME" : "DEFAULT",
+"SLOW_CONTROLS_SAVE_BINARY_FILE" : "False",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646850021"
+},
+{
+"FE_INTERFACE_GROUP_ID" : "RD53FE0Group",
+"FE_INTERFACE_UID" : "RD53FEInterface0",
+"STATUS" : "Off",
+"FE_INTERFACE_PLUGIN_NAME" : "FEMiddlewareInterface",
+"LINK_TO_FE_TYPE_TABLE" : "FEMiddlewareInterfaceTable",
+"LINK_TO_FE_TYPE_UID" : "RD53FEInterface0",
+"LINK_TO_FE_TO_DETECTOR_TABLE" : "NO_LINK",
+"LINK_TO_FE_TO_DETECTOR_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_MONITOR_UID" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_PORT" : "0",
+"SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" : "No",
+"SLOW_CONTROLS_LOCAL_FILE_PATH" : "DEFAULT",
+"SLOW_CONTROLS_RADIX_FILE_NAME" : "DEFAULT",
+"SLOW_CONTROLS_SAVE_BINARY_FILE" : "False",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1654374851"
+},
+{
+"FE_INTERFACE_GROUP_ID" : "CommanderFE0Group",
+"FE_INTERFACE_UID" : "Commander0",
+"STATUS" : "On",
+"FE_INTERFACE_PLUGIN_NAME" : "FECommanderInterface",
+"LINK_TO_FE_TYPE_TABLE" : "FECommanderInterfaceTable",
+"LINK_TO_FE_TYPE_UID" : "Commander",
+"LINK_TO_FE_TO_DETECTOR_TABLE" : "NO_LINK",
+"LINK_TO_FE_TO_DETECTOR_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_MONITOR_UID" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_PORT" : "0",
+"SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" : "No",
+"SLOW_CONTROLS_LOCAL_FILE_PATH" : "DEFAULT",
+"SLOW_CONTROLS_RADIX_FILE_NAME" : "DEFAULT",
+"SLOW_CONTROLS_SAVE_BINARY_FILE" : "False",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646849917"
+},
+{
+"FE_INTERFACE_GROUP_ID" : "TimingFEVMEGroup",
+"FE_INTERFACE_UID" : "TimingFEVME",
+"STATUS" : "On",
+"FE_INTERFACE_PLUGIN_NAME" : "FEOtsUDPCMSTimingInterface",
+"LINK_TO_FE_TYPE_TABLE" : "FECMSTimingInterfaceTable",
+"LINK_TO_FE_TYPE_UID" : "CMSVMETiming",
+"LINK_TO_FE_TO_DETECTOR_TABLE" : "NO_LINK",
+"LINK_TO_FE_TO_DETECTOR_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_MONITOR_UID" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_PORT" : "0",
+"SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" : "No",
+"SLOW_CONTROLS_LOCAL_FILE_PATH" : "DEFAULT",
+"SLOW_CONTROLS_RADIX_FILE_NAME" : "DEFAULT",
+"SLOW_CONTROLS_SAVE_BINARY_FILE" : "False",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646849917"
+},
+{
+"FE_INTERFACE_GROUP_ID" : "FESupervisorYarr0",
+"FE_INTERFACE_UID" : "Yarr0_FE0",
+"STATUS" : "On",
+"FE_INTERFACE_PLUGIN_NAME" : "FERD53AInterface",
+"LINK_TO_FE_TYPE_TABLE" : "FEYarrInterfaceTable",
+"LINK_TO_FE_TYPE_UID" : "Yarr0_FE0",
+"LINK_TO_FE_TO_DETECTOR_TABLE" : "NO_LINK",
+"LINK_TO_FE_TO_DETECTOR_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_MONITOR_UID" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_PORT" : "0",
+"SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" : "No",
+"SLOW_CONTROLS_LOCAL_FILE_PATH" : "DEFAULT",
+"SLOW_CONTROLS_RADIX_FILE_NAME" : "DEFAULT",
+"SLOW_CONTROLS_SAVE_BINARY_FILE" : "False",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646849917"
+},
+{
+"FE_INTERFACE_GROUP_ID" : "FESupervisorYarr2",
+"FE_INTERFACE_UID" : "Yarr2_FE2",
+"STATUS" : "On",
+"FE_INTERFACE_PLUGIN_NAME" : "FERD53AInterface",
+"LINK_TO_FE_TYPE_TABLE" : "FEYarrInterfaceTable",
+"LINK_TO_FE_TYPE_UID" : "Yarr2_FE2",
+"LINK_TO_FE_TO_DETECTOR_TABLE" : "NO_LINK",
+"LINK_TO_FE_TO_DETECTOR_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_MONITOR_UID" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_PORT" : "0",
+"SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" : "No",
+"SLOW_CONTROLS_LOCAL_FILE_PATH" : "DEFAULT",
+"SLOW_CONTROLS_RADIX_FILE_NAME" : "DEFAULT",
+"SLOW_CONTROLS_SAVE_BINARY_FILE" : "False",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646849917"
+},
+{
+"FE_INTERFACE_GROUP_ID" : "TimingFETOFPETGroup",
+"FE_INTERFACE_UID" : "TimingFETOFPET",
+"STATUS" : "On",
+"FE_INTERFACE_PLUGIN_NAME" : "FEOtsUDPCMSTimingInterface",
+"LINK_TO_FE_TYPE_TABLE" : "FECMSTimingInterfaceTable",
+"LINK_TO_FE_TYPE_UID" : "CMSTOFPETTiming",
+"LINK_TO_FE_TO_DETECTOR_TABLE" : "NO_LINK",
+"LINK_TO_FE_TO_DETECTOR_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_MONITOR_UID" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_PORT" : "0",
+"SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" : "No",
+"SLOW_CONTROLS_LOCAL_FILE_PATH" : "DEFAULT",
+"SLOW_CONTROLS_RADIX_FILE_NAME" : "DEFAULT",
+"SLOW_CONTROLS_SAVE_BINARY_FILE" : "False",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1634591755"
+},
+{
+"FE_INTERFACE_GROUP_ID" : "FENetScopeGroup",
+"FE_INTERFACE_UID" : "NetScopeFE",
+"STATUS" : "On",
+"FE_INTERFACE_PLUGIN_NAME" : "FENetScopeInterface",
+"LINK_TO_FE_TYPE_TABLE" : "FENetScopeInterfaceTable",
+"LINK_TO_FE_TYPE_UID" : "FENetScope0",
+"LINK_TO_FE_TO_DETECTOR_TABLE" : "NO_LINK",
+"LINK_TO_FE_TO_DETECTOR_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_MONITOR_UID" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_PORT" : "0",
+"SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" : "No",
+"SLOW_CONTROLS_LOCAL_FILE_PATH" : "DEFAULT",
+"SLOW_CONTROLS_RADIX_FILE_NAME" : "DEFAULT",
+"SLOW_CONTROLS_SAVE_BINARY_FILE" : "False",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1634591755"
+},
+{
+"FE_INTERFACE_GROUP_ID" : "NimPlusFE0Group",
+"FE_INTERFACE_UID" : "NIMPlus",
+"STATUS" : "On",
+"FE_INTERFACE_PLUGIN_NAME" : "FENIMPlusInterface",
+"LINK_TO_FE_TYPE_TABLE" : "FENIMPlusInterfaceTable",
+"LINK_TO_FE_TYPE_UID" : "NIMPlus",
+"LINK_TO_FE_TO_DETECTOR_TABLE" : "NO_LINK",
+"LINK_TO_FE_TO_DETECTOR_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_MONITOR_UID" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_PORT" : "0",
+"SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" : "No",
+"SLOW_CONTROLS_LOCAL_FILE_PATH" : "DEFAULT",
+"SLOW_CONTROLS_RADIX_FILE_NAME" : "DEFAULT",
+"SLOW_CONTROLS_SAVE_BINARY_FILE" : "False",
+"COMMENT_DESCRIPTION" : "Generated by Record Creation Wiz",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1634591755"
+},
+{
+"FE_INTERFACE_GROUP_ID" : "NimPlusFE0Group",
+"FE_INTERFACE_UID" : "NIMPlusX",
+"STATUS" : "On",
+"FE_INTERFACE_PLUGIN_NAME" : "FENIMPlusInterfaceV1",
+"LINK_TO_FE_TYPE_TABLE" : "FENIMPlusInterfaceTable",
+"LINK_TO_FE_TYPE_UID" : "NIMPlusX",
+"LINK_TO_FE_TO_DETECTOR_TABLE" : "NO_LINK",
+"LINK_TO_FE_TO_DETECTOR_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_CHANNEL_GROUP_ID" : "DEFAULT",
+"LINK_TO_SLOW_CONTROLS_MONITOR_TABLE" : "NO_LINK",
+"LINK_TO_SLOW_CONTROLS_MONITOR_UID" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_IP_ADDRESS" : "DEFAULT",
+"SLOW_CONTROLS_TX_SOCKET_PORT" : "0",
+"SLOW_CONTROLS_LOCAL_AGGREGATE_SAVING_ENABLED" : "No",
+"SLOW_CONTROLS_LOCAL_FILE_PATH" : "DEFAULT",
+"SLOW_CONTROLS_RADIX_FILE_NAME" : "DEFAULT",
+"SLOW_CONTROLS_SAVE_BINARY_FILE" : "False",
+"COMMENT_DESCRIPTION" : "Generated by Record Creation Wiz",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1646858197"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2022-06-04T15:34:26.260-0500",
+"rawdata" : [
+
+]
+},
+"version" : "21",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2022-06-04T15:34:26.261-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2022-06-04T15:34:26.261-0500"
+},
+{
+"name" : "T992Config_v313",
+"assigned" : "2022-06-04T15:34:33.468-0500"
+},
+{
+"name" : "T992Config_v314",
+"assigned" : "2022-06-05T14:41:13.785-0500"
+},
+{
+"name" : "T992Config_v315",
+"assigned" : "2022-06-06T09:47:44.556-0500"
+},
+{
+"name" : "T992Config_v316",
+"assigned" : "2022-06-06T10:06:32.723-0500"
+},
+{
+"name" : "T992Config_v317",
+"assigned" : "2022-06-06T12:31:47.031-0500"
+},
+{
+"name" : "T992Config_v318",
+"assigned" : "2022-06-06T12:37:01.365-0500"
+},
+{
+"name" : "T992Config_v319",
+"assigned" : "2022-06-06T12:38:37.050-0500"
+},
+{
+"name" : "T992Config_v320",
+"assigned" : "2022-06-06T12:42:44.588-0500"
+},
+{
+"name" : "T992Config_v321",
+"assigned" : "2022-06-06T12:45:21.669-0500"
+},
+{
+"name" : "T992Config_v322",
+"assigned" : "2022-06-06T12:53:17.432-0500"
+},
+{
+"name" : "T992Config_v323",
+"assigned" : "2022-06-06T13:01:25.819-0500"
+},
+{
+"name" : "T992Config_v324",
+"assigned" : "2022-06-06T13:03:02.659-0500"
+},
+{
+"name" : "T992Config_v325",
+"assigned" : "2022-06-06T13:07:29.900-0500"
+},
+{
+"name" : "T992Config_v326",
+"assigned" : "2022-06-06T13:18:21.910-0500"
+},
+{
+"name" : "T992Config_v327",
+"assigned" : "2022-06-06T13:22:21.427-0500"
+},
+{
+"name" : "T992Config_v328",
+"assigned" : "2022-06-06T15:49:20.832-0500"
+},
+{
+"name" : "T992Config_v329",
+"assigned" : "2022-06-06T15:50:53.250-0500"
+},
+{
+"name" : "T992Config_v330",
+"assigned" : "2022-06-06T16:03:14.774-0500"
+},
+{
+"name" : "T992Config_v331",
+"assigned" : "2022-06-06T16:21:30.555-0500"
+},
+{
+"name" : "T992Config_v332",
+"assigned" : "2022-06-06T17:39:51.938-0500"
+},
+{
+"name" : "T992Config_v333",
+"assigned" : "2022-06-06T17:56:53.332-0500"
+},
+{
+"name" : "T992Config_v334",
+"assigned" : "2022-06-06T18:14:59.754-0500"
+},
+{
+"name" : "T992Config_v335",
+"assigned" : "2022-06-06T18:23:50.699-0500"
+},
+{
+"name" : "T992Config_v336",
+"assigned" : "2022-06-06T18:33:31.866-0500"
+},
+{
+"name" : "T992Config_v337",
+"assigned" : "2022-06-06T18:48:09.287-0500"
+},
+{
+"name" : "T992Config_v338",
+"assigned" : "2022-06-07T10:55:29.284-0500"
+},
+{
+"name" : "T992Config_v339",
+"assigned" : "2022-06-07T10:57:58.285-0500"
+},
+{
+"name" : "T992Config_v340",
+"assigned" : "2022-06-07T11:00:00.177-0500"
+},
+{
+"name" : "T992Config_v341",
+"assigned" : "2022-06-07T11:01:22.475-0500"
+},
+{
+"name" : "T992Config_v342",
+"assigned" : "2022-06-07T11:03:00.770-0500"
+},
+{
+"name" : "T992Config_v343",
+"assigned" : "2022-06-07T11:10:13.332-0500"
+},
+{
+"name" : "T992Config_v344",
+"assigned" : "2022-06-07T11:12:31.459-0500"
+},
+{
+"name" : "T992Config_v345",
+"assigned" : "2022-06-07T11:47:30.477-0500"
+},
+{
+"name" : "T992Config_v346",
+"assigned" : "2022-06-07T12:53:47.911-0500"
+},
+{
+"name" : "T992Config_v347",
+"assigned" : "2022-06-07T13:01:25.527-0500"
+},
+{
+"name" : "T992Config_v348",
+"assigned" : "2022-06-08T01:44:45.649-0500"
+},
+{
+"name" : "T992Config_v349",
+"assigned" : "2022-06-08T10:15:24.588-0500"
+},
+{
+"name" : "T992Config_v350",
+"assigned" : "2022-06-08T10:29:30.862-0500"
+},
+{
+"name" : "T992Config_v351",
+"assigned" : "2022-06-08T10:46:46.052-0500"
+},
+{
+"name" : "T992Config_v352",
+"assigned" : "2022-06-08T11:10:12.619-0500"
+},
+{
+"name" : "T992Config_v353",
+"assigned" : "2022-06-08T11:17:35.370-0500"
+},
+{
+"name" : "T992Config_v354",
+"assigned" : "2022-06-08T11:27:39.881-0500"
+},
+{
+"name" : "T992Config_v355",
+"assigned" : "2022-06-08T11:29:55.674-0500"
+},
+{
+"name" : "T992Config_v356",
+"assigned" : "2022-06-08T11:43:07.718-0500"
+},
+{
+"name" : "T992Config_v357",
+"assigned" : "2022-06-08T12:24:13.687-0500"
+},
+{
+"name" : "T992Config_v358",
+"assigned" : "2022-06-09T13:15:22.680-0500"
+},
+{
+"name" : "T992Config_v359",
+"assigned" : "2022-06-29T09:30:15.019-0500"
+},
+{
+"name" : "T992Config_v360",
+"assigned" : "2022-11-02T11:29:42.817-0500"
+},
+{
+"name" : "T992Config_v361",
+"assigned" : "2022-11-02T11:34:05.840-0500"
+},
+{
+"name" : "T992Config_v362",
+"assigned" : "2022-11-02T11:37:22.430-0500"
+},
+{
+"name" : "T992Config_v363",
+"assigned" : "2022-11-02T11:40:11.984-0500"
+},
+{
+"name" : "T992Config_v364",
+"assigned" : "2022-11-02T11:42:11.769-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-04T15:34:26.261-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2022-06-04T15:34:26.261-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2022-06-04T15:34:26.261-0500",
+"value" : {
+"name" : "21",
+"assigned" : "2022-06-04T15:34:26.261-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2022-06-04T15:34:26.261-0500",
+"value" : {
+"name" : "FEInterfaceTable",
+"assigned" : "2022-06-04T15:34:26.261-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2022-06-04T15:34:26.261-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2022-06-04T15:34:26.261-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-04T15:34:33.468-0500",
+"value" : {
+"name" : "T992Config_v313",
+"assigned" : "2022-06-04T15:34:33.468-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-05T14:41:13.785-0500",
+"value" : {
+"name" : "T992Config_v314",
+"assigned" : "2022-06-05T14:41:13.785-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T09:47:44.556-0500",
+"value" : {
+"name" : "T992Config_v315",
+"assigned" : "2022-06-06T09:47:44.556-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T10:06:32.723-0500",
+"value" : {
+"name" : "T992Config_v316",
+"assigned" : "2022-06-06T10:06:32.723-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T12:31:47.031-0500",
+"value" : {
+"name" : "T992Config_v317",
+"assigned" : "2022-06-06T12:31:47.031-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T12:37:01.365-0500",
+"value" : {
+"name" : "T992Config_v318",
+"assigned" : "2022-06-06T12:37:01.365-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T12:38:37.050-0500",
+"value" : {
+"name" : "T992Config_v319",
+"assigned" : "2022-06-06T12:38:37.050-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T12:42:44.588-0500",
+"value" : {
+"name" : "T992Config_v320",
+"assigned" : "2022-06-06T12:42:44.588-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T12:45:21.669-0500",
+"value" : {
+"name" : "T992Config_v321",
+"assigned" : "2022-06-06T12:45:21.669-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T12:53:17.432-0500",
+"value" : {
+"name" : "T992Config_v322",
+"assigned" : "2022-06-06T12:53:17.432-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T13:01:25.819-0500",
+"value" : {
+"name" : "T992Config_v323",
+"assigned" : "2022-06-06T13:01:25.819-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T13:03:02.659-0500",
+"value" : {
+"name" : "T992Config_v324",
+"assigned" : "2022-06-06T13:03:02.659-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T13:07:29.900-0500",
+"value" : {
+"name" : "T992Config_v325",
+"assigned" : "2022-06-06T13:07:29.900-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T13:18:21.910-0500",
+"value" : {
+"name" : "T992Config_v326",
+"assigned" : "2022-06-06T13:18:21.910-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T13:22:21.427-0500",
+"value" : {
+"name" : "T992Config_v327",
+"assigned" : "2022-06-06T13:22:21.427-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T15:49:20.832-0500",
+"value" : {
+"name" : "T992Config_v328",
+"assigned" : "2022-06-06T15:49:20.832-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T15:50:53.250-0500",
+"value" : {
+"name" : "T992Config_v329",
+"assigned" : "2022-06-06T15:50:53.250-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T16:03:14.774-0500",
+"value" : {
+"name" : "T992Config_v330",
+"assigned" : "2022-06-06T16:03:14.774-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T16:21:30.555-0500",
+"value" : {
+"name" : "T992Config_v331",
+"assigned" : "2022-06-06T16:21:30.555-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T17:39:51.938-0500",
+"value" : {
+"name" : "T992Config_v332",
+"assigned" : "2022-06-06T17:39:51.938-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T17:56:53.332-0500",
+"value" : {
+"name" : "T992Config_v333",
+"assigned" : "2022-06-06T17:56:53.332-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T18:14:59.754-0500",
+"value" : {
+"name" : "T992Config_v334",
+"assigned" : "2022-06-06T18:14:59.754-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T18:23:50.699-0500",
+"value" : {
+"name" : "T992Config_v335",
+"assigned" : "2022-06-06T18:23:50.699-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T18:33:31.867-0500",
+"value" : {
+"name" : "T992Config_v336",
+"assigned" : "2022-06-06T18:33:31.866-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-06T18:48:09.287-0500",
+"value" : {
+"name" : "T992Config_v337",
+"assigned" : "2022-06-06T18:48:09.287-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-07T10:55:29.284-0500",
+"value" : {
+"name" : "T992Config_v338",
+"assigned" : "2022-06-07T10:55:29.284-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-07T10:57:58.285-0500",
+"value" : {
+"name" : "T992Config_v339",
+"assigned" : "2022-06-07T10:57:58.285-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-07T11:00:00.177-0500",
+"value" : {
+"name" : "T992Config_v340",
+"assigned" : "2022-06-07T11:00:00.177-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-07T11:01:22.475-0500",
+"value" : {
+"name" : "T992Config_v341",
+"assigned" : "2022-06-07T11:01:22.475-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-07T11:03:00.770-0500",
+"value" : {
+"name" : "T992Config_v342",
+"assigned" : "2022-06-07T11:03:00.770-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-07T11:10:13.332-0500",
+"value" : {
+"name" : "T992Config_v343",
+"assigned" : "2022-06-07T11:10:13.332-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-07T11:12:31.459-0500",
+"value" : {
+"name" : "T992Config_v344",
+"assigned" : "2022-06-07T11:12:31.459-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-07T11:47:30.477-0500",
+"value" : {
+"name" : "T992Config_v345",
+"assigned" : "2022-06-07T11:47:30.477-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-07T12:53:47.911-0500",
+"value" : {
+"name" : "T992Config_v346",
+"assigned" : "2022-06-07T12:53:47.911-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-07T13:01:25.527-0500",
+"value" : {
+"name" : "T992Config_v347",
+"assigned" : "2022-06-07T13:01:25.527-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-08T01:44:45.649-0500",
+"value" : {
+"name" : "T992Config_v348",
+"assigned" : "2022-06-08T01:44:45.649-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-08T10:15:24.588-0500",
+"value" : {
+"name" : "T992Config_v349",
+"assigned" : "2022-06-08T10:15:24.588-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-08T10:29:30.862-0500",
+"value" : {
+"name" : "T992Config_v350",
+"assigned" : "2022-06-08T10:29:30.862-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-08T10:46:46.052-0500",
+"value" : {
+"name" : "T992Config_v351",
+"assigned" : "2022-06-08T10:46:46.052-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-08T11:10:12.619-0500",
+"value" : {
+"name" : "T992Config_v352",
+"assigned" : "2022-06-08T11:10:12.619-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-08T11:17:35.370-0500",
+"value" : {
+"name" : "T992Config_v353",
+"assigned" : "2022-06-08T11:17:35.370-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-08T11:27:39.881-0500",
+"value" : {
+"name" : "T992Config_v354",
+"assigned" : "2022-06-08T11:27:39.881-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-08T11:29:55.674-0500",
+"value" : {
+"name" : "T992Config_v355",
+"assigned" : "2022-06-08T11:29:55.674-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-08T11:43:07.718-0500",
+"value" : {
+"name" : "T992Config_v356",
+"assigned" : "2022-06-08T11:43:07.718-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-08T12:24:13.687-0500",
+"value" : {
+"name" : "T992Config_v357",
+"assigned" : "2022-06-08T12:24:13.687-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-09T13:15:22.680-0500",
+"value" : {
+"name" : "T992Config_v358",
+"assigned" : "2022-06-09T13:15:22.680-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-06-29T09:30:15.019-0500",
+"value" : {
+"name" : "T992Config_v359",
+"assigned" : "2022-06-29T09:30:15.019-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-11-02T11:29:42.817-0500",
+"value" : {
+"name" : "T992Config_v360",
+"assigned" : "2022-11-02T11:29:42.817-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-11-02T11:34:05.840-0500",
+"value" : {
+"name" : "T992Config_v361",
+"assigned" : "2022-11-02T11:34:05.840-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-11-02T11:37:22.430-0500",
+"value" : {
+"name" : "T992Config_v362",
+"assigned" : "2022-11-02T11:37:22.430-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-11-02T11:40:11.984-0500",
+"value" : {
+"name" : "T992Config_v363",
+"assigned" : "2022-11-02T11:40:11.984-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-11-02T11:42:11.769-0500",
+"value" : {
+"name" : "T992Config_v364",
+"assigned" : "2022-11-02T11:42:11.769-0500"
+}
+}
+],
+"created" : "2022-06-04T15:34:26.260-0500"
+},
+"_id" : {
+"$oid" : "2fe7b8dfb1864c94abcf8b30"
+},
+"collection" : "FEInterfaceTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

@@ -1,0 +1,3918 @@
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 10:23:16 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 10:25:27 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 10:25:28 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:2000000010000000",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 10:25:30 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:2000000010000000",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 10:46:53 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:2000000010000000",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 10:46:53 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:2000000010000000",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 10:46:54 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"w:5:5",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 10:53:04 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:5:1d",
+"Format":"hex:dec",
+"Time":"Tue Feb 13 2018 10:53:25 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:5:5",
+"Format":"hex:dec",
+"Time":"Tue Feb 13 2018 10:53:32 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:3:00000000000FFFFF",
+"Format":"hex:dec",
+"Time":"Tue Feb 13 2018 10:58:44 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:3:00000000000FFFFF",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 10:58:47 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"dec:hex",
+"Time":"Tue Feb 13 2018 11:00:28 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"dec:hex",
+"Time":"Tue Feb 13 2018 11:00:32 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"dec:hex",
+"Time":"Tue Feb 13 2018 11:04:21 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:68:0",
+"Format":"dec:hex",
+"Time":"Tue Feb 13 2018 11:04:42 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:104:0",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:04:54 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:11:0000000000064391",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:05:24 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:17:0000000000000000",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:05:34 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:05:41 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:05:48 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:07:29 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:D303D3030BF05303",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:07:30 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:07:46 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:07:48 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:07:48 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:07:49 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:07:53 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:07:55 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:D303D3030BF05303",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:07:56 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:07:56 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:07:57 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:07:58 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:07:59 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:07:59 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:00 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:D303D3030FF05303",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:00 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:01 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:02 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:03 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:04 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:04 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:05 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:05 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:D303D3030FF05303",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:06 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:09 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:30 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:31 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:32 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:104:0",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:46 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:47 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:104:1",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:50 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:51 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:08:56 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:13:18 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:104:3",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:13:35 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:13:37 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:13:47 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:104:FF",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:15:20 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:15:23 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:15:26 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444402000600E12C",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:15:41 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:15:49 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:c:0000002002020100",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:15:51 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:d:0000000000000000",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:16:00 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:16:04 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:16:10 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:16:13 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:16:18 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:16:19 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:16:17 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:16:25 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:16:42 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:16:43 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:104:0",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:16:57 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:16:59 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:17:04 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:17:05 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:17:06 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:17:06 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:17:58 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:17:59 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:17:59 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:18:00 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:18:00 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030BF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:18:01 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:920392030FF01203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:18:03 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:999:f",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:21:24 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:999:0",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:21:31 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:999:8",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:21:45 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:999:F",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:21:54 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:999:0",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:22:05 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:D303D3030FF05303",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:23:44 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:D303D3030BF05303",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:23:46 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:23:53 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:23:54 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:23:55 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:104:f",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:24:02 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:24:03 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444402000600E12C",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:28:06 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:104:f",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:28:11 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444402000600E12C",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:28:13 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:11:0000000000064391",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:28:27 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:104:0",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:28:45 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444402000600E12C",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:28:47 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:11:0000000000064391",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:29:45 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:11:0000000000064391",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:30:26 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:30:35 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101000033",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:30:36 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:11:0000000000064391",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:30:44 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:4:ff",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:31:33 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:00010401010000FF",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:31:34 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:104:ff",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:31:42 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:00010401010000FF",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:31:44 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:204:ff",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:31:51 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0001040101FF00FF",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:31:52 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:304:ff",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:31:59 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:00010401FFFF00FF",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:31:59 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:404:ff",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:32:04 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:000104FFFFFF00FF",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:32:05 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:104:ff",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:34:22 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:104:ff",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:34:23 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:204:ff",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 11:34:34 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000008020000080",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 12:02:00 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:200000D2100000D2",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 12:02:02 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:200000FE100000FE",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 12:02:03 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000015320000153",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 12:02:05 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000017420000174",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 12:02:06 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444402000600E12C",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 12:03:18 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444402000600E12C",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 12:03:24 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0401040101000008",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 12:03:27 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:0401040101000008",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 12:03:28 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444402000600E12C",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 12:03:33 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:210021000FF02100",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 12:04:02 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000004D2000004D",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:14:14 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:200000B3100000B3",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:14:17 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"w:999:f",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:25:12 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:10:A300A300033F1203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:25:13 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:10:A300A300033F1203",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:25:41 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"w:999:f",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:25:48 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:E300E3000CF05303",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:25:50 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:E300E3000CF05303",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:27:09 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:E300E3000CF05303",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:27:10 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:100021D0200021D0",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:33:04 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000220520002205",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:33:05 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000221B2000221B",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:33:06 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000000420000004",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:33:11 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000001A2000001A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:33:11 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000004020000040",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:33:12 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000005320000053",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:33:12 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000006920000069",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:33:13 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000008220000082",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:33:13 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:100003A2200003A2",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:33:51 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:10:D303D3030CF05303",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 14:59:54 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:999:f",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:03:44 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:999:0",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:03:59 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:0003FFFFFFFFFFFF",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:49:31 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:18008:100",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:50:06 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:00000000000003E8",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:52:09 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:4000000030000000",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:52:13 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:52:14 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:52:15 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:52:16 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:52:16 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:52:17 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:52:17 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:52:19 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:52:20 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:52:24 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:52:35 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:52:42 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:52:59 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:53:01 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:0401040101000008",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:53:03 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:55:37 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:55:38 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:55:39 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:55:39 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:55:39 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:a:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:55:40 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:b:444400000600000A",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 15:55:50 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:7:fff",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 16:00:04 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:f:2",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 16:00:42 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:7:1",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 16:01:32 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:7:2",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 16:01:47 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:7:2",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 16:02:03 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:7:2",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 16:02:03 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:f:2",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 16:02:11 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:6:2",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 16:02:16 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:6:2",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 16:02:16 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:6:2",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 16:02:17 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:6:2",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 16:03:25 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:6:2",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 16:03:30 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"w:6:2",
+"Format":"hex:hex",
+"Time":"Tue Feb 13 2018 16:03:31 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:100000BF200000BF",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 10:29:07 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:2000013E1000013E",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 10:29:10 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:2000000010000000",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 10:36:47 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000046420000000",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 10:36:49 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000047920000000",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 10:36:49 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:100004B020000000",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 10:36:50 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:2000000010000000",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 10:38:54 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 11:39:20 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000035420000000",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 11:39:22 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000001020000010",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 11:39:25 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000003F2000003F",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 11:39:26 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:100000A62000006D",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 11:39:28 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:100000B92000007A",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 11:39:28 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:24:26 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:24:27 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000016920000000",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:24:28 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000000C2000000C",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:24:31 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:100000692000004F",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:24:33 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000007B2000005D",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:24:34 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:100000D2200000D2",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:24:36 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:100000F4200000F4",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:24:36 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000017620000109",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:24:40 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:100001922000011E",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:24:40 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:100001BC20000141",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:24:42 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:100001DA2000015C",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:24:42 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000020F2000017D",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:24:43 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000023B20000199",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:24:44 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:100002C620000200",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:24:48 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:100009D020000712",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:25:32 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:10000A0D2000073C",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:25:33 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:26:06 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Wed Feb 14 2018 15:26:07 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:14 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:15 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:15 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:16 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:16 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:18 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:18 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:19 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:21 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:21 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:21 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:21 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:22 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:22 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:23 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:33 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:34 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:34 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r::FFFFFFFFFFFFFFFF",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:49 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r::FFFFFFFFFFFFFFFF",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:50 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r::FFFFFFFFFFFFFFFF",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:51 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:53 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:55 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:56 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:19:56 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:20:02 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:20:02 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:20:03 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:20:04 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:20:05 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:20:05 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:20:06 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:20:08 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000F1D20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:20:08 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:100000CC20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:23:13 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:100000DA20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:23:13 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:100000EB20000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:23:13 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:23:15 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000001320000013",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:23:16 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000002E2000002E",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:23:16 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000002F2000002F",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:24 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000004A2000004A",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:24 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000006920000069",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:25 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000008D20000045",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:26 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:100000A420000050",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:27 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:100000B120000057",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:28 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:100000D420000064",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:28 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000015B2000015B",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:31 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000017B2000017B",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:32 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000019220000192",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:32 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:10000204200000ED",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:35 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000023020000103",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:36 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000026C20000124",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:37 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000029B20000134",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:38 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000032A2000032A",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:41 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:1000034E2000034E",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:42 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:102:100003A5200001BB",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:44 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:1000045C2000021E",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:49 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:102:100004A32000023E",
+"Format":"hex:hex",
+"Time":"Thu Feb 15 2018 16:26:51 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIM1"
+}#
+{
+"Command":"r:100000009:0000000000000000",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 16:34:17 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 16:34:32 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 16:34:41 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:19 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:22 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:23 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:23 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:24 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:24 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:25 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:25 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:25 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:26 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:26 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:26 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:26 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:27 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:27 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:27 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:27 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:27 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:28 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:28 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:28 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:28 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:29 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:29 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:29 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:29 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:30 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:30 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:30 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:30 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:31 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:31 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:31 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:31 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:31 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:32 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:32 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:32 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:32 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:33 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:33 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:34 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:34 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:35 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:36 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:38 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:38 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:39 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:39 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:40 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:40 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:40 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:41 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:41 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:44 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:46 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:47 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:47 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:48 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:48 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:48 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:48 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:49 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:49 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:49 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:49 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:49 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:50 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:50 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:50 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:50 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:50 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:51 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:51 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:51 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:51 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:51 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:52 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:52 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:52 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:54 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:55 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:55 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:56 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:56 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:57 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:57 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:58 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:58 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:30:58 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:31:00 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:31:03 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:31:22 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:31:42 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r::0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:31:44 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:31:56 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:32:04 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:32:07 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:32:09 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:32:09 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:32:10 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:32:10 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:32:11 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:32:11 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:32:12 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:32:12 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:32:14 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:32:14 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:32:15 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:32:15 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:10000000:0000ABCD60000006",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:33:29 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:33:40 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:33:41 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Tue Mar 06 2018 17:33:41 GMT-0600 (CST)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"w:5:1",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 15:40:43 GMT-0600 (Central Standard Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:5:16",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 15:49:40 GMT-0600 (Central Standard Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:5:0",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 15:50:51 GMT-0600 (Central Standard Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:05:55 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:100:4000000030000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:05:55 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:101:0000000200000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:05:55 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:06:06 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:06:08 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:06:08 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:08:47 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:08:48 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:104:0",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:13:03 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:13:30 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:13:31 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:13:31 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:6:2",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:14:37 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:104:0",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:20:15 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:6:2",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:20:17 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:104:0",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:23:19 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:1000069520000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:33:02 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:100006B620000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:33:03 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:1000073C20000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:33:07 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:100:4000000030000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:33:07 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:101:0000000100000001",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:33:08 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:100000A020000054",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:33:18 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:100:4000005830000058",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:33:18 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:101:0000000000000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 18:33:18 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:5:d",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 18:51:47 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:5:d",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 18:56:30 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:5:d",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 18:59:16 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:5:d",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 19:00:21 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:5:0",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 19:00:33 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:5:d",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 19:15:16 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:7:000000000000014E",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 19:16:57 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:7:e",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 19:18:41 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:5:e",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 19:19:06 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:1000004D2000004D",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 19:26:42 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:100:400000533000004B",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 19:26:42 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:101:0000000000000000",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 19:26:43 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:1000009920000099",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 19:26:53 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:100:4000009930000085",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 19:26:53 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:101:0000000000000000",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 19:26:53 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 20:21:41 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:100:4000000030000000",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 20:21:41 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:101:0000000000000000",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 20:21:42 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:1000001820000018",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 20:22:01 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:100:4000001830000014",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 20:22:02 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:101:0000000000000000",
+"Format":"hex:dec",
+"Time":"Thu Mar 08 2018 20:22:02 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:1000001820000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 20:25:06 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:100:4000000030000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 20:25:06 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:101:0000000000000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 20:25:06 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:1000001820000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 20:25:18 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:100:4000000030000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 20:25:18 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:101:0000000000000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 08 2018 20:25:19 GMT-0600 (CST)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:00000000000003FF",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:16:49 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:100:00000000000003FF",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:16:49 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:101:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:16:49 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:4000000030000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:16:59 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:100:0000000000000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:16:59 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:101:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:16:59 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:4000000030000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:17:08 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:100:0000000000000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:17:08 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:101:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:17:08 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:18000:7",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:17:38 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:18000:0",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:17:38 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:00000000000003FF",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:17:41 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:100:00000000000003FF",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:17:41 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:101:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:17:41 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:102:4000000030000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:17:49 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:100:0000000000000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:17:49 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"r:101:1000000020000000",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:17:50 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:18000:7",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:18:04 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:18000:0",
+"Format":"hex:hex",
+"Time":"Thu Mar 29 2018 12:18:04 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlus"
+}#
+{
+"Command":"w:18008:100",
+"Format":"hex:hex",
+"Time":"Mon May 07 2018 10:19:55 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Mon May 07 2018 10:20:22 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:4000000030000000",
+"Format":"hex:hex",
+"Time":"Mon May 07 2018 10:20:23 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:0000000000000000",
+"Format":"hex:hex",
+"Time":"Mon May 07 2018 10:20:23 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:B:0401000101000133",
+"Format":"hex:hex",
+"Time":"Mon May 07 2018 10:21:07 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:18008:1FA",
+"Format":"hex:hex",
+"Time":"Mon May 07 2018 10:22:00 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:B:0401FA0101000133",
+"Format":"hex:hex",
+"Time":"Mon May 07 2018 10:22:03 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:2",
+"Format":"hex:hex",
+"Time":"Mon May 07 2018 10:24:22 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:2",
+"Format":"hex:hex",
+"Time":"Mon May 07 2018 10:25:58 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:a:444402010E00E5BE",
+"Format":"hex:hex",
+"Time":"Mon May 07 2018 10:26:30 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:c4000000:Time Out Error",
+"Format":"hex:hex",
+"Time":"Mon May 07 2018 15:51:50 GMT-0500 (CDT)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:Time Out Error",
+"Format":"hex:hex",
+"Time":"Mon May 07 2018 15:53:56 GMT-0500 (CDT)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:Time Out Error",
+"Format":"hex:hex",
+"Time":"Mon May 07 2018 15:54:50 GMT-0500 (CDT)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Mon May 07 2018 16:36:15 GMT-0500 (CDT)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:c4000000:Time Out Error",
+"Format":"hex:hex",
+"Time":"Mon May 07 2018 16:37:02 GMT-0500 (CDT)",
+"Interfaces":"FSSRInterface:210:OtsUDPFSSR0"
+}#
+{
+"Command":"r:102:10000E9820000931",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 10:38:36 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:400008D13000092C",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 10:38:37 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:0000000000000000",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 10:38:37 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:10000E9D20000936",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 10:38:44 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:400008D630000931",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 10:38:44 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:0000000000000000",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 10:38:44 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:10003B2A200024F6",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 10:42:12 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:40002355300024DF",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 10:42:12 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:0000000000000000",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 10:42:12 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:1",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:49 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:50 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:0:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:50 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:2",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:50 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:50 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:4",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:50 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:51 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:0:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:51 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:2",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:51 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:51 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:4",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:51 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:52 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:0:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:52 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:2",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:52 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:52 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:4",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:52 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:53 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:0:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:53 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:2",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:53 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:53 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:4",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:53 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:54:54 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:1",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:37 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:37 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:0:4000",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:37 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:2",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:37 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:37 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:4",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:38 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:38 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:0:4000",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:38 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:2",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:38 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:38 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:4",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:39 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:39 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:0:4000",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:39 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:2",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:39 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:39 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:4",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:40 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:40 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:0:4000",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:40 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:2",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:40 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:40 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:4",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:41 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:55:41 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:1",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:19 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:19 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:0:1470",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:19 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:2",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:20 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:20 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:4",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:20 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:20 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:0:1470",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:20 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:2",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:20 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:21 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:4",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:21 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:21 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:0:1470",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:21 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:2",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:22 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:22 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:4",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:22 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:22 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:0:1470",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:22 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:2",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:22 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:23 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:4",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:23 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:1:0",
+"Format":"hex:hex",
+"Time":"Wed May 09 2018 15:56:23 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:1000352E20002F67",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:33:58 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:40002B4330002E77",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:33:59 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:00000000000EC068",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:33:59 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:1000395D2000331C",
+"Format":"hex:dec",
+"Time":"Thu May 10 2018 11:34:20 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:40002E9C30003217",
+"Format":"hex:dec",
+"Time":"Thu May 10 2018 11:34:20 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:00000000000FE5C3",
+"Format":"hex:dec",
+"Time":"Thu May 10 2018 11:34:20 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:18000:7",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:34:31 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:18000:0",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:34:31 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:1000395D20000000",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:34:34 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:4000000030000000",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:34:35 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:0000000000000088",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:34:35 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:1000395D20000000",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:34:41 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:4000000030000000",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:34:41 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:0000000000000190",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:34:41 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:10002D0820001C1C",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:36:26 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:400015F930001A88",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:36:27 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:0000000000000000",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:36:27 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:10002D2120001C32",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:36:39 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:4000160D30001A9C",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:36:39 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:0000000000000000",
+"Format":"hex:hex",
+"Time":"Thu May 10 2018 11:36:40 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:5:1d",
+"Format":"hex:dec",
+"Time":"Fri May 11 2018 11:03:11 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:2",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:38:38 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:10:9203920308F31203",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:39:01 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:a:444402000400A000",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:39:07 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:7:FFF",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:39:56 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:7:4",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:40:08 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:7:4",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:41:19 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:7:4",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:41:19 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:2",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:41:26 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:2",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:41:27 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:f2",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:42:22 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:f2",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:42:22 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:7:2",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:49:33 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:7:2",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:49:33 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:f2",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:49:58 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:f2",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:49:58 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:f2",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:49:58 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:f1",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:50:31 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:f0",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:50:35 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:f2",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 12:50:37 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:f2",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 15:04:32 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:f2",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 15:06:39 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:f0",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 15:08:54 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:ff",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 15:09:20 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:f2",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 15:09:31 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:6:f2",
+"Format":"hex:hex",
+"Time":"Mon May 14 2018 15:35:28 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100000001:0000000000000072",
+"Format":"hex:hex",
+"Time":"Wed May 16 2018 21:27:16 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Wed May 16 2018 21:27:16 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100000001:0000000000000072",
+"Format":"hex:hex",
+"Time":"Wed May 16 2018 21:27:22 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Wed May 16 2018 21:27:22 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100000001:0000000000000072",
+"Format":"hex:hex",
+"Time":"Wed May 16 2018 21:27:37 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100000000:0000000000C0A885",
+"Format":"hex:hex",
+"Time":"Wed May 16 2018 21:27:37 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:1000D67820000016",
+"Format":"hex:hex",
+"Time":"Fri May 18 2018 09:07:15 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:40005BE930009443",
+"Format":"hex:hex",
+"Time":"Fri May 18 2018 09:07:16 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:000000000000E2AA",
+"Format":"hex:hex",
+"Time":"Fri May 18 2018 09:07:16 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:100216702000003E",
+"Format":"hex:hex",
+"Time":"Fri May 18 2018 09:09:06 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:400103D930018B8E",
+"Format":"hex:hex",
+"Time":"Fri May 18 2018 09:09:07 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:0000000000023A1A",
+"Format":"hex:hex",
+"Time":"Fri May 18 2018 09:09:07 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:3:0000000000003FFF",
+"Format":"hex:hex",
+"Time":"Fri May 18 2018 11:50:54 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:2:00000000000FC000",
+"Format":"hex:hex",
+"Time":"Fri May 18 2018 11:51:31 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:3:0000000000003FFF",
+"Format":"hex:hex",
+"Time":"Fri May 18 2018 11:51:43 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:3:0",
+"Format":"hex:hex",
+"Time":"Fri May 18 2018 11:53:46 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:3:0000000000003FFF",
+"Format":"hex:hex",
+"Time":"Fri May 18 2018 11:53:49 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:3:0000000000003FFF",
+"Format":"hex:hex",
+"Time":"Fri May 18 2018 11:53:54 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:3:1",
+"Format":"hex:hex",
+"Time":"Fri May 18 2018 11:54:52 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:1000000020000000",
+"Format":"hex:hex",
+"Time":"Tue May 22 2018 17:00:20 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:4000000030000000",
+"Format":"hex:hex",
+"Time":"Tue May 22 2018 17:00:20 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:0000000000000000",
+"Format":"hex:hex",
+"Time":"Tue May 22 2018 17:00:20 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:10000207200000E0",
+"Format":"hex:hex",
+"Time":"Tue May 22 2018 17:14:54 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:4000000030000000",
+"Format":"hex:hex",
+"Time":"Tue May 22 2018 17:14:54 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:0000000000005677",
+"Format":"hex:hex",
+"Time":"Tue May 22 2018 17:14:54 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:100010FE2000014F",
+"Format":"hex:hex",
+"Time":"Tue May 22 2018 17:33:09 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:4000000030000000",
+"Format":"hex:hex",
+"Time":"Tue May 22 2018 17:33:09 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:000000000002F5C3",
+"Format":"hex:hex",
+"Time":"Tue May 22 2018 17:33:09 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:100010FE2000014F",
+"Format":"hex:hex",
+"Time":"Tue May 22 2018 17:33:17 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:4000000030000000",
+"Format":"hex:hex",
+"Time":"Tue May 22 2018 17:33:17 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:000000000002F6E8",
+"Format":"hex:hex",
+"Time":"Tue May 22 2018 17:33:17 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:102:100010FE2000014F",
+"Format":"hex:hex",
+"Time":"Tue May 22 2018 17:33:25 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:100:4000000030000000",
+"Format":"hex:hex",
+"Time":"Tue May 22 2018 17:33:25 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:101:000000000002F81A",
+"Format":"hex:hex",
+"Time":"Tue May 22 2018 17:33:25 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:2:0000000000001000",
+"Format":"hex:hex",
+"Time":"Wed May 30 2018 10:25:59 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:2:0000000000001000",
+"Format":"hex:hex",
+"Time":"Wed May 30 2018 10:26:17 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:a:444412004000A000",
+"Format":"hex:hex",
+"Time":"Wed May 30 2018 10:30:10 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:a:444412004000A000",
+"Format":"hex:hex",
+"Time":"Wed May 30 2018 10:34:43 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:6:0000000000000000",
+"Format":"hex:hex",
+"Time":"Thu May 31 2018 15:22:23 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"r:a:444402004000A000",
+"Format":"dec:hex",
+"Time":"Thu May 31 2018 16:04:31 GMT-0500 (CDT)",
+"Interfaces":"FENIMPlusInterface:600:NIMPlusX"
+}#
+{
+"Command":"w:18000:7",
+"Format":"hex:hex",
+"Time":"Wed May 12 2021 11:19:51 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterfaceV1:600:NIMPlus"
+}#
+{
+"Command":"w:18000:0",
+"Format":"hex:hex",
+"Time":"Wed May 12 2021 11:19:51 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterfaceV1:600:NIMPlus"
+}#

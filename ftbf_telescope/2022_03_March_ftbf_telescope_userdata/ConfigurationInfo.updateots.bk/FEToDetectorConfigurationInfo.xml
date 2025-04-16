@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+	<ROOT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ConfigurationInfo.xsd">
+		<CONFIGURATION Name="FEToDetectorConfiguration">
+			<VIEW Name="FE_TO_DETECTOR_CONFIGURATION" Type="File,Database,DatabaseTest">
+				<COLUMN Type="GroupID-FEToDetector" 	 Name="FEInterfaceGroupID" 	 StorageName="FE_INTERFACE_GROUP_ID" 		DataType="VARCHAR2"/>
+				<COLUMN Type="UID" 	 Name="DetectorUID" 	 StorageName="DETECTOR_UID" 		DataType="VARCHAR2"/>
+				<COLUMN Type="Data" 	 Name="FEWriterChannel" 	 StorageName="FE_WRITER_CHANNEL" 		DataType="NUMBER"/>
+				<COLUMN Type="Data" 	 Name="FEWriterDetectorAddress" 	 StorageName="FE_WRITER_DETECTOR_ADDRESS" 		DataType="NUMBER"/>
+				<COLUMN Type="ChildLink-DetectorConfiguration" 	 Name="LinkToDetectorTable" 	 StorageName="LINK_TO_DETECTOR_TABLE" 		DataType="VARCHAR2"/>
+				<COLUMN Type="ChildLinkUID-DetectorConfiguration" 	 Name="LinkToDetectorUID" 	 StorageName="LINK_TO_DETECTOR_UID" 		DataType="VARCHAR2"/>
+				<COLUMN Type="Comment" 	 Name="CommentDescription" 	 StorageName="COMMENT_DESCRIPTION" 		DataType="VARCHAR2"/>
+				<COLUMN Type="Author" 	 Name="Author" 	 StorageName="AUTHOR" 		DataType="VARCHAR2"/>
+				<COLUMN Type="Timestamp" 	 Name="RecordInsertionTime" 	 StorageName="RECORD_INSERTION_TIME" 		DataType="TIMESTAMP WITH TIMEZONE"/>
+			</VIEW>
+		</CONFIGURATION>
+	</ROOT>

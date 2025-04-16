@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+	<ROOT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TableInfo.xsd">
+		<TABLE Name="FEToDetectorTable">
+			<VIEW Name="FE_TO_DETECTOR_TABLE" Type="File,Database,DatabaseTest" Description="No%20description.">
+				<COLUMN Type="GroupID-FEToDetector" 	 Name="FEInterfaceGroupID" 	 StorageName="FE_INTERFACE_GROUP_ID" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="UID" 	 Name="DetectorUID" 	 StorageName="DETECTOR_UID" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="Data" 	 Name="FEChannel" 	 StorageName="FE_CHANNEL" 		DataType="NUMBER" 		DataChoices=""/>
+				<COLUMN Type="Data" 	 Name="ROCAddress" 	 StorageName="ROC_ADDRESS" 		DataType="NUMBER" 		DataChoices=""/>
+				<COLUMN Type="FixedChoiceData" 	 Name="ROCAlign" 	 StorageName="ROC_ALIGN" 		DataType="NUMBER" 		DataChoices="arbitraryBool=0,1"/>
+				<COLUMN Type="ChildLink-DetectorTable" 	 Name="LinkToDetectorTable" 	 StorageName="LINK_TO_DETECTOR_TABLE" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="ChildLinkUID-DetectorTable" 	 Name="LinkToDetectorUID" 	 StorageName="LINK_TO_DETECTOR_UID" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="Comment" 	 Name="CommentDescription" 	 StorageName="COMMENT_DESCRIPTION" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="Author" 	 Name="Author" 	 StorageName="AUTHOR" 		DataType="STRING" 		DataChoices=""/>
+				<COLUMN Type="Timestamp" 	 Name="RecordInsertionTime" 	 StorageName="RECORD_INSERTION_TIME" 		DataType="TIMESTAMP WITH TIMEZONE" 		DataChoices=""/>
+			</VIEW>
+		</TABLE>
+	</ROOT>

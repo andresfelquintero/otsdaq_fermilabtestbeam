@@ -1,0 +1,84 @@
+{
+"Command":"w:31:63",
+"Format":"ascii:ascii",
+"Time":"Tue Oct 31 2017 10:46:33 GMT-0500 (CDT)",
+"Interfaces":"FTBFWireChamberInterface:210:FEI0"
+}#
+{
+"Command":"w:1:c",
+"Format":"hex:hex",
+"Time":"Tue Oct 31 2017 10:54:59 GMT-0500 (CDT)",
+"Interfaces":"FTBFWireChamberInterface:210:FEI0"
+}#
+{
+"Command":"w:31:63",
+"Format":"ascii:ascii",
+"Time":"Tue Oct 31 2017 10:59:59 GMT-0500 (CDT)",
+"Interfaces":"FTBFWireChamberInterface:210:FEI0"
+}#
+{
+"Command":"w:31:63",
+"Format":"ascii:ascii",
+"Time":"Tue Oct 31 2017 11:03:41 GMT-0500 (CDT)",
+"Interfaces":"FTBFWireChamberInterface:210:FEI0"
+}#
+{
+"Command":"w:31:63",
+"Format":"ascii:ascii",
+"Time":"Tue Oct 31 2017 11:07:03 GMT-0500 (CDT)",
+"Interfaces":"FTBFWireChamberInterface:210:FEI0"
+}#
+{
+"Command":"w:31:63",
+"Format":"ascii:ascii",
+"Time":"Tue Oct 31 2017 11:19:16 GMT-0500 (CDT)",
+"Interfaces":"FTBFWireChamberInterface:210:FEI0"
+}#
+{
+"Command":"w:31:c",
+"Format":"ascii:hex",
+"Time":"Tue Oct 31 2017 11:20:34 GMT-0500 (CDT)",
+"Interfaces":"FTBFWireChamberInterface:210:FEI0"
+}#
+{
+"Command":"w:31:63",
+"Format":"ascii:ascii",
+"Time":"Tue Oct 31 2017 11:20:39 GMT-0500 (CDT)",
+"Interfaces":"FTBFWireChamberInterface:210:FEI0"
+}#
+{
+"Command":"w:31:63",
+"Format":"ascii:ascii",
+"Time":"Tue Oct 31 2017 11:23:26 GMT-0500 (CDT)",
+"Interfaces":"FTBFWireChamberInterface:210:FEI0"
+}#
+{
+"Command":"w:31:63",
+"Format":"ascii:ascii",
+"Time":"Tue Oct 31 2017 11:30:02 GMT-0500 (CDT)",
+"Interfaces":"FTBFWireChamberInterface:210:FEI0"
+}#
+{
+"Command":"r:0:0000000000000000",
+"Format":"hex:hex",
+"Time":"Thu Nov 02 2017 14:09:00 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:100000001:0000000000000070",
+"Format":"hex:hex",
+"Time":"Thu Nov 02 2017 14:09:54 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:100000001:0000000000000070",
+"Format":"hex:dec",
+"Time":"Thu Nov 02 2017 14:10:00 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#
+{
+"Command":"r:100000001:0000000000000070",
+"Format":"hex:dec",
+"Time":"Thu Nov 02 2017 15:14:10 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface:600:NIM0"
+}#

@@ -1,0 +1,14 @@
+otsConsole: {
+	type: UDP
+	threshold: DEBUG
+	filename_delimit: "/src"
+	port: 30000
+	host: "127.0.0.1"
+}
+console: {
+	type: "OTS"
+	threshold: "DEBUG"
+	filename_delimit: "/src"
+	format_string: "|%L:%N:%f [%u]	%m"
+
+}

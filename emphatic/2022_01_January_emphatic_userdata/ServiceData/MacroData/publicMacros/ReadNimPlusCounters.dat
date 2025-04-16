@@ -1,0 +1,7 @@
+{
+"name":"ReadNimPlusCounters",
+"sequence":"2:r:102:,3:r:100:,4:r:101:",
+"time":"Fri Dec 01 2017 13:55:37 GMT-0600 (Central Standard Time)",
+"notes":"[Modified 14:47 1/25/2018] Reads sig norm, cms1 and cms2 counters.",
+"LSBF":"false"
+}@

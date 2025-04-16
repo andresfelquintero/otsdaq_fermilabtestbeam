@@ -1,0 +1,270 @@
+{
+"document" : {
+"data" : {
+"NAME" : "DATA_MANAGER_CONFIGURATION",
+"COMMENT" : "Data Buffer top-level records.",
+"AUTHOR" : "eflumerf",
+"CREATION_TIME" : 1513874061,
+"COL_TYPES" : {
+"DATA_MANAGER_GROUP_ID" : "VARCHAR2",
+"DATA_BUFFER_UID" : "VARCHAR2",
+"LINK_TO_DATA_BUFFER_TABLE" : "VARCHAR2",
+"LINK_TO_DATA_BUFFER_GROUP_ID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"DATA_MANAGER_GROUP_ID" : "DMVisualizerGroup0",
+"DATA_BUFFER_UID" : "DB1",
+"LINK_TO_DATA_BUFFER_TABLE" : "DataBufferConfiguration",
+"LINK_TO_DATA_BUFFER_GROUP_ID" : "DBGroup1",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509718136"
+},
+{
+"DATA_MANAGER_GROUP_ID" : "DMGroup0 | ARTDAQDMGroup0",
+"DATA_BUFFER_UID" : "readerDB0",
+"LINK_TO_DATA_BUFFER_TABLE" : "DataBufferConfiguration",
+"LINK_TO_DATA_BUFFER_GROUP_ID" : "reader0DBGroup",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509718136"
+},
+{
+"DATA_MANAGER_GROUP_ID" : "DataManagerSupervisorFSSR0",
+"DATA_BUFFER_UID" : "FSSR0_DataBuffer0",
+"LINK_TO_DATA_BUFFER_TABLE" : "DataBufferConfiguration",
+"LINK_TO_DATA_BUFFER_GROUP_ID" : "FSSR0_DataBuffer0",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "DEFAULT",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509718136"
+},
+{
+"DATA_MANAGER_GROUP_ID" : "DataManagerSupervisorFSSR1",
+"DATA_BUFFER_UID" : "FSSR1_DataBuffer0",
+"LINK_TO_DATA_BUFFER_TABLE" : "DataBufferConfiguration",
+"LINK_TO_DATA_BUFFER_GROUP_ID" : "FSSR1_DataBuffer0",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "DEFAULT",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509718136"
+},
+{
+"DATA_MANAGER_GROUP_ID" : "DataManagerSupervisorFSSR2",
+"DATA_BUFFER_UID" : "FSSR2_DataBuffer0",
+"LINK_TO_DATA_BUFFER_TABLE" : "DataBufferConfiguration",
+"LINK_TO_DATA_BUFFER_GROUP_ID" : "FSSR2_DataBuffer0",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "DEFAULT",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509718136"
+},
+{
+"DATA_MANAGER_GROUP_ID" : "DataManagerSupervisorFSSR3",
+"DATA_BUFFER_UID" : "FSSR3_DataBuffer0",
+"LINK_TO_DATA_BUFFER_TABLE" : "DataBufferConfiguration",
+"LINK_TO_DATA_BUFFER_GROUP_ID" : "FSSR3_DataBuffer0",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "DEFAULT",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509718136"
+},
+{
+"DATA_MANAGER_GROUP_ID" : "DataManagerSupervisorNIMPlus0",
+"DATA_BUFFER_UID" : "NIMPlus0_DataBuffer0",
+"LINK_TO_DATA_BUFFER_TABLE" : "DataBufferConfiguration",
+"LINK_TO_DATA_BUFFER_GROUP_ID" : "NIMPlus0_DataBuffer0",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509718136"
+},
+{
+"DATA_MANAGER_GROUP_ID" : "VisualDataManager",
+"DATA_BUFFER_UID" : "VisualBuffer",
+"LINK_TO_DATA_BUFFER_TABLE" : "DataBufferConfiguration",
+"LINK_TO_DATA_BUFFER_GROUP_ID" : "VisualBuffer",
+"STATUS" : "Off",
+"COMMENT_DESCRIPTION" : "DEFAULT",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513874052"
+},
+{
+"DATA_MANAGER_GROUP_ID" : "ARTDAQDataManagerStripsSupervisor0",
+"DATA_BUFFER_UID" : "readerStripsDB0",
+"LINK_TO_DATA_BUFFER_TABLE" : "DataBufferConfiguration",
+"LINK_TO_DATA_BUFFER_GROUP_ID" : "readerStripsDB0",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513352729"
+},
+{
+"DATA_MANAGER_GROUP_ID" : "ARTDAQDataManagerStripsSupervisor1",
+"DATA_BUFFER_UID" : "readerStripsDB1",
+"LINK_TO_DATA_BUFFER_TABLE" : "DataBufferConfiguration",
+"LINK_TO_DATA_BUFFER_GROUP_ID" : "readerStripsDB1",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513352729"
+},
+{
+"DATA_MANAGER_GROUP_ID" : "ARTDAQDataManagerStripsSupervisor2",
+"DATA_BUFFER_UID" : "readerStripsDB2",
+"LINK_TO_DATA_BUFFER_TABLE" : "DataBufferConfiguration",
+"LINK_TO_DATA_BUFFER_GROUP_ID" : "readerStripsDB2",
+"STATUS" : "On",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513352729"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T15:48:30.478-0500",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:30.481-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:30.480-0500"
+},
+{
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:32.087-0500"
+},
+{
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:24.101-0500"
+},
+{
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:47.629-0500"
+},
+{
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:56.854-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:30.480-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:30.480-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T15:48:30.480-0500",
+"value" : {
+"name" : "0",
+"assigned" : "2018-09-11T15:48:30.480-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T15:48:30.481-0500",
+"value" : {
+"name" : "DataManagerConfiguration",
+"assigned" : "2018-09-11T15:48:30.481-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T15:48:30.482-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:30.481-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:32.087-0500",
+"value" : {
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:32.087-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:28:24.101-0500",
+"value" : {
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:24.101-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:30:47.629-0500",
+"value" : {
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:47.629-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:56.854-0500",
+"value" : {
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:56.854-0500"
+}
+}
+],
+"created" : "2018-09-11T15:48:30.478-0500"
+},
+"_id" : {
+"$oid" : "ed32a556dcc145378cdb6851"
+},
+"collection" : "DataManagerConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

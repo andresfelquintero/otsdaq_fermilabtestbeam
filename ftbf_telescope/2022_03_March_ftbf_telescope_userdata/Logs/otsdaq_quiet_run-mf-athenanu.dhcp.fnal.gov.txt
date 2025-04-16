@@ -1,0 +1,359 @@
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [128]	Starting...
+
+
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [136]	port parameter file:/home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/QuietForwarder.cfg
+
+
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [160]	Forwarding from: 30000 to: 127.0.0.1:30001
+
+
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [232]	set socket receive size to 0x1400000.
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [243]	set socket receive size verified at 0x68000.
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 22 sz=4975
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3804
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 15 sz=4749
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4097
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 16 sz=4930
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3300
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4693
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4537
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 16 sz=4702
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4359
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4846
+MFfwd missed 1 vs 5 4294967292 packet(s) from 2021!
+MFfwd missed 5 vs 2 3 packet(s) from 2021!
+MFfwd missed 1 vs 5 4294967292 packet(s) from 2017!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3610
+MFfwd missed 5 vs 2 3 packet(s) from 2017!
+MFfwd missed 1 vs 5 4294967292 packet(s) from 2025!
+MFfwd missed 5 vs 2 3 packet(s) from 2025!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4965
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4345
+MFfwd missed 1 vs 5 4294967292 packet(s) from 2029!
+MFfwd missed 5 vs 2 3 packet(s) from 2029!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4968
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4635
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 15 sz=4838
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4532
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 17 sz=4934
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3826
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 17 sz=4879
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3802
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 14 sz=4616
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3920
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 15 sz=4796
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4649
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 15 sz=4746
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3537
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 17 sz=4674
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3445
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4971
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3878
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4725
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3925
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 16 sz=4778
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4483
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 15 sz=4791
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3824
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 16 sz=4876
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3831
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 15 sz=4792
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4566
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4866
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3552
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 16 sz=4769
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3297
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 16 sz=4651
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4476
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 16 sz=4637
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4581
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 17 sz=4933
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4599
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4883
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3895
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4876
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4399
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 16 sz=4888
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4150
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4933
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4521
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 17 sz=4932
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4401
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [549]	Partial Pack count ==> 10 sz=2598
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 22 sz=4914
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3773
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 17 sz=4918
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3588
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4731
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3577
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4934
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3816
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4878
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3948
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4987
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3617
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4969
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3643
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4927
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3854
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4803
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4159
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 16 sz=4880
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3220
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4802
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4045
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 16 sz=4984
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3743
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4850
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4164
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 15 sz=4807
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3537
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 17 sz=4946
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4344
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4846
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3680
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4887
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=2808
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4767
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3398
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 23 sz=4939
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3294
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4978
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3532
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4793
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4070
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4976
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3842
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4773
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3083
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4729
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3253
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 16 sz=4726
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3870
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 17 sz=4804
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=2877
+MFfwd missed 471 vs 380 91 packet(s) from 2017!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 24 sz=4874
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3522
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4928
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3075
+MFfwd missed 703 vs 694 9 packet(s) from 1984!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4875
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3841
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4824
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3339
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 23 sz=4992
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3581
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4746
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3602
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4877
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3283
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4985
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4061
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4990
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3340
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4662
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3132
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4779
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3406
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 24 sz=4939
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3718
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 17 sz=4751
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3966
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4854
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3342
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4907
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=2922
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4795
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3145
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 24 sz=4981
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3746
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 16 sz=4534
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3969
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4785
+MFfwd missed 91 vs 80 11 packet(s) from 2021!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3596
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [549]	Partial Pack count ==> 18 sz=4897
+MFfwd missed 748 vs 739 9 packet(s) from 1984!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 15 sz=4966
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4861
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4767
+MFfwd missed 1129 vs 1012 117 packet(s) from 2017!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3643
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 23 sz=4946
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3296
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4917
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3603
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4773
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3320
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4790
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3428
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4804
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3345
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4839
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3083
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4912
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3889
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4837
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3466
+MFfwd missed 731 vs 499 232 packet(s) from 2025!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4750
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3070
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4715
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3316
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4835
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3333
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4863
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3031
+MFfwd missed 847 vs 820 27 packet(s) from 1984!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4875
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3977
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4982
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [549]	Partial Pack count ==> 5 sz=2131
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 22 sz=4852
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4034
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 16 sz=4913
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3500
+MFfwd missed 1464 vs 1382 82 packet(s) from 2017!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4990
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3614
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4953
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3682
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4932
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3831
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4905
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3812
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4999
+MFfwd missed 134 vs 129 5 packet(s) from 2021!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3730
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4701
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3488
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4781
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3403
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4744
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3584
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4865
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3370
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [549]	Partial Pack count ==> 12 sz=3078
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 15 sz=4733
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4080
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [549]	Partial Pack count ==> 2 sz=595
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4817
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3179
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 17 sz=4950
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4575
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4848
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3839
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 16 sz=4915
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3992
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 17 sz=4965
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4135
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4951
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3979
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4922
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3442
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 23 sz=4918
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3094
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4996
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=2888
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4972
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3573
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 20 sz=5000
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4977
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3827
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 17 sz=4735
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3621
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4893
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=2902
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4993
+MFfwd missed 1574 vs 1563 11 packet(s) from 2017!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3504
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4810
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3100
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 22 sz=4933
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3606
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4916
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3535
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4884
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3097
+MFfwd missed 1237 vs 1228 9 packet(s) from 1984!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4713
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3742
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4877
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3364
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 22 sz=4747
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3594
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4765
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3615
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4895
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3296
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4631
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4188
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4850
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=2973
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4790
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3177
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4958
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3761
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 24 sz=4990
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3424
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 17 sz=4833
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4074
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4833
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3067
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4943
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3148
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4799
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3678
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 24 sz=4991
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3683
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 18 sz=4943
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4006
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [549]	Partial Pack count ==> 17 sz=4544
+MFfwd missed 1282 vs 1273 9 packet(s) from 1984!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [549]	Partial Pack count ==> 3 sz=1312
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 15 sz=4689
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4021
+MFfwd missed 2323 vs 2199 124 packet(s) from 2017!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 19 sz=4940
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=2725
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4998
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3408
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4822
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3658
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4945
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3481
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4698
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3974
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4839
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3478
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4878
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3204
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 17 sz=4883
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3385
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4890
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3194
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 21 sz=4883
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=4098
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [549]	Partial Pack count ==> 6 sz=1518
+MFfwd missed 228 vs 184 44 packet(s) from 2021!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4815
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3957
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 22 sz=4918
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [549]	Partial Pack count ==> 2 sz=853
+MFfwd missed 1372 vs 1363 9 packet(s) from 1984!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [549]	Partial Pack count ==> 3 sz=1144
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4985
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3974
+MFfwd missed 1485 vs 1177 308 packet(s) from 2025!
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 22 sz=4988
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3210
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4820
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3094
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 20 sz=4899
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3120
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 22 sz=4925
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3120
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [465]	Pack count ==> 17 sz=4857
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [512]	WrapAvoid Pack count ==> 13 sz=3813
+LogDebug:mfReceiveAndForward:otsdaq_utilities/otsdaq-utilities/Console/MF_ReceiveAndForward.cpp [549]	Partial Pack count ==> 11 sz=3486

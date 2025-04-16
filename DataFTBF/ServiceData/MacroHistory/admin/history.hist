@@ -1,0 +1,42 @@
+{
+"Command":"r:0:00000000000FFFFF",
+"Format":"hex:hex",
+"Time":"Tue Jun 05 2018 15:36:26 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface%3A600%3ANIM0"
+}#
+{
+"Command":"r:1801c:0000000000000000",
+"Format":"hex:hex",
+"Time":"Tue Jun 05 2018 15:36:51 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface%3A600%3ANIM0"
+}#
+{
+"Command":"w:1801c:3e8",
+"Format":"hex:dec",
+"Time":"Tue Jun 05 2018 15:36:59 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface%3A600%3ANIM0"
+}#
+{
+"Command":"r:1801c:0000000000000000",
+"Format":"hex:dec",
+"Time":"Tue Jun 05 2018 15:37:03 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface%3A600%3ANIM0"
+}#
+{
+"Command":"r:1801c:0000000000000000",
+"Format":"hex:hex",
+"Time":"Tue Jun 05 2018 15:37:08 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface%3A600%3ANIM0"
+}#
+{
+"Command":"w:1801c:200",
+"Format":"hex:hex",
+"Time":"Tue Jun 05 2018 15:37:31 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface%3A600%3ANIM0"
+}#
+{
+"Command":"r:1801c:0000000000000000",
+"Format":"hex:hex",
+"Time":"Tue Jun 05 2018 15:37:35 GMT-0500 (Central Daylight Time)",
+"Interfaces":"FENIMPlusInterface%3A600%3ANIM0"
+}#

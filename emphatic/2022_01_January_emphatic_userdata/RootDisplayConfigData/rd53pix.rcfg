@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ROOT>
+
+  <DATA>
+    <numPositionsTiled>2</numPositionsTiled>
+    <runNumWildcard>0</runNumWildcard>
+    <rootObjName>/LIVE_DQM.root/Detector/Board_0/Module_0/Chip_0/D_B(0)_M(0)_Occ2D_Chip(0)</rootObjName>
+    <rootPos>0</rootPos>
+    <rootIsTransparent>0</rootIsTransparent>
+    <rootIsAutoRefresh>1</rootIsAutoRefresh>
+    <rootObjName>/LIVE_DQM.root/Detector/Board_0/Module_0/Chip_0/D_B(0)_M(0)_TriggerID_Chip(0)</rootObjName>
+    <rootPos>1</rootPos>
+    <rootIsTransparent>0</rootIsTransparent>
+    <rootIsAutoRefresh>1</rootIsAutoRefresh>
+  </DATA>
+
+</ROOT>

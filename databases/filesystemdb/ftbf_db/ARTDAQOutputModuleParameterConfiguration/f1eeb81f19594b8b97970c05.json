@@ -1,0 +1,210 @@
+{
+"document" : {
+"data" : {
+"NAME" : "ARTDAQ_OUTPUT_MODULE_PARAMETER_CONFIGURATION",
+"COMMENT" : "No comment.",
+"AUTHOR" : "eflumerf",
+"CREATION_TIME" : 1513174621,
+"COL_TYPES" : {
+"OUTPUT_PARAMETER_GROUP_ID" : "VARCHAR2",
+"OUTPUT_PARAMETER_UID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"OUTPUT_PARAMETER_KEY" : "VARCHAR2",
+"OUTPUT_PARAMETER_VALUE" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"OUTPUT_PARAMETER_GROUP_ID" : "builder0OutputModulePGroup",
+"OUTPUT_PARAMETER_UID" : "builder0MPIOutputModuleP0",
+"STATUS" : "Off",
+"OUTPUT_PARAMETER_KEY" : "SelectEvents",
+"OUTPUT_PARAMETER_VALUE" : "{ SelectEvents: [ pmod2,pmod3 ] }",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1509115760"
+},
+{
+"OUTPUT_PARAMETER_GROUP_ID" : "aggregator0OutputModulePGroup",
+"OUTPUT_PARAMETER_UID" : "fileName",
+"STATUS" : "On",
+"OUTPUT_PARAMETER_KEY" : "fileName",
+"OUTPUT_PARAMETER_VALUE" : "\"/data-08/otsdaq_develop/OutputData/ftbfdaq_r%r_s%s_%#.root\"",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513174621"
+},
+{
+"OUTPUT_PARAMETER_GROUP_ID" : "aggregator0OutputModulePGroup",
+"OUTPUT_PARAMETER_UID" : "fastCloning",
+"STATUS" : "On",
+"OUTPUT_PARAMETER_KEY" : "fastCloning",
+"OUTPUT_PARAMETER_VALUE" : "false",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513174621"
+},
+{
+"OUTPUT_PARAMETER_GROUP_ID" : "aggregator0OutputModulePGroup",
+"OUTPUT_PARAMETER_UID" : "compressionLevel",
+"STATUS" : "On",
+"OUTPUT_PARAMETER_KEY" : "compressionLevel",
+"OUTPUT_PARAMETER_VALUE" : "2",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513174621"
+},
+{
+"OUTPUT_PARAMETER_GROUP_ID" : "aggregator0OutputModulePGroup",
+"OUTPUT_PARAMETER_UID" : "fileProperties",
+"STATUS" : "On",
+"OUTPUT_PARAMETER_KEY" : "fileProperties",
+"OUTPUT_PARAMETER_VALUE" : "{ maxSubRuns: 1 maxRuns: 1 }",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1513174621"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T15:48:30.176-0500",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:30.178-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:30.177-0500"
+},
+{
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:31.813-0500"
+},
+{
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:23.702-0500"
+},
+{
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:47.217-0500"
+},
+{
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:56.430-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:30.177-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:30.177-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T15:48:30.177-0500",
+"value" : {
+"name" : "0",
+"assigned" : "2018-09-11T15:48:30.177-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T15:48:30.178-0500",
+"value" : {
+"name" : "ARTDAQOutputModuleParameterConfiguration",
+"assigned" : "2018-09-11T15:48:30.178-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T15:48:30.178-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:30.178-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:31.813-0500",
+"value" : {
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:31.813-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:28:23.702-0500",
+"value" : {
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:23.702-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:30:47.217-0500",
+"value" : {
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:47.217-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:56.430-0500",
+"value" : {
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:56.430-0500"
+}
+}
+],
+"created" : "2018-09-11T15:48:30.176-0500"
+},
+"_id" : {
+"$oid" : "f1eeb81f19594b8b97970c05"
+},
+"collection" : "ARTDAQOutputModuleParameterConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

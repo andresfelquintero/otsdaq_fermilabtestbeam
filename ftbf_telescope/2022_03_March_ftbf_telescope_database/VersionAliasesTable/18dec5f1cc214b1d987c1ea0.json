@@ -1,0 +1,411 @@
+{
+"document" : {
+"data" : {
+"NAME" : "VERSION_ALIASES_TABLE",
+"COMMENT" : "Default Version Aliases.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1581220838,
+"COL_TYPES" : {
+"VERSION_ALIAS_UID" : "STRING",
+"TABLE_NAME" : "STRING",
+"VERSION_ALIAS" : "STRING",
+"VERSION" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"VERSION_ALIAS_UID" : "DQMHistosConsumerDefault",
+"TABLE_NAME" : "DQMHistosConsumerTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "DataBufferDefault",
+"TABLE_NAME" : "DataBufferTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "DataManagerSupervisorDefault",
+"TABLE_NAME" : "DataManagerSupervisorTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "DataProcessorDefault",
+"TABLE_NAME" : "DataProcessorTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "4",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "DetectorDefault",
+"TABLE_NAME" : "DetectorTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FECMSTimingInterfaceDefault",
+"TABLE_NAME" : "FECMSTimingInterfaceTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "5",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FECommanderInterfaceDefault",
+"TABLE_NAME" : "FECommanderInterfaceTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FEInterfaceDefault",
+"TABLE_NAME" : "FEInterfaceTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FENIMPlusInterfaceOptionalDefault",
+"TABLE_NAME" : "FENIMPlusInterfaceOptionalTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FENIMPlusInterfaceDefault",
+"TABLE_NAME" : "FENIMPlusInterfaceTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "3",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FENetScopeInterfaceDefault",
+"TABLE_NAME" : "FENetScopeInterfaceTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FEOtsUDPFSSRInterfaceDefault",
+"TABLE_NAME" : "FEOtsUDPFSSRInterfaceTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FEOtsUDPTemplateInterfaceDefault",
+"TABLE_NAME" : "FEOtsUDPTemplateInterfaceTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FEPixelTelescopeInterfaceDefault",
+"TABLE_NAME" : "FEPixelTelescopeInterfaceTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FEPurdueFSSRInterfaceDefault",
+"TABLE_NAME" : "FEPurdueFSSRInterfaceTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FEPurdueNetworkMasterInterfaceDefault",
+"TABLE_NAME" : "FEPurdueNetworkMasterInterfaceTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FESlowControlsDefault",
+"TABLE_NAME" : "FESlowControlsTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FESupervisorDefault",
+"TABLE_NAME" : "FESupervisorTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FEToDetectorDefault",
+"TABLE_NAME" : "FEToDetectorTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FEWOtsUDPHardwareDefault",
+"TABLE_NAME" : "FEWOtsUDPHardwareTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FEWireChamberInterfaceDefault",
+"TABLE_NAME" : "FEWireChamberInterfaceTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FEYarrInterfaceDefault",
+"TABLE_NAME" : "FEYarrInterfaceTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FSSRDACsDefault",
+"TABLE_NAME" : "FSSRDACsTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FSSRDQMHistosConsumerDefault",
+"TABLE_NAME" : "FSSRDQMHistosConsumerTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "FSSRInterfaceDefault",
+"TABLE_NAME" : "FSSRInterfaceTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "OTDQMHistosConsumerDefault",
+"TABLE_NAME" : "OTDQMHistosConsumerTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "ROCBitMaskDefault",
+"TABLE_NAME" : "ROCBitMaskTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "RawDataSaverConsumerDefault",
+"TABLE_NAME" : "RawDataSaverConsumerTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "3",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "RootDQMHistosConsumerDefault",
+"TABLE_NAME" : "RootDQMHistosConsumerTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "UDPDataListenerProducerDefault",
+"TABLE_NAME" : "UDPDataListenerProducerTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "UDPDataStreamerConsumerDefault",
+"TABLE_NAME" : "UDPDataStreamerConsumerTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+},
+{
+"VERSION_ALIAS_UID" : "WireChamberDataSaverConsumerDefault",
+"TABLE_NAME" : "WireChamberDataSaverConsumerTable",
+"VERSION_ALIAS" : "Default",
+"VERSION" : "2",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581220838"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2020-02-08T22:00:38.399-0600",
+"rawdata" : [
+
+]
+},
+"version" : "6",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2020-02-08T22:00:38.399-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2020-02-08T22:00:38.399-0600"
+},
+{
+"name" : "MemberVersionAliasWizBackbone_v0",
+"assigned" : "2020-02-08T22:00:38.991-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-08T22:00:38.399-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2020-02-08T22:00:38.399-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2020-02-08T22:00:38.399-0600",
+"value" : {
+"name" : "6",
+"assigned" : "2020-02-08T22:00:38.399-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2020-02-08T22:00:38.399-0600",
+"value" : {
+"name" : "VersionAliasesTable",
+"assigned" : "2020-02-08T22:00:38.399-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2020-02-08T22:00:38.399-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2020-02-08T22:00:38.399-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2020-02-08T22:00:38.991-0600",
+"value" : {
+"name" : "MemberVersionAliasWizBackbone_v0",
+"assigned" : "2020-02-08T22:00:38.991-0600"
+}
+}
+],
+"created" : "2020-02-08T22:00:38.399-0600"
+},
+"_id" : {
+"$oid" : "18dec5f1cc214b1d987c1ea0"
+},
+"collection" : "VersionAliasesTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

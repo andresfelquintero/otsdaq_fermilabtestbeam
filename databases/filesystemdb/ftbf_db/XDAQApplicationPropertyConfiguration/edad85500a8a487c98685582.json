@@ -1,0 +1,162 @@
+{
+"document" : {
+"data" : {
+"NAME" : "XDAQ_APPLICATION_PROPERTY_CONFIGURATION",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1512409831,
+"COL_TYPES" : {
+"PROPERTY_GROUP_ID" : "VARCHAR2",
+"UID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"PROPERTY_NAME" : "VARCHAR2",
+"PROPERTY_TYPE" : "VARCHAR2",
+"PROPERTY_VALUE" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T15:48:33.042-0500",
+"rawdata" : [
+
+]
+},
+"version" : "1",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:33.043-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:33.043-0500"
+},
+{
+"name" : "FTBFContext_v1",
+"assigned" : "2018-09-11T15:48:33.300-0500"
+},
+{
+"name" : "FTBFContext_v2",
+"assigned" : "2018-09-11T16:30:49.529-0500"
+},
+{
+"name" : "FTBFContext_v3",
+"assigned" : "2018-09-11T16:34:59.011-0500"
+},
+{
+"name" : "FTBFContext_v4",
+"assigned" : "2018-09-11T16:41:03.135-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:33.043-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:33.043-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T15:48:33.043-0500",
+"value" : {
+"name" : "1",
+"assigned" : "2018-09-11T15:48:33.043-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T15:48:33.043-0500",
+"value" : {
+"name" : "XDAQApplicationPropertyConfiguration",
+"assigned" : "2018-09-11T15:48:33.043-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T15:48:33.043-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:33.043-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:33.300-0500",
+"value" : {
+"name" : "FTBFContext_v1",
+"assigned" : "2018-09-11T15:48:33.300-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:30:49.529-0500",
+"value" : {
+"name" : "FTBFContext_v2",
+"assigned" : "2018-09-11T16:30:49.529-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:59.011-0500",
+"value" : {
+"name" : "FTBFContext_v3",
+"assigned" : "2018-09-11T16:34:59.011-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:41:03.135-0500",
+"value" : {
+"name" : "FTBFContext_v4",
+"assigned" : "2018-09-11T16:41:03.135-0500"
+}
+}
+],
+"created" : "2018-09-11T15:48:33.042-0500"
+},
+"_id" : {
+"$oid" : "edad85500a8a487c98685582"
+},
+"collection" : "XDAQApplicationPropertyConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

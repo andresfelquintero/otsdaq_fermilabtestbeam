@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ROOT>
+
+  <DATA>
+    <numPositionsTiled>1</numPositionsTiled>
+    <runNumWildcard>0</runNumWildcard>
+    <rootObjName>/LIVE_DQM.root/StripTelescope/General/NumberOfTriggers</rootObjName>
+    <rootPos>0</rootPos>
+    <rootIsTransparent>0</rootIsTransparent>
+    <rootIsAutoRefresh>1</rootIsAutoRefresh>
+  </DATA>
+
+</ROOT>

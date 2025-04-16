@@ -1,0 +1,249 @@
+{
+"document" : {
+"data" : {
+"NAME" : "UDP_DATA_LISTENER_PRODUCER_CONFIGURATION",
+"COMMENT" : "UDP Listener records.",
+"AUTHOR" : "rrivera",
+"CREATION_TIME" : 1515530570,
+"COL_TYPES" : {
+"PROCESSOR_UID" : "VARCHAR2",
+"BUFFER_SIZE" : "NUMBER",
+"HOST_IP_ADDRESS" : "VARCHAR2",
+"HOST_PORT" : "NUMBER",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"PROCESSOR_UID" : "UDPListener0",
+"BUFFER_SIZE" : "5000",
+"HOST_IP_ADDRESS" : "127.0.0.1",
+"HOST_PORT" : "40005",
+"COMMENT_DESCRIPTION" : "Listening to hardware emulator which is sending to 4005.",
+"AUTHOR" : "eflumerf",
+"RECORD_INSERTION_TIME" : "1510602199"
+},
+{
+"PROCESSOR_UID" : "UDPListener1",
+"BUFFER_SIZE" : "100",
+"HOST_IP_ADDRESS" : "127.0.0.1",
+"HOST_PORT" : "4101",
+"COMMENT_DESCRIPTION" : "Listening to DB0 streamer.",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1479826574"
+},
+{
+"PROCESSOR_UID" : "readerUDPListener0",
+"BUFFER_SIZE" : "2000",
+"HOST_IP_ADDRESS" : "127.0.0.1",
+"HOST_PORT" : "4121",
+"COMMENT_DESCRIPTION" : "artdaq listener",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1505402555"
+},
+{
+"PROCESSOR_UID" : "FSSR0_DB0_Listener0",
+"BUFFER_SIZE" : "1000",
+"HOST_IP_ADDRESS" : "192.168.133.1",
+"HOST_PORT" : "47000",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509723548"
+},
+{
+"PROCESSOR_UID" : "FSSR1_DB0_Listener0",
+"BUFFER_SIZE" : "1000",
+"HOST_IP_ADDRESS" : "192.168.133.1",
+"HOST_PORT" : "47001",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509723548"
+},
+{
+"PROCESSOR_UID" : "FSSR2_DB0_Listener0",
+"BUFFER_SIZE" : "10000",
+"HOST_IP_ADDRESS" : "192.168.133.1",
+"HOST_PORT" : "47002",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509723548"
+},
+{
+"PROCESSOR_UID" : "FSSR3_DB0_Listener0",
+"BUFFER_SIZE" : "1000",
+"HOST_IP_ADDRESS" : "192.168.133.1",
+"HOST_PORT" : "47003",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509723548"
+},
+{
+"PROCESSOR_UID" : "NIMPlus0_DB0_Listener0",
+"BUFFER_SIZE" : "1000",
+"HOST_IP_ADDRESS" : "192.168.133.1",
+"HOST_PORT" : "30001",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509723548"
+},
+{
+"PROCESSOR_UID" : "CMSTiming0_DB0_Listener0",
+"BUFFER_SIZE" : "1000",
+"HOST_IP_ADDRESS" : "192.168.133.1",
+"HOST_PORT" : "47004",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1509723548"
+},
+{
+"PROCESSOR_UID" : "VBListener0",
+"BUFFER_SIZE" : "1000",
+"HOST_IP_ADDRESS" : "192.168.133.1",
+"HOST_PORT" : "95000",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "rrivera",
+"RECORD_INSERTION_TIME" : "1515530421"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T15:48:31.260-0500",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:31.263-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:31.261-0500"
+},
+{
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:32.732-0500"
+},
+{
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:25.025-0500"
+},
+{
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:48.568-0500"
+},
+{
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:57.817-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:31.261-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T15:48:31.261-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T15:48:31.262-0500",
+"value" : {
+"name" : "0",
+"assigned" : "2018-09-11T15:48:31.262-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T15:48:31.262-0500",
+"value" : {
+"name" : "UDPDataListenerProducerConfiguration",
+"assigned" : "2018-09-11T15:48:31.262-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T15:48:31.263-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T15:48:31.263-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T15:48:32.732-0500",
+"value" : {
+"name" : "FTBFConfig_v0",
+"assigned" : "2018-09-11T15:48:32.732-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:28:25.025-0500",
+"value" : {
+"name" : "FTBFConfig_v1",
+"assigned" : "2018-09-11T16:28:25.025-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:30:48.568-0500",
+"value" : {
+"name" : "FTBFConfig_v2",
+"assigned" : "2018-09-11T16:30:48.568-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:57.817-0500",
+"value" : {
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:57.817-0500"
+}
+}
+],
+"created" : "2018-09-11T15:48:31.260-0500"
+},
+"_id" : {
+"$oid" : "41e25051d0f54e2f95187daf"
+},
+"collection" : "UDPDataListenerProducerConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

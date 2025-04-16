@@ -1,0 +1,430 @@
+02 Nov 2022 16:54:12.104 [139777957378240] INFO  gov.fnal.dhcp.athenanu.p:2001 <> - xdaq version: 05.09.00, compiled on May 13 2021 at 13:22:04, 64bit
+02 Nov 2022 16:54:12.107 [139777957378240] INFO  gov.fnal.dhcp.athenanu.p:2001 <> - Loaded profile: /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/XDAQConfigurations/otsConfiguration_CMake.xml
+02 Nov 2022 16:54:12.108 [139777957378240] INFO  gov.fnal.dhcp.athenanu.p:2001 <> - core::b2innub version: 02.05.02, compiled on May 13 2021 at 13:23:23
+02 Nov 2022 16:54:12.109 [139777957378240] INFO  gov.fnal.dhcp.athenanu.p:2001 <> - core::i2outils version: 04.00.00, compiled on May 13 2021 at 13:22:32
+02 Nov 2022 16:54:12.113 [139777957378240] INFO  gov.fnal.dhcp.athenanu.p:2001 <> - core::executive version: 04.02.00, compiled on May 13 2021 at 13:23:07
+02 Nov 2022 16:54:12.117 [139777957378240] INFO  gov.fnal.dhcp.athenanu.p:2001 <> - core::b2inutils version: 04.04.05, compiled on May 13 2021 at 13:23:26
+02 Nov 2022 16:54:12.121 [139777957378240] INFO  gov.fnal.dhcp.athenanu.p:2001 <> - core::pthttp version: 04.07.00, compiled on May 13 2021 at 13:22:36
+02 Nov 2022 16:54:12.123 [139777957378240] INFO  gov.fnal.dhcp.athenanu.p:2001 <> - core::ptfifo version: 04.04.00, compiled on May 13 2021 at 13:22:57
+02 Nov 2022 16:54:12.124 [139777957378240] INFO  gov.fnal.dhcp.athenanu.p:2001 <> - core::xrelay version: 04.02.00, compiled on May 13 2021 at 13:23:20
+02 Nov 2022 16:54:12.128 [139777957378240] INFO  gov.fnal.dhcp.athenanu.p:2001 <> - core::hyperdaq version: 05.04.00, compiled on May 13 2021 at 13:23:19
+02 Nov 2022 16:54:12.128 [139777957378240] DEBUG gov.fnal.dhcp.athenanu.p:2001 <> - Create application descriptor for class: executive::Application id: 0
+02 Nov 2022 16:54:12.136 [139777957378240] INFO  gov.fnal.dhcp.athenanu.p:2001.executive::Application.lid(0) <> - Log URL not set (was already console)
+02 Nov 2022 16:54:12.136 [139777957378240] INFO  gov.fnal.dhcp.athenanu.p:2001.executive::Application.lid(0) <> - Changed Log level to INFO
+02 Nov 2022 16:54:12.141 [139777957378240] INFO  gov.fnal.dhcp.athenanu.p:2001.pt::http::PeerTransportHTTP.lid(1) <> - No security policies on this server
+02 Nov 2022 16:54:12.292 [139777957378240] INFO  gov.fnal.dhcp.athenanu.p:2001 <> - otsdaq::CoreSupervisors version: 02.06.04, compiled on Nov  2 2022 at 10:58:24
+11-02 11:54:12.297491                    MessageFacility.h    DEBUG INIT_MF(...): Configuring message facility with /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/MessageFacilityGen.fcl
+otsConsole: {
+	type: UDP
+	threshold: DEBUG
+	filename_delimit: "/src"
+	port: 30000
+	host: "127.0.0.1"
+}
+console: {
+	type: "OTS"
+	threshold: "DEBUG"
+	filename_delimit: "/src"
+	format_string: "|%L:%N:%f [%u]	%m"
+
+}
+
+file: ""
+
+|Info:configureMessageFacility:configureMessageFacility.cc [283]	Message Facility Application . configured with: destinations:{console:{filename_delimit:"/src" format_string:"|%L:%N:%f [%u]\t%m" threshold:"DEBUG" type:"OTS"} file:"" otsConsole:{filename_delimit:"/src" host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+|Info:_TCPConnect:TCPConnect.cc [344]	Resolving host 127.0.0.1, on port 30000
+11-02 11:54:12.312696                         UDP_mfPlugin    ERROR routePayload(...): Error sending message 2 to 127.0.0.1, errno=17 (File exists)
+|Info:_TCPConnect:TCPConnect.cc [371]	Host resolved as 127.0.0.1
+|Info:_TCPConnect:TCPConnect.cc [247]	Resolving ip athenanu.dhcp.fnal.gov
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [24]	FESupervisor:UNINITIALIZED_supervisorApplicationUID	<> application->getApplicationContext()->getContextDescriptor()->getURL() = http://athenanu.dhcp.fnal.gov:2001
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [25]	FESupervisor:UNINITIALIZED_supervisorApplicationUID	<> application->getApplicationDescriptor()->getLocalId() = 214
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [26]	FESupervisor:UNINITIALIZED_supervisorApplicationUID	<> supervisorClass_ = ots::FESupervisor
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [27]	FESupervisor:UNINITIALIZED_supervisorApplicationUID	<> supervisorClassNoNamespace_ = FESupervisor
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [48]	Initializing info based on XDAQ context...
+|Debug:SupervisorDescriptorInfoBase.cc:otsdaq/otsdaq/SupervisorInfo/SupervisorDescriptorInfoBase.cc [33]	Init
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [107]	Initializing info for Normal mode XDAQ context...
+|Debug:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [104]	TableBase-TableGroupMetadata	<> Special table 'TableGroupMetadata' constructed. 1
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [193]	READONLY_USER	<> username_ = READONLY_USER
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [239]	READONLY_USER	<> ACTIVE_GROUPS_FILENAME = /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/ActiveTableGroups.cfg
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [240]	READONLY_USER	<> ARTDAQ_DATABASE_URI = filesystemdb:///home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_database
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Context group 'T992Context(91)']
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [102]	Foud FWD/WEB/QT true/true/true and IP:Port:FwdPort 127.0.0.1:30000:30001 in MesageFacility table.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [146]	Forwarding to Web GUI at IP:Port:FwdPort 127.0.0.1:30000:30001 with UDP forward MesageFacility.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [194]	Wrote /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/QuietForwarderGen.cfg:
+RECEIVE_PORT 	 30000
+DESTINATION_PORT 	 30001
+DESTINATION_IP 	 127.0.0.1
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [271]	Opened.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/MessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [282]	Opened for artdaq.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/ARTDAQInterfaceMessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [291]	Wrote 
+otsConsole: {
+	type: UDP
+	threshold: DEBUG
+	filename_delimit: "/src"
+	port: 30000
+	host: "127.0.0.1"
+}
+console: {
+	type: "OTS"
+	threshold: "DEBUG"
+	filename_delimit: "/src"
+	format_string: "|%L:%N:%f [%u]	%m"
+
+}
+|Debug:XDAQContextTable_table.cc:otsdaq/otsdaq/TablePlugins/XDAQContextTable_table.cc [337]	Fixing deprecated Supervisor class from ots::Supervisor to ots::GatewaySupervisor
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Context group 'T992Context(91)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(219)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(219)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1379]	READONLY_USER	<> Not loading group because it is not of type Context or Backbone (it is type 'Configuration').
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [272]	The TRACE-controller app for hostname 'athenanu.dhcp.fnal.gov' is CLASS:LID = ots::GatewaySupervisor:200
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [282]	TRACE-controller app count = 1
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [286]	The TRACE-controller for hostname = athenanu.dhcp.fnal.gov/200 is ... name = GatewaySupervisor class = ots::GatewaySupervisor hostname = athenanu.dhcp.fnal.gov
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [298]	Supervisor Info initialization complete!
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [456]	READONLY_USER	<> Destroying Backbone Key: 219
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [474]	READONLY_USER	<> Destroying Context Key: 91
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [68]	FESupervisor:UNINITIALIZED_supervisorApplicationUID	<> Getting configuration specific info for supervisor 'FESupervisorPixelTelescope0' of class ots::FESupervisor.
+|Debug:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [104]	TableBase-TableGroupMetadata	<> Special table 'TableGroupMetadata' constructed. 1
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [193]	READONLY_USER	<> username_ = READONLY_USER
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [239]	READONLY_USER	<> ACTIVE_GROUPS_FILENAME = /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/ActiveTableGroups.cfg
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [240]	READONLY_USER	<> ARTDAQ_DATABASE_URI = filesystemdb:///home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_database
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Context group 'T992Context(91)']
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [102]	Foud FWD/WEB/QT true/true/true and IP:Port:FwdPort 127.0.0.1:30000:30001 in MesageFacility table.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [146]	Forwarding to Web GUI at IP:Port:FwdPort 127.0.0.1:30000:30001 with UDP forward MesageFacility.
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [194]	Wrote /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/QuietForwarderGen.cfg:
+RECEIVE_PORT 	 30000
+DESTINATION_PORT 	 30001
+DESTINATION_IP 	 127.0.0.1
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [271]	Opened.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/MessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [282]	Opened for artdaq.. /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/ARTDAQInterfaceMessageFacilityGen.fcl
+|Debug:MessageFacilityTable_table.cc:otsdaq/otsdaq/TablePlugins/MessageFacilityTable_table.cc [291]	Wrote 
+otsConsole: {
+	type: UDP
+	threshold: DEBUG
+	filename_delimit: "/src"
+	port: 30000
+	host: "127.0.0.1"
+}
+console: {
+	type: "OTS"
+	threshold: "DEBUG"
+	filename_delimit: "/src"
+	format_string: "|%L:%N:%f [%u]	%m"
+
+}
+|Debug:XDAQContextTable_table.cc:otsdaq/otsdaq/TablePlugins/XDAQContextTable_table.cc [337]	Fixing deprecated Supervisor class from ots::Supervisor to ots::GatewaySupervisor
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Context group 'T992Context(91)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(219)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(219)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1379]	READONLY_USER	<> Not loading group because it is not of type Context or Backbone (it is type 'Configuration').
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [106]	FESupervisor:FESupervisorPixelTelescope0	<> CorePropertySupervisorBase::supervisorContextUID_ = PixelTelescopeContext
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [107]	FESupervisor:FESupervisorPixelTelescope0	<> CorePropertySupervisorBase::supervisorApplicationUID_ = FESupervisorPixelTelescope0
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [108]	FESupervisor:FESupervisorPixelTelescope0	<> CorePropertySupervisorBase::supervisorConfigurationPath_ = /PixelTelescopeContext/LinkToApplicationTable/FESupervisorPixelTelescope0/LinkToSupervisorTable
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [164]	hostname = athenanu.dhcp.fnal.gov
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [178]	Marked alive: /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/Logs/otsdaq_is_alive-athenanu.dhcp.fnal.gov-2001.dat
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/FiniteStateMachine.cc [19]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Constructing FiniteStateMachine
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [106]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Resetting RunControlStateMachine with name 'FESupervisor:FESupervisorPixelTelescope0'...
+|Debug:WorkLoopManager.cc:otsdaq/otsdaq/WorkLoopManager/WorkLoopManager.cc [19]	Request name: StateMachine jobName: StateMachine
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [26]	FESupervisor:FESupervisorPixelTelescope0	<> Constructor.
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [41]	FESupervisor:FESupervisorPixelTelescope0	<> Constructed.
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [41]	FESupervisor:FESupervisorPixelTelescope0	<> Constructing...
+|Debug:Configurable.cc:otsdaq/otsdaq/Configurable/Configurable.cc [16]	FESupervisorPixelTelescope0	<>  Configurable class constructed. 
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [23]	FESupervisorPixelTelescope0	<> Constructed.
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [845]	FESupervisor:FESupervisorPixelTelescope0	<> State Machine 0 WAS of type FEVInterfacesManager
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [855]	FESupervisor:FESupervisorPixelTelescope0	<> theFEInterfacesManager pointer = 0x1b37640
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [69]	FESupervisor:FESupervisorPixelTelescope0	<> Constructed.
+02 Nov 2022 16:54:13.575 [139777957378240] INFO  gov.fnal.dhcp.athenanu.p:2001 <> - Ready.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [148]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Received... 	Command: Initialize Par 0 Name: commandId Value: 5, Par 0 Name: xmlns:xdaq Value: urn:xdaq-soap:3.0,
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [159]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Defaulting iteration index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [169]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Defaulting subIterationIndex_ index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [218]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Starting state for FESupervisor:FESupervisorPixelTelescope0 is Initial and attempting to Initialize
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [316]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> command = Initialize
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [317]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> currentState = Initial
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [318]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> getErrorMessage() = 
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [319]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> retransmittedCommand = 0
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/FiniteStateMachine.cc [146]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> transition = Initialize
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [677]	FESupervisor:FESupervisorPixelTelescope0	<> transitionInitializing
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [405]	FESupervisor:FESupervisorPixelTelescope0	<> CoreSupervisorBase::stateHalted
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [430]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Ending state for FESupervisor:FESupervisorPixelTelescope0 is Halted
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [431]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> result = InitializeDone
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [148]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Received... 	Command: Configure Par 0 Name: ConfigurationAlias Value: T992Config, Par 0 Name: ConfigurationTableGroupKey Value: 364, Par 0 Name: ConfigurationTableGroupName Value: T992Config, Par 0 Name: commandId Value: 15, Par 0 Name: xmlns:xdaq Value: urn:xdaq-soap:3.0,
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [159]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Defaulting iteration index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [169]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Defaulting subIterationIndex_ index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [218]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Starting state for FESupervisor:FESupervisorPixelTelescope0 is Halted and attempting to Configure
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [316]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> command = Configure
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [317]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> currentState = Halted
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [318]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> getErrorMessage() = 
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [319]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> retransmittedCommand = 0
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/FiniteStateMachine.cc [146]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> transition = Configure
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [863]	FESupervisor:FESupervisorPixelTelescope0	<> transitionConfiguring
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [873]	FESupervisor:FESupervisorPixelTelescope0	<> Configuration table group name: T992Config key: 364
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Configuration group 'T992Config(364)']
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [25]	isFirstAppInContext = 0
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Configuration group 'T992Config(364)']
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [882]	CorePropertySupervisorBase::getSupervisorConfigurationPath() = /PixelTelescopeContext/LinkToApplicationTable/FESupervisorPixelTelescope0/LinkToSupervisorTable
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [908]	metricNamePreamble = DEFAULT
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [915]	metricNamePreamble = 
+|Info:MetricManager:MetricManager.cc [40]	Configuring metrics with parameter set: 
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [925]	FESupervisor:FESupervisorPixelTelescope0	<> transitionConfiguring metric manager(0x1a10940) initialized = 1
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [553]	FESupervisor:FESupervisorPixelTelescope0	<> Configuring all state machine implementations...
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [477]	FESupervisor:FESupervisorPixelTelescope0	<> theStateMachineImplementation Iteration 0.0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [167]	FESupervisorPixelTelescope0	<> Configuring FEVInterfacesManager 
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [53]	FESupervisorPixelTelescope0	<> Path: /PixelTelescopeContext/LinkToApplicationTable/FESupervisorPixelTelescope0/LinkToSupervisorTable/LinkToFEInterfaceTable
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [59]	FESupervisorPixelTelescope0	<> appNode.getValueAsString() = FESupervisorPixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [62]	FESupervisorPixelTelescope0	<> StringMacros::vectorToString(fes) = FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [71]	FESupervisorPixelTelescope0	<> StringMacros::vectorToString(theFENamesByPriority_) = FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [85]	FESupervisorPixelTelescope0	<> Interface Plugin Name: FEMiddlewareInterface
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [86]	FESupervisorPixelTelescope0	<> Interface Name: FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [87]	FESupervisorPixelTelescope0	<> XDAQContext Node: XDAQContextTable
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [88]	FESupervisorPixelTelescope0	<> Path to configuration: /PixelTelescopeContext/LinkToApplicationTable/FESupervisorPixelTelescope0/LinkToSupervisorTable/LinkToFEInterfaceTable/FEInterfacePixelTelescope0/LinkToFETypeTable
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [25]	Workloop-FEInterfacePixelTelescope0	<> Constructed.
+|Debug:Configurable.cc:otsdaq/otsdaq/Configurable/Configurable.cc [16]	FEInterfacePixelTelescope0	<>  Configurable class constructed. 
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [25]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> Constructed.
+|Debug:FEVInterface.cc:otsdaq/otsdaq/FECore/FEVInterface.cc [30]	FEInterfacePixelTelescope0	<> Constructed.
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [129]	FESupervisorPixelTelescope0	<> Done creating interfaces
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [2101]	FESupervisorPixelTelescope0	<> Number of front ends to transition: 1
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [190]	FESupervisorPixelTelescope0	<> Configuring interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [191]	FESupervisorPixelTelescope0	<> Configuring interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [192]	FESupervisorPixelTelescope0	<> Configuring interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [2138]	FESupervisorPixelTelescope0	<> theStateMachineImplementation Iteration 0.0
+|Debug:FEMiddlewareInterface_interface.cc:otsdaq_cmsoutertracker/otsdaq-cmsoutertracker/FEInterfaces/FEMiddlewareInterface_interface.cc [51]	FE:FEMiddlewareInterface:FEInterfacePixelTelescope0:FEInterfacePixelTelescope0	<> Configure
+bool TCPClientBase::connect(int, unsigned int)Connecting Client socket to server name-127.0.0.1-serverPort: 5000
+bool TCPClientBase::connect(int, unsigned int)Connecting Client socket to server ip  -127.0.0.1-serverPort: 5000
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 29 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 28 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 27 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 26 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 25 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 24 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 23 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 22 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 21 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 20 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 19 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 18 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 17 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 16 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 15 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 14 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 13 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 12 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 11 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 10 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 9 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 8 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 7 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 6 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 5 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 4 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 3 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 2 more times.
+bool TCPClientBase::connect(int, unsigned int)WARNING: Can't connect to 127.0.0.1. The server might still be down...Sleeping 1000ms and then retry 1 more times.
+bool TCPClientBase::connect(int, unsigned int)Can't connect to 127.0.0.1
+|Error:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [576]	FESupervisor:FESupervisorPixelTelescope0	<> 
+:FESupervisor:FESupervisorPixelTelescope0	<> :otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [575]	Error was caught while configuring: Write: critical error: Broken pipe
+|Error:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [435]	FESupervisor:FESupervisorPixelTelescope0	<> Failure performing transition from H to C exception: :FESupervisor:FESupervisorPixelTelescope0	<> :otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [575]	Error was caught while configuring: Write: critical error: Broken pipe
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [420]	FESupervisor:FESupervisorPixelTelescope0	<> Fsm current state: Failed
+|Error:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [416]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Unexpected Failure state for FESupervisor:FESupervisorPixelTelescope0 is Failed
+|Error:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [417]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Error message was as follows: :FESupervisor:FESupervisorPixelTelescope0	<> :otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [575]	Error was caught while configuring: Write: critical error: Broken pipe
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [430]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Ending state for FESupervisor:FESupervisorPixelTelescope0 is Failed
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [431]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> result = ConfigureFailed
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [394]	FESupervisor:FESupervisorPixelTelescope0	<> theStateMachine_.getErrorMessage() = :FESupervisor:FESupervisorPixelTelescope0	<> :otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [575]	Error was caught while configuring: Write: critical error: Broken pipe
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [148]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Received... 	Command: Error Par 0 Name: commandId Value: 21, Par 0 Name: xmlns:xdaq Value: urn:xdaq-soap:3.0,
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [159]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Defaulting iteration index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [169]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Defaulting subIterationIndex_ index to 0.
+otsdaq/otsdaq/ProgressBar/ProgressBar.cc [66]	File Not there
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [218]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Starting state for FESupervisor:FESupervisorPixelTelescope0 is Failed and attempting to Error
+|Error:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [239]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> 
+:FSM-FESupervisor:FESupervisorPixelTelescope0	<> :otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [238]	Error was received! Halting immediately.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [148]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Received... 	Command: Halt Par 0 Name: commandId Value: 30, Par 0 Name: xmlns:xdaq Value: urn:xdaq-soap:3.0,
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [159]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Defaulting iteration index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [169]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Defaulting subIterationIndex_ index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [218]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Starting state for FESupervisor:FESupervisorPixelTelescope0 is Failed and attempting to Halt
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [316]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> command = Halt
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [317]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> currentState = Failed
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [318]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> getErrorMessage() = :FESupervisor:FESupervisorPixelTelescope0	<> :otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [575]	Error was caught while configuring: Write: critical error: Broken pipe
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [319]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> retransmittedCommand = 0
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/FiniteStateMachine.cc [146]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> transition = Halt
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [960]	FESupervisor:FESupervisorPixelTelescope0	<> transitionHalting
+|Debug:MetricManager:MetricManager.cc [190]	MetricManager is shutting down...
+|Debug:MetricManager:MetricManager.cc [156]	Stopping Metrics
+|Debug:MetricManager:MetricManager.cc [159]	Joining Metric-Sending thread
+|Debug:MetricManager:MetricManager.cc [172]	do_stop Complete
+|Debug:MetricManager:MetricManager.cc [190]	MetricManager is shutting down...
+|Debug:MetricManager:MetricManager.cc [156]	Stopping Metrics
+|Debug:MetricManager:MetricManager.cc [159]	Joining Metric-Sending thread
+|Debug:MetricManager:MetricManager.cc [172]	do_stop Complete
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [607]	FESupervisor:FESupervisorPixelTelescope0	<> Halting all state machine implementations...
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [477]	FESupervisor:FESupervisorPixelTelescope0	<> theStateMachineImplementation Iteration 0.0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [2101]	FESupervisorPixelTelescope0	<> Number of front ends to transition: 1
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [232]	FESupervisorPixelTelescope0	<> Halting interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [233]	FESupervisorPixelTelescope0	<> Halting interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [234]	FESupervisorPixelTelescope0	<> Halting interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [2138]	FESupervisorPixelTelescope0	<> theStateMachineImplementation Iteration 0.0
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [81]	Workloop-FEInterfacePixelTelescope0	<> Stopping WorkLoop: FEInterfacePixelTelescope0
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [86]	Workloop-FEInterfacePixelTelescope0	<> MEASSAGE: WorkLoop FEInterfacePixelTelescope0 was not created at all! This message will be commented in the future
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [81]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> Stopping WorkLoop: FEInterfacePixelTelescope0-SlowControls
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [86]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> MEASSAGE: WorkLoop FEInterfacePixelTelescope0-SlowControls was not created at all! This message will be commented in the future
+|Debug:FEMiddlewareInterface_interface.cc:otsdaq_cmsoutertracker/otsdaq-cmsoutertracker/FEInterfaces/FEMiddlewareInterface_interface.cc [71]	FE:FEMiddlewareInterface:FEInterfacePixelTelescope0:FEInterfacePixelTelescope0	<> 
+|Warning:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [267]	FESupervisorPixelTelescope0	<> An error occurred while halting the front-end 'FEInterfacePixelTelescope0,' ignoring.
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [272]	FESupervisorPixelTelescope0	<> Done Halting interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [273]	FESupervisorPixelTelescope0	<> Done Halting interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [274]	FESupervisorPixelTelescope0	<> Done Halting interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [2199]	FESupervisorPixelTelescope0	<> Done transitioning all state machine implementations...
+virtual TCPClientBase::~TCPClientBase()Closing TCPSocket #9
+virtual TCPClientBase::~TCPClientBase()TCPSocket #9 closed.
+|Debug:FEVInterface.cc:otsdaq/otsdaq/FECore/FEVInterface.cc [39]	FEInterfacePixelTelescope0	<> Destructed.
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [31]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> Destructor.
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [81]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> Stopping WorkLoop: FEInterfacePixelTelescope0-SlowControls
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [86]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> MEASSAGE: WorkLoop FEInterfacePixelTelescope0-SlowControls was not created at all! This message will be commented in the future
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [34]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> Destructed.
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [31]	Workloop-FEInterfacePixelTelescope0	<> Destructor.
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [81]	Workloop-FEInterfacePixelTelescope0	<> Stopping WorkLoop: FEInterfacePixelTelescope0
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [86]	Workloop-FEInterfacePixelTelescope0	<> MEASSAGE: WorkLoop FEInterfacePixelTelescope0 was not created at all! This message will be commented in the future
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [34]	Workloop-FEInterfacePixelTelescope0	<> Destructed.
+virtual TCPSocket::~TCPSocket()Clean socket close!
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [281]	FESupervisorPixelTelescope0	<> Done Halting all interfaces.
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [520]	FESupervisor:FESupervisorPixelTelescope0	<> Done configuration all state machine implementations...
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [986]	FESupervisor:FESupervisorPixelTelescope0	<> transitionHalting done.
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [405]	FESupervisor:FESupervisorPixelTelescope0	<> CoreSupervisorBase::stateHalted
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [430]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Ending state for FESupervisor:FESupervisorPixelTelescope0 is Halted
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [431]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> result = HaltDone
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [148]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Received... 	Command: Configure Par 0 Name: ConfigurationAlias Value: T992Config, Par 0 Name: ConfigurationTableGroupKey Value: 364, Par 0 Name: ConfigurationTableGroupName Value: T992Config, Par 0 Name: commandId Value: 40, Par 0 Name: xmlns:xdaq Value: urn:xdaq-soap:3.0,
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [159]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Defaulting iteration index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [169]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Defaulting subIterationIndex_ index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [218]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Starting state for FESupervisor:FESupervisorPixelTelescope0 is Halted and attempting to Configure
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [316]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> command = Configure
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [317]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> currentState = Halted
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [318]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> getErrorMessage() = 
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [319]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> retransmittedCommand = 0
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/FiniteStateMachine.cc [146]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> transition = Configure
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [863]	FESupervisor:FESupervisorPixelTelescope0	<> transitionConfiguring
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [873]	FESupervisor:FESupervisorPixelTelescope0	<> Configuration table group name: T992Config key: 364
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Configuration group 'T992Config(364)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [406]	READONLY_USER	<> Deactivating Configuration group: T992Config
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [445]	READONLY_USER	<> Destroying Configuration Key: 364
+|Debug:FESlowControlsTable_table.cc:otsdaq/otsdaq/TablePlugins/FESlowControlsTable_table.cc [25]	isFirstAppInContext = 0
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Configuration group 'T992Config(364)']
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [882]	CorePropertySupervisorBase::getSupervisorConfigurationPath() = /PixelTelescopeContext/LinkToApplicationTable/FESupervisorPixelTelescope0/LinkToSupervisorTable
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [904]	FESupervisor:FESupervisorPixelTelescope0	<> Metric manager is not instantiated! Attempting to fix.
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [908]	metricNamePreamble = DEFAULT
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [915]	metricNamePreamble = 
+|Info:MetricManager:MetricManager.cc [40]	Configuring metrics with parameter set: 
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [925]	FESupervisor:FESupervisorPixelTelescope0	<> transitionConfiguring metric manager(0x7f206c1d58f0) initialized = 1
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [553]	FESupervisor:FESupervisorPixelTelescope0	<> Configuring all state machine implementations...
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [477]	FESupervisor:FESupervisorPixelTelescope0	<> theStateMachineImplementation Iteration 0.0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [167]	FESupervisorPixelTelescope0	<> Configuring FEVInterfacesManager 
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [53]	FESupervisorPixelTelescope0	<> Path: /PixelTelescopeContext/LinkToApplicationTable/FESupervisorPixelTelescope0/LinkToSupervisorTable/LinkToFEInterfaceTable
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [59]	FESupervisorPixelTelescope0	<> appNode.getValueAsString() = FESupervisorPixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [62]	FESupervisorPixelTelescope0	<> StringMacros::vectorToString(fes) = FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [71]	FESupervisorPixelTelescope0	<> StringMacros::vectorToString(theFENamesByPriority_) = FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [85]	FESupervisorPixelTelescope0	<> Interface Plugin Name: FEMiddlewareInterface
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [86]	FESupervisorPixelTelescope0	<> Interface Name: FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [87]	FESupervisorPixelTelescope0	<> XDAQContext Node: XDAQContextTable
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [88]	FESupervisorPixelTelescope0	<> Path to configuration: /PixelTelescopeContext/LinkToApplicationTable/FESupervisorPixelTelescope0/LinkToSupervisorTable/LinkToFEInterfaceTable/FEInterfacePixelTelescope0/LinkToFETypeTable
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [25]	Workloop-FEInterfacePixelTelescope0	<> Constructed.
+|Debug:Configurable.cc:otsdaq/otsdaq/Configurable/Configurable.cc [16]	FEInterfacePixelTelescope0	<>  Configurable class constructed. 
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [25]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> Constructed.
+|Debug:FEVInterface.cc:otsdaq/otsdaq/FECore/FEVInterface.cc [30]	FEInterfacePixelTelescope0	<> Constructed.
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [129]	FESupervisorPixelTelescope0	<> Done creating interfaces
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [2101]	FESupervisorPixelTelescope0	<> Number of front ends to transition: 1
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [190]	FESupervisorPixelTelescope0	<> Configuring interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [191]	FESupervisorPixelTelescope0	<> Configuring interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [192]	FESupervisorPixelTelescope0	<> Configuring interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [2138]	FESupervisorPixelTelescope0	<> theStateMachineImplementation Iteration 0.0
+|Debug:FEMiddlewareInterface_interface.cc:otsdaq_cmsoutertracker/otsdaq-cmsoutertracker/FEInterfaces/FEMiddlewareInterface_interface.cc [51]	FE:FEMiddlewareInterface:FEInterfacePixelTelescope0:FEInterfacePixelTelescope0	<> Configure
+bool TCPClientBase::connect(int, unsigned int)Connecting Client socket to server name-127.0.0.1-serverPort: 5000
+bool TCPClientBase::connect(int, unsigned int)Connecting Client socket to server ip  -127.0.0.1-serverPort: 5000
+bool TCPClientBase::connect(int, unsigned int)Succesfully connected to server 127.0.0.1 port: 5000
+|Debug:FEVInterface.cc:otsdaq/otsdaq/FECore/FEVInterface.cc [48]	FEInterfacePixelTelescope0	<> Metric manager starting...
+|Debug:MetricManager:MetricManager.cc [129]	Starting MetricManager
+|Info:MetricManager:MetricManager.cc [459]	Starting Metric Sending Thread
+|Info:MetricManager:MetricManager.cc [478]	Metric Sending thread started
+|Debug:FEVInterface.cc:otsdaq/otsdaq/FECore/FEVInterface.cc [50]	FEInterfacePixelTelescope0	<> Metric manager started.
+|Info:MetricManager:MetricManager.cc [536]	sendMetricLoop_ START
+|Debug:FEVInterface.cc:otsdaq/otsdaq/FECore/FEVInterface.cc [75]	FE:FEMiddlewareInterface:FEInterfacePixelTelescope0:FEInterfacePixelTelescope0	<> slowControlsGroupLink is disconnected, so done configuring slow controls.
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [40]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> Starting WorkLoop: FEInterfacePixelTelescope0-SlowControls
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [203]	FESupervisorPixelTelescope0	<> Done Configuring interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [204]	FESupervisorPixelTelescope0	<> Done Configuring interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [205]	FESupervisorPixelTelescope0	<> Done Configuring interface FEInterfacePixelTelescope0
+|Debug:FEVInterface.cc:otsdaq/otsdaq/FECore/FEVInterface.cc [149]	FE:FEMiddlewareInterface:FEInterfacePixelTelescope0:FEInterfacePixelTelescope0	<> slowControlsRunning
+|Debug:FEVInterface.cc:otsdaq/otsdaq/FECore/FEVInterface.cc [153]	FE:FEMiddlewareInterface:FEInterfacePixelTelescope0:FEInterfacePixelTelescope0	<> No slow controls channels to monitor, exiting slow controls workloop.
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [2199]	FESupervisorPixelTelescope0	<> Done transitioning all state machine implementations...
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [209]	FESupervisorPixelTelescope0	<> Done Configuring all interfaces.
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [520]	FESupervisor:FESupervisorPixelTelescope0	<> Done configuration all state machine implementations...
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [954]	FESupervisor:FESupervisorPixelTelescope0	<> transitionConfiguring done.
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [411]	FESupervisor:FESupervisorPixelTelescope0	<> CoreSupervisorBase::stateConfigured
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [430]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Ending state for FESupervisor:FESupervisorPixelTelescope0 is Configured
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [431]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> result = ConfigureDone
+02 Nov 2022 16:58:47.660 [139777394763520] ERROR gov.fnal.dhcp.athenanu.p:2001.pt::http::PeerTransportHTTP.lid(1) <> - Caught exception: pt::http::exception::Exception 'Broken pipe' raised at send(/home/eflumerf/Desktop/artdaq-product-build/dependencies/products/xdaq/v16_7_0_1/build/Linux64bit+3.10-2.17-e20-prof/core-release_16_7_0_1/pt/http/src/common/ReceiverLoop.cc:449)
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [148]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Received... 	Command: Configure Par 0 Name: ConfigurationAlias Value: T992Config, Par 0 Name: ConfigurationTableGroupKey Value: 364, Par 0 Name: ConfigurationTableGroupName Value: T992Config, Par 0 Name: commandId Value: 41, Par 0 Name: retransmission Value: 1, Par 0 Name: xmlns:xdaq Value: urn:xdaq-soap:3.0,
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [159]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Defaulting iteration index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [169]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Defaulting subIterationIndex_ index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [189]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Assuming a timeout occurred at Gateway waiting for a response. Attempting to avoid error, by giving last result for command 'Configure': ConfigureDone
+02 Nov 2022 16:58:47.665 [139777394763520] ERROR gov.fnal.dhcp.athenanu.p:2001.pt::http::PeerTransportHTTP.lid(1) <> - Caught exception: pt::http::exception::Exception 'Broken pipe' raised at send(/home/eflumerf/Desktop/artdaq-product-build/dependencies/products/xdaq/v16_7_0_1/build/Linux64bit+3.10-2.17-e20-prof/core-release_16_7_0_1/pt/http/src/common/ReceiverLoop.cc:449)
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [148]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Received... 	Command: Error Par 0 Name: commandId Value: 47, Par 0 Name: xmlns:xdaq Value: urn:xdaq-soap:3.0,
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [159]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Defaulting iteration index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [169]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Defaulting subIterationIndex_ index to 0.
+otsdaq/otsdaq/ProgressBar/ProgressBar.cc [66]	File Not there
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [218]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Starting state for FESupervisor:FESupervisorPixelTelescope0 is Configured and attempting to Error
+|Error:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [239]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> 
+:FSM-FESupervisor:FESupervisorPixelTelescope0	<> :otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [238]	Error was received! Halting immediately.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/FiniteStateMachine.cc [146]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> transition = Halt
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [960]	FESupervisor:FESupervisorPixelTelescope0	<> transitionHalting
+|Debug:MetricManager:MetricManager.cc [190]	MetricManager is shutting down...
+|Debug:MetricManager:MetricManager.cc [156]	Stopping Metrics
+|Debug:MetricManager:MetricManager.cc [159]	Joining Metric-Sending thread
+|Debug:MetricManager:MetricManager.cc [758]	MetricManager has been stopped.
+|Debug:MetricManager:MetricManager.cc [172]	do_stop Complete
+|Debug:MetricManager:MetricManager.cc [190]	MetricManager is shutting down...
+|Debug:MetricManager:MetricManager.cc [156]	Stopping Metrics
+|Debug:MetricManager:MetricManager.cc [159]	Joining Metric-Sending thread
+|Debug:MetricManager:MetricManager.cc [172]	do_stop Complete
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [607]	FESupervisor:FESupervisorPixelTelescope0	<> Halting all state machine implementations...
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [477]	FESupervisor:FESupervisorPixelTelescope0	<> theStateMachineImplementation Iteration 0.0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [2101]	FESupervisorPixelTelescope0	<> Number of front ends to transition: 1
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [232]	FESupervisorPixelTelescope0	<> Halting interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [233]	FESupervisorPixelTelescope0	<> Halting interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [234]	FESupervisorPixelTelescope0	<> Halting interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [2138]	FESupervisorPixelTelescope0	<> theStateMachineImplementation Iteration 0.0
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [81]	Workloop-FEInterfacePixelTelescope0	<> Stopping WorkLoop: FEInterfacePixelTelescope0
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [86]	Workloop-FEInterfacePixelTelescope0	<> MEASSAGE: WorkLoop FEInterfacePixelTelescope0 was not created at all! This message will be commented in the future
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [81]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> Stopping WorkLoop: FEInterfacePixelTelescope0-SlowControls
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [90]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> initially workLoop_->isActive() yes
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [116]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> WARNING: Can't remove request WorkLoop: FEInterfacePixelTelescope0-SlowControls
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [117]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> workLoop_->isActive() no
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [120]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> Stopped WorkLoop: FEInterfacePixelTelescope0-SlowControls
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [121]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> workLoop_->isActive() no
+|Debug:FEMiddlewareInterface_interface.cc:otsdaq_cmsoutertracker/otsdaq-cmsoutertracker/FEInterfaces/FEMiddlewareInterface_interface.cc [71]	FE:FEMiddlewareInterface:FEInterfacePixelTelescope0:FEInterfacePixelTelescope0	<> 
+std::size_t TCPReceiverSocket::receive(char*, std::size_t, int)Connection closed!
+|Warning:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [267]	FESupervisorPixelTelescope0	<> An error occurred while halting the front-end 'FEInterfacePixelTelescope0,' ignoring.
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [272]	FESupervisorPixelTelescope0	<> Done Halting interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [273]	FESupervisorPixelTelescope0	<> Done Halting interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [274]	FESupervisorPixelTelescope0	<> Done Halting interface FEInterfacePixelTelescope0
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [2199]	FESupervisorPixelTelescope0	<> Done transitioning all state machine implementations...
+virtual TCPClientBase::~TCPClientBase()Closing TCPSocket #9
+virtual TCPClientBase::~TCPClientBase()TCPSocket #-1 closed.
+|Debug:FEVInterface.cc:otsdaq/otsdaq/FECore/FEVInterface.cc [39]	FEInterfacePixelTelescope0	<> Destructed.
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [31]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> Destructor.
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [81]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> Stopping WorkLoop: FEInterfacePixelTelescope0-SlowControls
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [90]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> initially workLoop_->isActive() no
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [99]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> WARNING: Can't cancel WorkLoop job for FEInterfacePixelTelescope0-SlowControls because probably it has never been activated!
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [101]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> workLoop_->isActive() no
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [34]	Workloop-FEInterfacePixelTelescope0-SlowControls	<> Destructed.
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [31]	Workloop-FEInterfacePixelTelescope0	<> Destructor.
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [81]	Workloop-FEInterfacePixelTelescope0	<> Stopping WorkLoop: FEInterfacePixelTelescope0
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [86]	Workloop-FEInterfacePixelTelescope0	<> MEASSAGE: WorkLoop FEInterfacePixelTelescope0 was not created at all! This message will be commented in the future
+|Debug:Workloop:otsdaq/otsdaq/WorkLoopManager/WorkLoop.cc [34]	Workloop-FEInterfacePixelTelescope0	<> Destructed.
+|Debug:FEVInterfacesManager.cc:otsdaq/otsdaq/FECore/FEVInterfacesManager.cc [281]	FESupervisorPixelTelescope0	<> Done Halting all interfaces.
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [520]	FESupervisor:FESupervisorPixelTelescope0	<> Done configuration all state machine implementations...
+|Debug:FESupervisor.cc:otsdaq/otsdaq/CoreSupervisors/FESupervisor.cc [986]	FESupervisor:FESupervisorPixelTelescope0	<> transitionHalting done.
+|Debug:CoreSupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CoreSupervisorBase.cc [405]	FESupervisor:FESupervisorPixelTelescope0	<> CoreSupervisorBase::stateHalted
+02 Nov 2022 16:59:34.565 [139777394763520] ERROR gov.fnal.dhcp.athenanu.p:2001.pt::http::PeerTransportHTTP.lid(1) <> - Caught exception: pt::http::exception::Exception 'Broken pipe' raised at send(/home/eflumerf/Desktop/artdaq-product-build/dependencies/products/xdaq/v16_7_0_1/build/Linux64bit+3.10-2.17-e20-prof/core-release_16_7_0_1/pt/http/src/common/ReceiverLoop.cc:449)
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [148]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Received... 	Command: Error Par 0 Name: commandId Value: 48, Par 0 Name: retransmission Value: 1, Par 0 Name: xmlns:xdaq Value: urn:xdaq-soap:3.0,
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [159]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Defaulting iteration index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [169]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Defaulting subIterationIndex_ index to 0.
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [205]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Looks like Gateway command 'Error' was lost - attempting to handle retransmission.
+otsdaq/otsdaq/ProgressBar/ProgressBar.cc [66]	File Not there
+|Debug:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [218]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> Starting state for FESupervisor:FESupervisorPixelTelescope0 is Halted and attempting to Error
+|Error:FSM:otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [239]	FSM-FESupervisor:FESupervisorPixelTelescope0	<> 
+:FSM-FESupervisor:FESupervisorPixelTelescope0	<> :otsdaq/otsdaq/FiniteStateMachine/RunControlStateMachine.cc [238]	Error was received! Halting immediately.
+Terminating...

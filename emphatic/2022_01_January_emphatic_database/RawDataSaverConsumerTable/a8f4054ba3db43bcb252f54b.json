@@ -1,0 +1,204 @@
+{
+"document" : {
+"data" : {
+"NAME" : "RAW_DATA_SAVER_CONSUMER_TABLE",
+"COMMENT" : "No comment.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1643664532,
+"COL_TYPES" : {
+"PROCESSOR_UID" : "STRING",
+"FILE_PATH" : "STRING",
+"RADIX_FILE_NAME" : "STRING",
+"MAX_FILE_SIZE" : "NUMBER",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"PROCESSOR_UID" : "FSSR0_DB0_RawDataSaver0",
+"FILE_PATH" : "${OTSDAQ_DATA}/OtsData",
+"RADIX_FILE_NAME" : "RawDataSaver0FER0",
+"MAX_FILE_SIZE" : "1000000",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581096933"
+},
+{
+"PROCESSOR_UID" : "FSSR1_DB0_RawDataSaver0",
+"FILE_PATH" : "${OTSDAQ_DATA}/OtsData",
+"RADIX_FILE_NAME" : "RawDataSaver0FER1",
+"MAX_FILE_SIZE" : "1000000",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1581096971"
+},
+{
+"PROCESSOR_UID" : "FSSR2_DB0_RawDataSaver0",
+"FILE_PATH" : "${OTSDAQ_DATA}/OtsData",
+"RADIX_FILE_NAME" : "RawDataSaver0FER2",
+"MAX_FILE_SIZE" : "1000000",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1643664532"
+},
+{
+"PROCESSOR_UID" : "FSSR3_DB0_RawDataSaver0",
+"FILE_PATH" : "${OTSDAQ_DATA}/OtsData",
+"RADIX_FILE_NAME" : "RawDataSaver0FER3",
+"MAX_FILE_SIZE" : "1000000",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1643664532"
+},
+{
+"PROCESSOR_UID" : "NIMPlus0_DB0_RawDataSaver0",
+"FILE_PATH" : "${OTSDAQ_DATA}/NimPlus",
+"RADIX_FILE_NAME" : "NIMPlusX_RawData",
+"MAX_FILE_SIZE" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1518038600"
+},
+{
+"PROCESSOR_UID" : "CMSTiming0_DB0_RawDataSaver0",
+"FILE_PATH" : "${OTSDAQ_DATA}/CMSTiming",
+"RADIX_FILE_NAME" : "RawDataSaver0CMSVMETiming",
+"MAX_FILE_SIZE" : "1000",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1528475092"
+},
+{
+"PROCESSOR_UID" : "RAWSaver0",
+"FILE_PATH" : "/data/TestBeam/2018_01_January/Dummy",
+"RADIX_FILE_NAME" : "DONOTUSE",
+"MAX_FILE_SIZE" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1515704172"
+},
+{
+"PROCESSOR_UID" : "NetScope_DataSaver0",
+"FILE_PATH" : "${OTSDAQ_DATA}/NetScopeTiming",
+"RADIX_FILE_NAME" : "RawDataSaver0NetScope",
+"MAX_FILE_SIZE" : "1000",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1528489807"
+},
+{
+"PROCESSOR_UID" : "NIMPlus1_DB0_RawDataSaver0",
+"FILE_PATH" : "${OTSDAQ_DATA}/NimPlus",
+"RADIX_FILE_NAME" : "NIMPlus_RawData",
+"MAX_FILE_SIZE" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1518038587"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2022-01-31T15:28:52.244-0600",
+"rawdata" : [
+
+]
+},
+"version" : "5",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2022-01-31T15:28:52.247-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2022-01-31T15:28:52.245-0600"
+},
+{
+"name" : "T992Config_v207",
+"assigned" : "2022-01-31T15:28:59.222-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-31T15:28:52.246-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2022-01-31T15:28:52.245-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2022-01-31T15:28:52.246-0600",
+"value" : {
+"name" : "5",
+"assigned" : "2022-01-31T15:28:52.246-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2022-01-31T15:28:52.247-0600",
+"value" : {
+"name" : "RawDataSaverConsumerTable",
+"assigned" : "2022-01-31T15:28:52.247-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2022-01-31T15:28:52.247-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2022-01-31T15:28:52.247-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2022-01-31T15:28:59.222-0600",
+"value" : {
+"name" : "T992Config_v207",
+"assigned" : "2022-01-31T15:28:59.222-0600"
+}
+}
+],
+"created" : "2022-01-31T15:28:52.244-0600"
+},
+"_id" : {
+"$oid" : "a8f4054ba3db43bcb252f54b"
+},
+"collection" : "RawDataSaverConsumerTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

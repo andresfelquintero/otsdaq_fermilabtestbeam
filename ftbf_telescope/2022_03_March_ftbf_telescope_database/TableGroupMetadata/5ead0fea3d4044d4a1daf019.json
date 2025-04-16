@@ -1,0 +1,128 @@
+{
+"document" : {
+"data" : {
+"NAME" : "TABLE_GROUP_METADATA",
+"COMMENT" : "",
+"AUTHOR" : "",
+"CREATION_TIME" : 1530564597,
+"COL_TYPES" : {
+"UNUSED_UID" : "NUMBER",
+"GROUP_ALIASES" : "STRING",
+"COMMENT_DESCRIPTION" : "STRING",
+"AUTHOR" : "STRING",
+"GROUP_CREATION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"UNUSED_UID" : "0",
+"GROUP_ALIASES" : "",
+"COMMENT_DESCRIPTION" : "No%20comment.",
+"AUTHOR" : "admin",
+"GROUP_CREATION_TIME" : "1638900233"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2021-12-07T12:03:53.163-0600",
+"rawdata" : [
+
+]
+},
+"version" : "357",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2021-12-07T12:03:53.163-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2021-12-07T12:03:53.163-0600"
+},
+{
+"name" : "T992Config_v131",
+"assigned" : "2021-12-07T12:03:56.291-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2021-12-07T12:03:53.163-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2021-12-07T12:03:53.163-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2021-12-07T12:03:53.163-0600",
+"value" : {
+"name" : "357",
+"assigned" : "2021-12-07T12:03:53.163-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2021-12-07T12:03:53.163-0600",
+"value" : {
+"name" : "TableGroupMetadata",
+"assigned" : "2021-12-07T12:03:53.163-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2021-12-07T12:03:53.163-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2021-12-07T12:03:53.163-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2021-12-07T12:03:56.291-0600",
+"value" : {
+"name" : "T992Config_v131",
+"assigned" : "2021-12-07T12:03:56.291-0600"
+}
+}
+],
+"created" : "2021-12-07T12:03:53.163-0600"
+},
+"_id" : {
+"$oid" : "5ead0fea3d4044d4a1daf019"
+},
+"collection" : "TableGroupMetadata",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

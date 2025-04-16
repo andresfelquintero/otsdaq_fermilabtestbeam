@@ -1,0 +1,142 @@
+{
+"document" : {
+"data" : {
+"NAME" : "FE_CHERENKOV_INTERFACE_CONFIGURATION",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1536701694,
+"COL_TYPES" : {
+"INTERFACE_ID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"ADC_LIST" : "VARCHAR2",
+"TDC_LIST" : "VARCHAR2",
+"SCALER_LIST" : "VARCHAR2",
+"GATE_LIST" : "VARCHAR2",
+"LOOP_TIME" : "NUMBER",
+"DATA_FILENAME_PREFIX" : "VARCHAR2",
+"DATA_FILE_HEADER" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"INTERFACE_ID" : "Cherenkov",
+"STATUS" : "On",
+"ADC_LIST" : "0",
+"TDC_LIST" : "0",
+"SCALER_LIST" : "13",
+"GATE_LIST" : "0",
+"LOOP_TIME" : "1",
+"DATA_FILENAME_PREFIX" : "ccusb_data_",
+"DATA_FILE_HEADER" : "Data taken during development of Chernekov DAQ",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1536701688"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2018-09-11T16:34:54.856-0500",
+"rawdata" : [
+
+]
+},
+"version" : "1",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T16:34:54.858-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2018-09-11T16:34:54.857-0500"
+},
+{
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:57.034-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:54.857-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2018-09-11T16:34:54.857-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2018-09-11T16:34:54.857-0500",
+"value" : {
+"name" : "1",
+"assigned" : "2018-09-11T16:34:54.857-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2018-09-11T16:34:54.858-0500",
+"value" : {
+"name" : "FECherenkovInterfaceConfiguration",
+"assigned" : "2018-09-11T16:34:54.858-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2018-09-11T16:34:54.858-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2018-09-11T16:34:54.858-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2018-09-11T16:34:57.034-0500",
+"value" : {
+"name" : "FTBFConfig_v3",
+"assigned" : "2018-09-11T16:34:57.034-0500"
+}
+}
+],
+"created" : "2018-09-11T16:34:54.856-0500"
+},
+"_id" : {
+"$oid" : "a3b53e2aaed04784906bef28"
+},
+"collection" : "FECherenkovInterfaceConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

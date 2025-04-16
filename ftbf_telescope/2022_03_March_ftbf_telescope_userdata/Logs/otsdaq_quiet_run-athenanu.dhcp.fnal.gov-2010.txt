@@ -1,0 +1,110 @@
+04 Jun 2022 17:28:09.989 [139713520990400] INFO  gov.fnal.dhcp.athenanu.p:2010 <> - xdaq version: 05.09.00, compiled on May 13 2021 at 13:22:04, 64bit
+04 Jun 2022 17:28:09.990 [139713520990400] INFO  gov.fnal.dhcp.athenanu.p:2010 <> - Loaded profile: /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/XDAQConfigurations/otsConfiguration_CMake.xml
+04 Jun 2022 17:28:09.992 [139713520990400] INFO  gov.fnal.dhcp.athenanu.p:2010 <> - core::b2innub version: 02.05.02, compiled on May 13 2021 at 13:23:23
+04 Jun 2022 17:28:09.993 [139713520990400] INFO  gov.fnal.dhcp.athenanu.p:2010 <> - core::i2outils version: 04.00.00, compiled on May 13 2021 at 13:22:32
+04 Jun 2022 17:28:09.995 [139713520990400] INFO  gov.fnal.dhcp.athenanu.p:2010 <> - core::executive version: 04.02.00, compiled on May 13 2021 at 13:23:07
+04 Jun 2022 17:28:09.999 [139713520990400] INFO  gov.fnal.dhcp.athenanu.p:2010 <> - core::b2inutils version: 04.04.05, compiled on May 13 2021 at 13:23:26
+04 Jun 2022 17:28:10.003 [139713520990400] INFO  gov.fnal.dhcp.athenanu.p:2010 <> - core::pthttp version: 04.07.00, compiled on May 13 2021 at 13:22:36
+04 Jun 2022 17:28:10.004 [139713520990400] INFO  gov.fnal.dhcp.athenanu.p:2010 <> - core::ptfifo version: 04.04.00, compiled on May 13 2021 at 13:22:57
+04 Jun 2022 17:28:10.006 [139713520990400] INFO  gov.fnal.dhcp.athenanu.p:2010 <> - core::xrelay version: 04.02.00, compiled on May 13 2021 at 13:23:20
+04 Jun 2022 17:28:10.011 [139713520990400] INFO  gov.fnal.dhcp.athenanu.p:2010 <> - core::hyperdaq version: 05.04.00, compiled on May 13 2021 at 13:23:19
+04 Jun 2022 17:28:10.011 [139713520990400] DEBUG gov.fnal.dhcp.athenanu.p:2010 <> - Create application descriptor for class: executive::Application id: 0
+04 Jun 2022 17:28:10.035 [139713520990400] INFO  gov.fnal.dhcp.athenanu.p:2010.executive::Application.lid(0) <> - Log URL not set (was already console)
+04 Jun 2022 17:28:10.035 [139713520990400] INFO  gov.fnal.dhcp.athenanu.p:2010.executive::Application.lid(0) <> - Changed Log level to INFO
+04 Jun 2022 17:28:10.038 [139713520990400] INFO  gov.fnal.dhcp.athenanu.p:2010.pt::http::PeerTransportHTTP.lid(1) <> - No security policies on this server
+04 Jun 2022 17:28:10.181 [139713520990400] INFO  gov.fnal.dhcp.athenanu.p:2010 <> - otsdaq::CoreSupervisors version: 02.06.04, compiled on Mar 17 2022 at 10:44:13
+06-04 12:28:10.191977 MessageFacility.h    DEBUG INIT_MF(...): Configuring message facility with /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/MessageFacilityConfigurations/MessageFacilityGen.fcl
+otsConsole: {
+	type: UDP
+	threshold: DEBUG
+	filename_delimit: "/src"
+	port: 30000
+	host: "127.0.0.1"
+}
+console: {
+	type: "OTS"
+	threshold: "DEBUG"
+	filename_delimit: "/src"
+	format_string: "|%L:%N:%f [%u]	%m"
+
+}
+
+file: ""
+
+|Info:configureMessageFacility:configureMessageFacility.cc [283]	Message Facility Application . configured with: destinations:{console:{filename_delimit:"/src" format_string:"|%L:%N:%f [%u]\t%m" threshold:"DEBUG" type:"OTS"} file:"" otsConsole:{filename_delimit:"/src" host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+|Info:_TCPConnect:TCPConnect.cc [344]	Resolving host 127.0.0.1, on port 30000
+06-04 12:28:10.210017             UDP_mfPlugin    ERROR routePayload(...): Error sending message 2 to 127.0.0.1, errno=17 (File exists)
+|Info:_TCPConnect:TCPConnect.cc [371]	Host resolved as 127.0.0.1
+|Info:_TCPConnect:TCPConnect.cc [247]	Resolving ip athenanu.dhcp.fnal.gov
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [24]	FESupervisor:UNINITIALIZED_supervisorApplicationUID	<> application->getApplicationContext()->getContextDescriptor()->getURL() = http://athenanu.dhcp.fnal.gov:2010
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [25]	FESupervisor:UNINITIALIZED_supervisorApplicationUID	<> application->getApplicationDescriptor()->getLocalId() = 215
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [26]	FESupervisor:UNINITIALIZED_supervisorApplicationUID	<> supervisorClass_ = ots::FESupervisor
+|Debug:CorePropertySupervisorBase.cc:otsdaq/otsdaq/CoreSupervisors/CorePropertySupervisorBase.cc [27]	FESupervisor:UNINITIALIZED_supervisorApplicationUID	<> supervisorClassNoNamespace_ = FESupervisor
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [48]	Initializing info based on XDAQ context...
+|Debug:SupervisorDescriptorInfoBase.cc:otsdaq/otsdaq/SupervisorInfo/SupervisorDescriptorInfoBase.cc [33]	Init
+|Debug:AllSupervisorInfo.cc:otsdaq/otsdaq/SupervisorInfo/AllSupervisorInfo.cc [107]	Initializing info for Normal mode XDAQ context...
+|Debug:TableBase:otsdaq/otsdaq/TableCore/TableBase.cc [104]	TableBase-TableGroupMetadata	<> Special table 'TableGroupMetadata' constructed. 1
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [193]	READONLY_USER	<> username_ = READONLY_USER
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [239]	READONLY_USER	<> ACTIVE_GROUPS_FILENAME = /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/ServiceData/ActiveTableGroups.cfg
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [240]	READONLY_USER	<> ARTDAQ_DATABASE_URI = filesystemdb:///home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_database
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1394]	READONLY_USER	<> ------------------------------------- init start    	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(206)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1560]	READONLY_USER	<> ------------------------------------- init complete 	 [for all plug-ins in Backbone group 'GroupAliasTreeEditWizBackbone(206)']
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1379]	READONLY_USER	<> Not loading group because it is not of type Context or Backbone (it is type 'Configuration').
+|Debug:ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [456]	READONLY_USER	<> Destroying Backbone Key: 206
+04 Jun 2022 17:28:10.694 [139713520990400] ERROR gov.fnal.dhcp.athenanu.p:2010.executive::Application.lid(0) <> - Caught exception: xdaq::exception::ConfigurationError 'Failed to instantiate application class 'ots::FESupervisor', local identifier '215'' raised at instantiateApplications(/home/eflumerf/Desktop/artdaq-product-build/dependencies/products/xdaq/v16_7_0_1/build/Linux64bit+3.10-2.17-e20-prof/core-release_16_7_0_1/executive/src/common/Application.cc:1177);
+	originated by xdaq::exception::ApplicationInstantiationFailed 'Failed to instantiate object for class ots::FESupervisor in context http://athenanu.dhcp.fnal.gov:2010, std exception in user function: :ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1918]	Can not find table named 'XDAQContextTable' - you need to load the table before it can be used. It probably is missing from the member list of the Table Group that was loaded.
+
+You may need to enter wiz mode to remedy the situation, use the following:
+
+	 StartOTS.sh --wiz
+
+
+
+
+
+:StringMacros.cc:otsdaq/otsdaq/Macros/StringMacros.cc [1178]	ots::stackTrace:
+[1] /home/otsdaq/otsdaq/build_slf7.x86_64/otsdaq/slf7.x86_64.e20.s114.prof/lib/libConfigurationInterface.so : ots::ConfigurationManager::getTableByName(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0x1c6 [0x7f11631d4dc6]
+[2] //home/otsdaq/otsdaq/build_slf7.x86_64/otsdaq/slf7.x86_64.e20.s114.prof/lib/libCoreSupervisors.so : ots::XDAQContextTable const* ots::ConfigurationManager::getTable<ots::XDAQContextTable>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0x1c [0x7f1174b33f0c]
+[3] /home/otsdaq/otsdaq/build_slf7.x86_64/otsdaq/slf7.x86_64.e20.s114.prof/lib/libSupervisorInfo.so : ots::AllSupervisorInfo::init(xdaq::ApplicationContext*)+0x10be [0x7f1163a3824e]
+[4] //home/otsdaq/otsdaq/build_slf7.x86_64/otsdaq/slf7.x86_64.e20.s114.prof/lib/libCoreSupervisors.so : ots::CorePropertySupervisorBase::CorePropertySupervisorBase(xdaq::Application*)+0x1017 [0x7f1174b85e67]
+[5] //home/otsdaq/otsdaq/build_slf7.x86_64/otsdaq/slf7.x86_64.e20.s114.prof/lib/libCoreSupervisors.so : ots::CoreSupervisorBase::CoreSupervisorBase(xdaq::ApplicationStub*)+0x5c [0x7f1174bc717c]
+[6] //home/otsdaq/otsdaq/build_slf7.x86_64/otsdaq/slf7.x86_64.e20.s114.prof/lib/libCoreSupervisors.so : ots::FESupervisor::FESupervisor(xdaq::ApplicationStub*)+0x75 [0x7f1174c04d05]
+[7] //home/otsdaq/otsdaq/build_slf7.x86_64/otsdaq/slf7.x86_64.e20.s114.prof/lib/libCoreSupervisors.so : ots::FESupervisor::instantiate(xdaq::ApplicationStub*)+0x23 [0x7f1174c077a3]
+[8] /cvmfs/fermilab.opensciencegrid.org/products/artdaq/xdaq/v16_7_0_1/Linux64bit+3.10-2.17-e20-prof/lib/libxdaq.so : +0x32a83 [0x7f119685fa83]
+[9] //cvmfs/fermilab.opensciencegrid.org/products/artdaq/xdaq/v16_7_0_1/Linux64bit+3.10-2.17-e20-prof/lib/libexecutive.so : executive::Application::instantiateApplications(xercesc_3_2::DOMNode*)+0x50a [0x7f118627aada]
+
+
+' raised at instantiateApplication(/home/eflumerf/Desktop/artdaq-product-build/dependencies/products/xdaq/v16_7_0_1/build/Linux64bit+3.10-2.17-e20-prof/core-release_16_7_0_1/xdaq/src/common/ApplicationRegistry.cc:260)
+04 Jun 2022 17:28:10.694 [139713520990400] ERROR gov.fnal.dhcp.athenanu.p:2010.executive::Application.lid(0) <> - Failed to configure executive
+04 Jun 2022 17:28:10.696 [139713520990400] FATAL root <> - Caught exception: xdaq::exception::Exception 'Failed to configure from file /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/XDAQConfigurations/ots.xml' raised at init(/home/eflumerf/Desktop/artdaq-product-build/dependencies/products/xdaq/v16_7_0_1/build/Linux64bit+3.10-2.17-e20-prof/core-release_16_7_0_1/xdaq/src/common/ApplicationContextImpl.cc:770);
+	originated by xdaq::exception::Exception 'Failed to configure executive from file /home/otsdaq/otsdaq/srcs/otsdaq_fermilabtestbeam/ftbf_telescope/2022_03_March_ftbf_telescope_userdata/XDAQConfigurations/ots.xml' raised at init(/home/eflumerf/Desktop/artdaq-product-build/dependencies/products/xdaq/v16_7_0_1/build/Linux64bit+3.10-2.17-e20-prof/core-release_16_7_0_1/xdaq/src/common/ApplicationContextImpl.cc:748);
+	originated by xoap::exception::Exception 'Failed to configure executive' raised at Configure(/home/eflumerf/Desktop/artdaq-product-build/dependencies/products/xdaq/v16_7_0_1/build/Linux64bit+3.10-2.17-e20-prof/core-release_16_7_0_1/executive/src/common/Application.cc:341);
+	originated by xdaq::exception::Exception 'Failed to configure executive' raised at Configure(/home/eflumerf/Desktop/artdaq-product-build/dependencies/products/xdaq/v16_7_0_1/build/Linux64bit+3.10-2.17-e20-prof/core-release_16_7_0_1/executive/src/common/Application.cc:282);
+	originated by xdaq::exception::ConfigurationError 'Failed to instantiate application class 'ots::FESupervisor', local identifier '215'' raised at instantiateApplications(/home/eflumerf/Desktop/artdaq-product-build/dependencies/products/xdaq/v16_7_0_1/build/Linux64bit+3.10-2.17-e20-prof/core-release_16_7_0_1/executive/src/common/Application.cc:1177);
+	originated by xdaq::exception::ApplicationInstantiationFailed 'Failed to instantiate object for class ots::FESupervisor in context http://athenanu.dhcp.fnal.gov:2010, std exception in user function: :ConfigurationManager:otsdaq/otsdaq/ConfigurationInterface/ConfigurationManager.cc [1918]	Can not find table named 'XDAQContextTable' - you need to load the table before it can be used. It probably is missing from the member list of the Table Group that was loaded.
+
+You may need to enter wiz mode to remedy the situation, use the following:
+
+	 StartOTS.sh --wiz
+
+
+
+
+
+:StringMacros.cc:otsdaq/otsdaq/Macros/StringMacros.cc [1178]	ots::stackTrace:
+[1] /home/otsdaq/otsdaq/build_slf7.x86_64/otsdaq/slf7.x86_64.e20.s114.prof/lib/libConfigurationInterface.so : ots::ConfigurationManager::getTableByName(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0x1c6 [0x7f11631d4dc6]
+[2] //home/otsdaq/otsdaq/build_slf7.x86_64/otsdaq/slf7.x86_64.e20.s114.prof/lib/libCoreSupervisors.so : ots::XDAQContextTable const* ots::ConfigurationManager::getTable<ots::XDAQContextTable>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0x1c [0x7f1174b33f0c]
+[3] /home/otsdaq/otsdaq/build_slf7.x86_64/otsdaq/slf7.x86_64.e20.s114.prof/lib/libSupervisorInfo.so : ots::AllSupervisorInfo::init(xdaq::ApplicationContext*)+0x10be [0x7f1163a3824e]
+[4] //home/otsdaq/otsdaq/build_slf7.x86_64/otsdaq/slf7.x86_64.e20.s114.prof/lib/libCoreSupervisors.so : ots::CorePropertySupervisorBase::CorePropertySupervisorBase(xdaq::Application*)+0x1017 [0x7f1174b85e67]
+[5] //home/otsdaq/otsdaq/build_slf7.x86_64/otsdaq/slf7.x86_64.e20.s114.prof/lib/libCoreSupervisors.so : ots::CoreSupervisorBase::CoreSupervisorBase(xdaq::ApplicationStub*)+0x5c [0x7f1174bc717c]
+[6] //home/otsdaq/otsdaq/build_slf7.x86_64/otsdaq/slf7.x86_64.e20.s114.prof/lib/libCoreSupervisors.so : ots::FESupervisor::FESupervisor(xdaq::ApplicationStub*)+0x75 [0x7f1174c04d05]
+[7] //home/otsdaq/otsdaq/build_slf7.x86_64/otsdaq/slf7.x86_64.e20.s114.prof/lib/libCoreSupervisors.so : ots::FESupervisor::instantiate(xdaq::ApplicationStub*)+0x23 [0x7f1174c077a3]
+[8] /cvmfs/fermilab.opensciencegrid.org/products/artdaq/xdaq/v16_7_0_1/Linux64bit+3.10-2.17-e20-prof/lib/libxdaq.so : +0x32a83 [0x7f119685fa83]
+[9] //cvmfs/fermilab.opensciencegrid.org/products/artdaq/xdaq/v16_7_0_1/Linux64bit+3.10-2.17-e20-prof/lib/libexecutive.so : executive::Application::instantiateApplications(xercesc_3_2::DOMNode*)+0x50a [0x7f118627aada]
+
+
+' raised at instantiateApplication(/home/eflumerf/Desktop/artdaq-product-build/dependencies/products/xdaq/v16_7_0_1/build/Linux64bit+3.10-2.17-e20-prof/core-release_16_7_0_1/xdaq/src/common/ApplicationRegistry.cc:260)
+|Debug:MetricManager:MetricManager.cc [190]	MetricManager is shutting down...
+|Debug:MetricManager:MetricManager.cc [156]	Stopping Metrics
+|Debug:MetricManager:MetricManager.cc [159]	Joining Metric-Sending thread
+|Debug:MetricManager:MetricManager.cc [172]	do_stop Complete

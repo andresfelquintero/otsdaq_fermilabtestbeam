@@ -1,0 +1,144 @@
+services: {
+	scheduler: {
+		fileMode: NOMERGE
+		errorOnFailureToPut: false
+	}
+
+	NetMonTransportServiceInterface: {
+		service_provider: NetMonTransportService
+		destinations: {
+			d4: { transferPluginType: Autodetect destination_rank: 502 max_fragment_size_words: 20971520 host_map: [{rank: 502 host: "ftbf-daq-08.fnal.gov" portOffset: 0}, {rank: 504 host: "ftbf-daq-08.fnal.gov" portOffset: 0}]}
+		}
+
+	}
+
+}
+
+daq: {
+	event_builder: {
+		expected_fragments_per_event: 4
+		use_art: true
+		print_event_store_stats: true
+		verbose: false
+		send_requests: true
+		request_port: 8600
+		request_address: "227.128.12.26"
+		output_address: "0.0.0.0"
+		max_fragment_size_bytes: 167772160
+		buffer_count: 5
+		
+		sources: {
+			s1: { transferPluginType: Autodetect source_rank: 500 max_fragment_size_words: 20971520 host_map: [{rank: 500 host: "ftbf-daq-08.fnal.gov" portOffset: 0}, {rank: 504 host: "ftbf-daq-08.fnal.gov" portOffset: 0}]}
+			s2: { transferPluginType: Autodetect source_rank: 520 max_fragment_size_words: 20971520 host_map: [{rank: 520 host: "ftbf-daq-08.fnal.gov" portOffset: 1}, {rank: 504 host: "ftbf-daq-08.fnal.gov" portOffset: 0}]}
+			s3: { transferPluginType: Autodetect source_rank: 521 max_fragment_size_words: 20971520 host_map: [{rank: 521 host: "ftbf-daq-08.fnal.gov" portOffset: 2}, {rank: 504 host: "ftbf-daq-08.fnal.gov" portOffset: 0}]}
+			s4: { transferPluginType: Autodetect source_rank: 522 max_fragment_size_words: 20971520 host_map: [{rank: 522 host: "ftbf-daq-08.fnal.gov" portOffset: 3}, {rank: 504 host: "ftbf-daq-08.fnal.gov" portOffset: 0}]}
+		}
+
+	}
+
+	metrics: {
+		evbFile: {
+			metricPluginType: "file"
+			level: 3
+			fileName: "/tmp/eventbuilder/evb_%UID%_metrics.log"
+			uniquify: true
+		}
+
+		# ganglia: {
+			# metricPluginType: "ganglia"
+			# level: %{ganglia_level}
+			# reporting_interval: 15.0
+			# configFile: "/etc/ganglia/gmond.conf"
+			# group: "ARTDAQ"
+		# }
+
+		# msgfac: {
+			# metricPluginType: "msgFacility"
+			# level: %{mf_level}
+			# output_message_application_name: "ARTDAQ Metric"
+			# output_message_severity: 0
+		# }
+
+		# graphite: {
+			# metricPluginType: "graphite"
+			# level: %{graphite_level}
+			# DEFAULT: DEFAULT
+			# DEFAULT: DEFAULT
+			# DEFAULT: DEFAULT
+		# }
+
+	}
+
+}
+
+outputs: {
+	rootMPIOutput: {
+		module_type: RootNetOutput
+		# SelectEvents: { SelectEvents: [ pmod2,pmod3 ] }
+	}
+
+}
+
+physics: {
+	analyzers: {
+		# wf: {
+			# module_type: "WFViewer"
+			# prescale: 0
+			# write_to_file: true
+			# fileName: "/data-08/otsdaq_develop/OutputData/WireChamberDQM_evb%n.root"
+			# write_to_network: false
+			# hostname: "127.0.0.1"
+			# port: 45300
+		# }
+
+		# checkintegrity: {
+			# module_type: "CheckIntegrity"
+		# }
+
+		stib: {
+			module_type: STIBDQM
+		}
+
+		wireChambers: {
+			module_type: WireChamberDQM
+			prescale: 0
+			write_to_file: true
+			fileName: "/data-08/otsdaq_develop/OutputData/WireChamberDQM_evb%n.root"
+			write_to_network: false
+			hostname: "127.0.0.1"
+			port: 45300
+		}
+
+		# wireChamberEvts: {
+			# module_type: WireChamberEVTDQM
+		# }
+
+		python: {
+			module_type: WireChamberPythonOutput
+			filePath: "/data-08/otsdaq_develop/OutputData/Python"
+		}
+
+	}
+
+	producers: {
+		# BuildInfo: {
+			# module_type: ArtdaqDemoBuildInfo
+			# instance_name:ArtdaqDemo
+		# }
+
+	}
+
+	a2: [ wireChambers ]
+	my_output_modules: [ rootMPIOutput ]
+	# a1: [ wireChamberEvts ]
+	a3: [ stib ]
+	a5: [ python ]
+}
+
+source: {
+	module_type: FTBFInput
+	waiting_time: 2500000
+	resume_after_timeout: true
+}
+
+process_name: DAQ
