@@ -8,7 +8,7 @@
 
 
 message(STATUS "This is MY CMakeLists.txt in otsdaq_fermilabtestbeam!")
-
+set(IGNORE_ABSOLUTE_TRANSITIVE_DEPENDENCIES TRUE)
 # use cmake 3.17 or later
 cmake_minimum_required (VERSION 3.17)
 
