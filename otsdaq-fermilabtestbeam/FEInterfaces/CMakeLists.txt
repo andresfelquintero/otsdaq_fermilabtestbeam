@@ -1,3 +1,23 @@
+include_directories(${CMAKE_BINARY_DIR}/artdaq)
+
+find_package(ROOT REQUIRED COMPONENTS Net)
+include_directories(${ROOT_INCLUDE_DIRS})
+link_directories(${ROOT_LIBRARY_DIR})
+
+link_directories(${Protobuf_LIBRARIES})
+
+find_package(XercesC REQUIRED)
+
+include_directories(
+  ${XercesC_INCLUDE_DIRS}
+  ${MPI_INCLUDE_PATH}
+  )
+
+cet_set_compiler_flags(
+  EXTRA_FLAGS -D__OTSDAQ__
+)
+
+
 basic_plugin(FSSRInterface "interface" 
   Configurable
   DAQHardware
