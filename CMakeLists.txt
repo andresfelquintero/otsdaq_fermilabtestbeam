@@ -60,7 +60,7 @@ find_package( otsdaq_components v1_00_00 )
 find_package( xdaq v16_7_0_1 )
 #find_package( root v5_34_00 )
 find_package( ROOT REQUIRED COMPONENTS Core Imt Hist Gpad Tree)
-#find_package( Boost QUIET COMPONENTS date_time program_options serialization thread iostreams REQUIRED EXPORT)
+find_package( Boost QUIET COMPONENTS date_time program_options serialization thread iostreams REQUIRED EXPORT)
 #find_package( Protobuf v3.19.4 REQUIRED)
 #find_package (CACTUS REQUIRED)
 
