@@ -7,6 +7,7 @@ namespace bpo = boost::program_options;
 #include "artdaq/DAQdata/Globals.hh"
 #include "artdaq/DAQdata/TCPConnect.hh"
 #include "otsdaq-fermilabtestbeam/ArtModules/detail/DataRequestMessage.hh"
+#include "artdaq-core/Utilities/configureMessageFacility.hh"
 
 int main(int argc, char* argv[])
 {
