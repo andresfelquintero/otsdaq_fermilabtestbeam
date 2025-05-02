@@ -17,24 +17,6 @@ cet_set_compiler_flags(
   EXTRA_FLAGS -D__OTSDAQ__
 )
 
-basic_plugin(FENIMPlusInterface "interface" 
-  Configurable
-  DAQHardware
-  DAQFirmwareHardware
-  WorkLoopManager
-  DetectorConfiguration
-  ConfigurationInterface
-  TableCore
-  FECore
-  NetworkUtilities
-  Macros
-  artdaq_DAQdata
-  MF_MessageLogger
-  ${XDAQ_XERCES-C}
-  ${Boost_SYSTEM_LIBRARY}
-  pthread
-  )
-
 basic_plugin(FSSRInterface "interface" 
   Configurable
   DAQHardware
