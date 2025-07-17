@@ -12,8 +12,16 @@ cet_make(LIBRARY_NAME FermilabTestbeamDQMHistos
              ${ROOT_LIBRARIES}
         ${MF_MESSAGELOGGER}
 )
-install_headers()
-install_source()
+
+install(TARGETS FermilabTestbeamDQMHistos
+        EXPORT FermilabTestbeamDQMHistosTargets
+        LIBRARY DESTINATION lib
+        ARCHIVE DESTINATION lib
+        RUNTIME DESTINATION bin)
+
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/
+        DESTINATION include/otsdaq-fermilabtestbeam/DQMHistos
+        FILES_MATCHING PATTERN "*.h")
 
 
 
