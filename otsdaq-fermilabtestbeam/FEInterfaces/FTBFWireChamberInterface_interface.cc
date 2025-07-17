@@ -232,7 +232,7 @@ bool FTBFWireChamberInterface::running(void)
 			// std::string spillMessage = createSpillMessage(spillNumber,
 			// std::to_string(spillTriggerCount) + " triggers", std::to_string(wordCount)
 			// + " words");
-			__MOUT__ << "Spill Number " << spillNumber << " : " << spillTriggerCount
+			__COUT__ << "Spill Number " << spillNumber << " : " << spillTriggerCount
 			         << " triggers " << wordCount << " words" << std::endl;
 
 			size_t bytesToRead = wordCount * 2;
@@ -244,16 +244,16 @@ bool FTBFWireChamberInterface::running(void)
 
 			if(data.size() < static_cast<size_t>(wordCount) * 2)
 			{
-				__MOUT__ << "I only read " << std::to_string(data.size())
+				__COUT__ << "I only read " << std::to_string(data.size())
 				         << " bytes out of an expected " << std::to_string(wordCount * 2)
 				         << "!";
 			}
-			__MOUT__ << "Sending " << std::to_string(data.size()) << " bytes of data";
+			__COUT__ << "Sending " << std::to_string(data.size()) << " bytes of data";
 		}
 		else if(WorkLoop::continueWorkLoop_)
 		{
 			usleep(1000000);  // sleep //wait one second before checking for end spill
-			__MOUT__ << "sending no data" << std::endl;
+			__COUT__ << "sending no data" << std::endl;
 		}
 
 		if(0)  // binary output
@@ -288,7 +288,7 @@ bool FTBFWireChamberInterface::running(void)
 			TransmitterSocket::send(streamToSocket_, data);
 		}
 	}
-	__MOUT__ << "Ending FTBFWireChamberInterface workloop." << std::endl;
+	__COUT__ << "Ending FTBFWireChamberInterface workloop." << std::endl;
 
 	return false;  // WorkLoop::continueWorkLoop_;//otherwise it stops!!!!!
 }
@@ -327,7 +327,7 @@ bool FTBFWireChamberInterface::checkForNewData()
 	checkForReadoutError();
 	if(!theTCPSocket_->is_valid())
 	{
-		__MOUT__ << "The TCP Socket Connection is invalid!" << std::endl;
+		__COUT__ << "The TCP Socket Connection is invalid!" << std::endl;
 
 		return false;
 	}
@@ -357,9 +357,9 @@ void FTBFWireChamberInterface::checkForReadoutError()
 	if(readoutBusyCount_ > 40)
 	{
 		readoutBusyCount_ = 0;
-		__MOUT__ << "\n\n\n\n\n\nRuntime Error: Wire chamber readout has stalled!"
+		__COUT__ << "\n\n\n\n\n\nRuntime Error: Wire chamber readout has stalled!"
 		         << std::endl;
-		__MOUT__ << "Runtime Error: Wire chamber readout has stalled! \n\n\n\n\n\n"
+		__COUT__ << "Runtime Error: Wire chamber readout has stalled! \n\n\n\n\n\n"
 		         << std::endl;
 		// Raise exception
 		return;
@@ -455,7 +455,7 @@ size_t FTBFWireChamberInterface::getData(std::string& physicsData, size_t totalB
 		__COUT__ << "SUCCCA" << std::endl;
 	}
 
-	__MOUT__ << "getData Returning " << std::to_string(totalByteCount - remainingBytes)
+	__COUT__ << "getData Returning " << std::to_string(totalByteCount - remainingBytes)
 	         << " bytes read of " << std::to_string(totalByteCount) << " total ("
 	         << std::to_string(remainingBytes) << " remain)." << std::endl;
 	return totalByteCount - remainingBytes;
