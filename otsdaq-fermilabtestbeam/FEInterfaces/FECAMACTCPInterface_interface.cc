@@ -43,21 +43,21 @@ ots::FECAMACTCPInterface::~FECAMACTCPInterface(void)
 //========================================================================================================================
 void ots::FECAMACTCPInterface::halt(void)
 {
-	__CFG_MOUT__ << "\tHalt" << std::endl;
+	__CFG_COUT__ << "\tHalt" << std::endl;
 	camac.reset(nullptr);
 	if(rawOutput && output.is_open())
 		output.close();
 }
 
 //========================================================================================================================
-void ots::FECAMACTCPInterface::pause(void) { __CFG_MOUT__ << "\tPause" << std::endl; }
+void ots::FECAMACTCPInterface::pause(void) { __CFG_COUT__ << "\tPause" << std::endl; }
 
 //========================================================================================================================
-void ots::FECAMACTCPInterface::resume(void) { __CFG_MOUT__ << "Resuming" << std::endl; }
+void ots::FECAMACTCPInterface::resume(void) { __CFG_COUT__ << "Resuming" << std::endl; }
 //========================================================================================================================
 void ots::FECAMACTCPInterface::start(std::string runNumber)
 {
-	__CFG_MOUT__ << "Starting CAMAC Interface" << std::endl;
+	__CFG_COUT__ << "Starting CAMAC Interface" << std::endl;
 	if(rawOutput)
 	{
 		// Setup stream to output file.
@@ -65,10 +65,10 @@ void ots::FECAMACTCPInterface::start(std::string runNumber)
 		            std::ios::out | std::ios::trunc);
 		if(!output.is_open())
 		{
-			__CFG_MOUT__ << "Could not open file.";
+			__CFG_COUT__ << "Could not open file.";
 			return;
 		}
-		__CFG_MOUT__ << "Output file created at " << rawOutputFile << "_" << runNumber
+		__CFG_COUT__ << "Output file created at " << rawOutputFile << "_" << runNumber
 		             << ".raw" << std::endl;
 		std::time_t now =
 		    std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
@@ -86,7 +86,7 @@ void ots::FECAMACTCPInterface::start(std::string runNumber)
 //========================================================================================================================
 void ots::FECAMACTCPInterface::stop(void)
 {
-	__CFG_MOUT__ << "Stopping CAMAC Interface" << std::endl;
+	__CFG_COUT__ << "Stopping CAMAC Interface" << std::endl;
 	if(rawOutput && output.is_open())
 		output.close();  // Close the output file.
 }
@@ -94,7 +94,7 @@ void ots::FECAMACTCPInterface::stop(void)
 //========================================================================================================================
 void ots::FECAMACTCPInterface::configure(void)
 {
-	__CFG_MOUT__ << "Configuring CAMAC crate." << std::endl;
+	__CFG_COUT__ << "Configuring CAMAC crate." << std::endl;
 	camac.reset(new UsbHandler());
 	std::string ADC = theXDAQContextConfigTree_.getNode(theConfigurationPath_)
 	                      .getNode("ADCList")
@@ -123,15 +123,15 @@ void ots::FECAMACTCPInterface::configure(void)
 	rawOutputFile = filePath + "/" + filePrefix;
 	cfgHeader     = header + "\n" + camac->setConfig(ADC, TDC, Scal, Gate);
 	cardList = "ADC " + ADC + " TDC " + TDC + " SCAL " + Scal + " GATE " + Gate + " END";
-	__CFG_MOUT__ << "Selected devices: " << cardList << std::endl;
+	__CFG_COUT__ << "Selected devices: " << cardList << std::endl;
 
 	int ret;
 	ret = camac->configureCrate();
 	if(ret < 0)
 	{
-		__CFG_MOUT_ERR__ << "Failed CAMAC configure [" << ret << "]\n";
+		__CFG_COUT_ERR__ << "Failed CAMAC configure [" << ret << "]\n";
 	}
-	__CFG_MOUT__ << "Finished configuring FECAMACTCPInterface" << std::endl;
+	__CFG_COUT__ << "Finished configuring FECAMACTCPInterface" << std::endl;
 }
 
 //========================================================================================================================
@@ -143,13 +143,13 @@ bool ots::FECAMACTCPInterface::running(void)
 		int           numReads = pdata.size();
 		if(numReads < 0)
 		{
-			__CFG_MOUT_ERR__ << "Error reading data, getData returned " << numReads
+			__CFG_COUT_ERR__ << "Error reading data, getData returned " << numReads
 			                 << std::endl;
 			return false;
 		}
 		else if(numReads == 0)
 		{
-			__CFG_MOUT__ << "No data received, continuing..." << std::endl;
+			__CFG_COUT__ << "No data received, continuing..." << std::endl;
 			TCPPublishServer::broadcast("NODATA");
 			usleep(10000);
 			continue;
@@ -163,7 +163,7 @@ bool ots::FECAMACTCPInterface::running(void)
 
 			if(events > 0)
 			{
-				__CFG_MOUT__ << "Read " << read << ", " << events << " events."
+				__CFG_COUT__ << "Read " << read << ", " << events << " events."
 				             << std::endl;
 				if(rawOutput)
 					output << std::hex << std::showbase << pdata[read][0] << std::dec
@@ -178,7 +178,7 @@ bool ots::FECAMACTCPInterface::running(void)
 					data_vec.push_back(pdata[read][idx]);
 					idx++;
 
-					__CFG_MOUT__ << "Event length is " << eventLength << std::endl;
+					__CFG_COUT__ << "Event length is " << eventLength << std::endl;
 
 					for(int j = 0; j < eventLength; ++j)
 					{
@@ -203,7 +203,7 @@ bool ots::FECAMACTCPInterface::running(void)
 			}
 		}
 	}
-	__MOUT__ << "Ending FECAMACTCPInterface workloop." << std::endl;
+	__COUT__ << "Ending FECAMACTCPInterface workloop." << std::endl;
 
 	return false;  // WorkLoop::continueWorkLoop_;//otherwise it stops!!!!!
 }
