@@ -77,7 +77,7 @@ void RootDQMHistosConsumer::stopProcessingData(void)
 //========================================================================================================================
 bool RootDQMHistosConsumer::workLoopThread(toolbox::task::WorkLoop* workLoop)
 {
-	//__MOUT__ << DataProcessor::processorUID_ << " running, because workloop: " <<
+	//__COUT__ << DataProcessor::processorUID_ << " running, because workloop: " <<
 	//	WorkLoop::continueWorkLoop_ << std::endl;
 	fastRead();
 	return WorkLoop::continueWorkLoop_;
@@ -91,7 +91,7 @@ void RootDQMHistosConsumer::slowRead(void) { socketRead(); }
 
 void RootDQMHistosConsumer::socketRead(void)
 {
-	// __MOUT__ << "Checking for ROOT Objects to read";
+	// __COUT__ << "Checking for ROOT Objects to read";
 	// Check for new connections
 	auto sts = listenSocket_->Accept();
 	if((int64_t)sts > 0)
@@ -110,7 +110,7 @@ void RootDQMHistosConsumer::socketRead(void)
 
 		theFile_->cd();
 
-		__MOUT__ << "Received ROOT TObject from socket!";
+		__COUT__ << "Received ROOT TObject from socket!";
 		TObject* h = (TObject*)message->ReadObject(message->GetClass());
 		h->Write(0, TObject::kOverwrite);
 		delete message;
