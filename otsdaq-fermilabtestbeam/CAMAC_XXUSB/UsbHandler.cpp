@@ -42,7 +42,7 @@ bool UsbHandler::checkResponse(int n, int f, int retcod, int q, int x)
 		        retcod,
 		        q,
 		        x);
-		__MOUT_ERR__ << stub;
+		__COUT_ERR__ << stub;
 		return false;
 	}
 	return true;
@@ -151,7 +151,7 @@ std::string UsbHandler::setConfig(std::string ADC,
 				writer << "ADC " << cADC << " in Slot " << slot << std::endl;
 			}
 			else
-				__MOUT_ERR__ << "Error reading ADC list, invalid format: " << reader.str()
+				__COUT_ERR__ << "Error reading ADC list, invalid format: " << reader.str()
 				             << std::endl;
 		}
 		reader.clear();
@@ -170,7 +170,7 @@ std::string UsbHandler::setConfig(std::string ADC,
 				writer << "TDC " << cTDC << " in Slot " << slot << std::endl;
 			}
 			else
-				__MOUT_ERR__ << "Error reading TDC list, invalid format: " << reader.str()
+				__COUT_ERR__ << "Error reading TDC list, invalid format: " << reader.str()
 				             << std::endl;
 		}
 		reader.clear();
@@ -189,7 +189,7 @@ std::string UsbHandler::setConfig(std::string ADC,
 				writer << "Scaler " << cSCAL << " in Slot " << slot << std::endl;
 			}
 			else
-				__MOUT_ERR__ << "Error reading Scaler list, invalid format: "
+				__COUT_ERR__ << "Error reading Scaler list, invalid format: "
 				             << reader.str() << std::endl;
 		}
 		reader.clear();
@@ -209,7 +209,7 @@ std::string UsbHandler::setConfig(std::string ADC,
 				writer << "Gate " << cGATE << " in Slot " << slot << std::endl;
 			}
 			else
-				__MOUT_ERR__ << "Error reading Gate list, invalid format: "
+				__COUT_ERR__ << "Error reading Gate list, invalid format: "
 				             << reader.str() << std::endl;
 		}
 	}
@@ -272,11 +272,11 @@ int UsbHandler::configureCrate()
 {
 	xxdev.SerialString[0] = '\0';
 	nDevices              = xxusb_devices_find(&xxdev);
-	__MOUT__ << "Found nDevices " << nDevices << " [" << xxdev.SerialString << "] \n";
+	__COUT__ << "Found nDevices " << nDevices << " [" << xxdev.SerialString << "] \n";
 
 	if(nDevices <= 0)
 	{
-		__MOUT_ERR__ << "No CC-USB devices found, exiting\n";
+		__COUT_ERR__ << "No CC-USB devices found, exiting\n";
 		return -1;
 	}
 
@@ -285,7 +285,7 @@ int UsbHandler::configureCrate()
 	crate = xxusb_device_open(ptr);
 	if(!crate)
 	{
-		__MOUT_ERR__ << "Failed to open ccusb, exiting \n";
+		__COUT_ERR__ << "Failed to open ccusb, exiting \n";
 		return -1;
 	}
 	else
@@ -293,12 +293,12 @@ int UsbHandler::configureCrate()
 		int retcod = xxusb_register_write(crate, 1, 0x0);
 		if(retcod < 0)
 		{
-			__MOUT_ERR__ << "Initial DAQ off returned " << retcod << "\n";
+			__COUT_ERR__ << "Initial DAQ off returned " << retcod << "\n";
 			return retcod;
 		}
 		ccUsbFlush();
 
-		__MOUT__ << "Opened device /dev/bus/usb/" << ptr->bus->dirname << "/"
+		__COUT__ << "Opened device /dev/bus/usb/" << ptr->bus->dirname << "/"
 		         << ptr->filename << "\n";
 
 		retcod = -2;
@@ -306,14 +306,14 @@ int UsbHandler::configureCrate()
 		retcod = CAMAC_C(crate);
 		if(retcod < 0)
 		{
-			__MOUT_ERR__ << "Failed to issue CAMAC C [" << retcod << "]\n";
+			__COUT_ERR__ << "Failed to issue CAMAC C [" << retcod << "]\n";
 			return retcod;
 		}
 
 		retcod = CAMAC_I(crate, 0);
 		if(retcod < 0)
 		{
-			__MOUT_ERR__ << "Failed to issue CAMAC I [" << retcod << "]\n";
+			__COUT_ERR__ << "Failed to issue CAMAC I [" << retcod << "]\n";
 			return retcod;
 		}
 
@@ -361,7 +361,7 @@ int UsbHandler::configureCrate()
 		StackApp(stack, 0x0010);
 		StackApp(stack, 0xffff);
 
-		__MOUT__ << "Finished creating the stack." << std::endl;
+		__COUT__ << "Finished creating the stack." << std::endl;
 
 		int q;
 		int x;
@@ -369,7 +369,7 @@ int UsbHandler::configureCrate()
 		retcod = xxusb_stack_write(crate, 2, stack);
 		if(retcod < 0)
 		{
-			__MOUT_ERR__ << "Failed to write stack to ccusb. [" << retcod << "]\n";
+			__COUT_ERR__ << "Failed to write stack to ccusb. [" << retcod << "]\n";
 			return retcod;
 		}
 
@@ -377,7 +377,7 @@ int UsbHandler::configureCrate()
 		retcod = xxusb_stack_read(crate, 2, &stackCheck[0]);
 		if(retcod < 0)
 		{
-			__MOUT_ERR__ << "Failed to read stack from ccusb. [" << retcod << "]\n";
+			__COUT_ERR__ << "Failed to read stack from ccusb. [" << retcod << "]\n";
 			return retcod;
 		}
 
@@ -386,7 +386,7 @@ int UsbHandler::configureCrate()
 		{
 			if(stack[ii] != stackCheck[ii])
 			{
-				__MOUT_ERR__ << "Stack was not written correctly! At word " << ii
+				__COUT_ERR__ << "Stack was not written correctly! At word " << ii
 				             << ", expected " << stack[ii] << ", got " << stackCheck[ii];
 				return -25;
 			}
@@ -397,7 +397,7 @@ int UsbHandler::configureCrate()
 		retcod       = CAMAC_write(crate, 25, 2, 16, d16, &q, &x);
 		if(retcod < 0)
 		{
-			__MOUT_ERR__ << "Failed CAMAC write. [" << retcod << "]\n";
+			__COUT_ERR__ << "Failed CAMAC write. [" << retcod << "]\n";
 			return retcod;
 		}
 		ccUsbFlush();
@@ -406,7 +406,7 @@ int UsbHandler::configureCrate()
 		    crate, 0x0);  // Set LAM mask, 24 bit word, bit position=N, 0x0 triggers on I1
 		if(retcod < 0)
 		{
-			__MOUT_ERR__ << "Failed CAMAC write. [" << retcod << "]\n";
+			__COUT_ERR__ << "Failed CAMAC write. [" << retcod << "]\n";
 			return retcod;
 		}
 		retcod = CAMAC_write(
@@ -419,7 +419,7 @@ int UsbHandler::configureCrate()
 		    &x);  // Set the size of the buffer for the output FIFO and format the header
 		if(retcod < 0)
 		{
-			__MOUT_ERR__ << "Failed CAMAC write. [" << retcod << "]\n";
+			__COUT_ERR__ << "Failed CAMAC write. [" << retcod << "]\n";
 			return retcod;
 		}
 		/* Configure Lecroy 2249A ADC for LAMs */
@@ -457,7 +457,7 @@ ccusb_buf_vec UsbHandler::getData()
 	int retcod = xxusb_register_write(crate, 1, 0x0);
 	if(retcod < 0)
 	{
-		__MOUT_ERR__ << "Failed to turn DAQ mode off. [" << retcod << "]\n";
+		__COUT_ERR__ << "Failed to turn DAQ mode off. [" << retcod << "]\n";
 	}
 	int  numReads = 0;
 	sui* pdata;
@@ -468,7 +468,7 @@ ccusb_buf_vec UsbHandler::getData()
 		retcod = xxusb_bulk_read(crate, pdata, 26700, 100);
 		if(retcod < 0)
 		{
-			__MOUT_ERR__ << "Failed USB bulk read. [" << retcod << "]\n";
+			__COUT_ERR__ << "Failed USB bulk read. [" << retcod << "]\n";
 			break;
 		}
 		cc_data_vec.push_back(cc_data);
@@ -480,7 +480,7 @@ ccusb_buf_vec UsbHandler::getData()
 	retcod = xxusb_register_write(crate, 1, 0x1);
 	if(retcod < 0)
 	{
-		__MOUT_ERR__ << "Failed to turn DAQ mode on. [" << retcod << "]\n";
+		__COUT_ERR__ << "Failed to turn DAQ mode on. [" << retcod << "]\n";
 	}
 
 	return cc_data_vec;
@@ -498,7 +498,7 @@ int UsbHandler::ccUsbFlush()
 		ret = xxusb_bulk_read(crate, IntArray, 8192, 100);
 		if(ret > 0)
 		{
-			__MOUT__ << "Flushing loop " << k << " from CCUSB buffer. Returned " << ret
+			__COUT__ << "Flushing loop " << k << " from CCUSB buffer. Returned " << ret
 			         << " bytes." << std::endl;
 			k++;
 		}
