@@ -136,18 +136,18 @@ void WireChamberDQMHistos::convertSpillData(const std::string& spillData)
 		default:;
 		}
 	}
-	//	__MOUT__ << "////////////////////////HEADER////////////////////// " << std::endl;
-	//	__MOUT__ << "wordCount " << totalWordCount << std::endl;
+	//	__COUT__ << "////////////////////////HEADER////////////////////// " << std::endl;
+	//	__COUT__ << "wordCount " << totalWordCount << std::endl;
 	//
-	//	__MOUT__ << "SPILL\t" << spillCount << std::endl;
+	//	__COUT__ << "SPILL\t" << spillCount << std::endl;
 	//	//outFile_ << SDATE
-	//	__MOUT__ << "Date: " << month << "/" << day << "/" << year << std::endl;
-	//	__MOUT__ << "Time: " << hour << ":" << minute << ":" << second << std::endl;
-	//	__MOUT__ << "spillTriggerCount " << spillTriggerCount << std::endl;
-	//	__MOUT__ << "spillTDCStatus " << spillTDCStatus << std::endl;
-	//	__MOUT__ << "spillLinkStatus " << spillLinkStatus << std::endl;
-	//	__MOUT__ << "words  " << words << " = " << it/2 << std::endl;
-	//	__MOUT__ << "//////////////////////////////////////////////////// " << std::endl;
+	//	__COUT__ << "Date: " << month << "/" << day << "/" << year << std::endl;
+	//	__COUT__ << "Time: " << hour << ":" << minute << ":" << second << std::endl;
+	//	__COUT__ << "spillTriggerCount " << spillTriggerCount << std::endl;
+	//	__COUT__ << "spillTDCStatus " << spillTDCStatus << std::endl;
+	//	__COUT__ << "spillLinkStatus " << spillLinkStatus << std::endl;
+	//	__COUT__ << "words  " << words << " = " << it/2 << std::endl;
+	//	__COUT__ << "//////////////////////////////////////////////////// " << std::endl;
 
 	// Unpack TDC Spill Header
 	// unsigned int tdcSpillWordCount, tdcNumber, tdcSpillTriggerCount, tdcSpillStatus,
@@ -196,40 +196,40 @@ void WireChamberDQMHistos::convertSpillData(const std::string& spillData)
 		}
 		tdcHeader.tdcHeaderIndex = tdcHeaderIndex;
 
-		//		__MOUT__ << "/////////////////// TDC HEADER////////////////////// " 	<<
+		//		__COUT__ << "/////////////////// TDC HEADER////////////////////// " 	<<
 		// std::endl;
-		//		//		__MOUT__ << "tdcHeaderIndex " 		<< tdcHeader.tdcHeaderIndex
+		//		//		__COUT__ << "tdcHeaderIndex " 		<< tdcHeader.tdcHeaderIndex
 		//<<  std::endl;
-		//		__MOUT__ << "tdcSpillWordCount " 	<< tdcHeader.tdcSpillWordCount 		<<
+		//		__COUT__ << "tdcSpillWordCount " 	<< tdcHeader.tdcSpillWordCount 		<<
 		// std::endl;
-		//		__MOUT__ << "tdcNumber " 			<< tdcHeader.tdcNumber 				<<
+		//		__COUT__ << "tdcNumber " 			<< tdcHeader.tdcNumber 				<<
 		// std::endl;
-		//		__MOUT__ << "tdcSpillTriggerCount " << tdcHeader.tdcSpillTriggerCount 	<<
+		//		__COUT__ << "tdcSpillTriggerCount " << tdcHeader.tdcSpillTriggerCount 	<<
 		// std::endl;
-		//		__MOUT__ << "tdcSpillStatus " 		<< tdcHeader.tdcSpillStatus 		<<
+		//		__COUT__ << "tdcSpillStatus " 		<< tdcHeader.tdcSpillStatus 		<<
 		// std::endl;
-		//		__MOUT__ << "tdcWords " 			<< tdcHeader.tdcWords 				<<
+		//		__COUT__ << "tdcWords " 			<< tdcHeader.tdcWords 				<<
 		// std::endl;
-		//		__MOUT__ << "//////////////////////////////////////////////////// " 	<<
+		//		__COUT__ << "//////////////////////////////////////////////////// " 	<<
 		// std::endl;
 
 		++tdcHeaderIndex;
 	}
 
-	//	__MOUT__ << "/////////////////// END OF DATA////////////////////// " << std::endl;
-	//	__MOUT__ << "//////////////////////////////////////////////////// " << std::endl;
-	//	__MOUT__ << "///////// unpacking tdc events ///////////////////// " << std::endl;
-	//	__MOUT__ << "spillTriggerCount: " << spillTriggerCount << std::endl;
-	//	__MOUT__ << "Current data index: " << it << std::endl;
-	//	__MOUT__ << "Spill data size: " << spillData.size() << std::endl;
+	//	__COUT__ << "/////////////////// END OF DATA////////////////////// " << std::endl;
+	//	__COUT__ << "//////////////////////////////////////////////////// " << std::endl;
+	//	__COUT__ << "///////// unpacking tdc events ///////////////////// " << std::endl;
+	//	__COUT__ << "spillTriggerCount: " << spillTriggerCount << std::endl;
+	//	__COUT__ << "Current data index: " << it << std::endl;
+	//	__COUT__ << "Spill data size: " << spillData.size() << std::endl;
 	// Unpack TDC Events
 	for(unsigned int triggerIndex = 0; triggerIndex < spillTriggerCount; ++triggerIndex)
 	{
-		//		__MOUT__ << "Trigger Index: " << triggerIndex << std::endl;
+		//		__COUT__ << "Trigger Index: " << triggerIndex << std::endl;
 
 		for(unsigned int numTDCsIndex = 0; numTDCsIndex < NUMBER_OF_TDCs; ++numTDCsIndex)
 		{
-			//			__MOUT__ << "numTDCsIndex: " << numTDCsIndex << std::endl;
+			//			__COUT__ << "numTDCsIndex: " << numTDCsIndex << std::endl;
 
 			unsigned int startIt = it;
 			doneFlag             = false;
@@ -278,32 +278,32 @@ void WireChamberDQMHistos::convertSpillData(const std::string& spillData)
 				}
 			}
 
-			//			__MOUT__ << "/////////////////// TDC Event////////////////////// "
+			//			__COUT__ << "/////////////////// TDC Event////////////////////// "
 			//<< 	std::endl;
-			//			__MOUT__ << "wordCount " 				<< tdcEvent.wordCount
+			//			__COUT__ << "wordCount " 				<< tdcEvent.wordCount
 			//<<  std::endl;
-			//			__MOUT__ << "tdcNumber " 				<< tdcEvent.tdcNumber
+			//			__COUT__ << "tdcNumber " 				<< tdcEvent.tdcNumber
 			//<<  std::endl;
-			//			__MOUT__ << "eventStatus " 				<< tdcEvent.eventStatus
+			//			__COUT__ << "eventStatus " 				<< tdcEvent.eventStatus
 			//<<  std::endl;
-			//			__MOUT__ << "triggerNumber " 			<< tdcEvent.triggerNumber
+			//			__COUT__ << "triggerNumber " 			<< tdcEvent.triggerNumber
 			//<< std::endl;
-			//			__MOUT__ << "triggerType " 				<< tdcEvent.triggerType
+			//			__COUT__ << "triggerType " 				<< tdcEvent.triggerType
 			//<<  std::endl;
-			//			__MOUT__ << "controllerEventTimeStamp " <<
+			//			__COUT__ << "controllerEventTimeStamp " <<
 			// tdcEvent.controllerEventTimeStamp	<< std::endl;
-			//			__MOUT__ << "tdcEventTimeStamp " 		<<
+			//			__COUT__ << "tdcEventTimeStamp " 		<<
 			// tdcEvent.tdcEventTimeStamp
 			//<< std::endl;
-			//			__MOUT__ << "////////////////////////////////////////////////////
+			//			__COUT__ << "////////////////////////////////////////////////////
 			//"
 			//<< std::endl;
 
-			//			__MOUT__ << "////////////////////tdcData/////////////////" <<
+			//			__COUT__ << "////////////////////tdcData/////////////////" <<
 			// std::endl;
-			//			__MOUT__ << "dataWords " 				<< tdcEvent.dataWords
+			//			__COUT__ << "dataWords " 				<< tdcEvent.dataWords
 			//<<  std::endl;
-			//			__MOUT__ << "wordCount " 				<< tdcEvent.wordCount
+			//			__COUT__ << "wordCount " 				<< tdcEvent.wordCount
 			//<<  std::endl;
 
 			for(; tdcEvent.dataWords < tdcEvent.wordCount &&
@@ -319,11 +319,11 @@ void WireChamberDQMHistos::convertSpillData(const std::string& spillData)
 				++tdcEvent.dataWords;
 				std::cout << tmpInt << ", ";
 			}
-			//			__MOUT__ << "////////////////End of tdcData/////////////" 	<<
+			//			__COUT__ << "////////////////End of tdcData/////////////" 	<<
 			// std::endl;
-			//			__MOUT__ << "dataWords " << tdcEvent.dataWords				<<
+			//			__COUT__ << "dataWords " << tdcEvent.dataWords				<<
 			// std::endl;
-			//			__MOUT__ << "///////////////////////////////////////////" 	<<
+			//			__COUT__ << "///////////////////////////////////////////" 	<<
 			// std::endl;
 
 			vectorOfTDCEvents_.push_back(tdcEvent);
@@ -364,7 +364,7 @@ void WireChamberDQMHistos::fill(std::string&                       buffer,
 			unsigned int chan = (data & 0xFC00) >> 10;
 			unsigned int tdc  = data & 0x03FF;
 
-			//			__MOUT__ << std::hex << "RAW: " << data << " CHANNEL: " << chan <<
+			//			__COUT__ << std::hex << "RAW: " << data << " CHANNEL: " << chan <<
 			//"  TDC: " << tdc
 			//					<< " CHAMBER: " << chamber << " MODULENUMBER: " <<
 			// chamberModuleNumber << std::endl;
@@ -381,7 +381,7 @@ void WireChamberDQMHistos::fill(std::string&                       buffer,
 				}
 				else
 				{
-					__MOUT__ << "Too many x-hits, mwpc " << event.tdcNumber << ", "
+					__COUT__ << "Too many x-hits, mwpc " << event.tdcNumber << ", "
 					         << nhit_x << " hits!" << std::endl;
 				}
 			}
@@ -395,16 +395,16 @@ void WireChamberDQMHistos::fill(std::string&                       buffer,
 				}
 				else
 				{
-					__MOUT__ << "Too many y-hits, mwpc " << event.tdcNumber << ", "
+					__COUT__ << "Too many y-hits, mwpc " << event.tdcNumber << ", "
 					         << nhit_y << " hits!" << std::endl;
 				}
 			}
 		}
 		if(chamberModuleNumber == 3)
 		{
-			//__MOUT__ << "CHAMBERMODULENUMBER = 3!!! FILLING HISTOGRAM MWPC!" <<
+			//__COUT__ << "CHAMBERMODULENUMBER = 3!!! FILLING HISTOGRAM MWPC!" <<
 			// std::endl;
-			//__MOUT__ << "NumHitsX: " << nhit_x << " NumHitsY: " << nhit_y << std::endl;
+			//__COUT__ << "NumHitsX: " << nhit_x << " NumHitsY: " << nhit_y << std::endl;
 
 			int onlygoodhits = 0;
 			for(unsigned int ix = 0; ix < nhit_x; ix++)
@@ -432,7 +432,7 @@ void WireChamberDQMHistos::fill(std::string&                       buffer,
 					{
 						continue;
 					}
-					//__MOUT__ << "MWPC \t xpos " << xpos << ", ypos " << ypos <<
+					//__COUT__ << "MWPC \t xpos " << xpos << ", ypos " << ypos <<
 					// std::endl;
 					h2_profile[chamber]->Fill(xpos, ypos);
 				}
