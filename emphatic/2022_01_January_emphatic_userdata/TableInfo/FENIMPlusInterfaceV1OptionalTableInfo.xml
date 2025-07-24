@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 	<ROOT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TableInfo.xsd">
-		<TABLE Name="FENIMPlusInterfaceOptionalTable">
+		<TABLE Name="FENIMPlusInterfaceV1OptionalTable">
 			<VIEW Name="FENIM_PLUS_INTERFACE_OPTIONAL_TABLE" Type="File,Database,DatabaseTest" Description="DelayAndWidth%20%5Beach%20bit%20is%203ns%5D%0AOutputTimeVetoDuration%20%5Bunits%20of%203ns%5D%0ASignalGeneratorHighPeriod%20%5Bunits%20of%203ns%5D%0ASignalGeneratorLow%20%5Bunits%20of%203ns%5D%0ASignalGeneratorPulseCount%20%5BNumber%20of%20pulses%20to%20output%2C%200%20for%20continuous%5D%0AOverrideORWithSelectionLogicRegister%20can%20be%20used%2C%20for%20example%2C%20to%20enable%20more%20than%20one%20combinatorial%20AND-gate%20for%20the%20selection%20logic%20-%20effectively%20an%20OR%20of%20ANDs.%0ATriggerCountAtRunStopFilename%20if%20DEFAULT%20does%20not%20save%20trigger%20counts%2C%20otherwise%20if%20valid%20file%20path%20will%20save%20trigger%20counts%20at%20end%20of%20run.">
 				<COLUMN Type="UID" 	 Name="InterfaceID" 	 StorageName="INTERFACE_ID" 		DataType="VARCHAR2" 		DataChoices=""/>
 				<COLUMN Type="YesNo" 	 Name="EnableExpertWebappFeatures" 	 StorageName="ENABLE_EXPERT_WEBAPP_FEATURES" 		DataType="VARCHAR2" 		DataChoices=""/>
