@@ -35,7 +35,7 @@ void WireChamberDataSaverConsumer::convertSpillData(const std::string& spillData
 			sprintf(msg, "0x%2.2x", ((unsigned int)spillData[i]) & 0x0FF);
 			ss << msg << " ";
 		}
-		//__MOUT__ << "\n" << ss.str() << std::endl;
+		//__COUT__ << "\n" << ss.str() << std::endl;
 	}
 
 	// Unpack Controller Header
@@ -93,18 +93,18 @@ void WireChamberDataSaverConsumer::convertSpillData(const std::string& spillData
 		default:;
 		}
 	}
-	__MOUT__ << "////////////////////////HEADER////////////////////// " << std::endl;
-	__MOUT__ << "wordCount " << totalWordCount << std::endl;
+	__COUT__ << "////////////////////////HEADER////////////////////// " << std::endl;
+	__COUT__ << "wordCount " << totalWordCount << std::endl;
 
 	outFile_ << "SPILL\t" << spillCount << std::endl;
 	// outFile_ << SDATE
-	__MOUT__ << "Date: " << month << "/" << day << "/" << year << std::endl;
-	__MOUT__ << "Time: " << hour << ":" << minute << ":" << second << std::endl;
-	__MOUT__ << "spillTriggerCount " << spillTriggerCount << std::endl;
-	__MOUT__ << "spillTDCStatus " << spillTDCStatus << std::endl;
-	__MOUT__ << "spillLinkStatus " << spillLinkStatus << std::endl;
-	__MOUT__ << "words  " << words << " = " << it / 2 << std::endl;
-	__MOUT__ << "//////////////////////////////////////////////////// " << std::endl;
+	__COUT__ << "Date: " << month << "/" << day << "/" << year << std::endl;
+	__COUT__ << "Time: " << hour << ":" << minute << ":" << second << std::endl;
+	__COUT__ << "spillTriggerCount " << spillTriggerCount << std::endl;
+	__COUT__ << "spillTDCStatus " << spillTDCStatus << std::endl;
+	__COUT__ << "spillLinkStatus " << spillLinkStatus << std::endl;
+	__COUT__ << "words  " << words << " = " << it / 2 << std::endl;
+	__COUT__ << "//////////////////////////////////////////////////// " << std::endl;
 
 	// Unpack TDC Spill Header
 	// unsigned int tdcSpillWordCount, tdcNumber, tdcSpillTriggerCount, tdcSpillStatus,
@@ -153,33 +153,33 @@ void WireChamberDataSaverConsumer::convertSpillData(const std::string& spillData
 		}
 		tdcHeader.tdcHeaderIndex = tdcHeaderIndex;
 
-		__MOUT__ << "/////////////////// TDC HEADER////////////////////// " << std::endl;
-		//		__MOUT__ << "tdcHeaderIndex " 		<< tdcHeader.tdcHeaderIndex 		<<
+		__COUT__ << "/////////////////// TDC HEADER////////////////////// " << std::endl;
+		//		__COUT__ << "tdcHeaderIndex " 		<< tdcHeader.tdcHeaderIndex 		<<
 		// std::endl;
-		__MOUT__ << "tdcSpillWordCount " << tdcHeader.tdcSpillWordCount << std::endl;
-		__MOUT__ << "tdcNumber " << tdcHeader.tdcNumber << std::endl;
-		__MOUT__ << "tdcSpillTriggerCount " << tdcHeader.tdcSpillTriggerCount
+		__COUT__ << "tdcSpillWordCount " << tdcHeader.tdcSpillWordCount << std::endl;
+		__COUT__ << "tdcNumber " << tdcHeader.tdcNumber << std::endl;
+		__COUT__ << "tdcSpillTriggerCount " << tdcHeader.tdcSpillTriggerCount
 		         << std::endl;
-		__MOUT__ << "tdcSpillStatus " << tdcHeader.tdcSpillStatus << std::endl;
-		__MOUT__ << "tdcWords " << tdcHeader.tdcWords << std::endl;
-		__MOUT__ << "//////////////////////////////////////////////////// " << std::endl;
+		__COUT__ << "tdcSpillStatus " << tdcHeader.tdcSpillStatus << std::endl;
+		__COUT__ << "tdcWords " << tdcHeader.tdcWords << std::endl;
+		__COUT__ << "//////////////////////////////////////////////////// " << std::endl;
 
 		++tdcHeaderIndex;
 	}
 
-	__MOUT__ << "/////////////////// END OF DATA////////////////////// " << std::endl;
-	__MOUT__ << "//////////////////////////////////////////////////// " << std::endl;
-	__MOUT__ << "///////// unpacking tdc events ///////////////////// " << std::endl;
-	__MOUT__ << "spillTriggerCount: " << spillTriggerCount << std::endl;
-	__MOUT__ << "Current data index: " << it << std::endl;
-	__MOUT__ << "Spill data size: " << spillData.size() << std::endl;
+	__COUT__ << "/////////////////// END OF DATA////////////////////// " << std::endl;
+	__COUT__ << "//////////////////////////////////////////////////// " << std::endl;
+	__COUT__ << "///////// unpacking tdc events ///////////////////// " << std::endl;
+	__COUT__ << "spillTriggerCount: " << spillTriggerCount << std::endl;
+	__COUT__ << "Current data index: " << it << std::endl;
+	__COUT__ << "Spill data size: " << spillData.size() << std::endl;
 	for(unsigned int triggerIndex = 0; triggerIndex < spillTriggerCount; ++triggerIndex)
 	{
-		__MOUT__ << "Trigger Index: " << triggerIndex << std::endl;
+		__COUT__ << "Trigger Index: " << triggerIndex << std::endl;
 
 		for(unsigned int numTDCsIndex = 0; numTDCsIndex < NUMBER_OF_TDCs; ++numTDCsIndex)
 		{
-			__MOUT__ << "numTDCsIndex: " << numTDCsIndex << std::endl;
+			__COUT__ << "numTDCsIndex: " << numTDCsIndex << std::endl;
 
 			unsigned int startIt = it;
 			doneFlag             = false;
@@ -228,28 +228,28 @@ void WireChamberDataSaverConsumer::convertSpillData(const std::string& spillData
 				}
 			}
 
-			//			__MOUT__ << "/////////////////// TDC Event////////////////////// "
+			//			__COUT__ << "/////////////////// TDC Event////////////////////// "
 			//<< 	std::endl;
-			//			__MOUT__ << "wordCount " 				<< tdcEvent.wordCount
+			//			__COUT__ << "wordCount " 				<< tdcEvent.wordCount
 			//<<  std::endl;
-			__MOUT__ << "tdcNumber " << tdcEvent.tdcNumber << std::endl;
-			//			__MOUT__ << "eventStatus " 				<< tdcEvent.eventStatus
+			__COUT__ << "tdcNumber " << tdcEvent.tdcNumber << std::endl;
+			//			__COUT__ << "eventStatus " 				<< tdcEvent.eventStatus
 			//<<  std::endl;
-			__MOUT__ << "triggerNumber " << tdcEvent.triggerNumber << std::endl;
-			//			__MOUT__ << "triggerType " 				<< tdcEvent.triggerType
+			__COUT__ << "triggerNumber " << tdcEvent.triggerNumber << std::endl;
+			//			__COUT__ << "triggerType " 				<< tdcEvent.triggerType
 			//<<  std::endl;
-			//			__MOUT__ << "controllerEventTimeStamp " <<
+			//			__COUT__ << "controllerEventTimeStamp " <<
 			// tdcEvent.controllerEventTimeStamp	<< std::endl;
-			//			__MOUT__ << "tdcEventTimeStamp " 		<<
+			//			__COUT__ << "tdcEventTimeStamp " 		<<
 			// tdcEvent.tdcEventTimeStamp
 			//<< std::endl;
-			//			__MOUT__ << "////////////////////////////////////////////////////
+			//			__COUT__ << "////////////////////////////////////////////////////
 			//"
 			//<< std::endl;
 
-			__MOUT__ << "////////////////////tdcData/////////////////" << std::endl;
-			__MOUT__ << "dataWords " << tdcEvent.dataWords << std::endl;
-			__MOUT__ << "wordCount " << tdcEvent.wordCount << std::endl;
+			__COUT__ << "////////////////////tdcData/////////////////" << std::endl;
+			__COUT__ << "dataWords " << tdcEvent.dataWords << std::endl;
+			__COUT__ << "wordCount " << tdcEvent.wordCount << std::endl;
 
 			for(; tdcEvent.dataWords < tdcEvent.wordCount &&
 			      it < spillData.size() - (wordSz - 1);
@@ -264,9 +264,9 @@ void WireChamberDataSaverConsumer::convertSpillData(const std::string& spillData
 				++tdcEvent.dataWords;
 				std::cout << tmpInt << ", ";
 			}
-			__MOUT__ << "////////////////End of tdcData/////////////" << std::endl;
-			__MOUT__ << "dataWords " << tdcEvent.dataWords << std::endl;
-			__MOUT__ << "///////////////////////////////////////////" << std::endl;
+			__COUT__ << "////////////////End of tdcData/////////////" << std::endl;
+			__COUT__ << "dataWords " << tdcEvent.dataWords << std::endl;
+			__COUT__ << "///////////////////////////////////////////" << std::endl;
 
 			vectorOfTDCEvents_.push_back(tdcEvent);
 		}
@@ -301,7 +301,7 @@ void WireChamberDataSaverConsumer::openFile(std::string runNumber)
 	if(!outFile_.is_open())
 	{
 		__SS__ << "Can't open file " << fileName.str() << std::endl;
-		__MOUT_ERR__ << "\n" << ss.str();
+		__COUT_ERR__ << "\n" << ss.str();
 		throw std::runtime_error(ss.str());
 	}
 }
