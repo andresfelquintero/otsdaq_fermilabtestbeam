@@ -27,6 +27,16 @@ https://linux.web.cern.ch/updates/alma9/
 ### WARNING: The script will create the 'otsdaq' directory from the location where it is run. 
 ### You need sudo powers and need to install [protobuf](https://gitlab.cern.ch/cms_tk_ph2/MessageUtils/-/blob/master/README.md) yourself!
 -->
+## Automatic installation
+
+This code is meant to work with ostdaq v_03_02 . Several changes were made compared to the first version that worked with version 02_08. 
+https://github.com/art-daq/otsdaq-demo/blob/develop/tools/ots-quick-spack-start.sh was used to install otsdaq in develop mode. 
+Given that Spack already upgraded to V1.0, this installation code will need to be reworked to include a new develop version. 
+However there are no issues installing it and it will work properly with the setup file that is included, although it needs to be adjusted to your needs.
+
+Proper installation of this package will require that you use otsdaq_fermilabtestbeam_spack repository. 
+It is located at https://github.com/andresfelquintero/otsdaq-fermilabtestbeam-spack or https://gitlab.cern.ch/otsdaq/spack/otsdaq-fermilabtestbeam-spack
+
 ## Manual installation
 <!--
 ### If you didn't run the Install.sh script  then you can copy and paste in a terminal the following instructions
@@ -94,16 +104,10 @@ cd ${OTSDAQ_HOME}
 mkdir -p spack/repos
 cd spack
 git clone https://github.com/FNALssi/spack.git -b fnal-develop
-cd spack
-git reset --hard 5d8ac7656ad4b8c2850e76d4751b9e0333d80d6b
-cd ..
 echo 'export SPACK_DISABLE_LOCAL_CONFIG=true 
 source spack/share/spack/setup-env.sh' > setup-env.sh
 source setup-env.sh
 git clone https://github.com/fnalssi/fermi-spack-tools.git
-cd fermi-spack-tools
-git reset --hard 06627a1b963fefcfc922a4789696f1e5adf27511
-cd ..
 ./fermi-spack-tools/bin/make_packages_yaml spack
 
 ###################################################
@@ -119,12 +123,7 @@ spack env activate ots
 ###################################################
 cd ${OTSDAQ_HOME}
 cd spack/repos
-#git clone https://github.com/FNALssi/fnal_art.git && spack repo add fnal_art
 git clone -b eflumerf/DontUseMasterCMake https://github.com/eflumerf/fnal_art.git && spack repo add fnal_art
-#sed -i 's/libxml2@2.9.12/libxml2@2.9.13/g' ${OTSDAQ_HOME}/spack/repos/fnal_art/packages/art-suite/package.py
-#git clone https://github.com/uplegger/fnal_art.git && spack repo add fnal_art
-cd fnal_art
-git reset --hard a150e04757263b39dd7b01140c0e7b4a20ac92e1
 
 cd ${OTSDAQ_HOME}
 spack add art-suite@s126
@@ -138,11 +137,9 @@ cd ${OTSDAQ_HOME}
 cd spack/repos
 
 git clone https://github.com/art-daq/artdaq-spack.git && spack repo add artdaq-spack
-cd artdaq-spack
-git reset --hard e7f4a8998b0497ee6831a0ddb1e7ae0a487031bb
 
 cd ${OTSDAQ_HOME}
-spack add otsdaq-suite@v2_08_00 artdaq=31207 s=126
+spack add otsdaq-suite
 spack concretize -f
 spack install -j`nproc`
 spack install -j1
@@ -227,55 +224,84 @@ Copy and paste in Firefox or Chrome the link that appears on the terminal when O
 
 ##  Setup file example
 ```sh
+echo # This script is intended to be sourced.
 
-export CONFIGURATION_NAME=Default
-#export PROJECT_HOME=$(echo $PWD | sed -e 's|/user||')
-export PROJECT_HOME=$PWD
-export USER_DATA_HOME=${PROJECT_HOME}/otsdaq-cms-burninbox-data/${CONFIGURATION_NAME}
-export SPACK_HOME=${PROJECT_HOME}/spack
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+otsdir=$SCRIPT_DIR
+
+sh -c "[ `ps $$ | grep bash | wc -l` -gt 0 ] || { echo 'Please switch to the bash shell before running ots.'; exit; }" || exit
+export SPACK_DISABLE_LOCAL_CONFIG=true
+source /home/nfs/emdaq/andres_develop/spack/share/spack/setup-env.sh
+
+spack load --first gcc@13.1.0
+spack compiler find
+
+spack load otsdaq-utilities
+
+spack env activate ots-develop
+if [ -d /home/nfs/emdaq/andres_develop/local/install ]; then
+  export PATH=/home/nfs/emdaq/andres_develop/local/install/bin:$PATH
+  export LD_LIBRARY_PATH=/home/nfs/emdaq/andres_develop/local/install/lib:$LD_LIBRARY_PATH
+  export CET_PLUGIN_PATH=/home/nfs/emdaq/andres_develop/local/install/lib:$CET_PLUGIN_PATH
+  export FHICL_FILE_PATH=/home/nfs/emdaq/andres_develop/local/install/fcl:
+
+  export OTSDAQ_DIR=${OTSDAQ_DIR:-$SCRIPT_DIR/local/install} #only set if not set by spack, e.g. needed by UpdateOTS.sh
+  export OTSDAQ_LIB=${OTSDAQ_LIB:-$SCRIPT_DIR/local/install/lib} #only set if not set by spack, e.g. needed by otsConfiguration_Wizard_CMake.xml, otsConfiguration_MacroMaker_CMake.xml
+  export OTSDAQ_UTILITIES_LIB=${OTSDAQ_UTILITIES_LIB:-$SCRIPT_DIR/local/install/lib} #only set if not set by spack, needed by otsConfiguration_Wizard_CMake.xml, otsConfiguration_MacroMaker_CMake.xml
+  export OTSDAQ_UTILITIES_DIR=$SCRIPT_DIR/srcs/otsdaq-utilities
+
+  # in ots-develop mode, set WebPath because OTSDAQ_UTILITIES_DIR is not setup
+  if [ -d $SCRIPT_DIR/srcs/otsdaq-utilities/WebGUI ]; then
+      export OTSDAQ_WEB_PATH=$SCRIPT_DIR/srcs/otsdaq-utilities/WebGUI
+  else
+      export OTSDAQ_WEB_PATH=$OTSDAQ_UTILITIES_LIB/../WebGUI
+  fi
+  export OTS_FILE_PARSE_PATTERN="/srcs/" #will be used to parse filename (i.e. for TRACE)
+fi
+
+k5user=`klist|grep "Default principal"|cut -d: -f2|sed 's/@.*//;s/ //'`
+export TRACE_FILE=/tmp/trace_buffer_$USER.$k5user
+
 export OTS_MAIN_PORT=2015
 
-export SPACK_DISABLE_LOCAL_CONFIG=true 
-source ${SPACK_HOME}/spack/share/spack/setup-env.sh
+export USER_DATA="/home/nfs/emdaq/andres_develop/otsdaq_fermilabtestbeam/emphatic/2022_01_January_emphatic_userdata"
+export ARTDAQ_DATABASE_URI="filesystemdb:///home/nfs/emdaq/andres_develop/otsdaq_fermilabtestbeam/emphatic/2022_01_January_emphatic_database"
+export OTSDAQ_DATA="/home/nfs/emdaq/andres_develop/otsdaq_fermilabtestbeam/DataFTBF"
+export OTS_SOURCE=/home/nfs/emdaq/andres_develop/srcs
 
-spack env activate ots
-
-#return
-export MRB_SOURCE=$PROJECT_HOME
-
-##### DATA DIRECTORY CONFIGURATION ##########
-#OTSDAQ_DATA is the dirctory where all histograms are stored!!
-export OTSDAQ_DATA="${PROJECT_HOME}/OtsdaqData/BurninBoxOtsdaqData"
-
-##### OTSDAQ MAIN ENVIRONMENT VARIABLES CONFIGURATION ##########
-#USER_DATA is the directory where RunNumber, Logs and other user informations are stored
-export USER_DATA="${USER_DATA_HOME}/UserData"
-#ARTDAQ_DATABASE_URI is the variable pointing to the USER database
-export ARTDAQ_DATABASE_URI="filesystemdb://${USER_DATA_HOME}/Database"
-
-##### BURNIN BOX CONFIGURATION ##########
-#Each center has its own specific configuration for the sensors on the controller - NCP
-export BURNINBOX_CONFIGURATION_FILE="${USER_DATA_HOME}/HardwareConfiguration/BurninBoxConfiguration_${CONFIGURATION_NAME}.xml"
-export MODULE_NAMES_FILE="${USER_DATA_HOME}/tmp/ModuleNames.cfg"
-
-##### OUTERTRACKER CONFIGURATION ##########
-#export OTSDAQ_CMSTRACKER_DIR=${SPACK_HOME}/otsdaq-cmstracker
-export PH2ACF_BASE_DIR=${OTSDAQ_CMSTRACKER_DIR}/otsdaq-cmstracker/Ph2_ACF
-export ACFSUPERVISOR_ROOT=${OTSDAQ_CMSTRACKER_DIR}/otsdaq-cmstracker/ACFSupervisor
-
-ln -fs ${OTSDAQ_CMSBURNINBOX_DIR}/UserWebGUI ${OTSDAQ_UTILITIES_DIR}/WebGUI/CMSBurninBoxWebPath
-
-echo -e "setup [275]  \t Now your user data path is USER_DATA \t\t = ${USER_DATA}"
-echo -e "setup [275]  \t Now your database path is ARTDAQ_DATABASE_URI \t = ${ARTDAQ_DATABASE_URI}"
-echo -e "setup [275]  \t Now your output data path is OTSDAQ_DATA \t = ${OTSDAQ_DATA}"
-echo
-echo
-echo -e "setup [275]  \t Now use 'ots --wiz' to configure otsdaq"
-echo -e "setup [275]  \t Then use 'ots' to start otsdaq"
-echo -e "setup [275]  \t Or use 'ots --help' for more options"
-echo
-echo -e "setup [275]  \t Use 'kx' to kill otsdaq processes"
+echo -e "setup_ots.sh:${LINENO} |  \t  Now your user data path is USER_DATA \t\t = ${USER_DATA}"
+echo -e "setup_ots.sh:${LINENO} |  \t  Now your database path is ARTDAQ_DATABASE_URI \t = ${ARTDAQ_DATABASE_URI}"
+echo -e "setup_ots.sh:${LINENO} |  \t  Now your output data path is OTSDAQ_DATA \t = ${OTSDAQ_DATA}"
 echo
 
-alias kx='ots -k'
-```
+#make the number of build threads dependent on the number of cores on the machine:
+export CETPKG_J=$((19 + 1))
+
+alias  kx='ots -k'
+# When using upstream spack-mpd
+#alias  mb='date; start_time=$(date +%s); spack find | grep gcc; spack mpd build -j$CETPKG_J 2>&1 | sed s/__spack_path_placeholder__//g | sed s/\\[padded-to-255-chars\\]//g | sed s/\\/tdaq-v......../\\/tdaq-v_\ \ \ /g; end_time=$(date +%s); pushd /home/nfs/emdaq/andres_develop/build; ninja install; popd; date; delta_time=$((end_time - start_time)); fractional_minutes=$(echo "scale=1; $delta_time / 60" | bc); echo "Full time: $delta_time seconds or $fractional_minutes minutes"'
+#alias  ml='date; start_time=$(date +%s); spack find | grep gcc; spack mpd build -j$CETPKG_J 2>&1 | sed s/__spack_path_placeholder__//g | sed s/\\[padded-to-255-chars\\]//g | sed s/\\/tdaq-v......../\\/tdaq-v_\ \ \ /g | tee m.txt; end_time=$(date +%s); pushd /home/nfs/emdaq/andres_develop/build; ninja install; popd; date; delta_time=0; fractional_minutes=$(echo "scale=1; $delta_time / 60" | bc); echo "Full time: $delta_time seconds or $fractional_minutes minutes"; less m.txt'
+#alias  mz='date; start_time=$(date +%s); spack concretize --force --deprecated; spack mpd build --clean -j$CETPKG_J 2>&1 | sed s/__spack_path_placeholder__//g; end_time=$(date +%s); pushd /home/nfs/emdaq/andres_develop/build; ninja install; popd; date; delta_time=$((end_time - start_time)); fractional_minutes=$(echo "scale=1; $delta_time / 60" | bc); echo "Full time: $delta_time seconds or $fractional_minutes minutes"'
+# When using the fork of spack-mpd
+alias  mb='date; start_time=$(date +%s); spack find | grep gcc; spack mpd build -G Ninja -j$CETPKG_J 2>&1 | sed s/__spack_path_placeholder__//g | sed s/\\[padded-to-255-chars\\]//g | sed s/\\/tdaq-v......../\\/tdaq-v_\ \ \ /g; end_time=$(date +%s); pushd /home/nfs/emdaq/andres_develop/build; ninja install; popd; date; delta_time=$((end_time - start_time)); fractional_minutes=$(echo "scale=1; $delta_time / 60" | bc); echo "Full time: $delta_time seconds or $fractional_minutes minutes"'
+alias  ml='date; start_time=$(date +%s); spack find | grep gcc; spack mpd build -G Ninja -j$CETPKG_J 2>&1 | sed s/__spack_path_placeholder__//g | sed s/\\[padded-to-255-chars\\]//g | sed s/\\/tdaq-v......../\\/tdaq-v_\ \ \ /g | tee m.txt; end_time=$(date +%s); pushd /home/nfs/emdaq/andres_develop/build; ninja install; popd; date; delta_time=0; fractional_minutes=$(echo "scale=1; $delta_time / 60" | bc); echo "Full time: $delta_time seconds or $fractional_minutes minutes"; less m.txt'
+alias  mz='date; start_time=$(date +%s); spack concretize --force --deprecated; spack mpd build -G Ninja --clean -j$CETPKG_J 2>&1 | sed s/__spack_path_placeholder__//g; end_time=$(date +%s); pushd /home/nfs/emdaq/andres_develop/build; ninja install; popd; date; delta_time=$((end_time - start_time)); fractional_minutes=$(echo "scale=1; $delta_time / 60" | bc); echo "Full time: $delta_time seconds or $fractional_minutes minutes"'
+
+spack load otsdaq-utilities
+
+echo
+echo -e "setup_ots.sh:${LINENO} |  \t  Now use 'ots --wiz' to configure otsdaq"
+echo -e "setup_ots.sh:${LINENO} |  \t           Then use 'ots' to start otsdaq"
+echo -e "setup_ots.sh:${LINENO} |  \t           Or use 'ots --help' for more options"
+echo
+echo -e "setup_ots.sh:${LINENO} |  \t      use 'kx' to kill otsdaq processes"
+echo
+
+echo -e "setup_ots.sh:${LINENO} |  \t  "
+echo -e "setup_ots.sh:${LINENO} |  \t      setup_ots.sh creates some compiling aliases for you:"
+echo -e "setup_ots.sh:${LINENO} |  \t     ---------------"
+echo -e "setup_ots.sh:${LINENO} |  \t            mb                             ### for incremental build"
+echo -e "setup_ots.sh:${LINENO} |  \t            mz                             ### for clean build"
+echo -e "setup_ots.sh:${LINENO} |  \t     ---------------"
+echo -e "setup_ots.sh:${LINENO} |  \t  "
+echo -e "setup_ots.sh:${LINENO} |  \t  "
