@@ -17,80 +17,78 @@
 using namespace ots;
 
 //========================================================================================================================
-FSSRInterface::FSSRInterface(const std::string&       interfaceUID,
-                             const ConfigurationTree& theXDAQContextConfigTree,
-                             const std::string&       interfaceConfigurationPath)
-    : FEVInterface(interfaceUID, theXDAQContextConfigTree, interfaceConfigurationPath)
-    , FSSRFirmware_(nullptr)
-    , FSSRHardware_(nullptr)
-    , hardwareType_(theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
-                        .getNode("HardwareType")
-                        .getValue<std::string>())
-    , firmwareType_(theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
-                        .getNode("FirmwareType")
-                        .getValue<std::string>())
-    , firmwareVersion_(theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
-                           .getNode("FirmwareVersion")
-                           .getValue<unsigned int>())
+FSSRInterface::FSSRInterface(const std::string &interfaceUID,
+							 const ConfigurationTree &theXDAQContextConfigTree,
+							 const std::string &interfaceConfigurationPath)
+	: FEVInterface(interfaceUID, theXDAQContextConfigTree, interfaceConfigurationPath), FSSRFirmware_(nullptr), FSSRHardware_(nullptr), hardwareType_(theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
+																																						  .getNode("HardwareType")
+																																						  .getValue<std::string>()),
+	  firmwareType_(theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
+						.getNode("FirmwareType")
+						.getValue<std::string>()),
+	  firmwareVersion_(theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
+						   .getNode("FirmwareVersion")
+						   .getValue<unsigned int>())
 {
-	__CFG_COUT__ << "Constructing FSSRInterface. "
-	                "=================================================================="
-	             << std::endl;
+	//__CFG_COUT__ use this instead of std::cout
+	std::cout << "Constructing FSSRInterface. "
+				 "=================================================================="
+			  << std::endl;
 
 	universalAddressSize_ = 8;
-	universalDataSize_    = 8;
+	universalDataSize_ = 8;
 
 	// Setup firmware instance
-	__CFG_COUT__ << "FirmwareType: " << firmwareType_ << std::endl;
-	__CFG_COUT__ << "FirmwareVersion: " << firmwareVersion_ << std::endl;
+	std::cout << "FirmwareType: " << firmwareType_ << std::endl;
+	std::cout << "FirmwareVersion: " << firmwareVersion_ << std::endl;
 
 	// choose: PurdueFSSRFirmware or OtsUDPFSSRFirmware (Right now we are running with the
 	// OtsUDPFSSRFirmware)
-	if(firmwareType_ == FSSRFirmwareBase::PURDUE_FIRMWARE_NAME)
+	if (firmwareType_ == FSSRFirmwareBase::PURDUE_FIRMWARE_NAME)
 		FSSRFirmware_ = new FSSRFirmwareBase(firmwareType_, firmwareVersion_);
-	else if(firmwareType_ == FSSRFirmwareBase::OTS_FIRMWARE_NAME)
+	else if (firmwareType_ == FSSRFirmwareBase::OTS_FIRMWARE_NAME)
 		FSSRFirmware_ = new FSSRFirmwareBase(firmwareType_, firmwareVersion_);
 	else
 	{
 		__SS__ << "Unknown applicationFirmwareType type choice: " << firmwareType_
-		       << std::endl;
+			   << std::endl;
 		__CFG_COUT_ERR__ << ss.str();
 		throw std::runtime_error(ss.str());
 	}
 
 	// Setup hardware instance
-	__CFG_COUT__ << "HardwareType: " << hardwareType_ << std::endl;
+	std::cout << "HardwareType: " << hardwareType_ << std::endl;
 
 	// choose: OtsUDPHardware or OtsUDPHardware ?? //FIXME? ? why does purdue use same
 	// hardware? (this is how interface was ... why?)
-	if(hardwareType_ == "PurdueHardware")
+	if (hardwareType_ == "PurdueHardware")
 		FSSRHardware_ = new OtsUDPHardware(
-		    theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
-		        .getNode("HostIPAddress")
-		        .getValue<std::string>(),
-		    theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
-		        .getNode("HostPort")
-		        .getValue<unsigned int>(),
-		    theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
-		        .getNode("InterfaceIPAddress")
-		        .getValue<std::string>(),
-		    theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
-		        .getNode("InterfacePort")
-		        .getValue<unsigned int>());
-	else if(hardwareType_ == "OtsUDPHardware")
+			theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
+				.getNode("HostIPAddress")
+				.getValue<std::string>(),
+			theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
+				.getNode("HostPort")
+				.getValue<unsigned int>(),
+			theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
+				.getNode("InterfaceIPAddress")
+				.getValue<std::string>(),
+			theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
+				.getNode("InterfacePort")
+				.getValue<unsigned int>());
+	else if (hardwareType_ == "OtsUDPHardware")
 		FSSRHardware_ = new OtsUDPHardware(
-		    theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
-		        .getNode("HostIPAddress")
-		        .getValue<std::string>(),
-		    theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
-		        .getNode("HostPort")
-		        .getValue<unsigned int>(),
-		    theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
-		        .getNode("InterfaceIPAddress")
-		        .getValue<std::string>(),
-		    theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
-		        .getNode("InterfacePort")
-		        .getValue<unsigned int>());
+			theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
+				.getNode("HostIPAddress")
+				.getValue<std::string>(),
+			theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
+				.getNode("HostPort")
+				.getValue<unsigned int>(),
+			theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
+				.getNode("InterfaceIPAddress")
+				.getValue<std::string>(),
+			theXDAQContextConfigTree.getNode(interfaceConfigurationPath)
+				.getNode("InterfacePort")
+				.getValue<unsigned int>());
 	else
 	{
 		__SS__ << "Unknown hardware type choice: " << hardwareType_ << std::endl;
@@ -98,9 +96,9 @@ FSSRInterface::FSSRInterface(const std::string&       interfaceUID,
 		throw std::runtime_error(ss.str());
 	}
 
-	__CFG_COUT__ << "Constructor complete. "
-	                "=================================================================="
-	             << std::endl;
+	std::cout << "Constructor complete. "
+				 "=================================================================="
+			  << std::endl;
 }
 
 //========================================================================================================================
@@ -115,124 +113,125 @@ FSSRInterface::~FSSRInterface(void)
 //========================================================================================================================
 void FSSRInterface::configure(void)
 {
-	__CFG_COUT__
-	    << "============================================================================"
-	    << std::endl;
-	__CFG_COUT__
-	    << "Configure =================================================================="
-	    << std::endl;
+	std::cout
+		<< "============================================================================"
+		<< std::endl;
+	std::cout
+		<< "Configure =================================================================="
+		<< std::endl;
 	std::string writeBuffer;
 	std::string readBuffer;
-	uint64_t    tmp;
+	uint64_t tmp;
 
-	if(firmwareType_ == FSSRFirmwareBase::OTS_FIRMWARE_NAME)
+	stop();
+	if (firmwareType_ == FSSRFirmwareBase::OTS_FIRMWARE_NAME)
 	{
-		__CFG_COUT__ << "Resetting Ethernet!" << std::endl;
-		((OtsUDPFirmwareCore*)(FSSRFirmware_->communicationFirmwareInstance_))
-		    ->softEthernetReset(writeBuffer);
+		std::cout << "Resetting Ethernet!" << std::endl;
+		((OtsUDPFirmwareCore *)(FSSRFirmware_->communicationFirmwareInstance_))
+			->softEthernetReset(writeBuffer);
 		FSSRHardware_->write(writeBuffer);
-		((OtsUDPFirmwareCore*)(FSSRFirmware_->communicationFirmwareInstance_))
-		    ->clearEthernetReset(writeBuffer);
+		((OtsUDPFirmwareCore *)(FSSRFirmware_->communicationFirmwareInstance_))
+			->clearEthernetReset(writeBuffer);
 		FSSRHardware_->write(writeBuffer);
-		//__CFG_COUT__  << "Sleeping 1 second..." << std::endl;
-		// sleep(1); //seconds
+		// std::cout  << "Sleeping 1 second..." << std::endl;
+		//  sleep(1); //seconds
 	}
 
-	__CFG_COUT__ << "Clearing receive socket buffer: " << FSSRHardware_->flushRead()
-	             << " packets cleared." << std::endl;
+	std::cout << "Clearing receive socket buffer: " << FSSRHardware_->flushRead()
+			  << " packets cleared." << std::endl;
 
 	std::string streamToIP = theXDAQContextConfigTree_.getNode(theConfigurationPath_)
-	                             .getNode("StreamToIPAddress")
-	                             .getValue<std::string>();
+								 .getNode("StreamToIPAddress")
+								 .getValue<std::string>();
 	unsigned int streamToPort = theXDAQContextConfigTree_.getNode(theConfigurationPath_)
-	                                .getNode("StreamToPort")
-	                                .getValue<unsigned int>();
+									.getNode("StreamToPort")
+									.getValue<unsigned int>();
 
-	__CFG_COUT__ << "Setting destination IP:   " << streamToIP << std::endl;
-	__CFG_COUT__ << "Setting destination port: " << streamToPort << std::endl;
+	std::cout << "Setting destination IP:   " << streamToIP << std::endl;
+	std::cout << "Setting destination port: " << streamToPort << std::endl;
 
 	FSSRFirmware_->communicationFirmwareInstance_->setDataDestination(
-	    writeBuffer, streamToIP, streamToPort);
+		writeBuffer, streamToIP, streamToPort);
 	FSSRHardware_->write(writeBuffer);
-	//__CFG_COUT__ << "Data destination set!" << std::endl;
+	// std::cout << "Data destination set!" << std::endl;
 
 	/*
 	try
 	{
-	    if (firmwareType_ == FSSRFirmwareBase::OTS_FIRMWARE_NAME)
-	    {
+		if (firmwareType_ == FSSRFirmwareBase::OTS_FIRMWARE_NAME)
+		{
 
-	        __CFG_COUT__ << "Reading back burst dest MAC/IP/Port: "  << std::endl;
+			std::cout << "Reading back burst dest MAC/IP/Port: "  << std::endl;
 
-	        ((OtsUDPFirmwareCore*)(FSSRFirmware_->communicationFirmwareInstance_))->readDataDestinationMAC(writeBuffer);
-	        FSSRHardware_->read(writeBuffer, readBuffer);
-	        __CFG_COUT__ << "Destination MAC Address: ";
-	        for (uint32_t i = 0; i < readBuffer.size(); i++)
-	            printf("%2.2X-", (((int16_t)readBuffer[i]) & 0xFF));
-	        std::cout << std::endl;
+			((OtsUDPFirmwareCore*)(FSSRFirmware_->communicationFirmwareInstance_))->readDataDestinationMAC(writeBuffer);
+			FSSRHardware_->read(writeBuffer, readBuffer);
+			std::cout << "Destination MAC Address: ";
+			for (uint32_t i = 0; i < readBuffer.size(); i++)
+				printf("%2.2X-", (((int16_t)readBuffer[i]) & 0xFF));
+			std::cout << std::endl;
 
-	        ((OtsUDPFirmwareCore*)(FSSRFirmware_->communicationFirmwareInstance_))->readDataDestinationIP(writeBuffer);
-	        FSSRHardware_->read(writeBuffer, readBuffer);
-	        __CFG_COUT__ << "Destination IP: ";
-	        for (uint32_t i = 0; i < readBuffer.size(); i++)
-	            printf("%2.2X-", (((int16_t)readBuffer[i]) & 0xFF));
-	        std::cout << std::endl;
+			((OtsUDPFirmwareCore*)(FSSRFirmware_->communicationFirmwareInstance_))->readDataDestinationIP(writeBuffer);
+			FSSRHardware_->read(writeBuffer, readBuffer);
+			std::cout << "Destination IP: ";
+			for (uint32_t i = 0; i < readBuffer.size(); i++)
+				printf("%2.2X-", (((int16_t)readBuffer[i]) & 0xFF));
+			std::cout << std::endl;
 
-	        ((OtsUDPFirmwareCore*)(FSSRFirmware_->communicationFirmwareInstance_))->readDataDestinationPort(writeBuffer);
-	        FSSRHardware_->read(writeBuffer, readBuffer);
-	        __CFG_COUT__ << "Destination Port: ";
-	        for (uint32_t i = 0; i < readBuffer.size(); i++)
-	            printf("%2.2X-", (((int16_t)readBuffer[i]) & 0xFF));
-	        std::cout << std::endl;
-	    }
+			((OtsUDPFirmwareCore*)(FSSRFirmware_->communicationFirmwareInstance_))->readDataDestinationPort(writeBuffer);
+			FSSRHardware_->read(writeBuffer, readBuffer);
+			std::cout << "Destination Port: ";
+			for (uint32_t i = 0; i < readBuffer.size(); i++)
+				printf("%2.2X-", (((int16_t)readBuffer[i]) & 0xFF));
+			std::cout << std::endl;
+		}
 	}
 	catch (...)
 	{
-	    __CFG_COUT__ << "Error reading while configuring." << std::endl;
-	    throw;
+		std::cout << "Error reading while configuring." << std::endl;
+		throw;
 	}
 */
-	__CFG_COUT__ << "Done configuring Ethernet block." << std::endl;
+	std::cout << "Done configuring Ethernet block." << std::endl;
 
 	std::string value;
 	std::string CSRRegister = FSSRFirmware_->readCSRRegister();
 
 	FSSRHardware_->read(CSRRegister, value);
 	uint32_t registerValue = FSSRFirmware_->createRegisterFromValue(CSRRegister, value);
-	__CFG_COUT__ << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_)
-	                    .getNode("LinkToFEToDetectorTable")
-	             << " -> Initial STRIP CSR Register value: 0x" << std::hex
-	             << registerValue << std::dec << std::endl;
+	std::cout << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_)
+					 .getNode("LinkToFEToDetectorTable")
+			  << " -> Initial STRIP CSR Register value: 0x" << std::hex
+			  << registerValue << std::dec << std::endl;
 
-	FSSRFirmware_->setCSRRegister(0);  // registerValue);//WHY 0?????????
+	FSSRFirmware_->setCSRRegister(0); // registerValue);//WHY 0?????????
 
 	//	return;
 
 	/////////////////////////////////////////////////
-	__CFG_COUT__ << "Configuring clocks..." << std::endl;
-	__CFG_COUT__ << "Clock source:    "
-	             << theXDAQContextConfigTree_.getNode(theConfigurationPath_)
-	                    .getNode("ClockSelect")
-	                    .getValue<std::string>()
-	             << std::endl;
-	__CFG_COUT__ << "Clock frequency: "
-	             << theXDAQContextConfigTree_.getNode(theConfigurationPath_)
-	                    .getNode("ClockSpeedMHz")
-	                    .getValue<float>()
-	             << " MHz" << std::endl;
+	std::cout << "Configuring clocks..." << std::endl;
+	std::cout << "Clock source:    "
+			  << theXDAQContextConfigTree_.getNode(theConfigurationPath_)
+					 .getNode("ClockSelect")
+					 .getValue<std::string>()
+			  << std::endl;
+	std::cout << "Clock frequency: "
+			  << theXDAQContextConfigTree_.getNode(theConfigurationPath_)
+					 .getNode("ClockSpeedMHz")
+					 .getValue<float>()
+			  << " MHz" << std::endl;
 	FSSRHardware_->write(FSSRFirmware_->configureClocks(
-	    theXDAQContextConfigTree_.getNode(theConfigurationPath_)
-	        .getNode("ClockSelect")
-	        .getValue<std::string>(),
-	    //"Internal",
-	    theXDAQContextConfigTree_.getNode(theConfigurationPath_)
-	        .getNode("ClockSpeedMHz")
-	        .getValue<float>()));
+		theXDAQContextConfigTree_.getNode(theConfigurationPath_)
+			.getNode("ClockSelect")
+			.getValue<std::string>(),
+		//"Internal",
+		theXDAQContextConfigTree_.getNode(theConfigurationPath_)
+			.getNode("ClockSpeedMHz")
+			.getValue<float>()));
 
 	// FSSRHardware_->writeAndAcknowledge(FSSRFirmware_->resetDetector(),10);
 
 	//
-	//	__CFG_COUT__ << std::endl;
+	//	std::cout << std::endl;
 	//
 	usleep(200000);
 	// LORE 2018/10/22 Commented out because it is done inside the configure clocks twice!
@@ -247,103 +246,105 @@ void FSSRInterface::configure(void)
 	// the method  FSSRFirmware_->alignReadOut(writeBuffer, 0x1e);//SEEMED TO BE USELESS
 	// for(unsigned int i=0; i<numberOfTicks; i++)
 	//{
-	//FSSRFirmware_->alignReadOut(writeBuffer, sensor, chip);
+	// FSSRFirmware_->alignReadOut(writeBuffer, sensor, chip);
 	auto feDetectorList = theXDAQContextConfigTree_.getBackNode(theConfigurationPath_)
-	                            .getNode("LinkToFEToDetectorTable").getChildren();
+							  .getNode("LinkToFEToDetectorTable")
+							  .getChildren();
 
-	uint8_t channelsAlignment[6] = {0,0,0,0,0,0};
-	for(auto& it : feDetectorList)
+	uint8_t channelsAlignment[6] = {0, 0, 0, 0, 0, 0};
+	for (auto &it : feDetectorList)
 	{
-		unsigned int feChannel  = it.second.getNode("FEChannel").getValue<unsigned int>();
+		unsigned int feChannel = it.second.getNode("FEChannel").getValue<unsigned int>();
 		const unsigned int rocBaseAddress = 9;
 		unsigned int rocAddress = it.second.getNode("ROCAddress").getValue<unsigned int>();
-		unsigned int rocAlign   = it.second.getNode("ROCAlign").getValue<unsigned int>();
-		if(feChannel > 5)
+		unsigned int rocAlign = it.second.getNode("ROCAlign").getValue<unsigned int>();
+		if (feChannel > 5)
 		{
-		__SS__ << "Invalid FEChannel parameter value in FEToDetectorTable " << feChannel << ". Values can only be between 0 and 5." << std::endl;
-		__COUT_ERR__ << "\n" << ss.str();
-		__SS_THROW__;
+			__SS__ << "Invalid FEChannel parameter value in FEToDetectorTable " << feChannel << ". Values can only be between 0 and 5." << std::endl;
+			__COUT_ERR__ << "\n"
+						 << ss.str();
+			__SS_THROW__;
 		}
-		channelsAlignment[feChannel] += (rocAlign << (rocAddress-rocBaseAddress));
+		channelsAlignment[feChannel] += (rocAlign << (rocAddress - rocBaseAddress));
 	}
-	__CFG_COUT__ << std::hex << "ALIGNEMENT: " << channelsAlignment[0] << ":" << channelsAlignment[1] << std::dec << std::endl;
+	std::cout << std::hex << "ALIGNEMENT: " << channelsAlignment[0] << ":" << channelsAlignment[1] << std::dec << std::endl;
 	FSSRFirmware_->alignReadOut(writeBuffer, channelsAlignment[0], channelsAlignment[1], channelsAlignment[2], channelsAlignment[3], channelsAlignment[4], channelsAlignment[5]);
 	FSSRHardware_->write(writeBuffer);
 
 	FSSRHardware_->read(FSSRFirmware_->readTrimCSRRegister(), value);
-	__CFG_COUT__ << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_).getNode("LinkToFEToDetectorTable") << " -> STRIP TRIM CSR Register value: 0x" << std::hex << value << std::dec << std::endl;
+	std::cout << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_).getNode("LinkToFEToDetectorTable") << " -> STRIP TRIM CSR Register value: 0x" << std::hex << value << std::dec << std::endl;
 	//}
 	//////////////////////////////////////////////////////////////////
 	writeBuffer.resize(0);
 	FSSRHardware_->write(FSSRFirmware_->resetDetector());
-	usleep(50000);  // Need sometime to clear
+	usleep(50000); // Need sometime to clear
 
 	// FSSRHardware_->read(CSRRegister, value);
 	// registerValue = FSSRFirmware_->createRegisterFromValue(CSRRegister, value);
-	//__CFG_COUT__ << "STRIP CSR Register value: 0x" << std::hex << registerValue <<
+	// std::cout << "STRIP CSR Register value: 0x" << std::hex << registerValue <<
 	// std::dec << std::endl;
 
 	configureDetector();
 
 	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), value);
-	CSRRegister   = FSSRFirmware_->readCSRRegister();
+	CSRRegister = FSSRFirmware_->readCSRRegister();
 	registerValue = FSSRFirmware_->createRegisterFromValue(CSRRegister, value);
-	__CFG_COUT__ << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_)
-	                    .getNode("LinkToFEToDetectorTable")
-	             << " -> STRIP CSR Register value: 0x" << std::hex << registerValue
-	             << std::dec << std::endl;
-	__CFG_COUT__ << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_)
-	                    .getNode("LinkToFEToDetectorTable")
-	             << " -> STRIP CSR Register value: 0x" << std::hex << registerValue
-	             << std::dec << std::endl;
-	__CFG_COUT__ << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_)
-	                    .getNode("LinkToFEToDetectorTable")
-	             << " -> STRIP CSR Register value: 0x" << std::hex << registerValue
-	             << std::dec << std::endl;
-	__CFG_COUT__ << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_)
-	                    .getNode("LinkToFEToDetectorTable")
-	             << " -> STRIP CSR Register value: 0x" << std::hex << registerValue
-	             << std::dec << std::endl;
-	__CFG_COUT__ << "Configure done "
-	                "================================================================"
-	             << std::endl;
+	std::cout << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_)
+					 .getNode("LinkToFEToDetectorTable")
+			  << " -> STRIP CSR Register value: 0x" << std::hex << registerValue
+			  << std::dec << std::endl;
+	std::cout << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_)
+					 .getNode("LinkToFEToDetectorTable")
+			  << " -> STRIP CSR Register value: 0x" << std::hex << registerValue
+			  << std::dec << std::endl;
+	std::cout << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_)
+					 .getNode("LinkToFEToDetectorTable")
+			  << " -> STRIP CSR Register value: 0x" << std::hex << registerValue
+			  << std::dec << std::endl;
+	std::cout << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_)
+					 .getNode("LinkToFEToDetectorTable")
+			  << " -> STRIP CSR Register value: 0x" << std::hex << registerValue
+			  << std::dec << std::endl;
+	std::cout << "Configure done "
+				 "================================================================"
+			  << std::endl;
 }
 
 //========================================================================================================================
 void FSSRInterface::configureDetector(void)
 {
-	__CFG_COUT__ << "Configuring Detector: "
-	             << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_)
-	                    .getNode("LinkToFEToDetectorTable")
-	             << "  =========================================" << std::endl;
-	//__CFG_COUT__ <<
+	std::cout << "Configuring Detector: "
+			  << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_)
+					 .getNode("LinkToFEToDetectorTable")
+			  << "  =========================================" << std::endl;
+	// std::cout <<
 	//	for(const auto& interface:
-	// theXDAQContextConfigTree_.getBackNode(theConfigurationPath_).getNode("LinkToFEToDetectorTable").getChildren())
+	//  theXDAQContextConfigTree_.getBackNode(theConfigurationPath_).getNode("LinkToFEToDetectorTable").getChildren())
 	//	{
-	//		__CFG_COUT__ << interface.first << std::endl;
-	//		__CFG_COUT__ <<
-	// interface.second.getNode("FEWriterDetectorAddress").getValue<unsigned int>() <<
-	// std::endl;
+	//		std::cout << interface.first << std::endl;
+	//		std::cout <<
+	//  interface.second.getNode("FEWriterDetectorAddress").getValue<unsigned int>() <<
+	//  std::endl;
 	//	}
 
-	//__CFG_COUT__ << std::endl;
+	// std::cout << std::endl;
 
 	DACStream theDACStream;
 	theDACStream.makeStream(theXDAQContextConfigTree_.getBackNode(theConfigurationPath_)
-	                            .getNode("LinkToFEToDetectorTable"));
-	//__CFG_COUT__ << std::endl;
-	// NOTE This way we first upload all registers to the FPGA and then all together to
-	// the ROCS
+								.getNode("LinkToFEToDetectorTable"));
+	// std::cout << std::endl;
+	//  NOTE This way we first upload all registers to the FPGA and then all together to
+	//  the ROCS
 	std::set<unsigned int> fecChannel;
-	bool                   anyOn = false;
+	bool anyOn = false;
 
-	//__CFG_COUT__ << std::endl;
-	for(DACStream::const_iterator it = theDACStream.getChannelStreamMap().begin();
-	    it != theDACStream.getChannelStreamMap().end();
-	    it++)
+	// std::cout << std::endl;
+	for (DACStream::const_iterator it = theDACStream.getChannelStreamMap().begin();
+		 it != theDACStream.getChannelStreamMap().end();
+		 it++)
 	{
-		//__CFG_COUT__ << std::endl;
-		if(it->second.getROCStatus())
+		// std::cout << std::endl;
+		if (it->second.getROCStatus())
 		{
 			anyOn = true;
 			// FIXME This is not an hardware task since the hardware can be used by FEW
@@ -357,9 +358,9 @@ void FSSRInterface::configureDetector(void)
 			// string buffer;
 			FSSRFirmware_->makeDACBuffer(sendBuffer, it->first, it->second);
 
-			__CFG_COUT__ << "Configuring channel: " << it->first << std::endl;
+			std::cout << "Configuring channel: " << it->first << std::endl;
 			FSSRHardware_->write(sendBuffer);
-			//__CFG_COUT__ << std::endl;
+			// std::cout << std::endl;
 			usleep(100000);
 
 			//			FSSRHardware_->read(sendBuffer,receiveBuffer);
@@ -378,78 +379,79 @@ void FSSRInterface::configureDetector(void)
 			// FSSRFirmware_->compareSendAndReceive(toFix, receivedFixed);
 			//					if(!toFixAgain.empty())
 			//					{
-			//						__CFG_COUT__ << "ERROR: I tried to re-send " <<
+			//						std::cout << "ERROR: I tried to re-send " <<
 			// std::endl;
 			//
 			//						for (unsigned int i = 0; i < toFixAgain.size(); i++)
-			//							__CFG_COUT__ << (unsigned int)toFixAgain[i] <<
+			//							std::cout << (unsigned int)toFixAgain[i] <<
 			// std::endl;
 			//
-			//						__CFG_COUT__ << " and got an error again!" <<
+			//						std::cout << " and got an error again!" <<
 			// std::endl;
 			//					}
 			//				}
 			//			}
 
 			std::string maskBuffer;
-			//__CFG_COUT__ << std::endl;
+			// std::cout << std::endl;
 			FSSRFirmware_->makeMaskBuffer(maskBuffer, it->first, it->second);
 			usleep(100000);
 
-			//__CFG_COUT__ << std::endl;
+			// std::cout << std::endl;
 			//			FSSRHardware_->writeAndAcknowledge(maskBuffer);
 			FSSRHardware_->write(maskBuffer);
-			//__CFG_COUT__ << std::endl;
+			// std::cout << std::endl;
 
 			fecChannel.insert(it->first);
 			// conbinedBuffer += buffer;
 		}
 	}
 
-	//__CFG_COUT__ << std::endl;
+	// std::cout << std::endl;
 
-	if(!anyOn)
-		__CFG_COUT__ << "NOTE: No ROCs are on!" << std::endl;
+	if (!anyOn)
+		std::cout << "NOTE: No ROCs are on!" << std::endl;
 	// FIXME This is not an hardware task since the hardware can be used by FEW and FER
 	//    for(set<unsigned int>::const_iterator it=fecChannel.begin();
 	//    it!=fecChannel.end(); it++)
 	// uploadDACsToDetector(*it);
 
-	__CFG_COUT__
-	    << "Done Configuring Detector   ============================================="
-	    << std::endl;
+	std::cout
+		<< "Done Configuring Detector   ============================================="
+		<< std::endl;
 }
 
 //========================================================================================================================
 void FSSRInterface::halt(void)
 {
-	__CFG_COUT__ << "\tHalt" << std::endl;
+	std::cout << "\tHalt" << std::endl;
 	stop();
 }
 
 //========================================================================================================================
 void FSSRInterface::pause(void)
 {
-	__CFG_COUT__ << "\tPause" << std::endl;
+	std::cout << "\tPause" << std::endl;
 	stop();
 }
 
 //========================================================================================================================
 void FSSRInterface::resume(void)
 {
-	__CFG_COUT__ << "\tResume" << std::endl;
+	std::cout << "\tResume" << std::endl;
 	start("");
 }
 
 //========================================================================================================================
+/*
 void FSSRInterface::start(std::string)  // runNumber)
 {
 	unsigned int i = VStateMachine::getIterationIndex();
 	if(i == 0)
 	{
 		VStateMachine::indicateIterationWork();
-		__CFG_COUT__ << "\tStart" << std::endl;
-		//__CFG_COUT__ << "FE Detector config link = " <<
+		std::cout << "\tStart" << std::endl;
+		//std::cout << "FE Detector config link = " <<
 		// theXDAQContextConfigTree_.getBackNode(theConfigurationPath_).getNode("LinkToFEToDetectorTable")
 		//<< std::endl;
 
@@ -459,34 +461,34 @@ void FSSRInterface::start(std::string)  // runNumber)
 
 		FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
 		csrRegisterValue =
-		    FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 0 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 0 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 0 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
+			FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 0 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 0 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 0 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
 		if(csrRegisterValue == 0)
-			__CFG_COUT__ << "\tERROR - Problem with register! See above" << std::endl;
+			std::cout << "\tERROR - Problem with register! See above" << std::endl;
 		FSSRFirmware_->setCSRRegister(csrRegisterValue);
 
 		FSSRHardware_->write(FSSRFirmware_->enableTrigger());
 		csrRegisterRead.clear();
 		FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
 		csrRegisterValue =
-		    FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 1 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 1 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 1 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
+			FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 1 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 1 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 1 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
 
 		//	usleep(50000);
 		// NOW
@@ -497,16 +499,16 @@ void FSSRInterface::start(std::string)  // runNumber)
 		csrRegisterRead.clear();
 		FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
 		csrRegisterValue =
-		    FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 2 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 2 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 2 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
+			FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 2 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 2 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 2 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
 		// std::string buffer;
 		////LORE THIS ONE NEEDED BY RYAN OTS FSSR
 		//((OtsUDPFirmwareCore*)FSSRFirmware_)->startBurst(buffer);
@@ -515,51 +517,51 @@ void FSSRInterface::start(std::string)  // runNumber)
 		csrRegisterRead.clear();
 		FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
 		csrRegisterValue =
-		    FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 3 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 3 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 3 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
+			FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 3 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 3 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 3 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
 
 		// NOW
 		FSSRHardware_->write(FSSRFirmware_->startStream(
-		    theXDAQContextConfigTree_.getNode(theConfigurationPath_)
-		        .getNode("ChannelStatus0")
-		        .getValue<bool>(),
-		    theXDAQContextConfigTree_.getNode(theConfigurationPath_)
-		        .getNode("ChannelStatus1")
-		        .getValue<bool>(),
-		    theXDAQContextConfigTree_.getNode(theConfigurationPath_)
-		        .getNode("ChannelStatus2")
-		        .getValue<bool>(),
-		    theXDAQContextConfigTree_.getNode(theConfigurationPath_)
-		        .getNode("ChannelStatus3")
-		        .getValue<bool>(),
-		    theXDAQContextConfigTree_.getNode(theConfigurationPath_)
-		        .getNode("ChannelStatus4")
-		        .getValue<bool>(),
-		    theXDAQContextConfigTree_.getNode(theConfigurationPath_)
-		        .getNode("ChannelStatus5")
-		        .getValue<bool>()));
+			theXDAQContextConfigTree_.getNode(theConfigurationPath_)
+				.getNode("ChannelStatus0")
+				.getValue<bool>(),
+			theXDAQContextConfigTree_.getNode(theConfigurationPath_)
+				.getNode("ChannelStatus1")
+				.getValue<bool>(),
+			theXDAQContextConfigTree_.getNode(theConfigurationPath_)
+				.getNode("ChannelStatus2")
+				.getValue<bool>(),
+			theXDAQContextConfigTree_.getNode(theConfigurationPath_)
+				.getNode("ChannelStatus3")
+				.getValue<bool>(),
+			theXDAQContextConfigTree_.getNode(theConfigurationPath_)
+				.getNode("ChannelStatus4")
+				.getValue<bool>(),
+			theXDAQContextConfigTree_.getNode(theConfigurationPath_)
+				.getNode("ChannelStatus5")
+				.getValue<bool>()));
 
 		csrRegisterRead.clear();
 		FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
 		csrRegisterValue =
-		    FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 4 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 4 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 4 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
+			FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 4 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 4 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 4 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
 
 		{
 			std::string buffer;
@@ -570,16 +572,16 @@ void FSSRInterface::start(std::string)  // runNumber)
 		csrRegisterRead.clear();
 		FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
 		csrRegisterValue =
-		    FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 5 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 5 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> START 5 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
+			FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 5 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 5 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> START 5 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
 	}
 	else if(i == 1)
 	{
@@ -593,51 +595,51 @@ void FSSRInterface::start(std::string)  // runNumber)
 		csrRegisterRead.clear();
 		FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
 		csrRegisterValue =
-		    FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+			FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 		FSSRFirmware_->setCSRRegister(csrRegisterValue);
 
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> RUN   0 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> RUN   0 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> RUN   0 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> RUN   0 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> RUN   0 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> RUN   0 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
 		usleep(100000);
 
 		csrRegisterRead.clear();
 		FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
 		csrRegisterValue =
-		    FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+			FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 		FSSRFirmware_->setCSRRegister(csrRegisterValue);
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> RUN   1 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> RUN   1 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> RUN   1 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> RUN   1 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> RUN   1 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> RUN   1 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
 
 		if(csrRegisterValue & 0x00080000)
 		{
 			csrRegisterRead.clear();
 			FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
 			csrRegisterValue = FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer,
-			                                                          csrRegisterRead);
+																	  csrRegisterRead);
 			FSSRFirmware_->setCSRRegister(csrRegisterValue);
-			__CFG_COUT__ << FEVInterface::interfaceUID_
-			             << " -> RUN   2 STRIP CSR Register value: 0x" << std::hex
-			             << csrRegisterValue << std::dec << std::endl;
-			__CFG_COUT__ << FEVInterface::interfaceUID_
-			             << " -> RUN   2 STRIP CSR Register value: 0x" << std::hex
-			             << csrRegisterValue << std::dec << std::endl;
-			__CFG_COUT__ << FEVInterface::interfaceUID_
-			             << " -> RUN   2 STRIP CSR Register value: 0x" << std::hex
-			             << csrRegisterValue << std::dec << std::endl;
+			std::cout << FEVInterface::interfaceUID_
+						 << " -> RUN   2 STRIP CSR Register value: 0x" << std::hex
+						 << csrRegisterValue << std::dec << std::endl;
+			std::cout << FEVInterface::interfaceUID_
+						 << " -> RUN   2 STRIP CSR Register value: 0x" << std::hex
+						 << csrRegisterValue << std::dec << std::endl;
+			std::cout << FEVInterface::interfaceUID_
+						 << " -> RUN   2 STRIP CSR Register value: 0x" << std::hex
+						 << csrRegisterValue << std::dec << std::endl;
 			usleep(1000000);
 			if(VStateMachine::getSubIterationIndex() < 5)
 			{
@@ -649,34 +651,152 @@ void FSSRInterface::start(std::string)  // runNumber)
 		csrRegisterRead.clear();
 		FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
 		csrRegisterValue =
-		    FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+			FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 		FSSRFirmware_->setCSRRegister(csrRegisterValue);
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> RUNNING 3 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> RUNNING 3 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> RUNNING 3 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> RUNNING 3 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> RUNNING 3 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
+		std::cout << FEVInterface::interfaceUID_
+					 << " -> RUNNING 3 STRIP CSR Register value: 0x" << std::hex
+					 << csrRegisterValue << std::dec << std::endl;
 
 		FSSRHardware_->write(FSSRFirmware_->resetBCO());
 		//	std::string buffer;
-		/*
-		FSSRHardware_->write(FSSRFirmware_->startStream(
-		        theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus0").getValue<bool>(),
-		        theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus1").getValue<bool>(),
-		        theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus2").getValue<bool>(),
-		        theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus3").getValue<bool>(),
-		        theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus4").getValue<bool>(),
-		        theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus5").getValue<bool>()
-		));
-		 */
+
+		// FSSRHardware_->write(FSSRFirmware_->startStream(
+		//         theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus0").getValue<bool>(),
+		//         theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus1").getValue<bool>(),
+		//         theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus2").getValue<bool>(),
+		//         theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus3").getValue<bool>(),
+		//         theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus4").getValue<bool>(),
+		//         theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus5").getValue<bool>()
+		// ));
+
 		// LORE THIS ONE NEEDED BY RYAN OTS FSSR
 		//	((OtsUDPFirmwareCore*)FSSRFirmware_)->startBurst(buffer);
 		//	FSSRHardware_->write(buffer);
 	}
+}
+*/
+//========================================================================================================================
+void FSSRInterface::start(std::string) // runNumber)
+{
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << "\tStart" << std::endl;
+	// std::cout << "FE Detector config link = " <<
+	//  theXDAQContextConfigTree_.getBackNode(theConfigurationPath_).getNode("LinkToFEToDetectorTable")
+	//<< std::endl;
+
+	std::string csrRegisterBuffer;
+	std::string csrRegisterRead;
+	uint32_t csrRegisterValue;
+	
+	//Added to see if we get what we expect from the register
+	
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
+	std::cout << "Writing armBCOReset " << std::endl;
+	FSSRHardware_->write(FSSRFirmware_->armBCOReset());
+	
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
+	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+
+	csrRegisterValue = FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
+			  << FEVInterface::interfaceUID_
+			  << " -> START 0 STRIP CSR Register value: 0x" << std::hex
+			  << csrRegisterValue << std::dec << std::endl;
+	if (csrRegisterValue == 0)
+		std::cout << "\tERROR - Problem with register! See above" << std::endl;
+	FSSRFirmware_->setCSRRegister(csrRegisterValue);
+
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
+	FSSRHardware_->write(FSSRFirmware_->enableTrigger());
+
+	csrRegisterRead.clear();
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
+	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	csrRegisterValue = FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
+			  << FEVInterface::interfaceUID_
+			  << " -> START 1 STRIP CSR Register value: 0x" << std::hex
+			  << csrRegisterValue << std::dec << std::endl;
+
+	//	usleep(50000);
+	// NOW
+	// FSSRHardware_->write(FSSRFirmware_->resetBCO());
+	// usleep(50000);
+
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
+	FSSRHardware_->write(FSSRFirmware_->armBCOReset());
+
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
+	csrRegisterRead.clear();
+	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	csrRegisterValue = FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ 
+	          << FEVInterface::interfaceUID_
+			  << " -> START 2 STRIP CSR Register value: 0x" << std::hex
+			  << csrRegisterValue << std::dec << std::endl;
+	// std::string buffer;
+	////LORE THIS ONE NEEDED BY RYAN OTS FSSR
+	//((OtsUDPFirmwareCore*)FSSRFirmware_)->startBurst(buffer);
+	// FSSRHardware_->write(buffer);
+
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
+	csrRegisterRead.clear();
+	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	csrRegisterValue = FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
+	<< FEVInterface::interfaceUID_
+	<< " -> START 3 STRIP CSR Register value: 0x" << std::hex
+	<< csrRegisterValue << std::dec << std::endl;
+
+	// NOW
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
+	FSSRHardware_->write(FSSRFirmware_->startStream(
+		theXDAQContextConfigTree_.getNode(theConfigurationPath_)
+			.getNode("ChannelStatus0")
+			.getValue<bool>(),
+		theXDAQContextConfigTree_.getNode(theConfigurationPath_)
+			.getNode("ChannelStatus1")
+			.getValue<bool>(),
+		theXDAQContextConfigTree_.getNode(theConfigurationPath_)
+			.getNode("ChannelStatus2")
+			.getValue<bool>(),
+		theXDAQContextConfigTree_.getNode(theConfigurationPath_)
+			.getNode("ChannelStatus3")
+			.getValue<bool>(),
+		theXDAQContextConfigTree_.getNode(theConfigurationPath_)
+			.getNode("ChannelStatus4")
+			.getValue<bool>(),
+		theXDAQContextConfigTree_.getNode(theConfigurationPath_)
+			.getNode("ChannelStatus5")
+			.getValue<bool>()));
+
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
+	csrRegisterRead.clear();
+	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	csrRegisterValue = FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
+			  << FEVInterface::interfaceUID_
+			  << " -> START 4 STRIP CSR Register value: 0x" << std::hex
+			  << csrRegisterValue << std::dec << std::endl;
+
+	{
+		std::string buffer;
+		// LORE THIS ONE NEEDED BY RYAN OTS FSSR
+		((OtsUDPFirmwareCore *)FSSRFirmware_)->startBurst(buffer);
+		FSSRHardware_->write(buffer);
+	}
+	csrRegisterRead.clear();
+	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	csrRegisterValue = FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
+	    	  << FEVInterface::interfaceUID_
+			  << " -> START 5 STRIP CSR Register value: 0x" << std::hex
+			  << csrRegisterValue << std::dec << std::endl;
 }
 
 //========================================================================================================================
@@ -685,58 +805,43 @@ bool FSSRInterface::running(void)
 	return false;
 	std::string csrRegisterBuffer;
 	std::string csrRegisterRead;
-	uint32_t    csrRegisterValue;
+	uint32_t csrRegisterValue;
 
 	csrRegisterBuffer = FSSRFirmware_->readCSRRegister();
 
 	csrRegisterRead.clear();
 	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
 	csrRegisterValue =
-	    FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+		FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 	FSSRFirmware_->setCSRRegister(csrRegisterValue);
 
-	__CFG_COUT__ << FEVInterface::interfaceUID_
-	             << " -> RUN   0 STRIP CSR Register value: 0x" << std::hex
-	             << csrRegisterValue << std::dec << std::endl;
-	__CFG_COUT__ << FEVInterface::interfaceUID_
-	             << " -> RUN   0 STRIP CSR Register value: 0x" << std::hex
-	             << csrRegisterValue << std::dec << std::endl;
-	__CFG_COUT__ << FEVInterface::interfaceUID_
-	             << " -> RUN   0 STRIP CSR Register value: 0x" << std::hex
-	             << csrRegisterValue << std::dec << std::endl;
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
+	          << FEVInterface::interfaceUID_
+			  << " -> RUN   0 STRIP CSR Register value: 0x" << std::hex
+			  << csrRegisterValue << std::dec << std::endl;
 	usleep(100000);
 
 	csrRegisterRead.clear();
 	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
 	csrRegisterValue =
-	    FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+		FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 	FSSRFirmware_->setCSRRegister(csrRegisterValue);
-	__CFG_COUT__ << FEVInterface::interfaceUID_
-	             << " -> RUN   1 STRIP CSR Register value: 0x" << std::hex
-	             << csrRegisterValue << std::dec << std::endl;
-	__CFG_COUT__ << FEVInterface::interfaceUID_
-	             << " -> RUN   1 STRIP CSR Register value: 0x" << std::hex
-	             << csrRegisterValue << std::dec << std::endl;
-	__CFG_COUT__ << FEVInterface::interfaceUID_
-	             << " -> RUN   1 STRIP CSR Register value: 0x" << std::hex
-	             << csrRegisterValue << std::dec << std::endl;
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
+	          << FEVInterface::interfaceUID_
+			  << " -> RUN   1 STRIP CSR Register value: 0x" << std::hex
+			  << csrRegisterValue << std::dec << std::endl;
 
-	if(csrRegisterValue & 0x00080000)
+	if (csrRegisterValue & 0x00080000)
 	{
 		csrRegisterRead.clear();
 		FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
 		csrRegisterValue =
-		    FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+			FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 		FSSRFirmware_->setCSRRegister(csrRegisterValue);
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> RUN   2 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> RUN   2 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
-		__CFG_COUT__ << FEVInterface::interfaceUID_
-		             << " -> RUN   2 STRIP CSR Register value: 0x" << std::hex
-		             << csrRegisterValue << std::dec << std::endl;
+		std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
+		          << FEVInterface::interfaceUID_
+				  << " -> RUN   2 STRIP CSR Register value: 0x" << std::hex
+				  << csrRegisterValue << std::dec << std::endl;
 		usleep(1000000);
 		return true;
 	}
@@ -744,112 +849,108 @@ bool FSSRInterface::running(void)
 	csrRegisterRead.clear();
 	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
 	csrRegisterValue =
-	    FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+		FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 	FSSRFirmware_->setCSRRegister(csrRegisterValue);
-	__CFG_COUT__ << FEVInterface::interfaceUID_
-	             << " -> RUNNING 3 STRIP CSR Register value: 0x" << std::hex
-	             << csrRegisterValue << std::dec << std::endl;
-	__CFG_COUT__ << FEVInterface::interfaceUID_
-	             << " -> RUNNING 3 STRIP CSR Register value: 0x" << std::hex
-	             << csrRegisterValue << std::dec << std::endl;
-	__CFG_COUT__ << FEVInterface::interfaceUID_
-	             << " -> RUNNING 3 STRIP CSR Register value: 0x" << std::hex
-	             << csrRegisterValue << std::dec << std::endl;
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
+	          << FEVInterface::interfaceUID_
+			  << " -> RUNNING 3 STRIP CSR Register value: 0x" << std::hex
+			  << csrRegisterValue << std::dec << std::endl;
 
-	//FSSRHardware_->write(FSSRFirmware_->resetBCO());
+	// FSSRHardware_->write(FSSRFirmware_->resetBCO());
 	//	std::string buffer;
 	/*
 	FSSRHardware_->write(FSSRFirmware_->startStream(
-	        theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus0").getValue<bool>(),
-	        theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus1").getValue<bool>(),
-	        theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus2").getValue<bool>(),
-	        theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus3").getValue<bool>(),
-	        theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus4").getValue<bool>(),
-	        theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus5").getValue<bool>()
+			theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus0").getValue<bool>(),
+			theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus1").getValue<bool>(),
+			theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus2").getValue<bool>(),
+			theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus3").getValue<bool>(),
+			theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus4").getValue<bool>(),
+			theXDAQContextConfigTree_.getNode(theConfigurationPath_).getNode("ChannelStatus5").getValue<bool>()
 	));
 	 */
-	// LORE THIS ONE NEEDED BY RYAN OTS FSSR
-	//	((OtsUDPFirmwareCore*)FSSRFirmware_)->startBurst(buffer);
-	//	FSSRHardware_->write(buffer);
+	//LORE THIS ONE NEEDED BY RYAN OTS FSSR
+	std::string buffer;
+	((OtsUDPFirmwareCore*)FSSRFirmware_)->startBurst(buffer);
+	FSSRHardware_->write(buffer);
 	return false;
 }
 
 //========================================================================================================================
 void FSSRInterface::stop(void)
 {
-	__CFG_COUT__ << "\tStop" << std::endl;
+	std::cout << "\tStop" << std::endl;
 	std::string csrRegisterBuffer;
 	std::string csrRegisterRead;
-	uint32_t    csrRegisterValue;
+	uint32_t csrRegisterValue;
 
 	csrRegisterRead.clear();
 	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
 	csrRegisterValue =
-	    FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+		FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 	FSSRFirmware_->setCSRRegister(csrRegisterValue);
-	__CFG_COUT__ << FEVInterface::interfaceUID_
-	             << " -> STOP 0 STRIP CSR Register value: 0x" << std::hex
-	             << csrRegisterValue << std::dec << std::endl;
-	__CFG_COUT__ << FEVInterface::interfaceUID_
-	             << " -> STOP 0 STRIP CSR Register value: 0x" << std::hex
-	             << csrRegisterValue << std::dec << std::endl;
-	__CFG_COUT__ << FEVInterface::interfaceUID_
-	             << " -> STOP 0 STRIP CSR Register value: 0x" << std::hex
-	             << csrRegisterValue << std::dec << std::endl;
+	std::cout << FEVInterface::interfaceUID_
+			  << " -> STOP 0 STRIP CSR Register value: 0x" << std::hex
+			  << csrRegisterValue << std::dec << std::endl;
+	std::cout << FEVInterface::interfaceUID_
+			  << " -> STOP 0 STRIP CSR Register value: 0x" << std::hex
+			  << csrRegisterValue << std::dec << std::endl;
+	std::cout << FEVInterface::interfaceUID_
+			  << " -> STOP 0 STRIP CSR Register value: 0x" << std::hex
+			  << csrRegisterValue << std::dec << std::endl;
 
 	FSSRHardware_->write(FSSRFirmware_->stopStream());
 	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
 	csrRegisterValue =
-	    FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+		FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 	FSSRFirmware_->setCSRRegister(csrRegisterValue);
-	__CFG_COUT__ << FEVInterface::interfaceUID_
-	             << " -> STOP 1 STRIP CSR Register value: 0x" << std::hex
-	             << csrRegisterValue << std::dec << std::endl;
-	__CFG_COUT__ << FEVInterface::interfaceUID_
-	             << " -> STOP 1 STRIP CSR Register value: 0x" << std::hex
-	             << csrRegisterValue << std::dec << std::endl;
-	__CFG_COUT__ << FEVInterface::interfaceUID_
-	             << " -> STOP 1 STRIP CSR Register value: 0x" << std::hex
-	             << csrRegisterValue << std::dec << std::endl;
+	std::cout << FEVInterface::interfaceUID_
+			  << " -> STOP 1 STRIP CSR Register value: 0x" << std::hex
+			  << csrRegisterValue << std::dec << std::endl;
+	std::cout << FEVInterface::interfaceUID_
+			  << " -> STOP 1 STRIP CSR Register value: 0x" << std::hex
+			  << csrRegisterValue << std::dec << std::endl;
+	std::cout << FEVInterface::interfaceUID_
+			  << " -> STOP 1 STRIP CSR Register value: 0x" << std::hex
+			  << csrRegisterValue << std::dec << std::endl;
 	std::string buffer;
 	// LORE THIS ONE NEEDED BY RYAN OTS FSSR
-	((OtsUDPFirmwareCore*)FSSRFirmware_)->stopBurst(buffer);
+	((OtsUDPFirmwareCore *)FSSRFirmware_)->stopBurst(buffer);
 	FSSRHardware_->write(buffer);
 }
 
 //========================================================================================================================
 // NOTE: buffer for address must be at least size universalAddressSize_
 // NOTE: buffer for returnValue must be max UDP size to handle return possibility
-void ots::FSSRInterface::universalRead(char* address, char* returnValue)
+void ots::FSSRInterface::universalRead(char *address, char *returnValue)
 {
-	__CFG_COUT__ << "address size " << universalAddressSize_ << std::endl;
+	std::cout << "address size " << universalAddressSize_ << std::endl;
 
-	__CFG_COUT__ << "Request: ";
-	for(unsigned int i = 0; i < universalAddressSize_; ++i)
+	std::cout << "Request: ";
+	for (unsigned int i = 0; i < universalAddressSize_; ++i)
 		printf("%2.2X", (unsigned char)address[i]);
 	std::cout << std::endl;
 
-	std::string readBuffer(universalDataSize_, 0);  // 0 fill to correct number of bytes
-	FSSRHardware_->read(FSSRFirmware_->universalRead(address), readBuffer);  // data reply
+	std::string readBuffer(universalDataSize_, 0);							// 0 fill to correct number of bytes
+	FSSRHardware_->read(FSSRFirmware_->universalRead(address), readBuffer); // data reply
 
-	__CFG_COUT__ << "Result SIZE: " << readBuffer.size() << std::endl;
+	std::cout << "Result SIZE: " << readBuffer.size() << std::endl;
 	memcpy(returnValue, readBuffer.substr(2).c_str(), universalDataSize_);
 }
 
 //========================================================================================================================
 // NOTE: buffer for address must be at least size universalAddressSize_
 // NOTE: buffer for writeValue must be at least size universalDataSize_
-void ots::FSSRInterface::universalWrite(char* address, char* writeValue)
+void ots::FSSRInterface::universalWrite(char *address, char *writeValue)
 {
-	__CFG_COUT__ << "address size " << universalAddressSize_ << std::endl;
-	__CFG_COUT__ << "data size " << universalDataSize_ << std::endl;
-	__CFG_COUT__ << "Sending: ";
-	for(unsigned int i = 0; i < universalAddressSize_; ++i)
+	std::cout << "address size " << universalAddressSize_ << std::endl;
+	std::cout << "data size " << universalDataSize_ << std::endl;
+	std::cout << "Sending: ";
+	for (unsigned int i = 0; i < universalAddressSize_; ++i)
 		printf("%2.2X", (unsigned char)address[i]);
 	std::cout << std::endl;
 
 	FSSRHardware_->write(
-	    FSSRFirmware_->universalWrite(address, writeValue));  // data request
+		FSSRFirmware_->universalWrite(address, writeValue)); // data request
 }
 
 DEFINE_OTS_INTERFACE(FSSRInterface)
