@@ -42,6 +42,7 @@ class FSSRInterface : public FEVInterface
 	std::string           hardwareType_;
 	std::string           firmwareType_;
 	unsigned              firmwareVersion_;
+	std::pair<bool, std::string> tryReadWithRetries(std::string &readBuffer);
 };
 }
 
