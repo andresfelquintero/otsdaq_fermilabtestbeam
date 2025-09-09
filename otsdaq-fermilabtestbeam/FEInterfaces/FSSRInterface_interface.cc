@@ -13,6 +13,9 @@
 #include <unistd.h>
 #include <iostream>
 #include <set>
+#include <stdexcept>  // For std::exception
+#include <thread>     // For std::this_thread::sleep_for
+#include <chrono>   
 
 using namespace ots;
 
@@ -196,7 +199,7 @@ void FSSRInterface::configure(void)
 	std::string value;
 	std::string CSRRegister = FSSRFirmware_->readCSRRegister();
 
-	FSSRHardware_->read(CSRRegister, value);
+	FSSRHardware_->read(CSRRegister, value, 2);
 	uint32_t registerValue = FSSRFirmware_->createRegisterFromValue(CSRRegister, value);
 	std::cout << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_)
 					 .getNode("LinkToFEToDetectorTable")
@@ -242,7 +245,7 @@ void FSSRInterface::configure(void)
 
 	writeBuffer.resize(0);
 	//////////////////////////////////////////////////////////////////
-	// ORIGINAL TILL 2018/05/30 -> the explanation on how to align the readout is inside
+	// ORIGINAL TILL 2018/05/2 -> the explanation on how to align the readout is inside
 	// the method  FSSRFirmware_->alignReadOut(writeBuffer, 0x1e);//SEEMED TO BE USELESS
 	// for(unsigned int i=0; i<numberOfTicks; i++)
 	//{
@@ -271,7 +274,7 @@ void FSSRInterface::configure(void)
 	FSSRFirmware_->alignReadOut(writeBuffer, channelsAlignment[0], channelsAlignment[1], channelsAlignment[2], channelsAlignment[3], channelsAlignment[4], channelsAlignment[5]);
 	FSSRHardware_->write(writeBuffer);
 
-	FSSRHardware_->read(FSSRFirmware_->readTrimCSRRegister(), value);
+	FSSRHardware_->read(FSSRFirmware_->readTrimCSRRegister(), value, 2);
 	std::cout << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_).getNode("LinkToFEToDetectorTable") << " -> STRIP TRIM CSR Register value: 0x" << std::hex << value << std::dec << std::endl;
 	//}
 	//////////////////////////////////////////////////////////////////
@@ -286,7 +289,7 @@ void FSSRInterface::configure(void)
 
 	configureDetector();
 
-	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), value);
+	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), value, 2);
 	CSRRegister = FSSRFirmware_->readCSRRegister();
 	registerValue = FSSRFirmware_->createRegisterFromValue(CSRRegister, value);
 	std::cout << theXDAQContextConfigTree_.getBackNode(theConfigurationPath_)
@@ -696,11 +699,24 @@ void FSSRInterface::start(std::string) // runNumber)
 	//Added to see if we get what we expect from the register
 	
 	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
+	
 	std::cout << "Writing armBCOReset " << std::endl;
 	FSSRHardware_->write(FSSRFirmware_->armBCOReset());
 	
+	std::cout << "Writing enableTrigger " << std::endl;
 	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
-	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	FSSRHardware_->write(FSSRFirmware_->enableTrigger());
+	
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
+	//FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead, 2);
+	
+	auto [successStart1, errorMsgStart1] = tryReadWithRetries(csrRegisterRead);
+	if (!successStart1)
+	{std::cerr << "❌ Failed to read CSR register after retries. Last error: "
+				<< errorMsgStart1 << std::endl;}
+	else
+	{std::cout << "✅ Successfully read CSR register." << std::endl;	}
+
 
 	csrRegisterValue = FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
@@ -714,9 +730,19 @@ void FSSRInterface::start(std::string) // runNumber)
 	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
 	FSSRHardware_->write(FSSRFirmware_->enableTrigger());
 
-	csrRegisterRead.clear();
+	//csrRegisterRead.clear();
+	
 	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
-	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	//FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead, 2);
+	auto [successStart2, errorMsgStart2] = tryReadWithRetries(csrRegisterRead);
+	if (!successStart2)
+	{std::cerr << "❌ Failed to read CSR register after retries. Last error: "
+				<< errorMsgStart2 << std::endl;}
+	else
+	{std::cout << "✅ Successfully read CSR register." << std::endl;	}
+	
+	
+	
 	csrRegisterValue = FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
 			  << FEVInterface::interfaceUID_
@@ -733,7 +759,14 @@ void FSSRInterface::start(std::string) // runNumber)
 
 	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
 	csrRegisterRead.clear();
-	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	//FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead, 2);
+	auto [successStart3, errorMsgStart3] = tryReadWithRetries(csrRegisterRead);
+	if (!successStart3)
+	{std::cerr << "❌ Failed to read CSR register after retries. Last error: "
+				<< errorMsgStart3 << std::endl;}
+	else
+	{std::cout << "✅ Successfully read CSR register." << std::endl;	}
+
 	csrRegisterValue = FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ 
 	          << FEVInterface::interfaceUID_
@@ -744,9 +777,19 @@ void FSSRInterface::start(std::string) // runNumber)
 	//((OtsUDPFirmwareCore*)FSSRFirmware_)->startBurst(buffer);
 	// FSSRHardware_->write(buffer);
 
+
+
 	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
 	csrRegisterRead.clear();
-	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	//FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead, 2);
+	
+	auto [successStart4, errorMsgStart4] = tryReadWithRetries(csrRegisterRead);
+	if (!successStart4)
+	{std::cerr << "❌ Failed to read CSR register after retries. Last error: "
+				<< errorMsgStart4 << std::endl;}
+	else
+	{std::cout << "✅ Successfully read CSR register." << std::endl;	}
+	
 	csrRegisterValue = FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
 	<< FEVInterface::interfaceUID_
@@ -777,21 +820,39 @@ void FSSRInterface::start(std::string) // runNumber)
 
 	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__ << std::endl;
 	csrRegisterRead.clear();
-	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	//FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead, 2);
+	
+	auto [successStart5, errorMsgStart5] = tryReadWithRetries(csrRegisterRead);
+	if (!successStart5)
+	{std::cerr << "❌ Failed to read CSR register after retries. Last error: "
+				<< errorMsgStart5 << std::endl;}
+	else
+	{std::cout << "✅ Successfully read CSR register." << std::endl;	}
+	
 	csrRegisterValue = FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
 			  << FEVInterface::interfaceUID_
 			  << " -> START 4 STRIP CSR Register value: 0x" << std::hex
 			  << csrRegisterValue << std::dec << std::endl;
 
-	{
-		std::string buffer;
-		// LORE THIS ONE NEEDED BY RYAN OTS FSSR
-		((OtsUDPFirmwareCore *)FSSRFirmware_)->startBurst(buffer);
-		FSSRHardware_->write(buffer);
-	}
+
+	// This is needed to get some data as of now September 4th, 2025. 
+	// {
+	// 	std::string buffer;
+	// 	// LORE THIS ONE NEEDED BY RYAN OTS FSSR
+	// 	((OtsUDPFirmwareCore *)FSSRFirmware_)->startBurst(buffer);
+	// 	FSSRHardware_->write(buffer);
+	// }
 	csrRegisterRead.clear();
-	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	//FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead, 2);
+	auto [successStart6, errorMsgStart6] = tryReadWithRetries(csrRegisterRead);
+	if (!successStart6)
+	{std::cerr << "❌ Failed to read CSR register after retries. Last error: "
+				<< errorMsgStart6 << std::endl;}
+	else
+	{std::cout << "✅ Successfully read CSR register." << std::endl;	}
+	
+	
 	csrRegisterValue = FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
 	    	  << FEVInterface::interfaceUID_
@@ -802,15 +863,26 @@ void FSSRInterface::start(std::string) // runNumber)
 //========================================================================================================================
 bool FSSRInterface::running(void)
 {
-	return false;
+	//return false;
 	std::string csrRegisterBuffer;
 	std::string csrRegisterRead;
 	uint32_t csrRegisterValue;
 
+	// Just to see if it can wait this time before the triggers start and it can get the register down
+	usleep(1000000);
+
 	csrRegisterBuffer = FSSRFirmware_->readCSRRegister();
 
 	csrRegisterRead.clear();
-	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	//FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead, 2);
+	
+	auto [successRun1, errorMsgRun1] = tryReadWithRetries(csrRegisterRead);
+	if (!successRun1)
+	{std::cerr << "❌ Failed to read CSR register after retries. Last error: "
+				<< errorMsgRun1 << std::endl;}
+	else
+	{std::cout << "✅ Successfully read CSR register." << std::endl;	}
+	
 	csrRegisterValue =
 		FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 	FSSRFirmware_->setCSRRegister(csrRegisterValue);
@@ -819,10 +891,18 @@ bool FSSRInterface::running(void)
 	          << FEVInterface::interfaceUID_
 			  << " -> RUN   0 STRIP CSR Register value: 0x" << std::hex
 			  << csrRegisterValue << std::dec << std::endl;
-	usleep(100000);
+	//usleep(100000);
 
 	csrRegisterRead.clear();
-	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	//FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead, 2);
+	
+	auto [successRun2, errorMsgRun2] = tryReadWithRetries(csrRegisterRead);
+	if (!successRun2)
+	{std::cerr << "❌ Failed to read CSR register after retries. Last error: "
+				<< errorMsgRun2 << std::endl;}
+	else
+	{std::cout << "✅ Successfully read CSR register." << std::endl;	}
+	
 	csrRegisterValue =
 		FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 	FSSRFirmware_->setCSRRegister(csrRegisterValue);
@@ -831,29 +911,53 @@ bool FSSRInterface::running(void)
 			  << " -> RUN   1 STRIP CSR Register value: 0x" << std::hex
 			  << csrRegisterValue << std::dec << std::endl;
 
-	if (csrRegisterValue & 0x00080000)
-	{
-		csrRegisterRead.clear();
-		FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
-		csrRegisterValue =
-			FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
-		FSSRFirmware_->setCSRRegister(csrRegisterValue);
-		std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
-		          << FEVInterface::interfaceUID_
-				  << " -> RUN   2 STRIP CSR Register value: 0x" << std::hex
-				  << csrRegisterValue << std::dec << std::endl;
-		usleep(1000000);
-		return true;
-	}
+	// if (csrRegisterValue & 0x00080000)
+	// {
+	// 	csrRegisterRead.clear();
+	// 	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	// 	csrRegisterValue =
+	// 		FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+	// 	FSSRFirmware_->setCSRRegister(csrRegisterValue);
+	// 	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
+	// 	          << FEVInterface::interfaceUID_
+	// 			  << " -> RUN   2 STRIP CSR Register value: 0x" << std::hex
+	// 			  << csrRegisterValue << std::dec << std::endl;
+	// 	usleep(1000000);
+	// 	//return true;
+	// }
 
 	csrRegisterRead.clear();
-	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	//FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead, 2);
+	auto [successRun3, errorMsgRun3] = tryReadWithRetries(csrRegisterRead);
+	if (!successRun3)
+	{std::cerr << "❌ Failed to read CSR register after retries. Last error: "
+				<< errorMsgRun3 << std::endl;}
+	else
+	{std::cout << "✅ Successfully read CSR register." << std::endl;	}
 	csrRegisterValue =
 		FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 	FSSRFirmware_->setCSRRegister(csrRegisterValue);
 	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
 	          << FEVInterface::interfaceUID_
-			  << " -> RUNNING 3 STRIP CSR Register value: 0x" << std::hex
+			  << " -> RUN   2 STRIP CSR Register value: 0x" << std::hex
+			  << csrRegisterValue << std::dec << std::endl;
+		//return true;
+
+
+	csrRegisterRead.clear();
+	//FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead, 2);
+	auto [successRun4, errorMsgRun4] = tryReadWithRetries(csrRegisterRead);
+	if (!successRun4)
+	{std::cerr << "❌ Failed to read CSR register after retries. Last error: "
+				<< errorMsgRun4 << std::endl;}
+	else
+	{std::cout << "✅ Successfully read CSR register." << std::endl;	}
+	csrRegisterValue =
+		FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
+	FSSRFirmware_->setCSRRegister(csrRegisterValue);
+	std::cout << "[" << __LINE__ << "] " << __PRETTY_FUNCTION__
+	          << FEVInterface::interfaceUID_
+			  << " -> RUN 3 STRIP CSR Register value: 0x" << std::hex
 			  << csrRegisterValue << std::dec << std::endl;
 
 	// FSSRHardware_->write(FSSRFirmware_->resetBCO());
@@ -869,9 +973,9 @@ bool FSSRInterface::running(void)
 	));
 	 */
 	//LORE THIS ONE NEEDED BY RYAN OTS FSSR
-	std::string buffer;
-	((OtsUDPFirmwareCore*)FSSRFirmware_)->startBurst(buffer);
-	FSSRHardware_->write(buffer);
+	// std::string buffer;
+	// ((OtsUDPFirmwareCore*)FSSRFirmware_)->startBurst(buffer);
+	// FSSRHardware_->write(buffer);
 	return false;
 }
 
@@ -884,7 +988,18 @@ void FSSRInterface::stop(void)
 	uint32_t csrRegisterValue;
 
 	csrRegisterRead.clear();
-	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	FSSRHardware_->write(FSSRFirmware_->stopStream());
+	std::cout << "I was able to write a stopStream before reading " << std::endl;
+
+	//FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead, 2);
+	auto [successStop, errorMsgStop] = tryReadWithRetries(csrRegisterRead);
+	if (!successStop)
+	{std::cerr << "❌ Failed to read CSR register after retries. Last error: "
+				<< errorMsgStop << std::endl;}
+	else
+	{std::cout << "✅ Successfully read CSR register." << std::endl;	}
+	
+	
 	csrRegisterValue =
 		FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 	FSSRFirmware_->setCSRRegister(csrRegisterValue);
@@ -899,7 +1014,15 @@ void FSSRInterface::stop(void)
 			  << csrRegisterValue << std::dec << std::endl;
 
 	FSSRHardware_->write(FSSRFirmware_->stopStream());
-	FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead);
+	std::cout << "I was able to write a 2nd stopStream before reading " << std::endl;
+	//FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), csrRegisterRead, 2);
+	auto [successStop2, errorMsgStop2] = tryReadWithRetries(csrRegisterRead);
+	if (!successStop2)
+	{std::cerr << "❌ Failed to read CSR register after retries. Last error: "
+				<< errorMsgStop2 << std::endl;}
+	else
+	{std::cout << "✅ Successfully read CSR register." << std::endl;	}
+
 	csrRegisterValue =
 		FSSRFirmware_->createRegisterFromValue(csrRegisterBuffer, csrRegisterRead);
 	FSSRFirmware_->setCSRRegister(csrRegisterValue);
@@ -931,7 +1054,7 @@ void ots::FSSRInterface::universalRead(char *address, char *returnValue)
 	std::cout << std::endl;
 
 	std::string readBuffer(universalDataSize_, 0);							// 0 fill to correct number of bytes
-	FSSRHardware_->read(FSSRFirmware_->universalRead(address), readBuffer); // data reply
+	FSSRHardware_->read(FSSRFirmware_->universalRead(address), readBuffer, 2); // data reply
 
 	std::cout << "Result SIZE: " << readBuffer.size() << std::endl;
 	memcpy(returnValue, readBuffer.substr(2).c_str(), universalDataSize_);
@@ -952,5 +1075,51 @@ void ots::FSSRInterface::universalWrite(char *address, char *writeValue)
 	FSSRHardware_->write(
 		FSSRFirmware_->universalWrite(address, writeValue)); // data request
 }
+
+//New method, can be erased if not needed
+
+
+std::pair<bool, std::string> FSSRInterface::tryReadWithRetries(std::string &readBuffer)
+{
+    const int maxAttempts = 5;
+    std::string lastError;
+
+    for (int attempt = 0; attempt < maxAttempts; ++attempt)
+    {
+        try
+        {
+            // Attempt the hardware read
+            FSSRHardware_->read(FSSRFirmware_->readCSRRegister(), readBuffer, 2);
+            return {true, ""}; // Success!
+        }
+        catch (const std::exception &ex)
+        {
+            lastError = ex.what();
+            std::cerr << "[WARNING] Attempt " << attempt + 1
+                      << " failed: " << lastError << std::endl;
+
+            if (attempt == maxAttempts - 1)
+            {
+                std::cerr << "[ERROR] All " << maxAttempts << " attempts failed." << std::endl;
+                return {false, lastError};
+            }
+        }
+        catch (...)
+        {
+            lastError = "Unknown exception";
+            std::cerr << "[WARNING] Attempt " << attempt + 1
+                      << " failed: " << lastError << std::endl;
+
+            if (attempt == maxAttempts - 1)
+            {
+                std::cerr << "[ERROR] All " << maxAttempts << " attempts failed." << std::endl;
+                return {false, lastError};
+            }
+        }
+    }
+
+    return {false, "Unexpected failure"};
+}
+
 
 DEFINE_OTS_INTERFACE(FSSRInterface)
